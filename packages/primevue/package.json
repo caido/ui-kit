@@ -1,0 +1,20 @@
+{
+  "name": "@caido/primevue",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/primevue.mjs",
+  "scripts": {
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Caido Labs Inc.",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "5.5.4",
+    "vite": "^5.4.0"
+  },
+  "dependencies": {
+    "@primevue/themes": "^4.0.4"
+  }
+}
