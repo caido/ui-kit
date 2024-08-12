@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "description": "",
   "main": "dist/primevue.mjs",
+  "types": "dist/types/index.d.ts",
   "scripts": {
-    "build": "vite build",
+    "build": "vite build && tsc --emitDeclarationOnly",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

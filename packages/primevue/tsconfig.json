@@ -3,6 +3,7 @@
     "target": "esnext",
     "module": "esnext",
 
+
     "jsx": "preserve",
     "noImplicitAny": true,
     "noUncheckedIndexedAccess": true,
@@ -22,7 +23,10 @@
     "types": [
       "vite/client"
     ],
-    "baseUrl": "."
+    "baseUrl": ".",
+    "outDir": "./dist/types",
+    "declaration": true
+
   },
   "include": ["./src/**/*.ts"]
 }
