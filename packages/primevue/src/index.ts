@@ -1,1 +1,1 @@
-export * from "./caido-dark";
+export * from "./classic";
