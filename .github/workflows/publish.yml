@@ -29,3 +29,18 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_BOT_TOKEN }}
         run: pnpm -r publish --access public
+
+      - name: Publish internal
+        shell: bash
+        env:
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Switch npmrc
+          mv .npmrc .npmrc.pub
+          mv .npmrc.github .npmrc
+
+          pnpm -r publish
+
+          # Restore npmrc
+          mv .npmrc .npmrc.github
+          mv .npmrc.pub .npmrc
