@@ -39,7 +39,7 @@ jobs:
           mv .npmrc .npmrc.pub
           mv .npmrc.github .npmrc
 
-          pnpm -r publish
+          pnpm -r publish --no-git-checks
 
           # Restore npmrc
           mv .npmrc .npmrc.github
