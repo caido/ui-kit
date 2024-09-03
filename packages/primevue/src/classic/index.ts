@@ -7,6 +7,7 @@ import datatable from "./components/datatable";
 import menubar from "./components/menubar";
 import column from "./components/column";
 import checkbox from "./components/checkbox";
+import contextmenu from "./components/contextmenu";
 
 export const ClassicTheme = definePreset(Aura, {
   primitive: {
@@ -126,6 +127,7 @@ export const ClassicTheme = definePreset(Aura, {
         },
         highlight: {
           background: 'rgba(255, 255, 255, 0.2)',
+          focusBackground: 'color-mix(in srgb, {secondary.400}, transparent 76%)',
         },
         formField: {
           focusBorderColor: '{secondary.color}',
@@ -146,6 +148,7 @@ export const ClassicTheme = definePreset(Aura, {
     ...menubar.tokens,
     ...splitter.passthrough,
     ...checkbox.tokens,
+    ...contextmenu.tokens,
   }
 });
 
@@ -156,4 +159,5 @@ export const ClassicThemePassthrough = {
   ...menubar.passthrough,
   ...splitter.passthrough,
   ...checkbox.passthrough,
+  ...contextmenu.passthrough,
 } as const
