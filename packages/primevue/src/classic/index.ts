@@ -8,6 +8,7 @@ import menubar from "./components/menubar";
 import column from "./components/column";
 import checkbox from "./components/checkbox";
 import contextmenu from "./components/contextmenu";
+import tabs from "./components/tabs";
 
 export const ClassicTheme = definePreset(Aura, {
   primitive: {
@@ -149,6 +150,7 @@ export const ClassicTheme = definePreset(Aura, {
     ...splitter.passthrough,
     ...checkbox.tokens,
     ...contextmenu.tokens,
+    ...tabs.tokens,
   }
 });
 
@@ -160,4 +162,5 @@ export const ClassicThemePassthrough = {
   ...splitter.passthrough,
   ...checkbox.passthrough,
   ...contextmenu.passthrough,
+  ...tabs.passthrough,
 } as const
