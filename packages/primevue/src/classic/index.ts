@@ -9,6 +9,7 @@ import column from "./components/column";
 import checkbox from "./components/checkbox";
 import contextmenu from "./components/contextmenu";
 import tabs from "./components/tabs";
+import toggleswitch from "./components/toggleswitch";
 
 export const ClassicTheme = definePreset(Aura, {
   primitive: {
@@ -151,6 +152,7 @@ export const ClassicTheme = definePreset(Aura, {
     ...checkbox.tokens,
     ...contextmenu.tokens,
     ...tabs.tokens,
+    ...toggleswitch.tokens,
   }
 });
 
@@ -163,4 +165,5 @@ export const ClassicThemePassthrough = {
   ...checkbox.passthrough,
   ...contextmenu.passthrough,
   ...tabs.passthrough,
+  ...toggleswitch.passthrough,
 } as const
