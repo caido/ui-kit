@@ -2,3 +2,7 @@
    These tokens are meant to be consumed by the TailwindCSS config.
    Their purpose is to be reconfigurable dynamically by consumers via JS.
 */
+
+:root {
+  --c-bg-default: #25272d;
+}

@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "type": "module",
   "description": "TailwindCSS for Caido",
-  "main": "dist/tailwindcss.mjs",
+  "main": "dist/tailwindcss.js",
   "types": "dist/types/index.d.ts",
   "scripts": {
     "prepublish": "pnpm build",
