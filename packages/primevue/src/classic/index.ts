@@ -83,7 +83,7 @@ import ripple from './ripple';
 import tag from './tag';
 import terminal from './terminal';
 
-export default {
+export const Classic = {
     global,
     directives: {
         tooltip,
