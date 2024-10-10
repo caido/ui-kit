@@ -14,17 +14,18 @@ export default {
             // Colors and Conditions
             'outline-transparent',
             {
-                'border-surface-200 dark:border-surface-700': !context.active,
+                'border-surface-200 dark:border-secondary-400': context.active,
+                'border-surface-200 dark:border-transparent': !context.active,
                 'text-surface-700 dark:text-surface-0/80': !context.active,
 
-                'bg-surface-0 dark:bg-surface-900': context.active,
-                'text-primary': context.active,
+                'bg-surface-0 dark:bg-transparent': context.active,
+                'text-secondary-400': context.active,
 
                 'opacity-60 cursor-default user-select-none select-none pointer-events-none': props?.disabled
             },
 
             // States
-            'focus:outline-none focus:outline-offset-0 focus-visible:ring-1 ring-inset focus-visible:ring-primary-400 dark:focus-visible:ring-primary-300',
+            'focus:outline-none focus:outline-offset-0 focus-visible:ring-1 ring-inset focus-visible:ring-primary-400 dark:focus-visible:ring-secondary-400',
 
             // Transitions
             'transition-all duration-200',
