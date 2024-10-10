@@ -49,13 +49,13 @@ export default {
                 { 'border-surface-300 dark:border-surface-700': !parent.props.invalid },
 
                 // Invalid State
-                'invalid:focus:ring-red-200',
-                'invalid:hover:border-red-500',
+                'invalid:focus:ring-danger-400',
+                'invalid:hover:border-danger-400',
                 { 'border-red-500 dark:border-red-400': parent.props.invalid },
 
                 // States
-                { 'hover:border-primary': !parent.props.invalid },
-                'focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400 focus:z-10',
+                { 'hover:border-secondary-400': !parent.props.invalid },
+                'focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-secondary-500 dark:focus:ring-secondary-400 focus:z-10',
                 { 'bg-surface-200 dark:bg-surface-700 select-none pointer-events-none cursor-default': context.disabled },
 
                 // Filled State *for FloatLabel
