@@ -1,169 +1,234 @@
-import { definePreset } from "@primevue/themes";
-import Aura from "@primevue/themes/aura";
+import accordion from './accordion';
+import accordioncontent from './accordioncontent';
+import accordionheader from './accordionheader';
+import accordionpanel from './accordionpanel';
+import autocomplete from './autocomplete';
+import avatar from './avatar';
+import avatargroup from './avatargroup';
+import badge from './badge';
+import badgedirective from './badgedirective';
+import blockui from './blockui';
+import breadcrumb from './breadcrumb';
+import button from './button';
+import buttongroup from './buttongroup';
+import card from './card';
+import carousel from './carousel';
+import cascadeselect from './cascadeselect';
+import checkbox from './checkbox';
+import chip from './chip';
+import colorpicker from './colorpicker';
+import confirmdialog from './confirmdialog';
+import confirmpopup from './confirmpopup';
+import contextmenu from './contextmenu';
+import datatable from './datatable';
+import dataview from './dataview';
+import datepicker from './datepicker';
+import deferred from './deferred';
+import dialog from './dialog';
+import divider from './divider';
+import dock from './dock';
+import drawer from './drawer';
+import fieldset from './fieldset';
+import fileupload from './fileupload';
+import floatlabel from './floatlabel';
+import galleria from './galleria';
+import global from './global';
+import iconfield from './iconfield';
+import image from './image';
+import inplace from './inplace';
+import inputgroup from './inputgroup';
+import inputgroupaddon from './inputgroupaddon';
+import inputmask from './inputmask';
+import inputnumber from './inputnumber';
+import inputotp from './inputotp';
+import inputtext from './inputtext';
+import knob from './knob';
+import listbox from './listbox';
+import megamenu from './megamenu';
+import menu from './menu';
+import menubar from './menubar';
+import message from './message';
+import metergroup from './metergroup';
+import multiselect from './multiselect';
+import orderlist from './orderlist';
+import organizationchart from './organizationchart';
+import overlaybadge from './overlaybadge';
+import paginator from './paginator';
+import panel from './panel';
+import panelmenu from './panelmenu';
+import password from './password';
+import picklist from './picklist';
+import popover from './popover';
+import progressbar from './progressbar';
+import progressspinner from './progressspinner';
+import radiobutton from './radiobutton';
+import rating from './rating';
+import ripple from './ripple';
+import scrollpanel from './scrollpanel';
+import scrolltop from './scrolltop';
+import select from './select';
+import selectbutton from './selectbutton';
+import skeleton from './skeleton';
+import slider from './slider';
+import speeddial from './speeddial';
+import splitbutton from './splitbutton';
+import splitter from './splitter';
+import splitterpanel from './splitterpanel';
+import step from './step';
+import stepitem from './stepitem';
+import steplist from './steplist';
+import steppanels from './steppanels';
+import stepper from './stepper';
+import steps from './steps';
+import tab from './tab';
+import tablist from './tablist';
+import tabmenu from './tabmenu';
+import tabpanel from './tabpanel';
+import tabpanels from './tabpanels';
+import tabs from './tabs';
+import tabview from './tabview';
+import tag from './tag';
+import terminal from './terminal';
+import textarea from './textarea';
+import tieredmenu from './tieredmenu';
+import timeline from './timeline';
+import toast from './toast';
+import togglebutton from './togglebutton';
+import toggleswitch from './toggleswitch';
+import toolbar from './toolbar';
+import tooltip from './tooltip';
+import tree from './tree';
+import treeselect from './treeselect';
+import treetable from './treetable';
 
-import splitter from "./components/splitter";
-import card from "./components/card";
-import datatable from "./components/datatable";
-import menubar from "./components/menubar";
-import column from "./components/column";
-import checkbox from "./components/checkbox";
-import contextmenu from "./components/contextmenu";
-import tabs from "./components/tabs";
-import toggleswitch from "./components/toggleswitch";
-
-export const ClassicTheme = definePreset(Aura, {
-  primitive: {
-    red: {
-      900: "#3f0c16",
-      800: "#641224",
-      700: "#8c1c35",
-      600: "#a0213e",
-      500: "#df3259",
-      400: "#f25d74",
-      300: "#f58e97",
-      200: "#f7b5b9"
-    },
-    yellow: {
-      900: "#281e0f",
-      800: "#433014",
-      700: "#60441c",
-      600: "#7c5a26",
-      500: "#9b7132",
-      400: "#b9883e",
-      300: "#daa04a",
-      200: "#f1bc74"
-    },
-    green: {
-      900: "#122312",
-      800: "#1d3a1d",
-      700: "#2b532b",
-      600: "#3a6c3a",
-      500: "#4a874a",
-      400: "#579c57",
-      300: "#6cbf6c",
-      200: "#7fdb7f"
-    },
-    blue: {
-      100: "#88a2aa"
-    },
-    gray: {
-      900: "#25272d",
-      800: "#2f323a",
-      700: "#484c57",
-      600: "#616161",
-      500: "#797979",
-      400: "#929292",
-      300: "#acacac",
-      200: "#c6c6c6"
-    },
-    white: {
-      100: "#edeae8"
+export const Classic = {
+    global,
+    directives: {
+        badge: badgedirective,
+        ripple,
+        tooltip
     },
 
-    borderRadius: {
-      none: "0",
-      xs: "0.125rem",
-      sm: "0.25rem",
-      md: "0.5rem",
-      lg: "0.75rem",
-      xl: "1rem",
-    },
+    //forms
+    autocomplete,
+    select,
+    dropdown: select,
+    inputnumber,
+    inputtext,
+    datepicker,
+    calendar: datepicker,
+    checkbox,
+    radiobutton,
+    toggleswitch,
+    inputswitch: toggleswitch,
+    selectbutton,
+    slider,
+    rating,
+    multiselect,
+    togglebutton,
+    cascadeselect,
+    listbox,
+    colorpicker,
+    inputgroup,
+    inputgroupaddon,
+    inputmask,
+    knob,
+    treeselect,
+    textarea,
+    password,
+    iconfield,
+    floatlabel,
+    inputotp,
 
-    boxShadow: {
-      sm: "0px 1px 0px 0px rgb(1, 4, 9)",
-      md: "0px 8px 24px 0px rgb(1, 4, 9)",
-    },
-  },
+    //buttons
+    button,
+    buttongroup,
+    splitbutton,
+    speeddial,
 
-  semantic: {
-    primary: {
-      900: "{red.900}",
-      800: "{red.800}",
-      700: "{red.700}",
-      600: "{red.600}",
-      500: "{red.500}",
-      400: "{red.400}",
-      300: "{red.300}",
-      200: "{red.200}",
-    },
-    secondary: {
-      900: "{yellow.900}",
-      800: "{yellow.800}",
-      700: "{yellow.700}",
-      600: "{yellow.600}",
-      500: "{yellow.500}",
-      400: "{yellow.400}",
-      300: "{yellow.300}",
-      200: "{yellow.200}",
-    },
-    focusRing: {
-        color: '{secondary.color}',
-    },
-    colorScheme: {
-      dark: {
-        content: {
-          background: '{gray.800}',
-          borderColor: "unset",
-        },
-        surface: {
-          950: '{gray.900}',
-          900: '{gray.900}',
-          800: '{gray.800}',
-          700: '{gray.700}',
-          600: '{gray.600}',
-          500: '{gray.500}',
-          400: '{gray.400}',
-          300: '{gray.300}',
-          200: '{gray.200}',
-        },
-        primary: {
-          color: '{primary.600}',
-          contrastColor: '{white.100}',
-          hoverColor: "{primary.700}",
-          activeColor: "{primary.800}"
-        },
-        secondary: {
-          color: '{secondary.300}',
-          contrastColor: '#000000',
-          hoverColor: '{secondary.400}',
-        },
-        highlight: {
-          background: 'rgba(255, 255, 255, 0.2)',
-          focusBackground: 'color-mix(in srgb, {secondary.400}, transparent 76%)',
-        },
-        formField: {
-          focusBorderColor: '{secondary.color}',
-        },
-      }
-    },
-    content: {
-      borderRadius: "{borderRadius.sm}",
-    },
-    boxShadow: {
-      surface: '0 1px 5px #0003,0 2px 2px #00000024,0 3px 1px -2px #0000001f'
-    },
-  },
-  components: {
-    ...card.tokens,
-    ...column.tokens,
-    ...datatable.tokens,
-    ...menubar.tokens,
-    ...splitter.passthrough,
-    ...checkbox.tokens,
-    ...contextmenu.tokens,
-    ...tabs.tokens,
-    ...toggleswitch.tokens,
-  }
-});
+    //data
+    paginator,
+    datatable,
+    tree,
+    dataview,
+    organizationchart,
+    orderlist,
+    picklist,
+    treetable,
+    timeline,
 
-export const ClassicThemePassthrough = {
-  ...card.passthrough,
-  ...column.passthrough,
-  ...datatable.passthrough,
-  ...menubar.passthrough,
-  ...splitter.passthrough,
-  ...checkbox.passthrough,
-  ...contextmenu.passthrough,
-  ...tabs.passthrough,
-  ...toggleswitch.passthrough,
-} as const
+    //panels
+    accordion,
+    accordionpanel,
+    accordionheader,
+    accordioncontent,
+    panel,
+    fieldset,
+    card,
+    tabview,
+    divider,
+    toolbar,
+    scrollpanel,
+    splitter,
+    splitterpanel,
+    stepper,
+    steplist,
+    step,
+    stepitem,
+    steppanels,
+    deferred,
+    tab,
+    tabs,
+    tablist,
+    tabpanels,
+    tabpanel,
+
+    //file
+    fileupload,
+
+    //menu
+    contextmenu,
+    menu,
+    menubar,
+    steps,
+    tieredmenu,
+    breadcrumb,
+    panelmenu,
+    megamenu,
+    dock,
+    tabmenu,
+
+    //overlays
+    dialog,
+    popover,
+    sidebar: popover,
+    drawer,
+    overlaypanel: drawer,
+    confirmpopup,
+    confirmdialog,
+
+    //messages
+    message,
+    toast,
+
+    //media
+    carousel,
+    galleria,
+    image,
+
+    //misc
+    badge,
+    overlaybadge,
+    avatar,
+    avatargroup,
+    tag,
+    chip,
+    progressbar,
+    skeleton,
+    scrolltop,
+    terminal,
+    blockui,
+    metergroup,
+    inplace,
+    progressspinner
+};
