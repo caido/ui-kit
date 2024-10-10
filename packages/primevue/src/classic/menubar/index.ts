@@ -14,8 +14,8 @@ export default {
             'rounded-md',
 
             // Color
-            'bg-surface-0 dark:bg-surface-900',
-            'border border-surface-200 dark:border-surface-700'
+            'bg-surface-0 dark:bg-surface-800',
+            'border border-surface-200 dark:border-none'
         ]
     },
     rootList: ({ props }) => ({
@@ -45,7 +45,7 @@ export default {
             'border-0',
 
             // Color
-            'bg-surface-0 dark:bg-surface-900 sm:bg-transparent',
+            'bg-surface-0 dark:bg-surface-800 sm:bg-transparent',
 
             // Misc
             'outline-none'
