@@ -3,6 +3,9 @@ export default {
         class: [
             'relative',
 
+            // Fluid
+            { 'w-full': props.fluid },
+
             // Alignments
             'items-center inline-flex text-center align-bottom justify-center',
             { 'flex-col': (props.iconPos === 'top' || props.iconPos === 'bottom') && props.label },
@@ -146,7 +149,7 @@ export default {
             { 'hover:bg-surface-300/10': props.plain && (props.text || props.outlined) },
 
             // Primary
-            { 'hover:bg-primary-600 hover:border-primary-600': !props.link && props.severity === null && !props.text && !props.outlined && !props.plain },
+            { 'hover:bg-primary-600/80 hover:border-primary-600/80': !props.link && props.severity === null && !props.text && !props.outlined && !props.plain },
             { 'focus:ring-primary-300': props.severity === null },
             // Text & Outlined Button
             { 'hover:bg-primary-300/10': (props.text || props.outlined) && props.severity === null && !props.plain },
