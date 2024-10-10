@@ -5,11 +5,11 @@ export default {
             'flex flex-col',
 
             //Shape
-            'rounded-[12px]',
+            'rounded-[0.25rem]',
             'shadow-md',
 
             //Color
-            'bg-surface-0 dark:bg-surface-900',
+            'bg-surface-0 dark:bg-surface-800',
             'text-surface-700 dark:text-surface-0'
         ]
     },
