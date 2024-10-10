@@ -1,6 +1,6 @@
 {
   "name": "@caido/primevue",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Primevue themes for Caido",
   "main": "dist/primevue.mjs",
   "types": "dist/types/index.d.ts",
@@ -18,8 +18,5 @@
   "devDependencies": {
     "typescript": "5.5.4",
     "vite": "5.4.0"
-  },
-  "dependencies": {
-    "@primevue/themes": "^4.0.4"
   }
 }

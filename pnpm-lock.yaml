@@ -9,10 +9,6 @@ importers:
   .: {}
 
   packages/primevue:
-    dependencies:
-      '@primevue/themes':
-        specifier: ^4.0.4
-        version: 4.0.4
     devDependencies:
       typescript:
         specifier: 5.5.4
@@ -160,18 +156,6 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
-
-  '@primeuix/styled@0.0.5':
-    resolution: {integrity: sha512-pVoGn/uPkVm/DyF3TR3EmH/pL/dP4nR42FcYbVduFq9VfO3KVeOEqvcCULHXos66RZO9MCbCFUoLy6ctf9GUGQ==}
-    engines: {node: '>=12.11.0'}
-
-  '@primeuix/utils@0.0.5':
-    resolution: {integrity: sha512-ntUiUgtRtkF8KuaxHffzhYxQxoXk6LAPHm7CVlFjdqS8Rx8xRkLkZVyo84E+pO2hcNFkOGVP/GxHhQ2s94O8zA==}
-    engines: {node: '>=12.11.0'}
-
-  '@primevue/themes@4.0.4':
-    resolution: {integrity: sha512-eknRgSo1KQY+r7LEtb/jERhVHq4/Vlu5BKBQ8/Sc/G3DBDHaeJTDqYHWWoTxdaTJkXbC2pJMKFaJ/Vs7LuoIOw==}
-    engines: {node: '>=12.11.0'}
 
   '@rollup/rollup-android-arm-eabi@4.20.0':
     resolution: {integrity: sha512-TSpWzflCc4VGAUJZlPpgAJE1+V60MePDQnBd7PPkpuEmOy8i87aL6tinFGKBFKuEDikYpig72QzdT3QPYIi+oA==}
@@ -393,16 +377,6 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.5':
     optional: true
-
-  '@primeuix/styled@0.0.5':
-    dependencies:
-      '@primeuix/utils': 0.0.5
-
-  '@primeuix/utils@0.0.5': {}
-
-  '@primevue/themes@4.0.4':
-    dependencies:
-      '@primeuix/styled': 0.0.5
 
   '@rollup/rollup-android-arm-eabi@4.20.0':
     optional: true
