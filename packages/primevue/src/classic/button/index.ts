@@ -73,14 +73,14 @@ export default {
 
             // Success Button
             {
-                'text-white dark:text-green-900': props.severity === 'success' && !props.text && !props.outlined && !props.plain,
-                'bg-green-500 dark:bg-green-400': props.severity === 'success' && !props.text && !props.outlined && !props.plain,
-                'border border-green-500 dark:border-green-400': props.severity === 'success' && !props.text && !props.outlined && !props.plain
+                'text-white dark:text-success-900': props.severity === 'success' && !props.text && !props.outlined && !props.plain,
+                'bg-success-500 dark:bg-success-400': props.severity === 'success' && !props.text && !props.outlined && !props.plain,
+                'border border-success-500 dark:border-success-400': props.severity === 'success' && !props.text && !props.outlined && !props.plain
             },
             // Success Text Button
-            { 'text-green-500 dark:text-green-400': props.text && props.severity === 'success' && !props.plain },
+            { 'text-success-500 dark:text-success-400': props.text && props.severity === 'success' && !props.plain },
             // Success Outlined Button
-            { 'text-green-500 border border-green-500 hover:bg-green-300/10': props.outlined && props.severity === 'success' && !props.plain },
+            { 'text-success-500 border border-success-500 hover:bg-success-300/10': props.outlined && props.severity === 'success' && !props.plain },
 
             // Info Button
             {
@@ -161,10 +161,10 @@ export default {
             { 'hover:bg-surface-300/10': (props.text || props.outlined) && props.severity === 'secondary' && !props.plain },
 
             // Success
-            { 'hover:bg-green-600 dark:hover:bg-green-300 hover:border-green-600 dark:hover:border-green-300': props.severity === 'success' && !props.text && !props.outlined && !props.plain },
-            { 'focus:ring-green-500 dark:focus:ring-green-400': props.severity === 'success' },
+            { 'hover:bg-success-600 dark:hover:bg-success-300 hover:border-success-600 dark:hover:border-success-300': props.severity === 'success' && !props.text && !props.outlined && !props.plain },
+            { 'focus:ring-success-500 dark:focus:ring-success-400': props.severity === 'success' },
             // Text & Outlined Button
-            { 'hover:bg-green-300/10': (props.text || props.outlined) && props.severity === 'success' && !props.plain },
+            { 'hover:bg-success-300/10': (props.text || props.outlined) && props.severity === 'success' && !props.plain },
 
             // Info
             { 'hover:bg-blue-600 dark:hover:bg-info-300 hover:border-blue-600 dark:hover:border-info-300': props.severity === 'info' && !props.text && !props.outlined && !props.plain },
