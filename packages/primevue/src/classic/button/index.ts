@@ -118,13 +118,13 @@ export default {
             // Danger Button
             {
                 'text-white dark:text-surface-900': props.severity === 'danger' && !props.text && !props.outlined && !props.plain,
-                'bg-red-500 dark:bg-red-400': props.severity === 'danger' && !props.text && !props.outlined && !props.plain,
-                'border border-red-500 dark:border-red-400': props.severity === 'danger' && !props.text && !props.outlined && !props.plain
+                'bg-danger-500 dark:bg-danger-400': props.severity === 'danger' && !props.text && !props.outlined && !props.plain,
+                'border border-danger-500 dark:border-danger-400': props.severity === 'danger' && !props.text && !props.outlined && !props.plain
             },
             // Danger Text Button
-            { 'text-red-500 dark:text-red-400': props.text && props.severity === 'danger' && !props.plain },
+            { 'text-danger-400 dark:text-danger-400': props.text && props.severity === 'danger' && !props.plain },
             // Danger Outlined Button
-            { 'text-red-500 border border-red-500 hover:bg-red-300/10': props.outlined && props.severity === 'danger' && !props.plain },
+            { 'text-danger-400 border border-danger-400 hover:bg-danger-300/10': props.outlined && props.severity === 'danger' && !props.plain },
 
             // Contrast Button
             {
@@ -185,10 +185,10 @@ export default {
             { 'hover:bg-purple-300/10': (props.text || props.outlined) && props.severity === 'help' && !props.plain },
 
             // Danger
-            { 'hover:bg-red-600 dark:hover:bg-red-300 hover:border-red-600 dark:hover:border-red-300': props.severity === 'danger' && !props.text && !props.outlined && !props.plain },
-            { 'focus:ring-red-500 dark:focus:ring-red-400': props.severity === 'danger' },
+            { 'hover:bg-danger-600 dark:hover:bg-danger-300 hover:border-danger-600 dark:hover:border-danger-300': props.severity === 'danger' && !props.text && !props.outlined && !props.plain },
+            { 'focus:ring-danger-500 dark:focus:ring-danger-400': props.severity === 'danger' },
             // Text & Outlined Button
-            { 'hover:bg-red-300/10': (props.text || props.outlined) && props.severity === 'danger' && !props.plain },
+            { 'hover:bg-danger-300/10': (props.text || props.outlined) && props.severity === 'danger' && !props.plain },
 
             // Contrast
             { 'hover:bg-surface-800 dark:hover:bg-surface-200 hover:border-surface-800 dark:hover:border-surface-200': props.severity === 'contrast' && !props.text && !props.outlined && !props.plain },
