@@ -129,13 +129,13 @@ export default {
             // Contrast Button
             {
                 'text-white dark:text-surface-900': props.severity === 'contrast' && !props.text && !props.outlined && !props.plain,
-                'bg-surface-900 dark:bg-surface-0': props.severity === 'contrast' && !props.text && !props.outlined && !props.plain,
-                'border border-surface-900 dark:border-surface-0': props.severity === 'contrast' && !props.text && !props.outlined && !props.plain
+                'bg-surface-900 dark:bg-surface-300': props.severity === 'contrast' && !props.text && !props.outlined && !props.plain,
+                'border border-surface-900 dark:border-surface-300': props.severity === 'contrast' && !props.text && !props.outlined && !props.plain
             },
             // Contrast Text Button
-            { 'text-surface-900 dark:text-surface-0': props.text && props.severity === 'contrast' && !props.plain },
+            {'text-surface-900 dark:text-surface-300': props.text && props.severity === 'contrast' && !props.plain },
             // Contrast Outlined Button
-            { 'text-surface-900 dark:text-surface-0 border border-surface-900 dark:border-surface-0': props.outlined && props.severity === 'contrast' && !props.plain },
+            { 'text-surface-900 dark:text-surface-300 border border-surface-900 dark:border-surface-300': props.outlined && props.severity === 'contrast' && !props.plain },
 
             // --- Severity Button States ---
             'focus:outline-none focus:outline-offset-0 focus:ring-1',
@@ -191,8 +191,8 @@ export default {
             { 'hover:bg-red-300/10': (props.text || props.outlined) && props.severity === 'danger' && !props.plain },
 
             // Contrast
-            { 'hover:bg-surface-800 dark:hover:bg-surface-100 hover:border-surface-800 dark:hover:border-surface-100': props.severity === 'contrast' && !props.text && !props.outlined && !props.plain },
-            { 'focus:ring-surface-500 dark:focus:ring-surface-400': props.severity === 'contrast' },
+            { 'hover:bg-surface-800 dark:hover:bg-surface-200 hover:border-surface-800 dark:hover:border-surface-200': props.severity === 'contrast' && !props.text && !props.outlined && !props.plain },
+            { 'focus:ring-surface-500 dark:focus:ring-surface-0': props.severity === 'contrast' },
             // Text & Outlined Button
             { 'hover:bg-surface-900/10 dark:hover:bg-[rgba(255,255,255,0.03)]': (props.text || props.outlined) && props.severity === 'contrast' && !props.plain },
 
