@@ -7,7 +7,7 @@
   "types": "dist/types/index.d.ts",
   "scripts": {
     "prepublish": "pnpm build",
-    "build": "vite build # && tsc --emitDeclarationOnly",
+    "build": "vite build && tsc --emitDeclarationOnly",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
@@ -17,11 +17,10 @@
   "author": "Caido Labs Inc.",
   "license": "MIT",
   "devDependencies": {
-    "vite-plugin-static-copy": "1.0.6",
     "typescript": "5.5.4",
     "vite": "5.4.0"
   },
   "dependencies": {
-    "tailwindcss": "^3.4.13"
+    "tailwindcss": "3.4.13"
   }
 }
