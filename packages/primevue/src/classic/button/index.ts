@@ -63,13 +63,13 @@ export default {
             // Secondary Button
             {
                 'text-surface-900 dark:text-white': props.severity === 'secondary' && !props.text && !props.outlined && !props.plain,
-                'bg-surface-100 dark:bg-surface-700': props.severity === 'secondary' && !props.text && !props.outlined && !props.plain,
-                'border border-surface-100 dark:border-surface-700': props.severity === 'secondary' && !props.text && !props.outlined && !props.plain
+                'bg-secondary-400 dark:bg-secondary-400': props.severity === 'secondary' && !props.text && !props.outlined && !props.plain,
+                'border border-secondary-400 dark:border-secondary-400': props.severity === 'secondary' && !props.text && !props.outlined && !props.plain
             },
             // Secondary Text Button
-            { 'text-surface-500 dark:text-surface-300': props.text && props.severity === 'secondary' && !props.plain },
+            { 'text-secondary-400 dark:text-secondary-400': props.text && props.severity === 'secondary' && !props.plain },
             // Secondary Outlined Button
-            { 'text-surface-500 dark:text-surface-300 border border-surface-500 hover:bg-surface-300/10': props.outlined && props.severity === 'secondary' && !props.plain },
+            { 'text-secondary-400 dark:text-secondary-400 border border-secondary-400 hover:bg-secondary-300/10': props.outlined && props.severity === 'secondary' && !props.plain },
 
             // Success Button
             {
@@ -155,10 +155,10 @@ export default {
             { 'hover:bg-primary-300/10': (props.text || props.outlined) && props.severity === null && !props.plain },
 
             // Secondary
-            { 'hover:bg-surface-200 dark:hover:bg-surface-600 hover:border-surface-200 dark:hover:border-surface-600': props.severity === 'secondary' && !props.text && !props.outlined && !props.plain },
-            { 'focus:ring-surface-500 dark:focus:ring-surface-400': props.severity === 'secondary' },
+            { 'hover:bg-secondary-300 dark:hover:bg-secondary-300 hover:border-secondary-300 dark:hover:border-secondary-300': props.severity === 'secondary' && !props.text && !props.outlined && !props.plain },
+            { 'focus:ring-secondary-500 dark:focus:ring-secondary-400': props.severity === 'secondary' },
             // Text & Outlined Button
-            { 'hover:bg-surface-300/10': (props.text || props.outlined) && props.severity === 'secondary' && !props.plain },
+            { 'hover:bg-secondary-300/10': (props.text || props.outlined) && props.severity === 'secondary' && !props.plain },
 
             // Success
             { 'hover:bg-success-600 dark:hover:bg-success-300 hover:border-success-600 dark:hover:border-success-300': props.severity === 'success' && !props.text && !props.outlined && !props.plain },
