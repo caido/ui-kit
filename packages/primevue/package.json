@@ -18,5 +18,8 @@
   "devDependencies": {
     "typescript": "5.5.4",
     "vite": "5.4.0"
+  },
+  "peerDependencies": {
+    "primevue": "4.1.0"
   }
 }
