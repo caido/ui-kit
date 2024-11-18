@@ -14,9 +14,9 @@ export default {
             { 'bg-surface-0 dark:bg-surface-950': !props.disabled },
 
             'border',
-            { 'dark:border-surface-700': parent.instance.$name != 'InputGroup' },
-            { 'dark:border-surface-600': parent.instance.$name == 'InputGroup' },
-            { 'border-surface-300 dark:border-surface-600': !props.invalid },
+            { 'dark:border-surface-300': parent.instance.$name != 'InputGroup' },
+            { 'dark:border-surface-300': parent.instance.$name == 'InputGroup' },
+            { 'border-surface-300 dark:border-surface-300': !props.invalid },
 
             // Invalid State
             'invalid:focus:ring-red-200',
@@ -28,8 +28,7 @@ export default {
             'duration-200',
 
             // States
-            { 'hover:border-surface-400 dark:hover:border-surface-600': !props.invalid },
-            { 'outline-none outline-offset-0 ring-1 ring-primary-500 dark:ring-secondary-400 z-10': state.focused },
+            { 'hover:border-surface-400 dark:hover:border-surface-200': !props.invalid },
 
             // Misc
             'cursor-pointer',
@@ -54,7 +53,7 @@ export default {
 
             // Sizing and Spacing
             'w-[1%]',
-            'py-2 px-3',
+            'py-2 pl-3',
             { 'pr-7': props.showClear },
 
             //Shape
@@ -86,10 +85,10 @@ export default {
 
             // Color and Background
             'bg-transparent',
-            'text-surface-500',
+            'text-surface-300',
 
             // Size
-            'w-12',
+            'pl-1 pr-3',
 
             // Shape
             'rounded-r-md'
@@ -117,7 +116,7 @@ export default {
         ]
     },
     list: {
-        class: 'p-1 list-none m-0'
+        class: 'm-0 p-1 list-none gap-[2px] flex flex-col'
     },
     option: ({ context }) => ({
         class: [
@@ -138,19 +137,15 @@ export default {
             {
                 'bg-surface-200 dark:bg-surface-600/60': context.focused && !context.selected,
                 'text-surface-700 dark:text-white/80': context.focused && !context.selected,
-                'bg-highlight': context.selected
+                'bg-highlight': context.selected,
+                'bg-highlight-emphasis': context.focused && context.selected
             },
 
-            //States
-            { 'hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]': !context.focused && !context.selected },
-            { 'hover:bg-highlight-emphasis': context.selected },
-            { 'hover:text-surface-700 hover:bg-surface-100 dark:hover:text-white dark:hover:bg-[rgba(255,255,255,0.03)]': context.focused && !context.selected },
-
             // Transition
-            'transition-shadow duration-200',
+            'transition-colors duration-200',
 
             // Misc
-            'cursor-pointer overflow-hidden whitespace-nowrap'
+            'cursor-pointer font-normal overflow-hidden whitespace-nowrap'
         ]
     }),
     optionGroup: {
@@ -196,7 +191,10 @@ export default {
             // Color
             'text-surface-700 dark:text-white/80',
             'bg-surface-0 dark:bg-surface-900',
-            'border-surface-300 dark:border-surface-700'
+            'border-surface-300 dark:border-surface-700',
+
+            // Filter
+            '[&_[data-pc-name=pcfilter]]:w-full'
         ]
     },
     clearIcon: {
