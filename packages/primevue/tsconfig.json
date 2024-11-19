@@ -28,6 +28,10 @@
     "declaration": true
 
   },
-  "include": ["./src/**/*.ts"]
+  "include": [
+    "./env.d.ts",
+    "./src/**/*.ts",
+    "./src/**/*.vue"
+  ]
 }
 
