@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import CascadeSelect from 'primevue/cascadeselect'
 import { ref } from 'vue'
 

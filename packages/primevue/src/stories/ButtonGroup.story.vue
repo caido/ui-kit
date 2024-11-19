@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import Button from 'primevue/button'
 import ButtonGroup from 'primevue/buttongroup'
 

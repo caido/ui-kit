@@ -1,23 +1,15 @@
-<script setup>
+<script setup lang="ts">
 import Checkbox from 'primevue/checkbox'
 import { ref } from 'vue'
 
 const checked = ref(false)
 const cities = ref([])
-const categories = ref([])
 
 const cityOptions = [
     { name: 'New York', code: 'NY' },
     { name: 'London', code: 'LDN' },
     { name: 'Paris', code: 'PRS' },
     { name: 'Tokyo', code: 'TK' }
-]
-
-const categoryOptions = [
-    { name: 'Accounting', key: 'A' },
-    { name: 'Marketing', key: 'M' },
-    { name: 'Production', key: 'P' },
-    { name: 'Research', key: 'R' }
 ]
 </script>
 

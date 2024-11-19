@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import Badge from 'primevue/badge'
 import Button from 'primevue/button'
 </script>

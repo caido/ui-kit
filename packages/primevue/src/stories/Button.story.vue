@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import Button from 'primevue/button'
 
 const severities = [undefined, 'secondary', 'success', 'info', 'warn', 'danger', 'contrast']

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import Avatar from 'primevue/avatar'
 import AvatarGroup from 'primevue/avatargroup'
 </script>

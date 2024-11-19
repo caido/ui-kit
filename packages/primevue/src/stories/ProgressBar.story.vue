@@ -1,9 +1,5 @@
-<script setup>
+<script setup lang="ts">
 import ProgressBar from 'primevue/progressbar'
-import { ref } from 'vue'
-
-const value = ref(50)
-const indeterminate = ref(true)
 
 const modes = [
     { value: 25, label: '25%' },

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import Accordion from 'primevue/accordion'
 import AccordionTab from 'primevue/accordiontab'
 import { ref } from 'vue'

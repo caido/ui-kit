@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import ColorPicker from 'primevue/colorpicker'
 import { ref } from 'vue'
 

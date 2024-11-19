@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import BlockUI from 'primevue/blockui'
 import Button from 'primevue/button'
 import { ref } from 'vue'

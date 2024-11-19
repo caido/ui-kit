@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import DataView from 'primevue/dataview'
 import { ref } from 'vue'
 

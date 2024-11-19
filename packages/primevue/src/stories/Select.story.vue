@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import Select from 'primevue/select'
 import { ref } from 'vue'
 

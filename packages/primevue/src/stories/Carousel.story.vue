@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import Carousel from 'primevue/carousel'
 import { ref } from 'vue'
 

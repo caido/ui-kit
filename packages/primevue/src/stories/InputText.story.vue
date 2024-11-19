@@ -1,6 +1,5 @@
-<script setup>
+<script setup lang="ts">
 import InputText from 'primevue/inputtext'
-import { ref } from 'vue'
 
 const sizes = ['small', undefined, 'large']
 </script>
@@ -21,7 +20,6 @@ const sizes = ['small', undefined, 'large']
             <div class="flex flex-col gap-4 w-[240px]">
                 <div v-for="size in sizes" :key="size">
                     <InputText
-                        v-model="value"
                         :size="size"
                         :placeholder="size ?? 'default'"
                     />
