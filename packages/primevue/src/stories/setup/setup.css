@@ -1,0 +1,9 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./tokens.css";
+@import "./primevue.css";
+@import "@fortawesome/fontawesome-free/css/fontawesome.min";
+@import "@fortawesome/fontawesome-free/css/regular.min";
+@import "@fortawesome/fontawesome-free/css/solid.min";
+@import "@fortawesome/fontawesome-free/css/brands.min";

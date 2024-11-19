@@ -2,7 +2,7 @@
   "name": "ui-kit",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "typecheck": "pnpm -r typecheck"
   },
   "keywords": [],
   "author": "Caido Labs Inc.",
