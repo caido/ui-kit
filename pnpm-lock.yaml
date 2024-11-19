@@ -17,6 +17,9 @@ importers:
       '@caido/tailwindcss':
         specifier: 0.0.1
         version: 0.0.1
+      '@fortawesome/fontawesome-free':
+        specifier: 6.5.1
+        version: 6.5.1
       '@histoire/plugin-vue':
         specifier: 0.17.17
         version: 0.17.17(histoire@0.17.17(@types/node@22.7.4)(vite@5.4.0(@types/node@22.7.4)))(vite@5.4.0(@types/node@22.7.4))(vue@3.4.33(typescript@5.5.4))
@@ -243,6 +246,10 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@fortawesome/fontawesome-free@6.5.1':
+    resolution: {integrity: sha512-CNy5vSwN3fsUStPRLX7fUYojyuzoEMSXPl7zSLJ8TgtRfjv24LOnOWKT2zYwaHZCJGkdyRnTmstR0P+Ah503Gw==}
+    engines: {node: '>=6'}
 
   '@histoire/app@0.17.17':
     resolution: {integrity: sha512-2i1V38o08V+eaR0d3L0/EA6AYG14xyQBJbyYv0Hz3r4sH3Elj1FoJiwolbCfTDmkOnSgwWTc7+JoCqkLIbxfhA==}
@@ -1570,6 +1577,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.5':
     optional: true
+
+  '@fortawesome/fontawesome-free@6.5.1': {}
 
   '@histoire/app@0.17.17(vite@5.4.0(@types/node@22.7.4))':
     dependencies:

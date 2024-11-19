@@ -14,5 +14,10 @@ export default defineConfig({
     plugins: [
       Vue(),
     ],
-  }
+    server: {
+      fs: {
+        allow: ['../../node_modules'],
+      },
+    },
+  },
 })

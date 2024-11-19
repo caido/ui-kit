@@ -18,6 +18,7 @@
   "author": "Caido Labs Inc.",
   "license": "MIT",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "6.5.1",
     "@caido/tailwindcss": "0.0.1",
     "@histoire/plugin-vue": "0.17.17",
     "@vitejs/plugin-vue": "5.1.0",
