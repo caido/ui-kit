@@ -53,7 +53,7 @@
  *  should match;
  * :root.app-dark
 */
-:root[data-mode=dark] {
+:root[class*="htw-dark"] {
     --p-primary-color: var(--p-primary-400);
     --p-primary-contrast-color: var(--p-surface-900);
     --p-primary-hover-color: hsl(var(--c-secondary-300));

@@ -14,9 +14,9 @@ export default {
             { 'bg-surface-0 dark:bg-surface-950': !props.disabled },
 
             'border',
-            { 'dark:border-surface-300': parent.instance.$name != 'InputGroup' },
-            { 'dark:border-surface-300': parent.instance.$name == 'InputGroup' },
-            { 'border-surface-300 dark:border-surface-300': !props.invalid },
+            { 'dark:border-surface-600': parent.instance.$name != 'InputGroup' },
+            { 'dark:border-surface-600': parent.instance.$name == 'InputGroup' },
+            { 'border-surface-300 dark:border-surface-600': !props.invalid },
 
             // Invalid State
             'invalid:focus:ring-red-200',
@@ -28,7 +28,7 @@ export default {
             'duration-200',
 
             // States
-            { 'hover:border-surface-400 dark:hover:border-surface-200': !props.invalid },
+            { 'hover:border-secondary-400': !props.invalid },
 
             // Misc
             'cursor-pointer',
