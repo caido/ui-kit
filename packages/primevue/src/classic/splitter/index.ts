@@ -2,16 +2,12 @@ export default {
     root: ({ context }) => ({
         class: [
             // Colors
-            'bg-surface-0',
-            'dark:bg-surface-900',
+            'bg-transparent',
             'text-surface-700',
             'dark:text-surface-0/80',
 
             // Shape
             'rounded-md',
-
-            // Borders (Conditional)
-            { 'border border-solid border-surface-200 dark:border-surface-700': !context.nested },
 
             // Nested
             { 'flex grow border-0': context.nested }
@@ -27,8 +23,8 @@ export default {
             'shrink-0',
 
             // Colors
-            'bg-surface-100',
-            'dark:bg-surface-700',
+            'bg-transparent',
+            'dark:bg-transparent',
 
             // Transitions
             'transition-all',
@@ -45,8 +41,7 @@ export default {
         class: [
             'z-20',
             // Colors
-            'bg-surface-100',
-            'dark:bg-surface-700',
+            'bg-transparent',
 
             // Shape
             'rounded-md',

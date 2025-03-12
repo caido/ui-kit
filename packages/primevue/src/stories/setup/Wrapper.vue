@@ -8,10 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <div
-    class="global-wrapper"
-    style="padding: 0.25rem; border: solid 1px rgba(0, 0, 0, 0.05);"
-  >
+  <div class="global-wrapper bg-surface-900 rounded-md p-12">
     <slot />
   </div>
 </template>

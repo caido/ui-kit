@@ -5,6 +5,7 @@ import tailwindcssCaido from '@caido/tailwindcss';
 export default {
   content: [
     "./src/**/*.{vue,js,ts}",
+    "./src/stories/**/*.{vue,js,ts}",
   ],
   darkMode: ['selector','[class*=htw-dark]'],
   plugins: [
