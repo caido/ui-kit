@@ -7,6 +7,7 @@
   "type": "module",
   "scripts": {
     "dev": "histoire dev",
+    "build:ui": "histoire build",
     "prepublish": "pnpm build",
     "typecheck": "vue-tsc --noEmit -p tsconfig.dev.json",
     "build": "vite build && vue-tsc --emitDeclarationOnly -p tsconfig.build.json",
