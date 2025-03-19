@@ -19,7 +19,7 @@ export default {
             },
             { 'gap-2': props.label !== null },
             {
-                'w-10 px-0 py-2': props.label == null && props.icon !== null
+                'w-10 px-0': props.label == null && props.icon !== null
             },
             {
                 'w-10 px-0 gap-0': instance.hasIcon && !props.label && !props.badge,
