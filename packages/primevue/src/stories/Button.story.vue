@@ -9,8 +9,8 @@ const iconPositions = ['left', 'right', 'top', 'bottom']
 <template>
     <Story title="Button">
         <Variant title="States">
-            <div class="flex flex-col gap-2">
-                <div v-for="severity in severities" :key="severity" class="flex flex-wrap gap-2">
+            <div class="flex flex-wrap gap-2">
+                <div v-for="severity in severities" :key="severity" class="flex flex-col gap-2">
                     <Button :severity="severity" label="Default" />
                     <Button :severity="severity" label="Text" text />
                     <Button :severity="severity" label="Outlined" outlined />
@@ -24,9 +24,9 @@ const iconPositions = ['left', 'right', 'top', 'bottom']
         </Variant>
 
         <Variant title="Icons">
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-wrap gap-2">
                 <div v-for="severity in severities" :key="severity">
-                    <div class="flex flex-wrap gap-2 items-center">
+                    <div class="flex flex-col gap-2 items-center">
                         <Button
                             v-for="position in iconPositions"
                             :key="position"
@@ -41,12 +41,16 @@ const iconPositions = ['left', 'right', 'top', 'bottom']
         </Variant>
 
         <Variant title="Sizes">
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-wrap gap-2">
                 <div v-for="severity in severities" :key="severity">
-                    <div class="flex flex-wrap gap-2 items-center">
+                    <div class="flex flex-col gap-2 items-center">
                         <div v-for="size in sizes" :key="size">
-                            <Button :severity="severity" :size="size" :label="size ?? 'default'" />
+                            <Button icon="fas fa-magnifying-glass" :severity="severity" :size="size" />
                         </div>
+                        <div v-for="size in sizes" :key="size">
+                            <Button icon="fas fa-magnifying-glass" :severity="severity" :size="size" :label="size ?? 'default'" />
+                        </div>
+
                     </div>
                 </div>
             </div>

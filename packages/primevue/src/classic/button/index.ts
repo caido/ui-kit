@@ -19,7 +19,7 @@ export default {
             },
             { 'gap-2': props.label !== null },
             {
-                'w-10 px-0 py-2': props.label == null && props.icon !== null
+                'w-10 px-0': props.label == null && props.icon !== null
             },
             {
                 'w-10 px-0 gap-0': instance.hasIcon && !props.label && !props.badge,
@@ -135,7 +135,7 @@ export default {
             // Contrast Text Button
             {'text-surface-900 dark:text-surface-300': props.text && props.severity === 'contrast' && !props.plain },
             // Contrast Outlined Button
-            { 'text-surface-900 dark:text-surface-300 border border-surface-900 dark:border-surface-300': props.outlined && props.severity === 'contrast' && !props.plain },
+            { 'text-surface-900 dark:text-surface-300 border border-surface-900 dark:border-surface-600': props.outlined && props.severity === 'contrast' && !props.plain },
 
             // --- Severity Button States ---
             'focus:outline-none focus:outline-offset-0 focus:ring-1',
