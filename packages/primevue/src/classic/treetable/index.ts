@@ -90,7 +90,8 @@ export default {
             // Block Display
             {
                 block: props.scrollable
-            }
+            },
+            'dark:bg-surface-800'
         ]
     }),
     tfoot: ({ props }) => ({
@@ -116,14 +117,18 @@ export default {
 
             // Color
             'text-surface-700 dark:text-white/80',
-            { 'bg-highlight': context.selected },
-            { 'bg-surface-0 text-surface-600 dark:bg-surface-900': !context.selected },
+            { 'dark:bg-white/40 dark:odd:bg-white/45 dark:hover:bg-white/25 dark:odd:hover:bg-white/30': context.selected },
+            { 'bg-surface-0 text-surface-600 dark:bg-surface-800 dark:odd:bg-surface-700/30': !context.selected },
+
+            // Border
+            'border-surface-200 dark:border-surface-900',
+            'border-b last:border-transparent focus:border-transparent',
 
             // Hover & Flexbox
             {
-                'hover:bg-surface-100 dark:bg-surface-800/50': context.selectable && !context.selected
+                'hover:bg-surface-100 dark:hover:bg-surface-900': context.selectable && !context.selected
             },
-            'focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 ring-inset dark:focus:ring-primary-400',
+            'focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 ring-inset dark:focus:ring-secondary-400',
 
             // Transition
             { 'transition duration-200': (props.selectionMode && !context.selected) || props.rowHover }
@@ -149,7 +154,7 @@ export default {
             'border-0 border-b border-solid',
 
             // Spacing
-            context?.size === 'small' ? 'py-[0.375rem] px-2' : context?.size === 'large' ? 'py-[0.9375rem] px-5' : 'py-3 px-4',
+            context?.size === 'small' ? 'py-0.5 px-2' : context?.size === 'large' ? 'py-[0.9375rem] px-5' : 'py-3 px-4',
 
             // Color
             (props.sortable === '' || props.sortable) && context.sorted ? 'bg-highlight' : 'bg-surface-0 text-surface-700 dark:text-white/80 dark:bg-surface-900',
@@ -189,7 +194,7 @@ export default {
                 'border-0 border-b border-solid',
 
                 // Spacing
-                context?.size === 'small' ? 'py-[0.375rem] px-2' : context?.size === 'large' ? 'py-[0.9375rem] px-5' : 'py-3 px-4',
+                context?.size === 'small' ? 'py-0.5 px-2' : context?.size === 'large' ? 'py-[0.9375rem] px-5' : 'py-3 px-4',
 
                 // Color
                 (props.sortable === '' || props.sortable) && context.sorted ? 'bg-highlight' : 'bg-surface-0 text-surface-700 dark:text-white/80 dark:bg-surface-900',
@@ -226,15 +231,18 @@ export default {
                 'text-left',
 
                 // Shape
-                'border-0 border-b border-solid',
                 'border-surface-200 dark:border-surface-700',
                 {
                     'border-x-0 border-l-0': !context.showGridlines
                 },
                 { 'first:border-l border-r border-b': context?.showGridlines },
 
+                // Right block
+                'first:relative first:before:absolute first:before:inset-0 first:before:w-1',
+                { 'first:before:bg-secondary-400': context.selected },
+
                 // Spacing
-                context?.size === 'small' ? 'py-[0.375rem] px-2' : context?.size === 'large' ? 'py-[0.9375rem] px-5' : 'py-3 px-4',
+                context?.size === 'small' ? 'py-0.5 px-2' : context?.size === 'large' ? 'py-[0.9375rem] px-5' : 'py-3 px-4',
 
                 // Misc
                 {
