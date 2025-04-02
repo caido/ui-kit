@@ -129,9 +129,6 @@ export default {
                 'hover:bg-surface-100 dark:hover:bg-surface-900': context.selectable && !context.selected
             },
             'focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 ring-inset dark:focus:ring-secondary-400',
-
-            // Transition
-            { 'transition duration-200': (props.selectionMode && !context.selected) || props.rowHover }
         ]
     }),
     headerCell: ({ context, props }) => ({
@@ -253,6 +250,12 @@ export default {
             ]
         }),
         bodyCellContent: 'flex items-center gap-2',
+        rowToggleIcon: ({ context }) => ({
+            class: [
+                // Size
+                context?.size === 'small' ? 'size-[.6rem]' : context?.size === 'large' ? 'size-4' : 'size-[.8rem]',
+            ],
+        }),
         rowToggleButton: {
             class: [
                 'relative',
@@ -265,7 +268,7 @@ export default {
                 'm-0 mr-2 p-0',
 
                 // Size
-                'w-7 h-7',
+                'size-7',
 
                 // Shape
                 'border-0 rounded-full',
