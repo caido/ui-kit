@@ -344,7 +344,7 @@ export default {
             { 'bg-highlight': context.selected },
             { 'bg-surface-0 text-surface-600 dark:text-white/80 dark:bg-surface-900': !context.selected },
             { 'font-bold bg-surface-0 dark:bg-surface-900 z-20': props.frozenRow },
-            { 'odd:bg-surface-0 odd:text-surface-600 dark:odd:text-surface-0 dark:even:text-surface-0 dark:odd:bg-surface-800 even:bg-surface-50 even:text-surface-600 dark:even:bg-surface-900': context.stripedRows },
+            { 'odd:bg-surface-0 odd:text-surface-600 dark:odd:text-surface-0 dark:even:text-surface-0 dark:odd:bg-surface-800 even:bg-surface-50 even:text-surface-600 dark:even:bg-surface-900': context.stripedRows && !context.selected },
             // State
             { 'hover:bg-surface-300/20 dark:hover:bg-surface-700/50': (props.selectionMode && !context.selected) || parent.instance.rowHover },
 

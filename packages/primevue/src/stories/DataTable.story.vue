@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import DataTable from 'primevue/datatable'
 import Column from 'primevue/column'
+import DataTable from 'primevue/datatable'
 import { ref } from 'vue'
 
 const products = ref([
@@ -28,10 +28,10 @@ const selectedProduct = ref()
         </Variant>
 
         <Variant title="Selection">
-            <DataTable 
-                :value="products" 
-                v-model:selection="selectedProduct" 
-                selectionMode="single" 
+            <DataTable
+                :value="products"
+                v-model:selection="selectedProduct"
+                selectionMode="single"
                 tableStyle="min-width: 50rem"
             >
                 <Column field="code" header="Code"></Column>
@@ -53,5 +53,22 @@ const selectedProduct = ref()
             </DataTable>
             <div class="text-gray-300 mt-2">Table with striped rows for better readability</div>
         </Variant>
+
+        <Variant title="Striped+Selection">
+            <DataTable
+                :value="products"
+                v-model:selection="selectedProduct"
+                selectionMode="single"
+                tableStyle="min-width: 50rem"
+                stripedRows
+            >
+                <Column field="code" header="Code"></Column>
+                <Column field="name" header="Name"></Column>
+                <Column field="category" header="Category"></Column>
+                <Column field="price" header="Price"></Column>
+                <Column field="quantity" header="Quantity"></Column>
+            </DataTable>
+            <div class="text-gray-300 mt-2">Selected: {{ selectedProduct?.name || 'None' }}</div>
+        </Variant>
     </Story>
-</template> 
+</template>
