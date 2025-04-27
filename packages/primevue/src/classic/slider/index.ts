@@ -36,7 +36,7 @@ export default {
             'rounded-md',
 
             // Colors
-            'bg-primary'
+            'bg-secondary-400'
         ]
     }),
     handle: ({ props }) => ({
@@ -61,7 +61,7 @@ export default {
 
             // States
             'focus-visible:outline-none focus-visible:outline-offset-0 focus-visible:ring-1',
-            'ring-primary-500 dark:ring-primary-400',
+            'ring-secondary-400 dark:ring-secondary-400',
 
             // Transitions
             'transition duration-200',
@@ -93,7 +93,7 @@ export default {
 
             // States
             'focus-visible:outline-none focus-visible:outline-offset-0 focus-visible:ring-1',
-            'ring-primary-500 dark:ring-primary-400',
+            'ring-secondary-400 dark:ring-secondary-400',
 
             // Transitions
             'transition duration-200',
@@ -125,7 +125,7 @@ export default {
 
             // States
             'focus-visible:outline-none focus-visible:outline-offset-0 focus-visible:ring-1',
-            'ring-primary-500 dark:ring-primary-400',
+            'ring-secondary-400 dark:ring-secondary-400',
 
             // Transitions
             'transition duration-200',
