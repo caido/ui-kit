@@ -117,7 +117,7 @@ export default {
 
             // Color
             'text-surface-700 dark:text-white/80',
-            { 'dark:bg-white/40 dark:odd:bg-white/45 dark:hover:bg-white/25 dark:odd:hover:bg-white/30': context.selected },
+            { 'dark:bg-white/30 dark:odd:bg-white/30 dark:hover:bg-white/25 dark:odd:hover:bg-white/30': context.selected },
             { 'bg-surface-0 text-surface-600 dark:bg-surface-800 dark:odd:bg-surface-700/30': !context.selected },
 
             // Border
@@ -128,7 +128,7 @@ export default {
             {
                 'hover:bg-surface-100 dark:hover:bg-surface-900': context.selectable && !context.selected
             },
-            'focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 ring-inset dark:focus:ring-secondary-400',
+            'focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 ring-inset dark:focus:ring-white/80',
         ]
     }),
     headerCell: ({ context, props }) => ({
@@ -256,7 +256,7 @@ export default {
                 context?.size === 'small' ? 'size-[.6rem]' : context?.size === 'large' ? 'size-4' : 'size-[.8rem]',
             ],
         }),
-        rowToggleButton: {
+        nodeToggleButton: ({ context }) => ({
             class: [
                 'relative',
 
@@ -268,18 +268,18 @@ export default {
                 'm-0 mr-2 p-0',
 
                 // Size
-                'size-7',
+                context.size === 'small' ? 'size-5' : context.size === 'large' ? 'size-7' : 'size-6',
 
                 // Shape
-                'border-0 rounded-full',
+                'border-0 rounded-md',
 
                 // Color
                 'text-surface-700 dark:text-white/70',
                 'border-transparent',
 
                 // States
-                'focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400',
-                'hover:text-surface-700 hover:bg-surface-50 dark:hover:bg-surface-800/50',
+                'focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-white/80 dark:focus:ring-white/80',
+                'hover:text-surface-200 hover:bg-surface-50 dark:hover:bg-surface-700/50',
 
                 // Transition
                 'transition duration-200',
@@ -288,7 +288,7 @@ export default {
                 'overflow-hidden',
                 'cursor-pointer select-none'
             ]
-        },
+        }),
         sortIcon: ({ context }) => ({
             class: ['ml-2 inline-block', context.sorted ? 'text-inherit' : 'fill-surface-700 dark:fill-white/70']
         }),
