@@ -1,15 +1,18 @@
-import PrimeVue from 'primevue/config'
-import { defineSetupVue3 } from '@histoire/plugin-vue'
-import { Classic } from '../../classic'
-import Wrapper from './Wrapper.vue'
+import { defineSetupVue3 } from "@histoire/plugin-vue";
+import PrimeVue from "primevue/config";
 
-import './setup.css'
+import { Classic } from "../../classic";
 
-export const setupVue3 = defineSetupVue3(({ app, story, variant, addWrapper }) => {
-  addWrapper(Wrapper)
+import "./setup.css";
+import Wrapper from "./Wrapper.vue";
 
-  app.use(PrimeVue, {
-    unstyled: true,
-    pt: Classic,
-  })
-})
+export const setupVue3 = defineSetupVue3(
+  ({ app, story, variant, addWrapper }) => {
+    addWrapper(Wrapper);
+
+    app.use(PrimeVue, {
+      unstyled: true,
+      pt: Classic,
+    });
+  },
+);
