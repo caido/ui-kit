@@ -9,7 +9,7 @@
     "dev": "histoire dev",
     "build:ui": "histoire build",
     "prepublish": "pnpm build",
-    "typecheck": "vue-tsc --noEmit -p tsconfig.dev.json",
+    "typecheck": "vue-tsc --noEmit",
     "build": "vite build && vue-tsc --emitDeclarationOnly -p tsconfig.build.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

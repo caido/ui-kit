@@ -1,0 +1,12 @@
+{
+    "workspaces": {
+      "packages/primevue": {
+        "project": [
+          "src/**/*.ts!",
+          "src/**/*.vue!",
+          "src/stories/**"
+        ]
+      }
+    }
+  }
+  
