@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import Button from "primevue/button";
+import InputGroup from "primevue/inputgroup";
+import InputGroupAddon from "primevue/inputgroupaddon";
+import InputText from "primevue/inputtext";
 import Popover from "primevue/popover";
 import { ref } from "vue";
 
@@ -55,7 +58,7 @@ const toggleRight = (event) => {
                 class="w-[25rem]"
               ></InputText>
               <InputGroupAddon>
-                <i class="pi pi-copy"></i>
+                <i class="fa-solid fa-copy"></i>
               </InputGroupAddon>
             </InputGroup>
           </div>
@@ -63,7 +66,7 @@ const toggleRight = (event) => {
             <span class="font-medium block mb-2">Invite Member</span>
             <InputGroup>
               <InputText disabled />
-              <Button label="Invite" icon="pi pi-users"></Button>
+              <Button label="Invite" icon="fa-solid fa-user"></Button>
             </InputGroup>
           </div>
           <div>
@@ -88,7 +91,7 @@ const toggleRight = (event) => {
                   class="flex items-center gap-2 text-surface-500 dark:text-surface-400 ml-auto text-sm"
                 >
                   <span>{{ member.role }}</span>
-                  <i class="pi pi-angle-down"></i>
+                  <i class="fa-solid fa-chevron-down"></i>
                 </div>
               </li>
             </ul>
@@ -116,7 +119,7 @@ const toggleRight = (event) => {
                   class="w-[25rem]"
                 ></InputText>
                 <InputGroupAddon>
-                  <i class="pi pi-copy"></i>
+                  <i class="fa-solid fa-copy"></i>
                 </InputGroupAddon>
               </InputGroup>
             </div>
@@ -124,7 +127,7 @@ const toggleRight = (event) => {
               <span class="font-medium block mb-2">Invite Member</span>
               <InputGroup>
                 <InputText disabled />
-                <Button label="Invite" icon="pi pi-users"></Button>
+                <Button label="Invite" icon="fa-solid fa-user"></Button>
               </InputGroup>
             </div>
             <div>
@@ -149,7 +152,7 @@ const toggleRight = (event) => {
                     class="flex items-center gap-2 text-surface-500 dark:text-surface-400 ml-auto text-sm"
                   >
                     <span>{{ member.role }}</span>
-                    <i class="pi pi-angle-down"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                   </div>
                 </li>
               </ul>
