@@ -37,11 +37,11 @@ export default {
       },
     ],
   }),
-  gutterhandler: ({ props }) => ({
+  gutterhandle: ({ props }) => ({
     class: [
       "z-20",
       // Colors
-      "bg-transparent",
+      "bg-surface-700",
 
       // Shape
       "rounded-md",
@@ -53,10 +53,12 @@ export default {
       "transition-all",
       "duration-200",
 
+      "m-[1px]",
+
       // Sizing (Conditional)
       {
-        "h-[1.70rem]": props.layout == "horizontal",
-        "w-[1.70rem] h-2": props.layout !== "horizontal",
+        "!w-[2px] !h-10": props.layout == "horizontal",
+        "!h-[2px] !w-10": props.layout !== "horizontal",
       },
     ],
   }),
