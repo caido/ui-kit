@@ -1,7 +1,9 @@
 export default {
+  root: {
+    class: "bg-surface-800 rounded-md",
+  },
   panel: {
-    class:
-      "p-1 overflow-hidden mb-3 border border-surface-200 dark:border-surface-700 rounded-md",
+    class: "p-1 overflow-hidden rounded-md bg-surface-800",
   },
   header: {
     class: ["rounded-[4px]", "outline-none"],
@@ -12,13 +14,11 @@ export default {
       "rounded-[4px]",
 
       // Color
-      "bg-surface-0 dark:bg-surface-900",
       "text-surface-600 dark:text-surface-0/80",
       { "text-surface-900": context.active },
 
       // States
-      "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]",
-      "hover:text-surface-900",
+      "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.20)]",
 
       // Transition
       "transition duration-200 ease-in-out",
@@ -50,16 +50,12 @@ export default {
     class: "mr-2",
   },
   submenuIcon: {
-    class: "mr-2",
+    class: "mr-2 w-3 h-3",
   },
   content: {
     class: [
-      // Spacing
-      "pl-4",
-
       // Color
       "text-surface-700 dark:text-white/80",
-      "bg-surface-0 dark:bg-surface-900",
     ],
   },
   rootList: {
@@ -97,10 +93,10 @@ export default {
       "rounded-[4px]",
 
       // Color
-      "text-surface-700 dark:text-white/80",
+      "text-surface-300",
 
       // States
-      "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)] hover:text-surface-700 dark:hover:text-white/80",
+      "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.20)] hover:text-surface-700 dark:hover:text-white/80",
       {
         "bg-surface-200 text-surface-700 dark:text-white/80 dark:bg-surface-0/10":
           context.focused,
@@ -115,7 +111,7 @@ export default {
     class: "mr-2",
   },
   submenu: {
-    class: "p-0 pl-4 m-0 list-none",
+    class: "p-0 m-0 list-none",
   },
   transition: {
     enterFromClass: "max-h-0",
