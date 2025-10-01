@@ -7,12 +7,9 @@ import StepList from "primevue/steplist";
 import StepPanel from "primevue/steppanel";
 import StepPanels from "primevue/steppanels";
 import Stepper from "primevue/stepper";
-import InputTextarea from "primevue/textarea";
 import { ref } from "vue";
 
 const activeStep = ref(1);
-const linearActiveStep = ref(1);
-const iconActiveStep = ref(1);
 
 const nextStep = () => {
   if (activeStep.value < 3) {
@@ -23,30 +20,6 @@ const nextStep = () => {
 const prevStep = () => {
   if (activeStep.value > 1) {
     activeStep.value--;
-  }
-};
-
-const nextLinearStep = () => {
-  if (linearActiveStep.value < 4) {
-    linearActiveStep.value++;
-  }
-};
-
-const prevLinearStep = () => {
-  if (linearActiveStep.value > 1) {
-    linearActiveStep.value--;
-  }
-};
-
-const nextIconStep = () => {
-  if (iconActiveStep.value < 3) {
-    iconActiveStep.value++;
-  }
-};
-
-const prevIconStep = () => {
-  if (iconActiveStep.value > 1) {
-    iconActiveStep.value--;
   }
 };
 </script>
