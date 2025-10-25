@@ -20,7 +20,7 @@ export default {
         "leading-none",
 
         // Colors
-        "text-surface-600 dark:text-surface-200",
+        "text-surface-900 dark:text-surface-200",
         "placeholder:text-surface-400 dark:placeholder:text-surface-500",
         { "bg-surface-0 dark:bg-surface-950": !props.disabled },
         "border",
@@ -284,7 +284,7 @@ export default {
 
       // Colors
       {
-        "bg-surface-100 dark:bg-surface-800 text-surface-600 dark:text-white/70":
+        "bg-surface-200 dark:bg-surface-800 text-surface-600 dark:text-white/70":
           context.date.today && !context.selected && !context.disabled,
         "bg-transparent text-surface-600 dark:text-white/70":
           !context.selected && !context.disabled && !context.date.today,
@@ -294,7 +294,7 @@ export default {
       // States
       "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400 focus:z-10",
       {
-        "hover:bg-surface-50 dark:hover:bg-surface-500/10":
+        "hover:bg-surface-100 dark:hover:bg-surface-500/10":
           !context.selected && !context.disabled,
       },
       {
@@ -331,7 +331,7 @@ export default {
       // States
       "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400 focus:z-10",
       {
-        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:bg-surface-200 dark:hover:bg-[rgba(255,255,255,0.03)]":
           !context.selected && !context.disabled,
       },
 
@@ -367,7 +367,7 @@ export default {
       // States
       "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400 focus:z-10",
       {
-        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:bg-surface-200 dark:hover:bg-[rgba(255,255,255,0.03)]":
           !context.selected && !context.disabled,
       },
 
@@ -383,7 +383,7 @@ export default {
 
       // Borders
       "border-t-1",
-      "border-solid border-surface-200",
+      "border-solid border-surface-200 dark:border-surface-700",
 
       // Spacing
       "pt-2 mt-2",
@@ -451,7 +451,8 @@ export default {
     ],
   },
   calendarContainer: "flex",
-  calendar: "flex-auto border-l first:border-l-0 border-surface-200",
+  calendar:
+    "flex-auto border-l first:border-l-0 border-surface-200 dark:border-surface-700",
   buttonbar: {
     class: [
       // Flexbox

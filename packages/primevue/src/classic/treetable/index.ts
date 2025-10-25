@@ -21,7 +21,7 @@ export default {
       "w-full h-full",
 
       // Color
-      "bg-surface-100/40 dark:bg-surface-800/40",
+      "bg-surface-200/40 dark:bg-surface-800/40",
 
       // Transition
       "transition duration-200",
@@ -182,7 +182,7 @@ export default {
 
       // States
       {
-        "hover:bg-surface-100 dark:hover:bg-surface-80/50":
+        "hover:bg-surface-200 dark:hover:bg-surface-80/50":
           (props.sortable === "" || props.sortable) && !context?.sorted,
       },
       "focus-visible:outline-none focus-visible:outline-offset-0 focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400",
@@ -240,8 +240,8 @@ export default {
 
         // States
         {
-          "hover:bg-surface-100 dark:hover:bg-surface-80/50":
-            (props.sortable === "" || props.sortable) && !context?.sorted,
+        "hover:bg-surface-200 dark:hover:bg-surface-80/50":
+          (props.sortable === "" || props.sortable) && !context?.sorted,
         },
         "focus-visible:outline-none focus-visible:outline-offset-0 focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400",
 

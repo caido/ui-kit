@@ -36,7 +36,7 @@ export default {
       "cursor-pointer",
       "select-none",
       {
-        "bg-surface-200 dark:bg-surface-700 select-none pointer-events-none cursor-default":
+        "bg-surface-100 dark:bg-surface-700 select-none pointer-events-none cursor-default":
           props.disabled,
       },
     ],
@@ -52,7 +52,7 @@ export default {
       "py-2 px-3",
 
       // Color
-      "text-surface-800 dark:text-white/80",
+      "text-surface-700 dark:text-white/80",
       {
         "placeholder:text-transparent dark:placeholder:text-transparent":
           parent.instance?.$name == "FloatLabel",

@@ -45,7 +45,7 @@ export default {
       "rounded-tr-lg",
 
       // Colors
-      "text-surface-700 dark:text-surface-0/80",
+      "text-surface-900 dark:text-surface-0/80",
       "border border-b-0",
       "border-surface-200 dark:border-surface-700",
     ],
@@ -71,7 +71,7 @@ export default {
       },
 
       // Colors
-      "text-surface-700 dark:text-surface-0/80",
+      "text-surface-900 dark:text-surface-0/80",
       "border border-t-0 border-b-0",
       "border-surface-200 dark:border-surface-700",
 
@@ -97,7 +97,7 @@ export default {
 
       // Colors
       "bg-surface-0 dark:bg-surface-900",
-      "text-surface-700 dark:text-surface-0/80",
+      "text-surface-900 dark:text-surface-0/80",
       "border border-t-0 border-b-0",
       "border-surface-200 dark:border-surface-700",
     ],

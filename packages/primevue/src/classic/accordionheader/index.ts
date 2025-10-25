@@ -11,5 +11,5 @@ export default {
       },
     ],
   }),
-  toggleIcon: "inline-block text-surface-900 dark:text-surface-0 w-4 h-4",
+  toggleIcon: "inline-block text-surface-700 dark:text-surface-0 w-4 h-4",
 };
