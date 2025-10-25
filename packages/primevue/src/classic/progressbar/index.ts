@@ -11,7 +11,7 @@ export default {
       "rounded-md",
 
       // Colors
-      "bg-surface-100 dark:bg-surface-800",
+      "bg-surface-200 dark:bg-surface-800",
     ],
   },
   value: ({ props }) => ({

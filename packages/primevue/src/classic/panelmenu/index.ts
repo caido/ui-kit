@@ -18,7 +18,7 @@ export default {
       { "text-surface-900": context.active },
 
       // States
-      "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.20)]",
+      "hover:bg-surface-200 dark:hover:bg-[rgba(255,255,255,0.20)]",
 
       // Transition
       "transition duration-200 ease-in-out",
@@ -96,7 +96,7 @@ export default {
       "text-surface-300",
 
       // States
-      "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.20)] hover:text-surface-700 dark:hover:text-white/80",
+      "hover:bg-surface-200 dark:hover:bg-[rgba(255,255,255,0.20)] hover:text-surface-700 dark:hover:text-white/80",
       {
         "bg-surface-200 text-surface-700 dark:text-white/80 dark:bg-surface-0/10":
           context.focused,

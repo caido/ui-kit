@@ -9,7 +9,7 @@ export default {
       "rounded-md border",
 
       // Color
-      "bg-surface-100 dark:bg-surface-950",
+      "bg-surface-50 dark:bg-surface-950",
       {
         "text-surface-600 dark:text-white/60 before:bg-transparent":
           !context.active,
@@ -28,7 +28,7 @@ export default {
       // Invalid State
       {
         "border-red-500 dark:border-red-400": props.invalid,
-        "border-surface-100 dark:border-surface-950": !props.invalid,
+        "border-surface-200 dark:border-surface-950": !props.invalid,
       },
 
       // Before

@@ -12,8 +12,8 @@ export default {
       "rounded-md",
 
       // Colors
-      "text-surface-800 dark:text-white/80",
-      "placeholder:text-surface-400 dark:placeholder:text-surface-500",
+      "text-surface-700 dark:text-white/80",
+      "placeholder:text-surface-500 dark:placeholder:text-surface-500",
       { "bg-surface-0 dark:bg-surface-950": !context.disabled },
       "border",
       { "border-surface-300 dark:border-surface-600": !props.invalid },
@@ -29,7 +29,7 @@ export default {
           !context.disabled && !props.invalid,
         "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-secondary-500 dark:focus:ring-secondary-400 focus:z-10":
           !context.disabled,
-        "bg-surface-200 dark:bg-surface-700 select-none pointer-events-none cursor-default":
+        "bg-surface-300 dark:bg-surface-700 select-none pointer-events-none cursor-default":
           context.disabled,
       },
 

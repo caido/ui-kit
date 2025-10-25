@@ -33,7 +33,7 @@ export default {
       // Colors
       "border",
       {
-        "bg-surface-300 dark:bg-surface-700": !(
+        "bg-surface-200 dark:bg-surface-700": !(
           props.modelValue == props.trueValue
         ),
         "bg-secondary-400": props.modelValue == props.trueValue,
@@ -46,7 +46,7 @@ export default {
 
       // States
       {
-        "peer-hover:bg-surface-400 dark:peer-hover:bg-surface-600":
+        "peer-hover:bg-surface-300 dark:peer-hover:bg-surface-600":
           !(props.modelValue == props.trueValue) &&
           !props.disabled &&
           !props.invalid,

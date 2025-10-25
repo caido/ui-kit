@@ -284,7 +284,7 @@ export default {
 
       // Colors
       {
-        "bg-surface-100 dark:bg-surface-800 text-surface-600 dark:text-white/70":
+        "bg-surface-200 dark:bg-surface-800 text-surface-600 dark:text-white/70":
           context.date.today && !context.selected && !context.disabled,
         "bg-transparent text-surface-600 dark:text-white/70":
           !context.selected && !context.disabled && !context.date.today,
@@ -294,7 +294,7 @@ export default {
       // States
       "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400 focus:z-10",
       {
-        "hover:bg-surface-50 dark:hover:bg-surface-500/10":
+        "hover:bg-surface-100 dark:hover:bg-surface-500/10":
           !context.selected && !context.disabled,
       },
       {
@@ -331,7 +331,7 @@ export default {
       // States
       "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400 focus:z-10",
       {
-        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:bg-surface-200 dark:hover:bg-[rgba(255,255,255,0.03)]":
           !context.selected && !context.disabled,
       },
 
@@ -367,7 +367,7 @@ export default {
       // States
       "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400 focus:z-10",
       {
-        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:bg-surface-200 dark:hover:bg-[rgba(255,255,255,0.03)]":
           !context.selected && !context.disabled,
       },
 

@@ -39,7 +39,7 @@ export default {
       "cursor-pointer",
       "select-none",
       {
-        "bg-surface-200 dark:bg-surface-700 select-none pointer-events-none cursor-default":
+        "bg-surface-300 dark:bg-surface-700 select-none pointer-events-none cursor-default":
           props.disabled,
       },
     ],
@@ -59,8 +59,8 @@ export default {
 
       // Color
       {
-        "text-surface-800 dark:text-white/80": props.modelValue?.length,
-        "text-surface-400 dark:text-surface-500": !props.modelValue?.length,
+        "text-surface-700 dark:text-white/80": props.modelValue?.length,
+        "text-surface-500 dark:text-surface-500": !props.modelValue?.length,
       },
       {
         "placeholder:text-transparent dark:placeholder:text-transparent":
@@ -175,12 +175,12 @@ export default {
 
       //States
       {
-        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:bg-surface-200 dark:hover:bg-[rgba(255,255,255,0.03)]":
           !context.focused && !context.selected,
       },
       { "hover:bg-highlight-emphasis": context.selected },
       {
-        "hover:text-surface-700 hover:bg-surface-100 dark:hover:text-white dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:text-surface-700 hover:bg-surface-200 dark:hover:text-white dark:hover:bg-[rgba(255,255,255,0.03)]":
           context.focused && !context.selected,
       },
 
@@ -214,7 +214,7 @@ export default {
       "py-2 px-3",
 
       // Color
-      "text-surface-800 dark:text-white/80",
+      "text-surface-700 dark:text-white/80",
       "bg-transparent",
     ],
   },

@@ -4,7 +4,7 @@ export default {
       "block relative",
 
       // Base Label Appearance
-      "[&>*:last-child]:text-surface-900/60 dark:[&>*:last-child]:text-white/60",
+      "[&>*:last-child]:text-surface-600 dark:[&>*:last-child]:text-white/60",
       "[&>*:last-child]:absolute",
       "[&>*:last-child]:left-3",
       "[&>*:last-child]:pointer-events-none",

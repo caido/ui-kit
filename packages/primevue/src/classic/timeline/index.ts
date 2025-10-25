@@ -77,7 +77,7 @@ export default {
   },
   eventConnector: ({ props }) => ({
     class: [
-      "grow bg-surface-300 dark:bg-surface-700",
+      "grow bg-surface-200 dark:bg-surface-700",
       {
         "w-[2px]": props.layout === "vertical",
         "w-full h-[2px]": props.layout === "horizontal",

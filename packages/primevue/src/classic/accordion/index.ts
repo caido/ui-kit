@@ -49,7 +49,7 @@ export default {
     headerIcon: ({ context }) => ({
       class: [
         "inline-block ml-2",
-        { "text-surface-900 dark:text-surface-0": context.active },
+        { "text-surface-700 dark:text-surface-0": context.active },
       ],
     }),
     headerTitle: {

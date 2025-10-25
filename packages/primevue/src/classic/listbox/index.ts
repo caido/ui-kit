@@ -11,7 +11,7 @@ export default {
 
       // Disabled State
       {
-        "bg-surface-200 dark:bg-surface-700 select-none pointer-events-none cursor-default":
+        "bg-surface-300 dark:bg-surface-700 select-none pointer-events-none cursor-default":
           props.disabled,
       },
 
@@ -42,7 +42,7 @@ export default {
 
       // Colors
       {
-        "bg-surface-200 dark:bg-surface-600/60":
+        "bg-surface-300 dark:bg-surface-600/60":
           context.focused && !context.selected,
         "text-surface-700 dark:text-white/80":
           context.focused && !context.selected,
@@ -52,13 +52,13 @@ export default {
 
       //States
       {
-        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:bg-surface-200 dark:hover:bg-[rgba(255,255,255,0.03)]":
           (!context.focused && !context.selected) ||
           (props.checkmark && context.selected),
       },
       { "hover:bg-highlight-emphasis": context.selected && !props.checkmark },
       {
-        "hover:text-surface-700 hover:bg-surface-100 dark:hover:text-white dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:text-surface-700 hover:bg-surface-200 dark:hover:text-white dark:hover:bg-[rgba(255,255,255,0.03)]":
           context.focused && !context.selected,
       },
 
