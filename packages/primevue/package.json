@@ -1,6 +1,6 @@
 {
   "name": "@caido/primevue",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Primevue themes for Caido",
   "main": "dist/primevue.mjs",
   "types": "dist/types/index.d.ts",

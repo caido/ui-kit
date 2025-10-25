@@ -15,7 +15,7 @@ export default {
       },
 
       // Sizes & Spacing
-      "leading-[normal]",
+      "leading-[normal] text-nowrap",
       {
         "px-3 py-2": props.size === null,
         "text-sm py-1.5 px-3": props.size === "small",
@@ -490,6 +490,7 @@ export default {
     class: [
       "duration-200",
       "font-medium",
+      "truncate",
       {
         "hover:underline": props.link,
       },
