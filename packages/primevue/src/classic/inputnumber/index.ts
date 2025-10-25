@@ -66,7 +66,7 @@ export default {
         },
 
         // Colors
-        "text-surface-700 dark:text-white/80",
+        "text-surface-900 dark:text-white/80",
         "placeholder:text-surface-500 dark:placeholder:text-surface-500",
         { "bg-surface-0 dark:bg-surface-950": !context.disabled },
         "border",

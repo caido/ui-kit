@@ -59,7 +59,7 @@ export default {
 
       // Color
       {
-        "text-surface-700 dark:text-white/80": props.modelValue?.length,
+        "text-surface-900 dark:text-white/80": props.modelValue?.length,
         "text-surface-500 dark:text-surface-500": !props.modelValue?.length,
       },
       {

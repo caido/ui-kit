@@ -30,7 +30,7 @@ export default {
       // Colors (Conditional)
       context.active
         ? "text-secondary-400"
-        : "text-surface-700 dark:text-surface-0", // Adjust colors as needed
+        : "text-surface-900 dark:text-surface-0", // Adjust colors as needed
 
       // Size and Shape
       "min-w-[2rem]",
