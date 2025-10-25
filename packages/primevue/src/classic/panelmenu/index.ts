@@ -1,9 +1,9 @@
 export default {
   root: {
-    class: "bg-surface-800 rounded-md",
+    class: "bg-surface-200 dark:bg-surface-800 rounded-md",
   },
   panel: {
-    class: "p-1 overflow-hidden rounded-md bg-surface-800",
+    class: "p-1 overflow-hidden rounded-md bg-surface-200 dark:bg-surface-800",
   },
   header: {
     class: ["rounded-[4px]", "outline-none"],
