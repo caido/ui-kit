@@ -2,9 +2,15 @@
   "name": "@caido/primevue",
   "version": "0.3.3",
   "description": "Primevue themes for Caido",
+  "author": "Caido Labs Inc. <dev@caido.io>",
+  "repository": "https://github.com/caido/ui-kit",
+  "license": "MIT",
   "main": "dist/primevue.mjs",
   "types": "dist/types/index.d.ts",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "histoire dev",
     "build:ui": "histoire build",
@@ -13,12 +19,6 @@
     "build": "vite build && vue-tsc --emitDeclarationOnly -p tsconfig.build.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "files": [
-    "dist"
-  ],
-  "keywords": [],
-  "author": "Caido Labs Inc.",
-  "license": "MIT",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "6.5.1",
     "@caido/tailwindcss": "0.0.1",
