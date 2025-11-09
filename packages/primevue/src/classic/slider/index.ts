@@ -14,7 +14,7 @@ export default {
       "rounded-md",
 
       // Colors
-      "bg-surface-200 dark:bg-surface-800",
+      "bg-surface-300 dark:bg-surface-800",
 
       // States
       {
@@ -63,7 +63,7 @@ export default {
       "before:block before:w-[16px] before:h-[16px] before:rounded-full before:bg-surface-0 dark:before:bg-surface-950 before:shadow-md",
 
       // Colors
-      "bg-surface-200 dark:bg-surface-800",
+      "bg-surface-300 dark:bg-surface-800",
 
       // States
       "focus-visible:outline-none focus-visible:outline-offset-0 focus-visible:ring-1",
@@ -95,7 +95,7 @@ export default {
       "before:block before:w-[16px] before:h-[16px] before:rounded-full before:bg-surface-0 dark:before:bg-surface-950 before:shadow-md",
 
       // Colors
-      "bg-surface-200 dark:bg-surface-800",
+      "bg-surface-300 dark:bg-surface-800",
 
       // States
       "focus-visible:outline-none focus-visible:outline-offset-0 focus-visible:ring-1",
@@ -127,7 +127,7 @@ export default {
       "before:block before:w-[16px] before:h-[16px] before:rounded-full before:bg-surface-0 dark:before:bg-surface-950 before:shadow-md",
 
       // Colors
-      "bg-surface-200 dark:bg-surface-800",
+      "bg-surface-300 dark:bg-surface-800",
 
       // States
       "focus-visible:outline-none focus-visible:outline-offset-0 focus-visible:ring-1",

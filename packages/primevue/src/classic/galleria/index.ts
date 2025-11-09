@@ -237,7 +237,7 @@ export default {
 
       // Conditional Appearance: Not Highlighted
       {
-        "bg-surface-200 hover:bg-surface-300 dark:bg-surface-700 dark:hover:bg-surface-600":
+        "bg-surface-300 hover:bg-surface-400 dark:bg-surface-700 dark:hover:bg-surface-600":
           !context.highlighted,
       },
 

@@ -37,7 +37,7 @@ export default {
 
       // States
       {
-        "hover:bg-surface-100 dark:hover:bg-surface-800":
+        "hover:bg-surface-200 dark:hover:bg-surface-800":
           context?.selectable && !context?.selected,
         "hover:bg-highlight-emphasis": context?.selectable && context?.selected,
       },

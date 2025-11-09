@@ -33,7 +33,7 @@ export default {
       "transition-none",
 
       // States
-      { "hover:bg-surface-100 dark:hover:bg-surface-800": props.toggleable },
+      { "hover:bg-surface-200 dark:hover:bg-surface-800": props.toggleable },
     ],
   }),
   toggleButton: ({ props }) => ({

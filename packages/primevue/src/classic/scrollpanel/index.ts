@@ -41,7 +41,7 @@ export default {
       "h-[9px] bottom-0",
 
       // Appearance
-      "bg-surface-100 dark:bg-surface-800 rounded",
+      "bg-surface-200 dark:bg-surface-800 rounded",
       "opacity-0",
 
       // Interactivity
@@ -66,7 +66,7 @@ export default {
       "w-[9px] top-0",
 
       // Appearance
-      "bg-surface-100 dark:bg-surface-800 rounded",
+      "bg-surface-200 dark:bg-surface-800 rounded",
       "opacity-0",
 
       // Interactivity

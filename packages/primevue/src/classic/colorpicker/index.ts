@@ -53,7 +53,7 @@ export default {
       "shadow-md border",
 
       // Colors
-      "bg-surface-800 dark:bg-surface-900 border-surface-600 dark:border-surface-700",
+      "bg-surface-100 dark:bg-surface-900 border-surface-300 dark:border-surface-700",
     ],
   }),
   colorSelector: {
