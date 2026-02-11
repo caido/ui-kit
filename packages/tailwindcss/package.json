@@ -1,6 +1,6 @@
 {
   "name": "@caido/tailwindcss",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "TailwindCSS for Caido",
   "author": "Caido Labs Inc. <dev@caido.io>",
   "repository": "https://github.com/caido/ui-kit",

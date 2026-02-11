@@ -60,7 +60,7 @@ export default plugin(() => {}, {
           900: "hsl(var(--c-success-900))",
         },
         surface: {
-          0: "hsl(var(--c-surface-0))",
+          100: "hsl(var(--c-surface-100))",
           200: "hsl(var(--c-surface-200))",
           300: "hsl(var(--c-surface-300))",
           400: "hsl(var(--c-surface-400))",
