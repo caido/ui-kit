@@ -70,7 +70,7 @@ export default {
       // Colors
       "bg-surface-0 dark:bg-surface-900",
       "border-b border-surface-200 dark:border-surface-700",
-      "text-surface-900 dark:text-surface-0/80",
+      "text-surface-700 dark:text-surface-0/80",
     ],
   },
   tabpanel: {
@@ -121,9 +121,9 @@ export default {
         // States
         "focus:outline-none focus:outline-offset-0 focus-visible:ring-1 ring-inset focus-visible:ring-primary-400 dark:focus-visible:ring-primary-300",
         {
-          "hover:bg-surface-0 dark:hover:bg-surface-800/80":
+          "hover:bg-surface-50 dark:hover:bg-surface-800/80":
             parent.state.d_activeIndex !== context.index,
-          "hover:text-surface-900 dark:hover:text-surface-0":
+          "hover:text-surface-800 dark:hover:text-surface-0":
             parent.state.d_activeIndex !== context.index,
         },
 
@@ -155,7 +155,7 @@ export default {
 
       // Colors
       "bg-surface-0 dark:bg-surface-900",
-      "text-surface-900 dark:text-surface-0/80",
+      "text-surface-700 dark:text-surface-0/80",
     ],
   },
 };

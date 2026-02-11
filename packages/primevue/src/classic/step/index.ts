@@ -25,7 +25,7 @@ export default {
       "justify-center",
 
       //Colors
-      "border-solid border-2 border-surface-200 dark:border-surface-700",
+      "border-solid border-2 border-surface-300 dark:border-surface-700",
 
       // Colors (Conditional)
       context.active
@@ -60,7 +60,7 @@ export default {
       // Text
       context.active
         ? "text-secondary-400"
-        : "text-surface-700 dark:text-surface-0/80",
+        : "text-surface-600 dark:text-surface-0/80",
       "font-medium",
 
       // Transitions

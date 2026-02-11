@@ -34,7 +34,7 @@ export default {
 
       // State
       {
-        "hover:bg-surface-50 dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
           !context.disabled,
         "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400":
           !context.disabled,
@@ -67,7 +67,7 @@ export default {
 
       // State
       {
-        "hover:bg-surface-50 dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
           !context.disabled,
         "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400":
           !context.disabled,
@@ -100,7 +100,7 @@ export default {
 
       // State
       {
-        "hover:bg-surface-50 dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
           !context.disabled,
         "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400":
           !context.disabled,
@@ -133,7 +133,7 @@ export default {
 
       // State
       {
-        "hover:bg-surface-50 dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
           !context.disabled,
         "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400":
           !context.disabled,
@@ -170,7 +170,7 @@ export default {
 
       // State
       {
-        "hover:bg-surface-50 dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
           !context.disabled && !context.active,
         "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400":
           !context.disabled,

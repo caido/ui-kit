@@ -10,7 +10,7 @@ export default {
 
       // Colors
       "bg-surface-0 dark:bg-surface-800",
-      "text-surface-700 dark:text-white/80",
+      "text-surface-900 dark:text-white/80",
     ],
   },
   list: {
@@ -105,7 +105,7 @@ export default {
 
       // Colors
       "bg-surface-0 dark:bg-surface-800",
-      "text-surface-400 dark:text-surface-300",
+      "text-surface-600 dark:text-surface-300",
     ],
   }),
   transition: {

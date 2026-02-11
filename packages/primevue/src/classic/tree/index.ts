@@ -51,7 +51,7 @@ export default {
 
       // States
       {
-        "hover:bg-surface-50 dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:bg-surface-200 dark:hover:bg-[rgba(255,255,255,0.03)]":
           (props.selectionMode == "single" ||
             props.selectionMode == "multiple") &&
           !context.selected,
@@ -86,7 +86,7 @@ export default {
       },
 
       // States
-      "hover:bg-surface-200/20 dark:hover:bg-surface-500/20",
+      "hover:bg-surface-300/20 dark:hover:bg-surface-500/20",
       "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
 
       // Transition

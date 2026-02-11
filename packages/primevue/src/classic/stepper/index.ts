@@ -1,7 +1,7 @@
 export default {
   root: "has-[[data-pc-name=stepitem]]:flex has-[[data-pc-name=stepitem]]:flex-col",
   separator:
-    "flex-1 w-full h-[2px] bg-surface-200 dark:bg-surface-700 transition-shadow duration-200",
+    "flex-1 w-full h-[2px] bg-surface-300 dark:bg-surface-700 transition-shadow duration-200",
   transition: {
     class: [
       "flex flex-1",

@@ -66,8 +66,8 @@ export default {
         },
 
         // Colors
-        "text-surface-800 dark:text-white/80",
-        "placeholder:text-surface-400 dark:placeholder:text-surface-500",
+        "text-surface-900 dark:text-white/80",
+        "placeholder:text-surface-500 dark:placeholder:text-surface-500",
         { "bg-surface-0 dark:bg-surface-950": !context.disabled },
         "border",
         { "border-surface-300 dark:border-surface-700": !parent.props.invalid },
@@ -81,7 +81,7 @@ export default {
         { "hover:border-secondary-400": !parent.props.invalid },
         "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-secondary-500 dark:focus:ring-secondary-400 focus:z-10",
         {
-          "bg-surface-200 dark:bg-surface-700 select-none pointer-events-none cursor-default":
+          "bg-surface-300 dark:bg-surface-700 select-none pointer-events-none cursor-default":
             context.disabled,
         },
 
@@ -140,10 +140,10 @@ export default {
       { "order-1": props.showButtons && props.buttonLayout === "vertical" },
 
       //Color
-      "text-surface-800 dark:text-surface-0",
+      "text-surface-700 dark:text-surface-0",
       "bg-transparent",
       {
-        "dark:bg-surface-900":
+        "bg-surface-50 dark:bg-surface-900":
           props.showButtons && props.buttonLayout !== "stacked",
       },
       "border border-surface-300 dark:border-surface-700",
@@ -180,7 +180,7 @@ export default {
       },
 
       //States
-      "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]",
+      "hover:bg-surface-200 dark:hover:bg-[rgba(255,255,255,0.03)]",
 
       //Misc
       "cursor-pointer overflow-hidden select-none",
@@ -209,10 +209,10 @@ export default {
       { "order-3": props.showButtons && props.buttonLayout === "vertical" },
 
       //Color
-      "text-surface-800 dark:text-surface-0",
+      "text-surface-700 dark:text-surface-0",
       "bg-transparent",
       {
-        "dark:bg-surface-900":
+        "bg-surface-50 dark:bg-surface-900":
           props.showButtons && props.buttonLayout !== "stacked",
       },
       "border border-surface-300 dark:border-surface-700",
@@ -252,7 +252,7 @@ export default {
       },
 
       //States
-      "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]",
+      "hover:bg-surface-200 dark:hover:bg-[rgba(255,255,255,0.03)]",
 
       //Misc
       "cursor-pointer overflow-hidden select-none",
