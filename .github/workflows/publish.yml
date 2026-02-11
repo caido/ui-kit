@@ -24,6 +24,9 @@ jobs:
           working_directory: .
           version: ${{ vars.CI__MISE_VERSION }}
 
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
       - name: Publish
         run: pnpm -r publish --access public
 
