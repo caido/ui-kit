@@ -27,20 +27,16 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Publish
-        run: pnpm -r publish --access public
+      - name: Publish @caido/tailwindcss
+        uses: ./.github/actions/publish-one
+        with:
+          package: tailwindcss
+          internal: true
+          secret-github-token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish internal
-        shell: bash
-        env:
-          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          # Switch npmrc
-          mv .npmrc .npmrc.pub
-          mv .npmrc.github .npmrc
-
-          pnpm -r publish --no-git-checks
-
-          # Restore npmrc
-          mv .npmrc .npmrc.github
-          mv .npmrc.pub .npmrc
+      - name: Publish @caido/primevue
+        uses: ./.github/actions/publish-one
+        with:
+          package: primevue
+          internal: true
+          secret-github-token: ${{ secrets.GITHUB_TOKEN }}
