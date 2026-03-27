@@ -17,7 +17,7 @@ export default {
       },
 
       // Flipped Tooltip Arrow
-      '[&[data-p-position="top"]>[data-pc-section=arrow]]:border-x-[10px] [&[data-p-position="top"]>[data-pc-section=arrow]]:border-t-[10px] [&[data-p-position="top"]>[data-pc-section=arrow]]:border-b-0 [&[data-p-position="top"]>[data-pc-section=arrow]]:border-t-surface-700 [&[data-p-position="top"]>[data-pc-section=arrow]]:border-y-0 [&[data-p-position="top"]>[data-pc-section=arrow]]:border-x-transparent',
+      '[&[data-p-position="top"]>[data-pc-section=arrow]]:border-x-[10px] [&[data-p-position="top"]>[data-pc-section=arrow]]:border-t-[10px] [&[data-p-position="top"]>[data-pc-section=arrow]]:border-b-0 [&[data-p-position="top"]>[data-pc-section=arrow]]:border-t-surface-400 [&[data-p-position="top"]>[data-pc-section=arrow]]:border-y-0 [&[data-p-position="top"]>[data-pc-section=arrow]]:border-x-transparent',
 
       '[&[data-p-position="top"]>[data-pc-section=arrow]]:-ml-[10px] [&[data-p-position="top"]>[data-pc-section=arrow]]:left-1/2 [&[data-p-position="top"]>[data-pc-section=arrow]]:mt-auto [&[data-p-position="top"]>[data-pc-section=arrow]]:top-auto',
     ],
@@ -35,17 +35,17 @@ export default {
       "border-transparent",
       "border-solid",
       {
-        "border-y-[10px] border-r-[10px] border-l-0 border-r-surface-700":
+        "border-y-[10px] border-r-[10px] border-l-0 border-r-surface-400":
           context?.right ||
           (!context?.right &&
             !context?.left &&
             !context?.top &&
             !context?.bottom),
-        "border-y-[10px] border-l-[10px] border-r-0 border-l-surface-700":
+        "border-y-[10px] border-l-[10px] border-r-0 border-l-surface-400":
           context?.left,
-        "border-x-[10px] border-t-[10px] border-b-0 border-t-surface-700 ":
+        "border-x-[10px] border-t-[10px] border-b-0 border-t-surface-400 ":
           context?.top,
-        "border-x-[10px] border-b-[10px] border-t-0 border-b-surface-700":
+        "border-x-[10px] border-b-[10px] border-t-0 border-b-surface-400":
           context?.bottom,
       },
 
@@ -65,7 +65,7 @@ export default {
   text: {
     class: [
       "p-3",
-      "bg-surface-700",
+      "bg-surface-400",
       "text-white",
       "leading-none",
       "rounded-md",

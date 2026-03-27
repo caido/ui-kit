@@ -41,7 +41,7 @@ export default {
     class: [
       "z-20",
       // Colors
-      "bg-surface-700",
+      "bg-surface-300 dark:bg-surface-700",
 
       // Shape
       "rounded-md",

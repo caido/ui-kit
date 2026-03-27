@@ -12,7 +12,7 @@ export default {
 
       // Colors
       "text-surface-700 dark:text-white",
-      "bg-surface-100 dark:bg-surface-700",
+      "bg-surface-300 dark:bg-surface-700",
     ],
   },
   label: {

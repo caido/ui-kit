@@ -36,7 +36,7 @@ export default {
       "mb-3",
 
       // Colors
-      "bg-surface-100 dark:bg-surface-700",
+      "bg-surface-200 dark:bg-surface-700",
     ],
   },
   meterLabel: ({ instance }) => ({

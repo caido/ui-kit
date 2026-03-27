@@ -40,7 +40,7 @@ export default {
       "cursor-pointer",
       "select-none",
       {
-        "bg-surface-200 dark:bg-surface-700 select-none pointer-events-none cursor-default":
+        "bg-surface-100 dark:bg-surface-700 select-none pointer-events-none cursor-default":
           props.disabled,
       },
     ],
@@ -58,8 +58,8 @@ export default {
       "bg-transparent",
       "border-0",
       {
-        "text-surface-800 dark:text-white/80": props.modelValue != undefined,
-        "text-surface-400 dark:text-surface-500": props.modelValue == undefined,
+        "text-surface-700 dark:text-white/80": props.modelValue != undefined,
+        "text-surface-500 dark:text-surface-500": props.modelValue == undefined,
       },
       {
         "placeholder:text-transparent dark:placeholder:text-transparent":
@@ -157,7 +157,7 @@ export default {
 
       // States
       {
-        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:bg-surface-200 dark:hover:bg-[rgba(255,255,255,0.03)]":
           !context.active,
         "hover:bg-highlight-emphasis": context.active,
       },

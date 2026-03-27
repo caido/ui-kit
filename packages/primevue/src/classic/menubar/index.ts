@@ -73,7 +73,7 @@ export default {
 
       // States
       {
-        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:bg-surface-200 dark:hover:bg-[rgba(255,255,255,0.03)]":
           !context.active,
         "hover:bg-highlight-emphasis": context.active,
       },
@@ -168,7 +168,7 @@ export default {
 
       // States
       "hover:text-surface-600 dark:hover:text-white/60",
-      "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]",
+      "hover:bg-surface-200 dark:hover:bg-[rgba(255,255,255,0.03)]",
       "focus:outline-none focus:outline-offset-0",
       "focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
 

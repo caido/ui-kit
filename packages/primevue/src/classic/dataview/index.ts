@@ -20,8 +20,8 @@ export default {
       "py-3 px-4",
 
       // Color
-      "text-surface-800 dark:text-white/80",
-      "bg-surface-00 dark:bg-surface-900",
+      "text-surface-700 dark:text-white/80",
+      "bg-surface-200 dark:bg-surface-900",
       "border-b border-surface-200 dark:border-surface-700",
     ],
   },
