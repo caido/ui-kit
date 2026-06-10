@@ -1,0 +1,14 @@
+[build]
+base = "packages/primevue"
+command = "make deploy-netlify"
+publish = "dist-ui"
+
+[build.environment]
+MISE_VERSION = "2026.5.7"
+
+[[headers]]
+for = "/*"
+[headers.values]
+X-Frame-Options = "SAMEORIGIN"
+Strict-Transport-Security = "max-age=63072000; preload"
+X-Content-Type-Options = "nosniff"
