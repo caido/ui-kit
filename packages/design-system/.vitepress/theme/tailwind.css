@@ -1,0 +1,10 @@
+*,
+::before,
+::after {
+  border-width: 0;
+  border-style: solid;
+  border-color: var(--c-border-separator);
+}
+
+@tailwind components;
+@tailwind utilities;

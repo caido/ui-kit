@@ -9,8 +9,29 @@ const packagePrimevue = () => {
   }]
 }
 
+const packageDesignSystem = () => {
+  return [
+    {
+      files: ["packages/design-system/.vitepress/**/*.mts"],
+      languageOptions: {
+        parserOptions: {
+          projectService: true,
+        },
+      },
+    },
+    {
+      files: ["packages/design-system/.vitepress/**/*.vue"],
+      rules: {
+        "compat/compat": "off",
+        "vue/require-default-prop": "off",
+      },
+    },
+  ]
+}
+
 /** @type {import('eslint').Linter.Config } */
 export default [
   ...defaultConfig(),
   ...packagePrimevue(),
+  ...packageDesignSystem(),
 ]
