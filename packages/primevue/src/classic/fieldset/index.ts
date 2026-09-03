@@ -59,7 +59,7 @@ export default {
         "hover:text-surface-900 dark:hover:text-surface-100": props.toggleable,
       },
       {
-        "focus:outline-none focus:outline-offset-0 focus-visible:ring-1 focus-visible:ring-primary-400 dark:focus-visible:ring-primary-300":
+        "focus:outline-hidden focus:outline-offset-0 focus-visible:ring-1 focus-visible:ring-primary-400 dark:focus-visible:ring-primary-300":
           props.toggleable,
       },
 

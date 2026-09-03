@@ -72,7 +72,7 @@ export default {
       // Before
       "before:rounded-full before:w-[0.375rem] before:h-[0.375rem] before:bg-primary",
       // After
-      "after:absolute after:rounded-full after:w-full after:h-full after:shadow-sm",
+      "after:absolute after:rounded-full after:w-full after:h-full after:shadow-xs",
     ],
   },
   eventConnector: ({ props }) => ({

@@ -40,7 +40,7 @@ export default {
         "transition-shadow duration-200",
 
         // States
-        "focus:outline-none focus:outline-offset-0 focus-visible:ring-1 focus-visible:ring-primary-400 dark:focus-visible:ring-primary-300", // Focus
+        "focus:outline-hidden focus:outline-offset-0 focus-visible:ring-1 focus-visible:ring-primary-400 dark:focus-visible:ring-primary-300", // Focus
 
         // Misc
         "cursor-pointer no-underline select-none",

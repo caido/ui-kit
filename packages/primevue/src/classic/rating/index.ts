@@ -21,7 +21,7 @@ export default {
 
       // State
       {
-        "outline-none ring-1 ring-primary-500/50 dark:ring-primary-500":
+        "outline-hidden ring-1 ring-primary-500/50 dark:ring-primary-500":
           context.focused,
       },
 

@@ -32,7 +32,7 @@ export default {
           !props.invalid,
       },
       {
-        "outline-none outline-offset-0 ring-1 ring-primary-500 dark:ring-primary-400":
+        "outline-hidden outline-offset-0 ring-1 ring-primary-500 dark:ring-primary-400":
           state.focused,
       },
 
@@ -83,7 +83,7 @@ export default {
       "duration-200",
 
       // States
-      "focus:outline-none focus:shadow-none",
+      "focus:outline-hidden focus:shadow-none",
 
       // Filled State *for FloatLabel
       {
@@ -94,7 +94,7 @@ export default {
       // Misc
       "relative",
       "cursor-pointer",
-      "overflow-hidden overflow-ellipsis",
+      "overflow-hidden text-ellipsis",
       "whitespace-nowrap",
       "appearance-none",
     ],

@@ -48,7 +48,7 @@ export default {
       "bg-surface-0 dark:bg-surface-900 sm:bg-transparent dark:sm:bg-transparent",
 
       // Misc
-      "outline-none",
+      "outline-hidden",
     ],
   }),
   item: ({ props }) => ({
@@ -188,7 +188,7 @@ export default {
       // States
       "hover:text-surface-600 dark:hover:text-white/60",
       "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]",
-      "focus:outline-none focus:outline-offset-0",
+      "focus:outline-hidden focus:outline-offset-0",
       "focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
 
       // Transitions

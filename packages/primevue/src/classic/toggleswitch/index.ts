@@ -86,7 +86,7 @@ export default {
       // Shape
       "opacity-0",
       "rounded-2xl",
-      "outline-none",
+      "outline-hidden",
 
       // Misc
       "appearance-none",

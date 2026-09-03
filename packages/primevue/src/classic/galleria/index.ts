@@ -114,7 +114,7 @@ export default {
       "hover:bg-surface-0/10 hover:text-white",
 
       // Focus Effects
-      "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
+      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
     ],
   },
   thumbnailsViewport: {
@@ -174,7 +174,7 @@ export default {
       "hover:bg-surface-0/10 hover:text-white",
 
       // Focus Effects
-      "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
+      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
     ],
   },
   indicatorList: ({ parent }) => ({
@@ -233,7 +233,7 @@ export default {
       "rounded-full transition duration-200",
 
       // Focus Effects
-      "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
+      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
 
       // Conditional Appearance: Not Highlighted
       {
@@ -270,7 +270,7 @@ export default {
       "hover:text-white hover:bg-surface-0/10",
 
       // Focus Effects
-      "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
+      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
     ],
   },
   closeIcon: {
@@ -303,7 +303,7 @@ export default {
       "hover:bg-surface-0/10 hover:text-white",
 
       // Focus Effects
-      "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
+      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
     ],
   }),
   nextButton: ({ parent }) => ({
@@ -333,7 +333,7 @@ export default {
       "hover:bg-surface-0/10 hover:text-white",
 
       // Focus Effects
-      "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
+      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
     ],
   }),
   caption: {

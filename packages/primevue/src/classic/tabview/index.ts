@@ -35,7 +35,7 @@ export default {
       // Colors
       "bg-surface-0 dark:bg-surface-900",
       "text-surface-700 dark:text-surface-0/80",
-      "shadow-sm",
+      "shadow-xs",
     ],
   },
   nextButton: {
@@ -55,7 +55,7 @@ export default {
       // Colors
       "text-surface-700 dark:text-surface-0/80",
       "bg-surface-0 dark:bg-surface-900",
-      "shadow-sm",
+      "shadow-xs",
     ],
   },
   nav: {
@@ -80,7 +80,7 @@ export default {
         "mr-0",
 
         // Misc
-        "outline-none",
+        "outline-hidden",
         {
           "opacity-60 cursor-default user-select-none select-none pointer-events-none":
             props?.disabled,
@@ -119,7 +119,7 @@ export default {
         },
 
         // States
-        "focus:outline-none focus:outline-offset-0 focus-visible:ring-1 ring-inset focus-visible:ring-primary-400 dark:focus-visible:ring-primary-300",
+        "focus:outline-hidden focus:outline-offset-0 focus-visible:ring-1 ring-inset focus-visible:ring-primary-400 dark:focus-visible:ring-primary-300",
         {
           "hover:bg-surface-0 dark:hover:bg-surface-800/80":
             parent.state.d_activeIndex !== context.index,
