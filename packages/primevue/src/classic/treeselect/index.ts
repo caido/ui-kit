@@ -28,7 +28,7 @@ export default {
           !props.invalid,
       },
       {
-        "outline-none outline-offset-0 ring-1 ring-primary-500 dark:ring-primary-400 z-10":
+        "outline-hidden outline-offset-0 ring-1 ring-primary-500 dark:ring-primary-400 z-10":
           state.focused,
       },
 
@@ -72,7 +72,7 @@ export default {
       "transition duration-200",
 
       // Misc
-      "overflow-hidden whitespace-nowrap cursor-pointer overflow-ellipsis",
+      "overflow-hidden whitespace-nowrap cursor-pointer text-ellipsis",
     ],
   }),
   dropdown: {

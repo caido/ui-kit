@@ -31,7 +31,7 @@ export default {
           !props.invalid,
       },
       {
-        "outline-none outline-offset-0 z-10 ring-1 ring-primary-500 dark:ring-primary-400":
+        "outline-hidden outline-offset-0 z-10 ring-1 ring-primary-500 dark:ring-primary-400":
           state.focused,
       },
 
@@ -81,7 +81,7 @@ export default {
       "transition duration-200",
 
       // Misc
-      "overflow-hidden whitespace-nowrap cursor-pointer overflow-ellipsis",
+      "overflow-hidden whitespace-nowrap cursor-pointer text-ellipsis",
     ],
   }),
   dropdown: {
@@ -162,7 +162,7 @@ export default {
       "first:mt-0 mt-[2px]",
 
       // Shape
-      "border-0 rounded",
+      "border-0 rounded-sm",
 
       // Colors
       {

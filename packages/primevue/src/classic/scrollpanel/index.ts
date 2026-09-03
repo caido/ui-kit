@@ -41,12 +41,12 @@ export default {
       "h-[9px] bottom-0",
 
       // Appearance
-      "bg-surface-100 dark:bg-surface-800 rounded",
+      "bg-surface-100 dark:bg-surface-800 rounded-sm",
       "opacity-0",
 
       // Interactivity
       "cursor-pointer",
-      "focus:outline-none",
+      "focus:outline-hidden",
 
       // Visibility & Layering
       "invisible z-20",
@@ -66,12 +66,12 @@ export default {
       "w-[9px] top-0",
 
       // Appearance
-      "bg-surface-100 dark:bg-surface-800 rounded",
+      "bg-surface-100 dark:bg-surface-800 rounded-sm",
       "opacity-0",
 
       // Interactivity
       "cursor-pointer",
-      "focus:outline-none",
+      "focus:outline-hidden",
 
       // Visibility & Layering
       "z-20",

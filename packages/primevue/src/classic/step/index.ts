@@ -12,7 +12,7 @@ export default {
   header: ({ props, context }) => ({
     class: [
       "inline-flex items-center border-0 cursor-pointer rounded-md outline-transparent bg-transparent p-0 gap-2",
-      "focus:outline-none focus:outline-offset-0 focus-visible:ring-1 ring-inset focus-visible:ring-secondary-400 dark:focus-visible:ring-secondary-300",
+      "focus:outline-hidden focus:outline-offset-0 focus-visible:ring-1 ring-inset focus-visible:ring-secondary-400 dark:focus-visible:ring-secondary-300",
       { "!cursor-default": context.active },
       { "cursor-auto": props.linear },
     ],

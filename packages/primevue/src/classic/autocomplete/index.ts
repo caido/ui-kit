@@ -60,7 +60,7 @@ export default {
           !props.invalid,
       },
       {
-        "outline-none outline-offset-0 z-10 ring-1 ring-primary-500 dark:ring-primary-400":
+        "outline-hidden outline-offset-0 z-10 ring-1 ring-primary-500 dark:ring-primary-400":
           state.focused,
       },
 
@@ -79,7 +79,7 @@ export default {
   },
   input: {
     class:
-      "border-none outline-none bg-transparent m-0 p-0 shadow-none rounded-none w-full",
+      "border-none outline-hidden bg-transparent m-0 p-0 shadow-none rounded-none w-full",
   },
   dropdown: {
     class: [
@@ -101,7 +101,7 @@ export default {
       "border border-primary",
 
       // States
-      "focus:outline-none focus:outline-offset-0 focus:ring-1 ",
+      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 ",
       "hover:bg-primary-emphasis hover:border-primary-emphasis",
       "focus:ring-primary-500 dark:focus:ring-primary-400",
     ],
@@ -142,7 +142,7 @@ export default {
       "first:mt-0 mt-[2px]",
 
       // Shape
-      "border-0 rounded",
+      "border-0 rounded-sm",
 
       // Colors
       {

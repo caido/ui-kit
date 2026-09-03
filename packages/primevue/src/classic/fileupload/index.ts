@@ -87,7 +87,7 @@ export default {
       "gap-2",
 
       // Shape
-      "rounded",
+      "rounded-sm",
     ],
   },
   fileThumbnail: "shrink-0",

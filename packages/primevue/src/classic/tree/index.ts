@@ -30,7 +30,7 @@ export default {
     class: [
       "p-0 my-[2px] mx-0 first:mt-0",
       "rounded-md",
-      "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-inset focus:ring-primary-500 dark:focus:ring-primary-400 focus:z-10",
+      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-inset focus:ring-primary-500 dark:focus:ring-primary-400 focus:z-10",
     ],
   },
   nodeContent: ({ context, props }) => ({
@@ -87,7 +87,7 @@ export default {
 
       // States
       "hover:bg-surface-200/20 dark:hover:bg-surface-500/20",
-      "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
+      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
 
       // Transition
       "transition duration-200",

@@ -140,7 +140,7 @@ export default {
           "hover:bg-surface-100 dark:hover:bg-surface-800/50":
             (props.sortable === "" || props.sortable) && !context?.sorted,
         },
-        "focus-visible:outline-none focus-visible:outline-offset-0 focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400",
+        "focus-visible:outline-hidden focus-visible:outline-offset-0 focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400",
 
         // Transition
         { "transition duration-200": props.sortable === "" || props.sortable },
@@ -303,7 +303,7 @@ export default {
           "hover:text-surface-700 hover:bg-surface-100 dark:hover:text-white dark:hover:bg-[rgba(255,255,255,0.03)]":
             !context?.highlighted,
         },
-        "focus-visible:outline-none focus-visible:outline-offset-0 focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400",
+        "focus-visible:outline-hidden focus-visible:outline-offset-0 focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400",
 
         // Transitions
         "transition-shadow",
@@ -357,7 +357,7 @@ export default {
         // Color
         "text-surface-500 dark:text-white/70",
         "bg-transparent",
-        "focus-visible:outline-none focus-visible:outline-offset-0",
+        "focus-visible:outline-hidden focus-visible:outline-offset-0",
         "focus-visible:ring-1 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400",
 
         // Transition
@@ -465,7 +465,7 @@ export default {
       // Color
       "text-surface-500 dark:text-white/70",
       "bg-transparent",
-      "focus-visible:outline-none focus-visible:outline-offset-0",
+      "focus-visible:outline-hidden focus-visible:outline-offset-0",
       "focus-visible:ring-1 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400",
 
       // Transition

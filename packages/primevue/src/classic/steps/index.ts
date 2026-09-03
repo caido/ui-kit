@@ -44,7 +44,7 @@ export default {
       "dark:bg-transparent",
 
       // States
-      "focus:outline-none focus:outline-offset-0 focus:ring",
+      "focus:outline-hidden focus:outline-offset-0 focus:ring-3",
       "focus:ring-primary-500 dark:focus:ring-primary-400",
 
       // Misc
@@ -110,7 +110,7 @@ export default {
       // Text and Overflow
       "whitespace-nowrap",
       "overflow-hidden",
-      "overflow-ellipsis",
+      "text-ellipsis",
       "max-w-full",
     ],
   }),

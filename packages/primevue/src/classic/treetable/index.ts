@@ -137,7 +137,7 @@ export default {
         "hover:bg-surface-100 dark:hover:bg-surface-900":
           context.selectable && !context.selected,
       },
-      "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 ring-inset dark:focus:ring-white/80",
+      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 ring-inset dark:focus:ring-white/80",
     ],
   }),
   headerCell: ({ context, props }) => ({
@@ -185,7 +185,7 @@ export default {
         "hover:bg-surface-100 dark:hover:bg-surface-80/50":
           (props.sortable === "" || props.sortable) && !context?.sorted,
       },
-      "focus-visible:outline-none focus-visible:outline-offset-0 focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400",
+      "focus-visible:outline-hidden focus-visible:outline-offset-0 focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400",
 
       // Transition
       { "transition duration-200": props.sortable === "" || props.sortable },
@@ -243,7 +243,7 @@ export default {
           "hover:bg-surface-100 dark:hover:bg-surface-80/50":
             (props.sortable === "" || props.sortable) && !context?.sorted,
         },
-        "focus-visible:outline-none focus-visible:outline-offset-0 focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400",
+        "focus-visible:outline-hidden focus-visible:outline-offset-0 focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400",
 
         // Transition
         { "transition duration-200": props.sortable === "" || props.sortable },
@@ -344,7 +344,7 @@ export default {
         "border-transparent",
 
         // States
-        "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-white/80 dark:focus:ring-white/80",
+        "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-white/80 dark:focus:ring-white/80",
         "hover:text-surface-200 hover:bg-surface-50 dark:hover:bg-surface-700/50",
 
         // Transition

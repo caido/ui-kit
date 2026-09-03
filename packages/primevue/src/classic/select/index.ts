@@ -79,7 +79,7 @@ export default {
       "duration-200",
 
       // States
-      "focus:outline-none focus:shadow-none",
+      "focus:outline-hidden focus:shadow-none",
 
       // Filled State *for FloatLabel
       {
@@ -90,7 +90,7 @@ export default {
       // Misc
       "relative",
       "cursor-pointer",
-      "overflow-hidden overflow-ellipsis",
+      "overflow-hidden text-ellipsis",
       "whitespace-nowrap",
       "appearance-none",
     ],
@@ -149,7 +149,7 @@ export default {
       "first:mt-0 mt-[2px]",
 
       // Shape
-      "border-0 rounded",
+      "border-0 rounded-sm",
 
       // Colors
       {

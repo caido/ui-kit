@@ -299,7 +299,7 @@ export default {
       },
 
       // --- Severity Button States ---
-      "focus:outline-none focus:outline-offset-0 focus:ring-1",
+      "focus:outline-hidden focus:outline-offset-0 focus:ring-1",
 
       // Link
       { "focus:ring-primary-400": props.link },

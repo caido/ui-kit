@@ -80,7 +80,7 @@ export default {
       // States
       "hover:text-surface-700 dark:hover:text-white/80",
       "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]",
-      "focus:outline-none focus:outline-offset-0 focus:ring-1",
+      "focus:outline-hidden focus:outline-offset-0 focus:ring-1",
       "focus:ring-primary-500 dark:focus:ring-primary-400",
 
       // Misc

@@ -50,7 +50,7 @@ export default {
         // Text color
         "text-surface-500 dark:text-surface-300",
         // Focus states
-        "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-surface-500 dark:focus:ring-surface-400",
+        "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-surface-500 dark:focus:ring-surface-400",
         // Hover effect
         "hover:bg-surface-300/10",
         // Transition effects

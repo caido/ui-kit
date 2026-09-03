@@ -21,7 +21,7 @@ export default {
   }),
   listContainer: "overflow-auto",
   list: {
-    class: "p-1 list-none m-0 outline-none",
+    class: "p-1 list-none m-0 outline-hidden",
   },
   option: ({ context, props }) => ({
     class: [
@@ -38,7 +38,7 @@ export default {
       "first:mt-0 mt-[2px]",
 
       // Shape
-      "border-0 rounded",
+      "border-0 rounded-sm",
 
       // Colors
       {

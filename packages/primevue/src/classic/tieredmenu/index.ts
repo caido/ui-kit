@@ -19,7 +19,7 @@ export default {
       "list-none",
       "flex flex-col",
       "m-0 p-0",
-      "outline-none",
+      "outline-hidden",
     ],
   },
   item: {
