@@ -9,8 +9,8 @@ export default {
       "p-1",
 
       // Colors
-      "bg-surface-0 dark:bg-surface-800",
-      "text-surface-700 dark:text-white/80",
+      "bg-surface-raised",
+      "text-fg-default",
     ],
   },
   list: {
@@ -19,14 +19,13 @@ export default {
       "list-none",
       "m-0",
       "p-0",
-      "outline-hidden",
     ],
   },
   item: {
     class: "relative my-[2px] [&:first-child]:mt-0",
   },
   separator: {
-    class: "border-t border-surface-200 dark:border-surface-700",
+    class: "border-t border-line-default",
   },
   itemContent: ({ context }) => ({
     class: [
@@ -35,11 +34,9 @@ export default {
 
       // Colors
       {
-        "text-surface-500 dark:text-white/70":
-          !context.focused && !context.active,
-        "text-surface-500 dark:text-white/70 bg-surface-200 dark:bg-[rgba(255,255,255,0.03)]":
-          context.focused && !context.active,
-        "bg-highlight text-highlight-contrast":
+        "text-fg-muted": !context.focused && !context.active,
+        "text-fg-default bg-surface-hover": context.focused && !context.active,
+        "bg-surface-selected text-fg-strong":
           (context.focused && context.active) ||
           context.active ||
           (!context.focused && context.active),
@@ -51,9 +48,8 @@ export default {
 
       // States
       {
-        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
-          !context.active,
-        "hover:bg-highlight-emphasis": context.active,
+        "hover:bg-surface-hover": !context.active,
+        "hover:bg-surface-hover hover:text-fg-strong": context.active,
       },
 
       // Disabled
@@ -104,8 +100,8 @@ export default {
       "rounded-tr-none",
 
       // Colors
-      "bg-surface-0 dark:bg-surface-800",
-      "text-surface-400 dark:text-surface-300",
+      "bg-surface-raised",
+      "text-fg-muted",
     ],
   }),
   transition: {

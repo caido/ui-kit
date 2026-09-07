@@ -11,9 +11,9 @@ export default {
       "m-0",
 
       // Color
-      "bg-surface-0 dark:bg-surface-900",
+      "bg-surface-page",
       "[&:last-child]:border-b",
-      "border-surface-200 dark:border-surface-700",
+      "border-line-default",
 
       // Transitions
       "transform",
@@ -45,9 +45,9 @@ export default {
       "rounded-tr-lg",
 
       // Colors
-      "text-surface-700 dark:text-surface-0/80",
+      "text-fg-default",
       "border border-b-0",
-      "border-surface-200 dark:border-surface-700",
+      "border-line-default",
     ],
   },
   title: {
@@ -71,9 +71,9 @@ export default {
       },
 
       // Colors
-      "text-surface-700 dark:text-surface-0/80",
+      "text-fg-default",
       "border border-t-0 border-b-0",
-      "border-surface-200 dark:border-surface-700",
+      "border-line-default",
 
       // Misc
       "overflow-y-auto",
@@ -96,10 +96,10 @@ export default {
       "rounded-b-lg",
 
       // Colors
-      "bg-surface-0 dark:bg-surface-900",
-      "text-surface-700 dark:text-surface-0/80",
+      "bg-surface-page",
+      "text-fg-default",
       "border border-t-0 border-b-0",
-      "border-surface-200 dark:border-surface-700",
+      "border-line-default",
     ],
   },
   mask: ({ props }) => ({

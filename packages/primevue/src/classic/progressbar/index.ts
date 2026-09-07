@@ -11,7 +11,7 @@ export default {
       "rounded-md",
 
       // Colors
-      "bg-surface-100 dark:bg-surface-800",
+      "bg-surface-subtle",
     ],
   },
   value: ({ props }) => ({
@@ -23,7 +23,7 @@ export default {
       },
 
       // Colors
-      "bg-primary",
+      "bg-fill-primary",
 
       // Spacing & Sizing
       "m-0",
@@ -57,7 +57,7 @@ export default {
       "inline-flex",
 
       // Font and Text
-      "text-white dark:text-surface-900",
+      "text-fg-on-primary",
       "leading-5",
     ],
   },

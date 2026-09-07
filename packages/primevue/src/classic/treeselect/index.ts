@@ -9,14 +9,13 @@ export default {
       "rounded-md",
 
       // Color and Background
-      { "bg-surface-0 dark:bg-surface-950": !props.disabled },
+      { "bg-surface-page": !props.disabled },
       "border",
-      { "border-surface-300 dark:border-surface-700": !props.invalid },
+      { "border-line-default": !props.invalid },
 
       // Invalid State
-      "invalid:focus:ring-red-200",
-      "invalid:hover:border-red-500",
-      { "border-red-500 dark:border-red-400": props.invalid },
+      "invalid:hover:border-line-danger",
+      { "border-line-danger": props.invalid },
 
       // Transitions
       "transition-all",
@@ -24,19 +23,17 @@ export default {
 
       // States
       {
-        "hover:border-surface-400 dark:hover:border-surface-600":
-          !props.invalid,
+        "hover:border-line-strong": !props.invalid,
       },
       {
-        "outline-hidden outline-offset-0 ring-1 ring-primary-500 dark:ring-primary-400 z-10":
-          state.focused,
+        "z-10": state.focused,
       },
 
       // Misc
       "cursor-pointer",
       "select-none",
       {
-        "bg-surface-200 dark:bg-surface-700 select-none pointer-events-none cursor-default":
+        "bg-surface-subtle select-none pointer-events-none cursor-default":
           props.disabled,
       },
     ],
@@ -52,11 +49,10 @@ export default {
       "py-2 px-3",
 
       // Color
-      "text-surface-800 dark:text-white/80",
+      "text-fg-strong",
       {
-        "placeholder:text-transparent dark:placeholder:text-transparent":
-          parent.instance?.$name == "FloatLabel",
-        "!text-transparent dark:!text-transparent":
+        "placeholder:text-transparent": parent.instance?.$name == "FloatLabel",
+        "!text-transparent":
           (parent.instance?.$name == "FloatLabel" &&
             props.modelValue == null) ||
           props.modelValue?.length == 0,
@@ -95,11 +91,11 @@ export default {
   panel: {
     class: [
       // Colors
-      "bg-surface-0 dark:bg-surface-900",
-      "text-surface-700 dark:text-white/80",
+      "bg-surface-page",
+      "text-fg-default",
 
       // Shape
-      "border border-surface-300 dark:border-surface-700",
+      "border border-line-default",
       "rounded-md",
       "shadow-md",
     ],

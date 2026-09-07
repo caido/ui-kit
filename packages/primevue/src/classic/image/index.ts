@@ -68,7 +68,6 @@ export default {
 
       // States
       "hover:text-white hover:bg-surface-0/10",
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
 
       // Transition
       "transition duration-200 ease-in-out",
@@ -98,7 +97,6 @@ export default {
 
       // States
       "hover:text-white hover:bg-surface-0/10",
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
 
       // Transition
       "transition duration-200 ease-in-out",
@@ -128,7 +126,6 @@ export default {
 
       // States
       "hover:text-white hover:bg-surface-0/10",
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
 
       // Transition
       "transition duration-200 ease-in-out",
@@ -158,7 +155,6 @@ export default {
 
       // States
       "hover:text-white hover:bg-surface-0/10",
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
 
       // Transition
       "transition duration-200 ease-in-out",
@@ -188,7 +184,6 @@ export default {
 
       // States
       "hover:text-white hover:bg-surface-0/10",
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
 
       // Transition
       "transition duration-200 ease-in-out",

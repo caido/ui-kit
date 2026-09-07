@@ -14,11 +14,11 @@ export default {
       { "[&>input]:!rounded-r-none": props.dropdown },
 
       // Color
-      "text-surface-900 dark:text-surface-0",
+      "text-fg-strong",
 
       //States
       {
-        "bg-surface-200 dark:bg-surface-700 select-none pointer-events-none cursor-default":
+        "bg-surface-subtle select-none pointer-events-none cursor-default":
           props.disabled,
       },
     ],
@@ -43,25 +43,22 @@ export default {
       "appearance-none rounded-md",
 
       // Color
-      "text-surface-700 dark:text-white/80",
-      "placeholder:text-surface-400 dark:placeholder:text-surface-500",
-      { "bg-surface-0 dark:bg-surface-950": !props.disabled },
+      "text-fg-default",
+      "placeholder:text-fg-muted",
+      { "bg-surface-page": !props.disabled },
       "border",
-      { "border-surface-300 dark:border-surface-700": !props.invalid },
+      { "border-line-default": !props.invalid },
 
       // Invalid State
-      "invalid:focus:ring-red-200",
-      "invalid:hover:border-red-500",
-      { "border-red-500 dark:border-red-400": props.invalid },
+      "invalid:hover:border-line-danger",
+      { "border-line-danger": props.invalid },
 
       // States
       {
-        "hover:border-surface-400 dark:hover:border-surface-700":
-          !props.invalid,
+        "hover:border-line-strong": !props.invalid,
       },
       {
-        "outline-hidden outline-offset-0 z-10 ring-1 ring-primary-500 dark:ring-primary-400":
-          state.focused,
+        "z-10": state.focused,
       },
 
       // Transition
@@ -78,8 +75,7 @@ export default {
     class: "flex-auto inline-flex pt-1 pb-1",
   },
   input: {
-    class:
-      "border-none outline-hidden bg-transparent m-0 p-0 shadow-none rounded-none w-full",
+    class: "border-none bg-transparent m-0 p-0 shadow-none rounded-none w-full",
   },
   dropdown: {
     class: [
@@ -96,30 +92,28 @@ export default {
       "w-10",
 
       // Colors
-      "text-primary-contrast",
-      "bg-primary",
-      "border border-primary",
+      "text-fg-on-primary",
+      "bg-fill-primary",
+      "border border-fill-primary",
 
       // States
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 ",
-      "hover:bg-primary-emphasis hover:border-primary-emphasis",
-      "focus:ring-primary-500 dark:focus:ring-primary-400",
+      "hover:bg-fill-primary-hover hover:border-fill-primary-hover",
     ],
   },
   loader: {
     class: [
-      "text-surface-500 dark:text-surface-0/70",
+      "text-fg-muted",
       "absolute top-[50%] right-[0.5rem] -mt-2 animate-spin",
     ],
   },
   overlay: {
     class: [
       // Colors
-      "bg-surface-0 dark:bg-surface-900",
-      "text-surface-700 dark:text-white/80",
+      "bg-surface-page",
+      "text-fg-default",
 
       // Shape
-      "border border-surface-300 dark:border-surface-700",
+      "border border-line-default",
       "rounded-md",
       "shadow-md",
 
@@ -146,21 +140,18 @@ export default {
 
       // Colors
       {
-        "bg-surface-200 dark:bg-surface-600/60":
-          context.focused && !context.selected,
-        "text-surface-700 dark:text-white/80":
-          context.focused && !context.selected,
-        "bg-highlight": context.selected,
+        "bg-surface-hover": context.focused && !context.selected,
+        "text-fg-default": context.focused && !context.selected,
+        "bg-surface-selected text-fg-strong": context.selected,
       },
 
       //States
       {
-        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
-          !context.focused && !context.selected,
+        "hover:bg-surface-hover": !context.focused && !context.selected,
       },
-      { "hover:bg-highlight-emphasis": context.selected },
+      { "hover:bg-surface-hover hover:text-fg-strong": context.selected },
       {
-        "hover:text-surface-700 hover:bg-surface-100 dark:hover:text-white dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:text-fg-default hover:bg-surface-hover":
           context.focused && !context.selected,
       },
 
@@ -179,7 +170,7 @@ export default {
       "m-0 py-2 px-3",
 
       // Colors
-      "text-surface-400 dark:text-surface-500",
+      "text-fg-muted",
 
       // Misc
       "cursor-auto",
@@ -194,7 +185,7 @@ export default {
       "py-2 px-3",
 
       // Color
-      "text-surface-800 dark:text-white/80",
+      "text-fg-strong",
       "bg-transparent",
     ],
   },

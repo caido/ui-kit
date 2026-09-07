@@ -32,17 +32,16 @@ export default {
       },
 
       // Color
-      "text-primary-contrast",
       {
-        "bg-primary": props.severity == null || props.severity === "primary",
-        "bg-surface-500 dark:bg-surface-400": props.severity === "secondary",
-        "bg-green-500 dark:bg-green-400": props.severity === "success",
-        "bg-blue-500 dark:bg-blue-400": props.severity === "info",
-        "bg-orange-500 dark:bg-orange-400": props.severity === "warn",
-        "bg-purple-500 dark:bg-purple-400": props.severity === "help",
-        "bg-red-500 dark:bg-red-400": props.severity === "danger",
-        "text-surface-0 dark:text-surface-900 bg-surface-900 dark:bg-surface-0":
-          props.severity === "contrast",
+        "bg-fill-primary text-fg-on-primary":
+          props.severity == null || props.severity === "primary",
+        "bg-fill-neutral text-fg-on-neutral": props.severity === "secondary",
+        "bg-fill-success text-fg-on-success": props.severity === "success",
+        "bg-fill-info text-fg-on-info":
+          props.severity === "info" || props.severity === "help",
+        "bg-fill-warn text-fg-on-warn": props.severity === "warn",
+        "bg-fill-danger text-fg-on-danger": props.severity === "danger",
+        "text-surface-900 bg-surface-0": props.severity === "contrast",
       },
     ],
   }),

@@ -22,7 +22,7 @@ export default {
       { "h-2": props.orientation === "horizontal" },
 
       // Colors
-      "bg-gray-200 dark:bg-gray-700",
+      "bg-surface-subtle",
 
       // Border Radius
       "rounded-lg",
@@ -46,7 +46,7 @@ export default {
       },
 
       // Colors
-      "bg-primary",
+      "bg-fill-primary",
     ],
   }),
   labelList: ({ props }) => ({
@@ -95,7 +95,7 @@ export default {
       "inline-flex",
 
       // Background Color
-      "bg-primary",
+      "bg-fill-primary",
 
       // Size
       "w-2 h-2",

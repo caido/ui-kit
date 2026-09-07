@@ -28,36 +28,33 @@ export default {
       "before:h-4 before:w-4",
       "before:rounded-full",
       "before:duration-200",
-      "before:bg-surface-0 before:dark:bg-surface-500",
+      "before:bg-surface-0",
 
       // Colors
       "border",
       {
-        "bg-surface-300 dark:bg-surface-700": !(
-          props.modelValue == props.trueValue
-        ),
-        "bg-secondary-400": props.modelValue == props.trueValue,
-        "before:dark:bg-surface-950": props.modelValue == props.trueValue,
+        "bg-surface-subtle": !(props.modelValue == props.trueValue),
+        "bg-fill-secondary": props.modelValue == props.trueValue,
+        "before:bg-surface-page": props.modelValue == props.trueValue,
         "border-transparent": !props.invalid,
       },
 
       // Invalid State
-      { "border-red-500 dark:border-danger-400": props.invalid },
+      { "border-line-danger": props.invalid },
 
       // States
       {
-        "peer-hover:bg-surface-400 dark:peer-hover:bg-surface-600":
+        "peer-hover:bg-surface-subtle":
           !(props.modelValue == props.trueValue) &&
           !props.disabled &&
           !props.invalid,
       },
       {
-        "peer-hover:bg-primary-hover":
+        "peer-hover:bg-fill-primary-hover":
           props.modelValue == props.trueValue &&
           !props.disabled &&
           !props.invalid,
       },
-      "peer-focus-visible:ring-1 peer-focus-visible:ring-primary-500 dark:peer-focus-visible:ring-secondary-200",
 
       // Transition
       "transition-colors duration-200",
@@ -86,7 +83,6 @@ export default {
       // Shape
       "opacity-0",
       "rounded-2xl",
-      "outline-hidden",
 
       // Misc
       "appearance-none",

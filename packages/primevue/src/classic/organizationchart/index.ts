@@ -27,19 +27,19 @@ export default {
       // Shape
       "border",
       "rounded-md",
-      "border-surface-200 dark:border-surface-700",
+      "border-line-default",
       // Color
       {
-        "text-surface-600 dark:text-white/80": !context?.selected,
-        "bg-surface-0 dark:bg-surface-900": !context?.selected,
-        "bg-highlight": context?.selected,
+        "text-fg-subtle": !context?.selected,
+        "bg-surface-page": !context?.selected,
+        "bg-surface-selected text-fg-strong": context?.selected,
       },
 
       // States
       {
-        "hover:bg-surface-100 dark:hover:bg-surface-800":
-          context?.selectable && !context?.selected,
-        "hover:bg-highlight-emphasis": context?.selectable && context?.selected,
+        "hover:bg-surface-hover": context?.selectable && !context?.selected,
+        "hover:bg-surface-hover hover:text-fg-strong":
+          context?.selectable && context?.selected,
       },
 
       { "cursor-pointer": context?.selectable },
@@ -63,7 +63,7 @@ export default {
       "w-px h-[20px]",
 
       // Color
-      "bg-surface-200 dark:bg-surface-700",
+      "bg-surface-subtle",
     ],
   },
   connectorLeft: ({ context }) => ({
@@ -79,7 +79,7 @@ export default {
       { "border-t": context.lineTop },
 
       // Color
-      "border-surface-200 dark:border-surface-700",
+      "border-line-default",
     ],
   }),
   connectorRight: ({ context }) => ({
@@ -95,7 +95,7 @@ export default {
 
       // Color
       {
-        "border-t border-surface-200 dark:border-surface-700": context.lineTop,
+        "border-t border-line-default": context.lineTop,
       },
     ],
   }),
@@ -116,13 +116,12 @@ export default {
 
       // Shape
       "rounded-full",
-      "border border-surface-200 dark:border-surface-700",
+      "border border-line-default",
 
       // Color
       "bg-inherit text-inherit",
 
       // Focus
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
 
       // Misc
       "cursor-pointer no-underline select-none",

@@ -13,14 +13,13 @@ export default {
       "rounded-md",
 
       // Color and Background
-      { "bg-surface-0 dark:bg-surface-950": !props.disabled },
+      { "bg-surface-page": !props.disabled },
       "border",
-      { "border-surface-300 dark:border-surface-600": !props.invalid },
+      { "border-line-strong": !props.invalid },
 
       // Invalid State
-      "invalid:focus:ring-red-200",
-      "invalid:hover:border-red-500",
-      { "border-red-500 dark:border-red-400": props.invalid },
+      "invalid:hover:border-line-danger",
+      { "border-line-danger": props.invalid },
 
       // Transitions
       "transition-all",
@@ -28,19 +27,14 @@ export default {
 
       // States
       {
-        "hover:border-surface-400 dark:hover:border-surface-600":
-          !props.invalid,
-      },
-      {
-        "outline-hidden outline-offset-0 ring-1 ring-primary-500 dark:ring-primary-400":
-          state.focused,
+        "hover:border-line-strong": !props.invalid,
       },
 
       // Misc
       "cursor-pointer",
       "select-none",
       {
-        "bg-surface-200 dark:bg-surface-700 select-none pointer-events-none cursor-default":
+        "bg-surface-subtle select-none pointer-events-none cursor-default":
           props.disabled,
       },
     ],
@@ -58,13 +52,12 @@ export default {
       "bg-transparent",
       "border-0",
       {
-        "text-surface-800 dark:text-white/80": props.modelValue != undefined,
-        "text-surface-400 dark:text-surface-500": props.modelValue == undefined,
+        "text-fg-strong": props.modelValue != undefined,
+        "text-fg-muted": props.modelValue == undefined,
       },
       {
-        "placeholder:text-transparent dark:placeholder:text-transparent":
-          parent.instance?.$name == "FloatLabel",
-        "!text-transparent dark:!text-transparent":
+        "placeholder:text-transparent": parent.instance?.$name == "FloatLabel",
+        "!text-transparent":
           (parent.instance?.$name == "FloatLabel" &&
             props.modelValue == null) ||
           props.modelValue?.length == 0,
@@ -83,7 +76,7 @@ export default {
       "duration-200",
 
       // States
-      "focus:outline-hidden focus:shadow-none",
+      "focus:shadow-none",
 
       // Filled State *for FloatLabel
       {
@@ -119,11 +112,11 @@ export default {
   overlay: {
     class: [
       // Colors
-      "bg-surface-0 dark:bg-surface-900",
-      "text-surface-700 dark:text-white/80",
+      "bg-surface-page",
+      "text-fg-default",
 
       // Shape
-      "border border-surface-300 dark:border-surface-700",
+      "border border-line-default",
       "rounded-md",
       "shadow-md",
     ],
@@ -141,11 +134,9 @@ export default {
 
       // Colors
       {
-        "text-surface-500 dark:text-white/70":
-          !context.focused && !context.active,
-        "text-surface-500 dark:text-white/70 bg-surface-200 dark:bg-surface-600/90":
-          context.focused && !context.active,
-        "bg-highlight text-highlight-contrast":
+        "text-fg-muted": !context.focused && !context.active,
+        "text-fg-default bg-surface-hover": context.focused && !context.active,
+        "bg-surface-selected text-fg-strong":
           (context.focused && context.active) ||
           context.active ||
           (!context.focused && context.active),
@@ -157,9 +148,8 @@ export default {
 
       // States
       {
-        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
-          !context.active,
-        "hover:bg-highlight-emphasis": context.active,
+        "hover:bg-surface-hover": !context.active,
+        "hover:bg-surface-hover hover:text-fg-strong": context.active,
       },
 
       // Disabled
@@ -204,14 +194,14 @@ export default {
       // Shape
       "shadow-none sm:shadow-md",
       "rounded-md",
-      "border border-surface-200 dark:border-surface-700",
+      "border border-line-default",
 
       // Position
       "static sm:absolute",
       "z-10",
 
       // Color
-      "bg-surface-0 dark:bg-surface-900",
+      "bg-surface-page",
     ],
   },
   transition: {

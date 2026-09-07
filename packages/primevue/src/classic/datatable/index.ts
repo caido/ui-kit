@@ -24,7 +24,7 @@ export default {
       "w-full h-full",
 
       // Color
-      "bg-surface-100/40 dark:bg-surface-900/40",
+      "bg-surface-page",
 
       // Transition
       "transition duration-200",
@@ -57,9 +57,9 @@ export default {
       "p-4",
 
       // Color
-      "bg-surface-0 dark:bg-surface-900",
-      "border-surface-200 dark:border-surface-700",
-      "text-surface-700 dark:text-white/80",
+      "bg-surface-page",
+      "border-line-default",
+      "text-fg-default",
     ],
   }),
   table: {
@@ -68,8 +68,7 @@ export default {
   thead: ({ context }) => ({
     class: [
       {
-        "bg-surface-0 dark:bg-surface-900 top-0 z-40 sticky":
-          context.scrollable,
+        "bg-surface-page top-0 z-40 sticky": context.scrollable,
       },
     ],
   }),
@@ -78,7 +77,7 @@ export default {
       {
         "sticky z-20": instance.frozenRow && context.scrollable,
       },
-      "bg-surface-0 dark:bg-surface-800",
+      "bg-surface-raised",
     ],
   }),
   tfoot: ({ context }) => ({
@@ -99,9 +98,9 @@ export default {
       "p-4",
 
       // Color
-      "bg-surface-0 dark:bg-surface-800",
-      "border-surface-200 dark:border-surface-700",
-      "text-surface-700 dark:text-white/80",
+      "bg-surface-raised",
+      "border-line-default",
+      "text-fg-default",
     ],
   },
   column: {
@@ -131,16 +130,15 @@ export default {
 
         // Color
         (props.sortable === "" || props.sortable) && context.sorted
-          ? "bg-highlight"
-          : "bg-surface-50 text-surface-700 dark:text-surface-0/50 dark:bg-surface-800/50",
-        "border-surface-200 dark:border-surface-900",
+          ? "bg-surface-selected text-fg-strong"
+          : "bg-surface-raised text-fg-default",
+        "border-line-default",
 
         // States
         {
-          "hover:bg-surface-100 dark:hover:bg-surface-800/50":
+          "hover:bg-surface-hover/50":
             (props.sortable === "" || props.sortable) && !context?.sorted,
         },
-        "focus-visible:outline-hidden focus-visible:outline-offset-0 focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400",
 
         // Transition
         { "transition duration-200": props.sortable === "" || props.sortable },
@@ -158,8 +156,8 @@ export default {
     },
     sort: ({ context }) => ({
       class: [
-        context.sorted ? "text-primary-500" : "text-surface-700",
-        context.sorted ? "dark:text-primary-400" : "dark:text-white/80",
+        context.sorted ? "text-fg-primary" : "text-surface-700",
+        context.sorted ? "text-fg-primary" : "text-fg-default",
       ],
     }),
     bodyCell: ({ props, context, state, parent }) => ({
@@ -181,7 +179,7 @@ export default {
         "border-0 border-b dark:border-b-0 border-solid",
         { "first:border-l border-r border-b": context?.showGridlines },
         {
-          "bg-surface-0 dark:bg-surface-900":
+          "bg-surface-page":
             parent.instance.frozenRow || props.frozen || props.frozen === "",
         },
 
@@ -203,7 +201,7 @@ export default {
         { "py-[0.6rem] px-2": state["d_editing"] },
 
         // Color
-        "border-surface-200 dark:border-surface-700",
+        "border-line-default",
 
         {
           "overflow-hidden whitespace-nowrap border-y bg-clip-padding":
@@ -231,16 +229,13 @@ export default {
             : "p-4",
 
         // Color
-        "border-surface-200 dark:border-surface-700",
-        "text-surface-700 dark:text-white/80",
-        "bg-surface-0 dark:bg-surface-900",
+        "border-line-default",
+        "text-fg-default",
+        "bg-surface-page",
       ],
     }),
     sortIcon: ({ context }) => ({
-      class: [
-        "ml-2",
-        context.sorted ? "text-inherit" : "text-surface-700 dark:text-white/70",
-      ],
+      class: ["ml-2", context.sorted ? "text-inherit" : "text-fg-default"],
     }),
     columnFilter: {
       class: "inline-flex items-center ml-auto font-normal",
@@ -261,9 +256,9 @@ export default {
         "min-w-[12.5rem]",
 
         // Color
-        "bg-surface-0 dark:bg-surface-900",
-        "text-surface-800 dark:text-white/80",
-        "dark:border-surface-700",
+        "bg-surface-page",
+        "text-fg-strong",
+        "border-line-default",
       ],
     },
     filterConstraintList: {
@@ -287,23 +282,19 @@ export default {
         "py-3 px-5",
 
         // Color
-        { "text-surface-700 dark:text-white/80": !context?.highlighted },
+        { "text-fg-default": !context?.highlighted },
         {
-          "bg-surface-0 dark:bg-surface-900 text-surface-700 dark:text-white/80":
-            !context?.highlighted,
+          "bg-surface-page text-fg-default": !context?.highlighted,
         },
-        { "bg-highlight": context?.highlighted },
+        { "bg-surface-selected text-fg-strong": context?.highlighted },
 
         //States
         {
-          "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
-            !context?.highlighted,
+          "hover:bg-surface-hover": !context?.highlighted,
         },
         {
-          "hover:text-surface-700 hover:bg-surface-100 dark:hover:text-white dark:hover:bg-[rgba(255,255,255,0.03)]":
-            !context?.highlighted,
+          "hover:text-fg-strong hover:bg-surface-hover": !context?.highlighted,
         },
-        "focus-visible:outline-hidden focus-visible:outline-offset-0 focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400",
 
         // Transitions
         "transition-shadow",
@@ -321,8 +312,8 @@ export default {
         "rounded-t-md",
 
         // Color
-        "text-surface-700 dark:text-white/80",
-        "bg-surface-0 dark:bg-surface-700",
+        "text-fg-default",
+        "bg-surface-subtle",
         "[&>[data-pc-name=pcfilteroperatordropdown]]:w-full",
       ],
     },
@@ -355,10 +346,8 @@ export default {
         "border-0 rounded-full",
 
         // Color
-        "text-surface-500 dark:text-white/70",
+        "text-fg-muted",
         "bg-transparent",
-        "focus-visible:outline-hidden focus-visible:outline-offset-0",
-        "focus-visible:ring-1 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400",
 
         // Transition
         "transition duration-200",
@@ -400,19 +389,18 @@ export default {
   bodyRow: ({ context, props, parent }) => ({
     class: [
       // Color
-      { "bg-highlight": context.selected },
+      { "bg-surface-selected text-fg-strong": context.selected },
       {
-        "bg-surface-0 text-surface-600 dark:text-white/80 dark:bg-surface-900":
-          !context.selected,
+        "bg-surface-page text-fg-subtle": !context.selected,
       },
-      { "font-bold bg-surface-0 dark:bg-surface-900 z-20": props.frozenRow },
+      { "font-bold bg-surface-page z-20": props.frozenRow },
       {
-        "odd:bg-surface-0 odd:text-surface-600 dark:odd:text-surface-0 dark:even:text-surface-0 dark:odd:bg-surface-800 even:bg-surface-50 even:text-surface-600 dark:even:bg-surface-900":
+        "odd:bg-surface-raised odd:text-fg-strong even:bg-surface-page even:text-fg-strong":
           context.stripedRows && !context.selected,
       },
       // State
       {
-        "hover:bg-surface-300/20 dark:hover:bg-surface-700/50":
+        "hover:bg-surface-subtle":
           (props.selectionMode && !context.selected) ||
           parent.instance.rowHover,
       },
@@ -428,22 +416,13 @@ export default {
     ],
   }),
   rowExpansion: {
-    class:
-      "bg-surface-0 dark:bg-surface-900 text-surface-600 dark:text-white/80",
+    class: "bg-surface-page text-fg-subtle",
   },
   rowGroupHeader: {
-    class: [
-      "sticky z-20",
-      "bg-surface-0 text-surface-600 dark:text-white/70",
-      "dark:bg-surface-900",
-    ],
+    class: ["sticky z-20", "bg-surface-page text-fg-subtle"],
   },
   rowGroupFooter: {
-    class: [
-      "sticky z-20",
-      "bg-surface-0 text-surface-600 dark:text-white/70",
-      "dark:bg-surface-900",
-    ],
+    class: ["sticky z-20", "bg-surface-page text-fg-subtle"],
   },
   rowToggleButton: {
     class: [
@@ -463,10 +442,8 @@ export default {
       "border-0 rounded-full",
 
       // Color
-      "text-surface-500 dark:text-white/70",
+      "text-fg-muted",
       "bg-transparent",
-      "focus-visible:outline-hidden focus-visible:outline-offset-0",
-      "focus-visible:ring-1 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400",
 
       // Transition
       "transition duration-200",
@@ -480,6 +457,6 @@ export default {
     class: "inline-block w-4 h-4",
   },
   columnResizeIndicator: {
-    class: "absolute hidden w-[2px] z-20 bg-primary",
+    class: "absolute hidden w-[2px] z-20 bg-fill-primary",
   },
 };

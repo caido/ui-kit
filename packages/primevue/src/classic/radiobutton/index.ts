@@ -32,25 +32,23 @@ export default {
 
       // Colors
       {
-        "text-surface-700 dark:text-white/80": context.checked,
-        "border-surface-300 dark:border-surface-700":
-          !context.checked && !props.invalid,
-        "border-primary bg-primary": context.checked && !props.disabled,
+        "text-fg-on-primary": context.checked,
+        "border-line-default": !context.checked && !props.invalid,
+        "border-fill-primary bg-fill-primary":
+          context.checked && !props.disabled,
       },
       // Invalid State
-      { "border-red-500 dark:border-red-400": props.invalid },
+      { "border-line-danger": props.invalid },
 
       // States
       {
-        "peer-hover:border-surface-400 dark:peer-hover:border-surface-400":
+        "peer-hover:border-line-strong":
           !props.disabled && !props.invalid && !context.checked,
-        "peer-hover:border-primary-emphasis":
+        "peer-hover:border-fill-primary-hover":
           !props.disabled && !context.checked,
-        "peer-hover:[&>*:first-child]:bg-primary-600 dark:peer-hover:[&>*:first-child]:bg-primary-300":
+        "peer-hover:[&>*:first-child]:bg-fill-primary-hover":
           !props.disabled && !context.checked,
-        "peer-focus-visible:ring-1 peer-focus-visible:ring-primary-500 dark:peer-focus-visible:ring-primary-400":
-          !props.disabled,
-        "bg-surface-200 [&>*:first-child]:bg-surface-600 dark:bg-surface-700 dark:[&>*:first-child]:bg-surface-400 border-surface-300 dark:border-surface-700 select-none pointer-events-none cursor-default":
+        "bg-surface-200 [&>*:first-child]:bg-fill-neutral border-line-default select-none pointer-events-none cursor-default":
           props.disabled,
       },
     ],
@@ -75,8 +73,7 @@ export default {
       // Shape
       "opacity-0",
       "rounded-md",
-      "outline-hidden",
-      "border-1 border-surface-200 dark:border-surface-700",
+      "border-1 border-line-default",
 
       // Misc
       "appearance-none",
@@ -95,8 +92,8 @@ export default {
 
       // Conditions
       {
-        "bg-surface-0 dark:bg-surface-900": context.checked,
-        "bg-primary": !context.checked,
+        "bg-surface-page": context.checked,
+        "bg-fill-primary": !context.checked,
         "backface-hidden invisible scale-[0.1]": !context.checked,
         "transform visible translate-z-0 scale-[1,1]": context.checked,
       },

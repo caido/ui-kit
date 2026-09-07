@@ -38,10 +38,10 @@ export default {
     }
     @keyframes p-progress-spinner-color {
         100%, 66%, 0% {
-            stroke: #ff5757;
+            stroke: var(--color-fill-danger);
         }
         40%, 80%, 90% {
-            stroke: #cc8925;
+            stroke: var(--color-fill-warn);
         }
     }
 
