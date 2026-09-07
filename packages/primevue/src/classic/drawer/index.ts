@@ -22,9 +22,9 @@ export default {
       "shadow-lg",
 
       // Colors
-      "bg-surface-0 dark:bg-surface-900",
-      "text-surface-700 dark:text-white/80",
-      "dark:border-surface-700",
+      "bg-surface-page",
+      "text-fg-default",
+      "border-line-default",
 
       // Transitions
       "transition-transform",
@@ -44,8 +44,8 @@ export default {
       "p-[1.125rem]",
 
       // Colors
-      "bg-surface-0 dark:bg-surface-900",
-      "text-surface-700 dark:text-surface-0/80",
+      "bg-surface-page",
+      "text-fg-default",
     ],
   },
   title: {
@@ -78,10 +78,8 @@ export default {
       "transition duration-200 ease-in-out",
 
       // States
-      "hover:text-surface-700 dark:hover:text-white/80",
-      "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]",
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1",
-      "focus:ring-primary-500 dark:focus:ring-primary-400",
+      "hover:text-fg-default",
+      "hover:bg-surface-hover",
 
       // Misc
       "overflow-hidden",

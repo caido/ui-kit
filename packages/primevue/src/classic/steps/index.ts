@@ -17,7 +17,7 @@ export default {
       // Before
       "before:border-t-2",
       "before:border-surface-200",
-      "before:dark:border-surface-700",
+      "before:border-line-default",
       "before:w-full",
       "[&:first-child]:before:w-[calc(50%+1rem)]",
       "[&:last-child]:before:w-1/2",
@@ -41,11 +41,9 @@ export default {
 
       // Colors
       "bg-surface-0",
-      "dark:bg-transparent",
+      "bg-transparent",
 
       // States
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-3",
-      "focus:ring-primary-500 dark:focus:ring-primary-400",
 
       // Misc
       "overflow-hidden",
@@ -72,17 +70,16 @@ export default {
       "font-medium",
 
       // Colors
-      "bg-surface-0 dark:bg-surface-800",
-      "border-surface-100 dark:border-surface-700",
+      "bg-surface-raised",
+      "border-line-default",
       {
-        "text-surface-400 dark:text-white/60": !context.active,
-        "text-primary": context.active,
+        "text-fg-strong": !context.active,
+        "text-fg-primary": context.active,
       },
 
       // States
       {
-        "hover:border-surface-300 dark:hover:border-surface-500":
-          !context.active && !props.readonly,
+        "hover:border-line-strong": !context.active && !props.readonly,
       },
 
       // Transition
@@ -103,8 +100,8 @@ export default {
 
       // Colors
       {
-        "text-surface-700 dark:text-white/70": !context.active,
-        "text-primary": context.active,
+        "text-fg-default": !context.active,
+        "text-fg-primary": context.active,
       },
 
       // Text and Overflow

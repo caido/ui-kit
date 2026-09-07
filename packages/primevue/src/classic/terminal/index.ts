@@ -8,8 +8,8 @@ export default {
       "rounded-md",
 
       // Color
-      "bg-surface-0 dark:bg-surface-950 text-surface-700 dark:text-surface-0",
-      "border border-surface-200 dark:border-surface-700",
+      "bg-surface-page text-fg-strong",
+      "border border-line-default",
 
       // Sizing & Overflow
       "h-72 overflow-auto",
@@ -24,19 +24,19 @@ export default {
   prompt: {
     class: [
       // Color
-      "text-surface-700 dark:text-surface-0",
+      "text-fg-strong",
     ],
   },
   response: {
     class: [
       // Color
-      "text-surface-700 dark:text-surface-0",
+      "text-fg-strong",
     ],
   },
   command: {
     class: [
       // Color
-      "text-surface-700 dark:text-surface-0",
+      "text-fg-strong",
     ],
   },
   commandtext: {
@@ -54,7 +54,6 @@ export default {
       "bg-transparent text-inherit",
 
       // Outline
-      "outline-hidden",
     ],
   },
 };

@@ -67,17 +67,17 @@ export default {
       "w-[1.125rem] h-[1.125rem]",
 
       // Appearance
-      "rounded-full border-2 border-surface-200 bg-surface-0 dark:border-surface-700 dark:bg-surface-950",
+      "rounded-full border-2 border-line-default bg-surface-page",
 
       // Before
-      "before:rounded-full before:w-[0.375rem] before:h-[0.375rem] before:bg-primary",
+      "before:rounded-full before:w-[0.375rem] before:h-[0.375rem] before:bg-fill-primary",
       // After
       "after:absolute after:rounded-full after:w-full after:h-full after:shadow-xs",
     ],
   },
   eventConnector: ({ props }) => ({
     class: [
-      "grow bg-surface-300 dark:bg-surface-700",
+      "grow bg-surface-subtle",
       {
         "w-[2px]": props.layout === "vertical",
         "w-full h-[2px]": props.layout === "horizontal",

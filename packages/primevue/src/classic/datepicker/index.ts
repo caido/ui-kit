@@ -20,16 +20,15 @@ export default {
         "leading-none",
 
         // Colors
-        "text-surface-600 dark:text-surface-200",
-        "placeholder:text-surface-400 dark:placeholder:text-surface-500",
-        { "bg-surface-0 dark:bg-surface-950": !props.disabled },
+        "text-fg-subtle",
+        "placeholder:text-fg-muted",
+        { "bg-surface-page": !props.disabled },
         "border",
-        { "border-surface-300 dark:border-surface-600": !props.invalid },
+        { "border-line-strong": !props.invalid },
 
         // Invalid State
-        "invalid:focus:ring-red-200",
-        "invalid:hover:border-red-500",
-        { "border-red-500 dark:border-red-400": props.invalid },
+        "invalid:hover:border-line-danger",
+        { "border-line-danger": props.invalid },
 
         // Spacing
         "m-0 py-2 px-3",
@@ -52,11 +51,9 @@ export default {
 
         // States
         {
-          "hover:border-surface-400 dark:hover:border-surface-600":
-            !props.disabled && !props.invalid,
-          "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400 focus:z-10":
-            !props.disabled,
-          "bg-surface-200 dark:bg-surface-700 select-none pointer-events-none cursor-default":
+          "hover:border-line-strong": !props.disabled && !props.invalid,
+          "focus:z-10": !props.disabled,
+          "bg-surface-subtle select-none pointer-events-none cursor-default":
             props.disabled,
         },
 
@@ -69,11 +66,7 @@ export default {
     },
   }),
   dropdownIcon: {
-    class: [
-      "absolute top-1/2 -mt-2",
-      "text-surface-600 dark:text-surface-200",
-      "right-3",
-    ],
+    class: ["absolute top-1/2 -mt-2", "text-fg-subtle", "right-3"],
   },
   dropdown: {
     class: [
@@ -91,12 +84,10 @@ export default {
       "leading-[normal]",
 
       // Colors
-      "border border-l-0 border-surface-300 dark:border-surface-600",
+      "border border-l-0 border-line-default",
 
       // States
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1",
-      "hover:bg-primary-hover hover:border-primary-hover",
-      "focus:ring-primary-500 dark:focus:ring-primary-400",
+      "hover:bg-fill-primary-hover hover:border-fill-primary-hover",
     ],
   },
   inputIconContainer: "absolute cursor-pointer top-1/2 right-3 -mt-3",
@@ -121,8 +112,8 @@ export default {
       },
 
       // Colors
-      "bg-surface-0 dark:bg-surface-900",
-      "border-surface-200 dark:border-surface-700",
+      "bg-surface-page",
+      "border-line-default",
 
       //misc
       { "overflow-x-auto": props.inline },
@@ -145,9 +136,9 @@ export default {
       "rounded-t-md",
 
       // Colors
-      "text-surface-700 dark:text-white/80",
-      "bg-surface-0 dark:bg-surface-900",
-      "border-surface-200 dark:border-surface-700",
+      "text-fg-default",
+      "bg-surface-page",
+      "border-line-default",
     ],
   },
   title: {
@@ -167,7 +158,7 @@ export default {
       "rounded-md",
 
       // Colors
-      "text-surface-700 dark:text-white/80",
+      "text-fg-default",
 
       // Transitions
       "transition duration-200",
@@ -177,8 +168,8 @@ export default {
       "m-0 mr-2",
 
       // States
-      "hover:text-primary-500 dark:hover:text-primary-400",
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400 focus:z-10",
+      "hover:text-fg-primary",
+      "focus:z-10",
 
       // Misc
       "cursor-pointer",
@@ -194,7 +185,7 @@ export default {
       "rounded-md",
 
       // Colors
-      "text-surface-700 dark:text-white/80",
+      "text-fg-default",
 
       // Transitions
       "transition duration-200",
@@ -204,8 +195,8 @@ export default {
       "m-0 mr-2",
 
       // States
-      "hover:text-primary-500 dark:hover:text-primary-400",
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400 focus:z-10",
+      "hover:text-fg-primary",
+      "focus:z-10",
 
       // Misc
       "cursor-pointer",
@@ -231,19 +222,15 @@ export default {
     ],
   },
   weekHeader: {
-    class: [
-      "leading-5",
-      "text-surface-600 dark:text-white/70",
-      "opacity-60 cursor-default",
-    ],
+    class: ["leading-5", "text-fg-subtle", "opacity-60 cursor-default"],
   },
   weekNumber: {
-    class: ["text-surface-600 dark:text-white/70", "opacity-60 cursor-default"],
+    class: ["text-fg-subtle", "opacity-60 cursor-default"],
   },
   weekday: {
     class: [
       // Colors
-      "text-surface-500 dark:text-white/60",
+      "text-fg-muted",
       "p-1",
     ],
   },
@@ -284,18 +271,18 @@ export default {
 
       // Colors
       {
-        "bg-surface-100 dark:bg-surface-800 text-surface-600 dark:text-white/70":
+        "bg-surface-subtle text-fg-subtle":
           context.date.today && !context.selected && !context.disabled,
-        "bg-transparent text-surface-600 dark:text-white/70":
+        "bg-transparent text-fg-subtle":
           !context.selected && !context.disabled && !context.date.today,
-        "bg-highlight": context.selected && !context.disabled,
+        "bg-surface-selected text-fg-strong":
+          context.selected && !context.disabled,
       },
 
       // States
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400 focus:z-10",
+      "focus:z-10",
       {
-        "hover:bg-surface-50 dark:hover:bg-surface-500/10":
-          !context.selected && !context.disabled,
+        "hover:bg-surface-hover": !context.selected && !context.disabled,
       },
       {
         "opacity-60 cursor-default": context.disabled,
@@ -323,16 +310,15 @@ export default {
 
       // Colors
       {
-        "text-surface-600 dark:text-white/70 bg-transparent":
-          !context.selected && !context.disabled,
-        "bg-highlight": context.selected && !context.disabled,
+        "text-fg-subtle bg-transparent": !context.selected && !context.disabled,
+        "bg-surface-selected text-fg-strong":
+          context.selected && !context.disabled,
       },
 
       // States
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400 focus:z-10",
+      "focus:z-10",
       {
-        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
-          !context.selected && !context.disabled,
+        "hover:bg-surface-hover": !context.selected && !context.disabled,
       },
 
       // Misc
@@ -359,16 +345,15 @@ export default {
 
       // Colors
       {
-        "text-surface-600 dark:text-white/70 bg-transparent":
-          !context.selected && !context.disabled,
-        "bg-highlight": context.selected && !context.disabled,
+        "text-fg-subtle bg-transparent": !context.selected && !context.disabled,
+        "bg-surface-selected text-fg-strong":
+          context.selected && !context.disabled,
       },
 
       // States
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400 focus:z-10",
+      "focus:z-10",
       {
-        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
-          !context.selected && !context.disabled,
+        "hover:bg-surface-hover": !context.selected && !context.disabled,
       },
 
       // Misc
@@ -461,7 +446,7 @@ export default {
       "pt-2",
 
       // Shape
-      "border-t border-surface-200 dark:border-surface-700",
+      "border-t border-line-default",
     ],
   },
   transition: {

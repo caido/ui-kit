@@ -20,30 +20,29 @@ export default {
       },
 
       // Color and Background
-      { "bg-surface-0 dark:bg-surface-950": !props.disabled },
+      { "bg-surface-page": !props.disabled },
 
       "border",
-      { "dark:border-surface-600": parent.instance.$name != "InputGroup" },
-      { "dark:border-surface-600": parent.instance.$name == "InputGroup" },
-      { "border-surface-300 dark:border-surface-600": !props.invalid },
+      { "border-line-strong": parent.instance.$name != "InputGroup" },
+      { "border-line-strong": parent.instance.$name == "InputGroup" },
+      { "border-line-strong": !props.invalid },
 
       // Invalid State
-      "invalid:focus:ring-red-200",
-      "invalid:hover:border-red-500",
-      { "border-red-500 dark:border-red-400": props.invalid },
+      "invalid:hover:border-line-danger",
+      { "border-line-danger": props.invalid },
 
       // Transitions
       "transition-all",
       "duration-200",
 
       // States
-      { "hover:border-secondary-400": !props.invalid },
+      { "hover:border-fill-secondary": !props.invalid },
 
       // Misc
       "cursor-pointer",
       "select-none",
       {
-        "bg-surface-200 dark:bg-surface-700 select-none pointer-events-none cursor-default":
+        "bg-surface-subtle select-none pointer-events-none cursor-default":
           props.disabled,
       },
     ],
@@ -61,10 +60,10 @@ export default {
       "bg-transparent",
       "border-0",
       {
-        "text-surface-800 dark:text-white/80": props.modelValue != undefined,
-        "text-surface-400 dark:text-surface-500": props.modelValue == undefined,
+        "text-fg-strong": props.modelValue != undefined,
+        "text-fg-muted": props.modelValue == undefined,
       },
-      "placeholder:text-surface-400 dark:placeholder:text-surface-500",
+      "placeholder:text-fg-muted",
 
       // Sizing and Spacing
       "w-[1%]",
@@ -79,7 +78,7 @@ export default {
       "duration-200",
 
       // States
-      "focus:outline-hidden focus:shadow-none",
+      "focus:shadow-none",
 
       // Filled State *for FloatLabel
       {
@@ -115,11 +114,11 @@ export default {
   overlay: {
     class: [
       // Colors
-      "bg-surface-0 dark:bg-surface-900",
-      "text-surface-700 dark:text-white/80",
+      "bg-surface-page",
+      "text-fg-default",
 
       // Shape
-      "border border-surface-300 dark:border-surface-700",
+      "border border-line-default",
       "rounded-md",
       "shadow-md",
     ],
@@ -153,12 +152,10 @@ export default {
 
       // Colors
       {
-        "bg-surface-200 dark:bg-surface-600/60":
-          context.focused && !context.selected,
-        "text-surface-700 dark:text-white/80":
-          context.focused && !context.selected,
-        "bg-highlight": context.selected,
-        "bg-highlight-emphasis": context.focused && context.selected,
+        "bg-surface-hover": context.focused && !context.selected,
+        "text-fg-default": context.focused && !context.selected,
+        "bg-surface-selected text-fg-strong": context.selected,
+        "bg-surface-hover text-fg-strong": context.focused && context.selected,
       },
 
       // Transition
@@ -176,14 +173,13 @@ export default {
       "m-0 py-2 px-3",
 
       // Colors
-      "text-surface-400 dark:text-surface-500",
+      "text-fg-muted",
 
       // Misc
       "cursor-auto",
     ],
   },
-  optionCheckIcon:
-    "relative -ms-1.5 me-1.5 text-surface-700 dark:text-white/80 w-4 h-4",
+  optionCheckIcon: "relative -ms-1.5 me-1.5 text-fg-default w-4 h-4",
   optionBlankIcon: "w-4 h-4",
   emptyMessage: {
     class: [
@@ -194,7 +190,7 @@ export default {
       "py-2 px-3",
 
       // Color
-      "text-surface-800 dark:text-white/80",
+      "text-fg-strong",
       "bg-transparent",
     ],
   },
@@ -210,9 +206,9 @@ export default {
       "rounded-tr-md",
 
       // Color
-      "text-surface-700 dark:text-white/80",
-      "bg-surface-0 dark:bg-surface-900",
-      "border-surface-300 dark:border-surface-700",
+      "text-fg-default",
+      "bg-surface-page",
+      "border-line-default",
 
       // Filter
       "[&_[data-pc-name=pcfilter]]:w-full",
@@ -221,7 +217,7 @@ export default {
   clearIcon: {
     class: [
       // Color
-      "text-surface-400 dark:text-surface-500",
+      "text-fg-muted",
 
       // Position
       "absolute",
@@ -233,6 +229,6 @@ export default {
     ],
   },
   loadingIcon: {
-    class: "text-surface-400 dark:text-surface-500 animate-spin",
+    class: "text-fg-muted animate-spin",
   },
 };

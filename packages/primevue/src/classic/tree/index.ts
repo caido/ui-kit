@@ -9,8 +9,8 @@ export default {
       "border-none",
 
       // Color
-      "bg-surface-0 dark:bg-surface-900",
-      "text-surface-700 dark:text-white/80",
+      "bg-surface-page",
+      "text-fg-default",
       "[&_[data-pc-name=pcfilter]]:w-full",
     ],
   },
@@ -27,11 +27,7 @@ export default {
     ],
   },
   node: {
-    class: [
-      "p-0 my-[2px] mx-0 first:mt-0",
-      "rounded-md",
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-inset focus:ring-primary-500 dark:focus:ring-primary-400 focus:z-10",
-    ],
+    class: ["p-0 my-[2px] mx-0 first:mt-0", "rounded-md", "focus:z-10"],
   },
   nodeContent: ({ context, props }) => ({
     class: [
@@ -46,12 +42,12 @@ export default {
 
       // Colors
       context.selected
-        ? "bg-highlight text-highlight-contrast "
-        : "bg-transparent text-surface-600 dark:text-white/70",
+        ? "bg-surface-selected text-fg-strong "
+        : "bg-transparent text-fg-subtle",
 
       // States
       {
-        "hover:bg-surface-50 dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:bg-surface-hover":
           (props.selectionMode == "single" ||
             props.selectionMode == "multiple") &&
           !context.selected,
@@ -80,14 +76,13 @@ export default {
       // Colors
       "bg-transparent",
       {
-        "text-surface-600 dark:text-white/70": !context.selected,
-        "text-highlight-contrast": context.selected,
+        "text-fg-subtle": !context.selected,
+        "text-fg-strong": context.selected,
         invisible: context.leaf,
       },
 
       // States
-      "hover:bg-surface-200/20 dark:hover:bg-surface-500/20",
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
+      "hover:bg-surface-hover",
 
       // Transition
       "transition duration-200",
@@ -103,16 +98,16 @@ export default {
 
       // Color
       {
-        "text-surface-600 dark:text-white/70": !context.selected,
-        "text-highlight-contrast": context.selected,
+        "text-fg-subtle": !context.selected,
+        "text-fg-strong": context.selected,
       },
     ],
   }),
   nodeLabel: ({ context }) => ({
     class: [
       {
-        "text-surface-600 dark:text-white/70": !context.selected,
-        "text-highlight-contrast": context.selected,
+        "text-fg-subtle": !context.selected,
+        "text-fg-strong": context.selected,
       },
     ],
   }),
@@ -121,7 +116,7 @@ export default {
   },
   loadingIcon: {
     class: [
-      "text-surface-500 dark:text-surface-0/70",
+      "text-fg-muted",
       "absolute top-[50%] right-[50%] -mt-2 -mr-2 animate-spin",
     ],
   },

@@ -14,7 +14,7 @@ export default {
       "rounded-md",
 
       // Colors
-      "bg-surface-200 dark:bg-surface-800",
+      "bg-surface-subtle",
 
       // States
       {
@@ -42,7 +42,7 @@ export default {
       "rounded-md",
 
       // Colors
-      "bg-secondary-400",
+      "bg-fill-secondary",
     ],
   }),
   handle: ({ props }) => ({
@@ -60,14 +60,12 @@ export default {
       // Shape
       "rounded-full",
 
-      "before:block before:w-[16px] before:h-[16px] before:rounded-full before:bg-surface-0 dark:before:bg-surface-950 before:shadow-md",
+      "before:block before:w-[16px] before:h-[16px] before:rounded-full before:bg-surface-0",
 
       // Colors
-      "bg-surface-200 dark:bg-surface-800",
+      "bg-surface-subtle",
 
       // States
-      "focus-visible:outline-hidden focus-visible:outline-offset-0 focus-visible:ring-1",
-      "ring-secondary-400 dark:ring-secondary-400",
 
       // Transitions
       "transition duration-200",
@@ -92,14 +90,12 @@ export default {
       // Shape
       "rounded-full",
 
-      "before:block before:w-[16px] before:h-[16px] before:rounded-full before:bg-surface-0 dark:before:bg-surface-950 before:shadow-md",
+      "before:block before:w-[16px] before:h-[16px] before:rounded-full before:bg-surface-0",
 
       // Colors
-      "bg-surface-200 dark:bg-surface-800",
+      "bg-surface-subtle",
 
       // States
-      "focus-visible:outline-hidden focus-visible:outline-offset-0 focus-visible:ring-1",
-      "ring-secondary-400 dark:ring-secondary-400",
 
       // Transitions
       "transition duration-200",
@@ -124,14 +120,12 @@ export default {
       // Shape
       "rounded-full",
 
-      "before:block before:w-[16px] before:h-[16px] before:rounded-full before:bg-surface-0 dark:before:bg-surface-950 before:shadow-md",
+      "before:block before:w-[16px] before:h-[16px] before:rounded-full before:bg-surface-0",
 
       // Colors
-      "bg-surface-200 dark:bg-surface-800",
+      "bg-surface-subtle",
 
       // States
-      "focus-visible:outline-hidden focus-visible:outline-offset-0 focus-visible:ring-1",
-      "ring-secondary-400 dark:ring-secondary-400",
 
       // Transitions
       "transition duration-200",

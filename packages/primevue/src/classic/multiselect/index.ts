@@ -12,14 +12,13 @@ export default {
       "rounded-md",
 
       // Color and Background
-      { "bg-surface-0 dark:bg-surface-950": !props.disabled },
+      { "bg-surface-page": !props.disabled },
       "border",
-      { "border-surface-300 dark:border-surface-600": !props.invalid },
+      { "border-line-strong": !props.invalid },
 
       // Invalid State
-      "invalid:focus:ring-red-200",
-      "invalid:hover:border-red-500",
-      { "border-red-500 dark:border-red-400": props.invalid },
+      "invalid:hover:border-line-danger",
+      { "border-line-danger": props.invalid },
 
       // Transitions
       "transition-all",
@@ -27,19 +26,17 @@ export default {
 
       // States
       {
-        "hover:border-surface-400 dark:hover:border-surface-700":
-          !props.invalid,
+        "hover:border-line-strong": !props.invalid,
       },
       {
-        "outline-hidden outline-offset-0 z-10 ring-1 ring-primary-500 dark:ring-primary-400":
-          state.focused,
+        "z-10": state.focused,
       },
 
       // Misc
       "cursor-pointer",
       "select-none",
       {
-        "bg-surface-200 dark:bg-surface-700 select-none pointer-events-none cursor-default":
+        "bg-surface-subtle select-none pointer-events-none cursor-default":
           props.disabled,
       },
     ],
@@ -59,13 +56,12 @@ export default {
 
       // Color
       {
-        "text-surface-800 dark:text-white/80": props.modelValue?.length,
-        "text-surface-400 dark:text-surface-500": !props.modelValue?.length,
+        "text-fg-strong": props.modelValue?.length,
+        "text-fg-muted": !props.modelValue?.length,
       },
       {
-        "placeholder:text-transparent dark:placeholder:text-transparent":
-          parent.instance?.$name == "FloatLabel",
-        "!text-transparent dark:!text-transparent":
+        "placeholder:text-transparent": parent.instance?.$name == "FloatLabel",
+        "!text-transparent":
           (parent.instance?.$name == "FloatLabel" &&
             props.modelValue == null) ||
           props.modelValue?.length == 0,
@@ -104,11 +100,11 @@ export default {
   overlay: {
     class: [
       // Colors
-      "bg-surface-0 dark:bg-surface-900",
-      "text-surface-700 dark:text-white/80",
+      "bg-surface-page",
+      "text-fg-default",
 
       // Shape
-      "border border-surface-300 dark:border-surface-700",
+      "border border-line-default",
       "rounded-md",
       "shadow-md",
       "mt-[2px]",
@@ -129,9 +125,9 @@ export default {
       "rounded-tr-md",
 
       // Color
-      "text-surface-700 dark:text-white/80",
-      "bg-surface-0 dark:bg-surface-900",
-      "border-surface-300 dark:border-surface-700",
+      "text-fg-default",
+      "bg-surface-page",
+      "border-line-default",
 
       "[&_[data-pc-name=pcfiltercontainer]]:!flex-auto",
       "[&_[data-pc-name=pcfilter]]:w-full",
@@ -166,21 +162,18 @@ export default {
 
       // Colors
       {
-        "bg-surface-200 dark:bg-surface-600/60":
-          context.focused && !context.selected,
-        "text-surface-700 dark:text-white/80":
-          context.focused && !context.selected,
-        "bg-highlight": context.selected,
+        "bg-surface-hover": context.focused && !context.selected,
+        "text-fg-default": context.focused && !context.selected,
+        "bg-surface-selected text-fg-strong": context.selected,
       },
 
       //States
       {
-        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
-          !context.focused && !context.selected,
+        "hover:bg-surface-hover": !context.focused && !context.selected,
       },
-      { "hover:bg-highlight-emphasis": context.selected },
+      { "hover:bg-surface-hover hover:text-fg-strong": context.selected },
       {
-        "hover:text-surface-700 hover:bg-surface-100 dark:hover:text-white dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:text-fg-default hover:bg-surface-hover":
           context.focused && !context.selected,
       },
 
@@ -199,7 +192,7 @@ export default {
       "m-0 py-2 px-3",
 
       // Colors
-      "text-surface-400 dark:text-surface-500",
+      "text-fg-muted",
 
       // Misc
       "cursor-auto",
@@ -214,12 +207,12 @@ export default {
       "py-2 px-3",
 
       // Color
-      "text-surface-800 dark:text-white/80",
+      "text-fg-strong",
       "bg-transparent",
     ],
   },
   loadingIcon: {
-    class: "text-surface-400 dark:text-surface-500 animate-spin",
+    class: "text-fg-muted animate-spin",
   },
   transition: {
     enterFromClass: "opacity-0 scale-y-[0.8]",

@@ -4,24 +4,24 @@ export default {
       "rounded-md",
 
       // Colors
-      { "bg-surface-0 dark:bg-surface-900": !props.disabled },
-      "text-surface-700 dark:text-white/80",
+      { "bg-surface-page": !props.disabled },
+      "text-fg-default",
       "border",
-      { "border-surface-300 dark:border-surface-700": !props.invalid },
+      { "border-line-default": !props.invalid },
 
       // Disabled State
       {
-        "bg-surface-200 dark:bg-surface-700 select-none pointer-events-none cursor-default":
+        "bg-surface-subtle select-none pointer-events-none cursor-default":
           props.disabled,
       },
 
       // Invalid State
-      { "border-red-500 dark:border-red-400": props.invalid },
+      { "border-line-danger": props.invalid },
     ],
   }),
   listContainer: "overflow-auto",
   list: {
-    class: "p-1 list-none m-0 outline-hidden",
+    class: "p-1 list-none m-0",
   },
   option: ({ context, props }) => ({
     class: [
@@ -42,23 +42,25 @@ export default {
 
       // Colors
       {
-        "bg-surface-200 dark:bg-surface-600/60":
-          context.focused && !context.selected,
-        "text-surface-700 dark:text-white/80":
-          context.focused && !context.selected,
-        "bg-highlight": context.selected && !props.checkmark,
-        "bg-surface-0 dark:bg-surface-900": props.checkmark && context.selected,
+        "bg-surface-hover": context.focused && !context.selected,
+        "text-fg-default": context.focused && !context.selected,
+        "bg-surface-selected text-fg-strong":
+          context.selected && !props.checkmark,
+        "bg-surface-page": props.checkmark && context.selected,
       },
 
       //States
       {
-        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:bg-surface-hover":
           (!context.focused && !context.selected) ||
           (props.checkmark && context.selected),
       },
-      { "hover:bg-highlight-emphasis": context.selected && !props.checkmark },
       {
-        "hover:text-surface-700 hover:bg-surface-100 dark:hover:text-white dark:hover:bg-[rgba(255,255,255,0.03)]":
+        "hover:bg-surface-hover hover:text-fg-strong":
+          context.selected && !props.checkmark,
+      },
+      {
+        "hover:text-fg-default hover:bg-surface-hover":
           context.focused && !context.selected,
       },
 
@@ -77,14 +79,13 @@ export default {
       "m-0 py-2 px-3",
 
       // Colors
-      "text-surface-400 dark:text-surface-500",
+      "text-fg-muted",
 
       // Misc
       "cursor-auto",
     ],
   },
-  optionCheckIcon:
-    "relative -ms-1.5 me-1.5 text-surface-700 dark:text-white/80 w-4 h-4",
+  optionCheckIcon: "relative -ms-1.5 me-1.5 text-fg-default w-4 h-4",
   emptyMessage: {
     class: [
       // Font
@@ -94,7 +95,7 @@ export default {
       "py-2 px-3",
 
       // Color
-      "text-surface-800 dark:text-white/80",
+      "text-fg-strong",
       "bg-transparent",
     ],
   },
@@ -110,9 +111,9 @@ export default {
       "rounded-tr-md",
 
       // Color
-      "text-surface-700 dark:text-white/80",
-      "bg-surface-0 dark:bg-surface-900",
-      "border-surface-300 dark:border-surface-700",
+      "text-fg-default",
+      "bg-surface-page",
+      "border-line-default",
 
       "[&_[data-pc-name=pcfilter]]:w-full",
     ],

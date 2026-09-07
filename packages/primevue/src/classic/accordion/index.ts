@@ -2,7 +2,7 @@ export default {
   // For PrimeVue version 3
   accordiontab: {
     root: {
-      class: ["mb-0", "border-b border-surface-200 dark:border-surface-700"],
+      class: ["mb-0", "border-b border-line-default"],
     },
     header: ({ props }) => ({
       class: [
@@ -32,25 +32,21 @@ export default {
         "border-0",
 
         // Color
-        "bg-surface-0 dark:bg-surface-900",
-        "text-surface-600 dark:text-surface-0/80",
+        "bg-surface-page",
+        "text-fg-subtle",
 
         // Transition
         "transition duration-200 ease-in-out",
         "transition-shadow duration-200",
 
-        // States
-        "focus:outline-hidden focus:outline-offset-0 focus-visible:ring-1 focus-visible:ring-primary-400 dark:focus-visible:ring-primary-300", // Focus
+        // States // Focus
 
         // Misc
         "cursor-pointer no-underline select-none",
       ],
     },
     headerIcon: ({ context }) => ({
-      class: [
-        "inline-block ml-2",
-        { "text-surface-900 dark:text-surface-0": context.active },
-      ],
+      class: ["inline-block ml-2", { "text-fg-strong": context.active }],
     }),
     headerTitle: {
       class: "leading-none",
@@ -64,8 +60,8 @@ export default {
         "border-0 rounded-none",
 
         // Color
-        "bg-surface-0 dark:bg-surface-900",
-        "text-surface-600 dark:text-surface-0/70",
+        "bg-surface-page",
+        "text-fg-subtle",
       ],
     },
     transition: {

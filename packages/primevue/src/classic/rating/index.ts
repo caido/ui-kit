@@ -20,10 +20,6 @@ export default {
       "inline-flex items-center",
 
       // State
-      {
-        "outline-hidden ring-1 ring-primary-500/50 dark:ring-primary-500":
-          context.focused,
-      },
 
       // Misc
       {
@@ -38,10 +34,10 @@ export default {
       "w-4 h-4",
 
       // Color
-      "text-surface-700 dark:text-surface-0/80",
+      "text-fg-default",
 
       // State
-      { "hover:text-primary-500 dark:hover:text-primary-400": !props.readonly },
+      { "hover:text-fg-primary": !props.readonly },
 
       // Transition
       "transition duration-200 ease-in",
@@ -53,10 +49,10 @@ export default {
       "w-4 h-4",
 
       // Color
-      "text-primary",
+      "text-fg-primary",
 
       // State
-      { "hover:text-primary-600 dark:hover:text-primary-300": !props.readonly },
+      { "hover:text-fg-primary": !props.readonly },
 
       // Transition
       "transition duration-200 ease-in",

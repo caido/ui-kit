@@ -3,8 +3,7 @@ export default {
     class: [
       // Colors
       "bg-transparent",
-      "text-surface-700",
-      "dark:text-surface-0/80",
+      "text-fg-default",
 
       // Shape
       "rounded-md",
@@ -24,7 +23,7 @@ export default {
 
       // Colors
       "bg-transparent",
-      "dark:bg-transparent",
+      "bg-transparent",
 
       // Transitions
       "transition-all",
@@ -47,7 +46,6 @@ export default {
       "rounded-md",
 
       //States
-      "focus:outline-hidden focus:outline-offset-0 focus-visible:ring-1 focus-visible:ring-primary-400 dark:focus-visible:ring-primary-300",
 
       // Transitions
       "transition-all",

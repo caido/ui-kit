@@ -16,9 +16,9 @@ export default {
       "shadow-md rounded-md",
 
       // Colors
-      "bg-surface-0 dark:bg-surface-900",
-      "text-surface-700 dark:text-white/80",
-      "border-surface-200 dark:border-surface-700",
+      "bg-surface-page",
+      "text-fg-default",
+      "border-line-default",
     ],
   },
   meter: {
@@ -36,7 +36,7 @@ export default {
       "mb-3",
 
       // Colors
-      "bg-surface-100 dark:bg-surface-700",
+      "bg-surface-subtle",
     ],
   },
   meterLabel: ({ instance }) => ({
@@ -46,11 +46,9 @@ export default {
 
       // Colors
       {
-        "bg-red-500 dark:bg-red-400/50": instance?.meter?.strength == "weak",
-        "bg-orange-500 dark:bg-orange-400/50":
-          instance?.meter?.strength == "medium",
-        "bg-green-500 dark:bg-green-400/50":
-          instance?.meter?.strength == "strong",
+        "bg-fill-danger": instance?.meter?.strength == "weak",
+        "bg-fill-warn": instance?.meter?.strength == "medium",
+        "bg-fill-success": instance?.meter?.strength == "strong",
       },
 
       // Transitions
@@ -58,16 +56,10 @@ export default {
     ],
   }),
   maskIcon: {
-    class: [
-      "absolute top-1/2 right-3 -mt-2 z-10",
-      "text-surface-600 dark:text-white/70",
-    ],
+    class: ["absolute top-1/2 right-3 -mt-2 z-10", "text-fg-subtle"],
   },
   unmaskIcon: {
-    class: [
-      "absolute top-1/2 right-3 -mt-2 z-10",
-      "text-surface-600 dark:text-white/70",
-    ],
+    class: ["absolute top-1/2 right-3 -mt-2 z-10", "text-fg-subtle"],
   },
   transition: {
     enterFromClass: "opacity-0 scale-y-[0.8]",

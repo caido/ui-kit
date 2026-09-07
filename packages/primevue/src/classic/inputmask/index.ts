@@ -9,24 +9,21 @@ export default {
         "m-0 py-2 px-3",
 
         // Colors
-        "text-surface-800 dark:text-white/80",
-        { "bg-surface-0 dark:bg-surface-950": !context.disabled },
+        "text-fg-strong",
+        { "bg-surface-page": !context.disabled },
 
         "border",
-        { "border-surface-300 dark:border-surface-700": !props.invalid },
+        { "border-line-default": !props.invalid },
 
         // Invalid State
-        "invalid:focus:ring-red-200",
-        "invalid:hover:border-red-500",
-        { "border-red-500 dark:border-red-400": props.invalid },
+        "invalid:hover:border-line-danger",
+        { "border-line-danger": props.invalid },
 
         // States
         {
-          "hover:border-surface-400 dark:hover:border-surface-600":
-            !context.disabled && !props.invalid,
-          "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400 focus:z-10":
-            !context.disabled,
-          "bg-surface-200 dark:bg-surface-700 select-none pointer-events-none cursor-default":
+          "hover:border-line-strong": !context.disabled && !props.invalid,
+          "focus:z-10": !context.disabled,
+          "bg-surface-subtle select-none pointer-events-none cursor-default":
             context.disabled,
         },
 
@@ -40,8 +37,8 @@ export default {
         },
         parent.instance?.$name == "FloatLabel" ||
         parent.instance?.$parentInstance?.$name == "FloatLabel"
-          ? "placeholder:text-transparent dark:placeholder:text-transparent"
-          : "placeholder:text-surface-400 dark:placeholder:text-surface-500",
+          ? "placeholder:text-transparent"
+          : "placeholder:text-fg-muted",
 
         // Misc
         "rounded-md",

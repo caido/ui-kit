@@ -26,7 +26,7 @@ export default {
       "rounded-md",
 
       // Color
-      "bg-surface-0/10 dark:bg-surface-900/20 border border-surface-0/20",
+      "bg-surface-page border border-surface-0/20",
       "backdrop-blur-xs",
 
       // Spacing
@@ -48,7 +48,6 @@ export default {
       "m-0 p-0 list-none",
 
       // Shape
-      "outline-hidden",
     ],
   }),
   item: ({ props, context, instance }) => ({

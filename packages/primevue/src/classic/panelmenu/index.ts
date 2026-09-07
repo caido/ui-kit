@@ -6,7 +6,7 @@ export default {
     class: "p-1 overflow-hidden rounded-md bg-surface-800",
   },
   header: {
-    class: ["rounded-[4px]", "outline-hidden"],
+    class: ["rounded-[4px]", ""],
   },
   headerContent: ({ context }) => ({
     class: [
@@ -14,11 +14,11 @@ export default {
       "rounded-[4px]",
 
       // Color
-      "text-surface-600 dark:text-surface-0/80",
+      "text-fg-subtle",
       { "text-surface-900": context.active },
 
       // States
-      "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.20)]",
+      "hover:bg-surface-hover",
 
       // Transition
       "transition duration-200 ease-in-out",
@@ -55,11 +55,11 @@ export default {
   content: {
     class: [
       // Color
-      "text-surface-700 dark:text-white/80",
+      "text-fg-default",
     ],
   },
   rootList: {
-    class: ["outline-hidden", "m-0 p-0 list-none"],
+    class: ["", "m-0 p-0 list-none"],
   },
   menuitem: {
     class: "relative my-[2px]",
@@ -70,7 +70,7 @@ export default {
       "border-none rounded-[4px]",
 
       // Color
-      "text-surface-700 dark:text-white/80",
+      "text-fg-default",
 
       // Transition
       "transition-shadow duration-200",
@@ -96,10 +96,9 @@ export default {
       "text-surface-300",
 
       // States
-      "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.20)] hover:text-surface-700 dark:hover:text-white/80",
+      "hover:bg-surface-hover hover:text-fg-default",
       {
-        "bg-surface-200 text-surface-700 dark:text-white/80 dark:bg-surface-0/10":
-          context.focused,
+        "bg-surface-hover text-fg-default": context.focused,
       },
 
       // Misc
