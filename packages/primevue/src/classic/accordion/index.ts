@@ -39,8 +39,6 @@ export default {
         "transition duration-200 ease-in-out",
         "transition-shadow duration-200",
 
-        // States // Focus
-
         // Misc
         "cursor-pointer no-underline select-none",
       ],
