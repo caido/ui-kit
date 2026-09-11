@@ -14,7 +14,6 @@ export default {
   message: ({ props }) => ({
     class: [
       "mb-4 rounded-md w-full",
-      "border border-transparent",
       "backdrop-blur-[10px] shadow-md",
 
       // Colors
@@ -27,19 +26,11 @@ export default {
         "bg-surface-0": props.message.severity == "contrast",
       },
       {
-        "border-line-info": props.message.severity == "info",
-        "border-line-success": props.message.severity == "success",
-        "border-line-default": props.message.severity == "secondary",
-        "border-line-warn": props.message.severity == "warn",
-        "border-line-danger": props.message.severity == "error",
-        "border-surface-0": props.message.severity == "contrast",
-      },
-      {
-        "text-fg-info": props.message.severity == "info",
-        "text-fg-success": props.message.severity == "success",
+        "text-fg-info-strong": props.message.severity == "info",
+        "text-fg-success-strong": props.message.severity == "success",
         "text-fg-default": props.message.severity == "secondary",
-        "text-fg-warn": props.message.severity == "warn",
-        "text-fg-danger": props.message.severity == "error",
+        "text-fg-warn-strong": props.message.severity == "warn",
+        "text-fg-danger-strong": props.message.severity == "error",
         "text-surface-900": props.message.severity == "contrast",
       },
     ],
