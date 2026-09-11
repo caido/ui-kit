@@ -34,7 +34,7 @@ export default {
 
       // Colors
       {
-        "text-fg-muted": !context.focused && !context.active,
+        "text-fg-default": !context.focused && !context.active,
         "text-fg-default bg-surface-hover": context.focused && !context.active,
         "bg-surface-selected text-fg-strong":
           (context.focused && context.active) ||
