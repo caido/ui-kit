@@ -1,9 +1,9 @@
 export default {
   root: {
-    class: "bg-surface-800 rounded-md",
+    class: "bg-surface-raised rounded-md",
   },
   panel: {
-    class: "p-1 overflow-hidden rounded-md bg-surface-800",
+    class: "p-1 overflow-hidden rounded-md bg-surface-raised",
   },
   header: {
     class: ["rounded-[4px]", ""],
@@ -15,7 +15,7 @@ export default {
 
       // Color
       "text-fg-subtle",
-      { "text-surface-900": context.active },
+      { "text-fg-default": context.active },
 
       // States
       "hover:bg-surface-hover",
@@ -93,7 +93,7 @@ export default {
       "rounded-[4px]",
 
       // Color
-      "text-surface-300",
+      "text-fg-subtle",
 
       // States
       "hover:bg-surface-hover hover:text-fg-default",

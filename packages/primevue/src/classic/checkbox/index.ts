@@ -47,7 +47,7 @@ export default {
       {
         "peer-hover:border-line-default":
           !props.disabled && !context.checked && !props.invalid,
-        "peer-hover:bg-fill-primary-hover peer-hover:border-fill-primary-hover":
+        "peer-hover:bg-fill-secondary-hover peer-hover:border-fill-secondary-hover":
           !props.disabled && context.checked,
         "peer-focus-visible:z-10": !props.disabled,
         "bg-surface-subtle select-none pointer-events-none cursor-default":

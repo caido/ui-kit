@@ -50,7 +50,7 @@ export default {
           !props.invalid,
       },
       {
-        "peer-hover:bg-fill-primary-hover":
+        "peer-hover:bg-fill-secondary-hover":
           props.modelValue == props.trueValue &&
           !props.disabled &&
           !props.invalid,

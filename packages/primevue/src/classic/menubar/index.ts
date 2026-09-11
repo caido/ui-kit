@@ -15,7 +15,6 @@ export default {
 
       // Color
       "bg-surface-raised",
-      "border border-line-default",
     ],
   },
   rootList: ({ props }) => ({
