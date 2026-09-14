@@ -50,7 +50,7 @@ export default {
 
       // Color
       {
-        "text-fg-subtle hover:text-surface-900": props.toggleable,
+        "text-fg-subtle hover:text-fg-strong": props.toggleable,
       },
 
       // States

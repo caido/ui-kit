@@ -71,7 +71,7 @@ export default {
       "rounded-full",
 
       // Colors
-      "text-surface-500",
+      "text-fg-muted",
       "bg-transparent",
 
       // Transitions

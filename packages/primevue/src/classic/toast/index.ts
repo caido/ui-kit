@@ -23,7 +23,7 @@ export default {
         "bg-surface-raised": props.message.severity == "secondary",
         "bg-surface-warn": props.message.severity == "warn",
         "bg-surface-danger": props.message.severity == "error",
-        "bg-surface-0": props.message.severity == "contrast",
+        "bg-fill-neutral": props.message.severity == "contrast",
       },
       {
         "text-fg-info-strong": props.message.severity == "info",
@@ -31,7 +31,7 @@ export default {
         "text-fg-default": props.message.severity == "secondary",
         "text-fg-warn-strong": props.message.severity == "warn",
         "text-fg-danger-strong": props.message.severity == "error",
-        "text-surface-900": props.message.severity == "contrast",
+        "text-fg-on-neutral": props.message.severity == "contrast",
       },
     ],
   }),
@@ -70,7 +70,7 @@ export default {
       "block",
       "text-sm",
       props.message.severity === "contrast"
-        ? "text-surface-900"
+        ? "text-fg-on-neutral"
         : "text-fg-strong",
       { "mt-2": props.message.summary },
     ],

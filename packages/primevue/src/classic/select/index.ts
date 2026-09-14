@@ -102,7 +102,7 @@ export default {
 
       // Color and Background
       "bg-transparent",
-      "text-surface-300",
+      "text-fg-muted",
 
       // Size
       "pl-1 pr-3",

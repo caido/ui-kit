@@ -340,7 +340,7 @@ export default {
         "border-transparent",
 
         // States
-        "hover:text-surface-200 hover:bg-surface-hover/50",
+        "hover:text-fg-strong hover:bg-surface-hover/50",
 
         // Transition
         "transition duration-200",

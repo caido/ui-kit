@@ -51,7 +51,7 @@ export default {
       { "text-fg-muted": props.plain && props.text },
       // Plain Outlined Button
       {
-        "text-surface-500 border border-line-strong":
+        "text-fg-muted border border-line-strong":
           props.plain && props.outlined,
       },
 
@@ -268,17 +268,17 @@ export default {
 
       // Contrast Button
       {
-        "text-surface-900":
+        "text-fg-on-neutral":
           props.severity === "contrast" &&
           !props.text &&
           !props.outlined &&
           !props.plain,
-        "bg-surface-300":
+        "bg-fill-neutral":
           props.severity === "contrast" &&
           !props.text &&
           !props.outlined &&
           !props.plain,
-        "border border-surface-300":
+        "border border-fill-neutral":
           props.severity === "contrast" &&
           !props.text &&
           !props.outlined &&
@@ -425,7 +425,7 @@ export default {
 
       // Contrast
       {
-        "hover:bg-surface-200 hover:border-surface-200":
+        "hover:bg-fill-neutral-hover hover:border-fill-neutral-hover":
           props.severity === "contrast" &&
           !props.text &&
           !props.outlined &&

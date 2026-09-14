@@ -155,10 +155,7 @@ export default {
       class: "flex items-center gap-2",
     },
     sort: ({ context }) => ({
-      class: [
-        context.sorted ? "text-fg-primary" : "text-surface-700",
-        context.sorted ? "text-fg-primary" : "text-fg-default",
-      ],
+      class: [context.sorted ? "text-fg-primary" : "text-fg-default"],
     }),
     bodyCell: ({ props, context, state, parent }) => ({
       class: [

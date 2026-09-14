@@ -41,7 +41,7 @@ export default {
           props.severity === "info" || props.severity === "help",
         "bg-fill-warn text-fg-on-warn": props.severity === "warn",
         "bg-fill-danger text-fg-on-danger": props.severity === "danger",
-        "text-surface-900 bg-surface-0": props.severity === "contrast",
+        "text-fg-on-neutral bg-fill-neutral": props.severity === "contrast",
       },
     ],
   }),

@@ -54,7 +54,7 @@ export default {
 
       // Disabled
       {
-        "text-surface-500 pointer-events-none cursor-default": context.disabled,
+        "text-fg-subtle pointer-events-none cursor-default": context.disabled,
       },
     ],
   }),

@@ -100,7 +100,7 @@ export default {
 
       // Color and Background
       "bg-transparent",
-      "text-surface-500",
+      "text-fg-muted",
 
       // Size
       "w-12",

@@ -26,7 +26,7 @@ export default {
         "text-fg-info-strong bg-surface-info": props.severity === "info",
         "text-fg-warn-strong bg-surface-warn": props.severity === "warn",
         "text-fg-danger-strong bg-surface-danger": props.severity === "danger",
-        "text-surface-900 bg-surface-0": props.severity === "contrast",
+        "text-fg-on-neutral bg-fill-neutral": props.severity === "contrast",
       },
     ],
   }),

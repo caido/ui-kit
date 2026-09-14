@@ -12,7 +12,7 @@ export default {
         "bg-surface-subtle": props.severity == "secondary",
         "bg-surface-warn": props.severity == "warn",
         "bg-surface-danger": props.severity == "error",
-        "bg-surface-0": props.severity == "contrast",
+        "bg-fill-neutral": props.severity == "contrast",
       },
       {
         "outline-line-info": props.severity == "info",
@@ -20,7 +20,7 @@ export default {
         "outline-line-default": props.severity == "secondary",
         "outline-line-warn": props.severity == "warn",
         "outline-line-danger": props.severity == "error",
-        "outline-surface-0": props.severity == "contrast",
+        "outline-fill-neutral": props.severity == "contrast",
       },
       {
         "text-fg-info": props.severity == "info",
@@ -28,7 +28,7 @@ export default {
         "text-fg-default": props.severity == "secondary",
         "text-fg-warn": props.severity == "warn",
         "text-fg-danger": props.severity == "error",
-        "text-surface-900": props.severity == "contrast",
+        "text-fg-on-neutral": props.severity == "contrast",
       },
     ],
   }),
