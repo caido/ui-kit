@@ -14,10 +14,10 @@ export default {
       "inset-0 opacity-0 transition-opacity duration-300",
 
       // Color
-      "bg-transparent text-surface-100",
+      "bg-transparent text-white",
 
       // States
-      "hover:opacity-100 hover:cursor-pointer hover:bg-black/50 hover:bg-opacity-50",
+      "hover:opacity-100 hover:cursor-pointer hover:bg-black/50",
     ],
   },
   mask: {

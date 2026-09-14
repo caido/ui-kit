@@ -119,12 +119,9 @@ export default {
 
       // Color
       "text-fg-default",
+      { "bg-surface-selected text-fg-strong": context.selected },
       {
-        "odd:bg-surface-subtle hover:bg-surface-hover odd:hover:bg-surface-hover":
-          context.selected,
-      },
-      {
-        "bg-surface-raised text-fg-subtle odd:bg-surface-subtle":
+        "bg-surface-raised text-fg-subtle odd:bg-surface-subtle hover:bg-surface-hover":
           !context.selected,
       },
 

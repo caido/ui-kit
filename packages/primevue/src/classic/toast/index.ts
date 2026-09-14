@@ -14,7 +14,7 @@ export default {
   message: ({ props }) => ({
     class: [
       "mb-4 rounded-md w-full",
-      "backdrop-blur-[10px] shadow-md",
+      "backdrop-blur-[10px]",
 
       // Colors
       {

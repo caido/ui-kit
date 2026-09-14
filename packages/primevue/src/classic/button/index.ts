@@ -306,7 +306,7 @@ export default {
       },
       // Text & Outlined Button
       {
-        "hover:bg-surface-300/10":
+        "hover:bg-fill-neutral/10":
           props.plain && (props.text || props.outlined),
       },
 

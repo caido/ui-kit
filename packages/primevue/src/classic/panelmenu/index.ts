@@ -6,7 +6,7 @@ export default {
     class: "p-1 overflow-hidden rounded-md bg-surface-raised",
   },
   header: {
-    class: ["rounded-[4px]", ""],
+    class: "rounded-[4px]",
   },
   headerContent: ({ context }) => ({
     class: [
@@ -59,7 +59,7 @@ export default {
     ],
   },
   rootList: {
-    class: ["", "m-0 p-0 list-none"],
+    class: "m-0 p-0 list-none",
   },
   menuitem: {
     class: "relative my-[2px]",

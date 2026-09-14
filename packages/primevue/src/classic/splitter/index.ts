@@ -23,7 +23,6 @@ export default {
 
       // Colors
       "bg-transparent",
-      "bg-transparent",
 
       // Transitions
       "transition-all",
@@ -40,7 +39,7 @@ export default {
     class: [
       "z-20",
       // Colors
-      "bg-surface-700",
+      "bg-line-default",
 
       // Shape
       "rounded-md",

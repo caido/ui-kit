@@ -11,7 +11,7 @@ export default {
       "[&>[data-pc-name=pcbadge]]:origin-[100%_0]",
       "[&>[data-pc-name=pcbadge]]:outline",
       "[&>[data-pc-name=pcbadge]]:outline-[2px]",
-      "[&>[data-pc-name=pcbadge]]:outline-surface-0",
+      "[&>[data-pc-name=pcbadge]]:outline-surface-page",
       "[&>[data-pc-name=pcbadge]]:outline-surface-page",
     ],
   },

@@ -51,7 +51,7 @@ export default {
         "text-fg-muted",
         // Focus states
         // Hover effect
-        "hover:bg-surface-300/10",
+        "hover:bg-fill-neutral/10",
         // Transition effects
         "transition duration-200 ease-in-out",
         // Cursor and overflow

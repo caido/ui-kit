@@ -16,7 +16,6 @@ export default {
 
       // Before
       "before:border-t-2",
-      "before:border-surface-200",
       "before:border-line-default",
       "before:w-full",
       "[&:first-child]:before:w-[calc(50%+1rem)]",
@@ -40,7 +39,6 @@ export default {
       "rounded-md",
 
       // Colors
-      "bg-surface-0",
       "bg-transparent",
 
       // States

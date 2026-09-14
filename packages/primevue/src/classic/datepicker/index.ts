@@ -368,7 +368,7 @@ export default {
 
       // Borders
       "border-t-1",
-      "border-solid border-surface-200",
+      "border-solid border-line-default",
 
       // Spacing
       "pt-2 mt-2",
@@ -436,7 +436,7 @@ export default {
     ],
   },
   calendarContainer: "flex",
-  calendar: "flex-auto border-l first:border-l-0 border-surface-200",
+  calendar: "flex-auto border-l first:border-l-0 border-line-default",
   buttonbar: {
     class: [
       // Flexbox

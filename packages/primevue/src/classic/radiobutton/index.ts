@@ -48,7 +48,7 @@ export default {
           !props.disabled && !context.checked,
         "peer-hover:[&>*:first-child]:bg-fill-primary-hover":
           !props.disabled && !context.checked,
-        "bg-surface-200 [&>*:first-child]:bg-fill-neutral border-line-default select-none pointer-events-none cursor-default":
+        "bg-surface-subtle [&>*:first-child]:bg-fill-neutral border-line-default select-none pointer-events-none cursor-default":
           props.disabled,
       },
     ],

@@ -83,7 +83,7 @@ export default {
   tfoot: ({ context }) => ({
     class: [
       {
-        "bg-surface-0 bottom-0 z-0": context.scrollable,
+        "bg-surface-page bottom-0 z-0": context.scrollable,
       },
     ],
   }),
