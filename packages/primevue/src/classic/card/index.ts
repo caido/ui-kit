@@ -9,8 +9,8 @@ export default {
       "shadow-md",
 
       //Color
-      "bg-surface-0 dark:bg-surface-800",
-      "text-surface-700 dark:text-surface-0",
+      "bg-surface-raised",
+      "text-fg-strong",
     ],
   },
   body: {
@@ -41,7 +41,7 @@ export default {
       "mb-0",
 
       //Color
-      "text-surface-600 dark:text-surface-0/60",
+      "text-fg-subtle",
     ],
   },
   content: {

@@ -14,47 +14,24 @@ export default {
   message: ({ props }) => ({
     class: [
       "mb-4 rounded-md w-full",
-      "border border-transparent",
-      "backdrop-blur-[10px] shadow-md",
+      "backdrop-blur-[10px]",
 
       // Colors
       {
-        "bg-blue-50/90 dark:bg-blue-500/20": props.message.severity == "info",
-        "bg-green-50/90 dark:bg-green-500/20":
-          props.message.severity == "success",
-        "bg-surface-50 dark:bg-surface-800":
-          props.message.severity == "secondary",
-        "bg-orange-50/90 dark:bg-orange-500/20":
-          props.message.severity == "warn",
-        "bg-red-50/90 dark:bg-red-500/20": props.message.severity == "error",
-        "bg-surface-950 dark:bg-surface-0":
-          props.message.severity == "contrast",
+        "bg-surface-toast-info": props.message.severity == "info",
+        "bg-surface-toast-success": props.message.severity == "success",
+        "bg-surface-raised": props.message.severity == "secondary",
+        "bg-surface-toast-warn": props.message.severity == "warn",
+        "bg-surface-toast-danger": props.message.severity == "error",
+        "bg-fill-neutral": props.message.severity == "contrast",
       },
       {
-        "border-blue-200 dark:border-blue-500/20":
-          props.message.severity == "info",
-        "border-green-200 dark:border-green-500/20":
-          props.message.severity == "success",
-        "border-surface-300 dark:border-surface-500/20":
-          props.message.severity == "secondary",
-        "border-orange-200 dark:border-orange-500/20":
-          props.message.severity == "warn",
-        "border-red-200 dark:border-red-500/20":
-          props.message.severity == "error",
-        "border-surface-950 dark:border-surface-0":
-          props.message.severity == "contrast",
-      },
-      {
-        "text-blue-700 dark:text-blue-300": props.message.severity == "info",
-        "text-green-700 dark:text-green-300":
-          props.message.severity == "success",
-        "text-surface-700 dark:text-surface-300":
-          props.message.severity == "secondary",
-        "text-orange-700 dark:text-orange-300":
-          props.message.severity == "warn",
-        "text-red-700 dark:text-red-300": props.message.severity == "error",
-        "text-surface-0 dark:text-surface-950":
-          props.message.severity == "contrast",
+        "text-fg-info-strong": props.message.severity == "info",
+        "text-fg-success-strong": props.message.severity == "success",
+        "text-fg-default": props.message.severity == "secondary",
+        "text-fg-warn-strong": props.message.severity == "warn",
+        "text-fg-danger-strong": props.message.severity == "error",
+        "text-fg-on-neutral": props.message.severity == "contrast",
       },
     ],
   }),
@@ -93,8 +70,8 @@ export default {
       "block",
       "text-sm",
       props.message.severity === "contrast"
-        ? "text-surface-0 dark:text-surface-950"
-        : "text-surface-700 dark:text-surface-0",
+        ? "text-fg-on-neutral"
+        : "text-fg-strong",
       { "mt-2": props.message.summary },
     ],
   }),
@@ -119,22 +96,7 @@ export default {
       "transition duration-200 ease-in-out",
 
       // States
-      "hover:bg-surface-0/30 dark:hover:bg-[rgba(255,255,255,0.03)]",
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1",
-      {
-        "focus:ring-blue-500 dark:focus:ring-blue-400":
-          props.severity == "info",
-        "focus:ring-green-500 dark:focus:ring-green-400":
-          props.severity == "success",
-        "focus:ring-surface-500 dark:focus:ring-surface-400":
-          props.severity == "secondary",
-        "focus:ring-orange-500 dark:focus:ring-orange-400":
-          props.severity == "warn",
-        "focus:ring-red-500 dark:focus:ring-red-4000":
-          props.severity == "error",
-        "focus:ring-surface-0 dark:focus:ring-surface-950":
-          props.severity == "contrast",
-      },
+      "hover:bg-surface-hover",
 
       // Misc
       "overflow-hidden",

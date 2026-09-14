@@ -10,8 +10,8 @@ export default {
       "rounded-md",
 
       // Color
-      "bg-surface-0 dark:bg-surface-900",
-      "border border-surface-200 dark:border-surface-700",
+      "bg-surface-page",
+      "border border-line-default",
       {
         "p-2 items-center": props.orientation == "horizontal",
         "flex-col sm:w-48 p-1": props.orientation !== "horizontal",
@@ -45,10 +45,9 @@ export default {
       "border-0",
 
       // Color
-      "bg-surface-0 dark:bg-surface-900 sm:bg-transparent dark:sm:bg-transparent",
+      "bg-surface-page sm:bg-transparent",
 
       // Misc
-      "outline-hidden",
     ],
   }),
   item: ({ props }) => ({
@@ -66,11 +65,9 @@ export default {
 
       //  Colors
       {
-        "text-surface-500 dark:text-white/70":
-          !context.focused && !context.active,
-        "text-surface-500 dark:text-white/70 bg-surface-200 dark:bg-surface-600/90":
-          context.focused && !context.active,
-        "bg-highlight text-highlight-contrast":
+        "text-fg-muted": !context.focused && !context.active,
+        "text-fg-default bg-surface-hover": context.focused && !context.active,
+        "bg-surface-selected text-fg-strong":
           (context.focused && context.active) ||
           context.active ||
           (!context.focused && context.active),
@@ -78,9 +75,8 @@ export default {
 
       // Hover States
       {
-        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
-          !context.active,
-        "hover:bg-highlight-emphasis": context.active,
+        "hover:bg-surface-hover": !context.active,
+        "hover:bg-surface-hover hover:text-fg-strong": context.active,
       },
 
       // Transitions
@@ -135,7 +131,7 @@ export default {
       "rounded-md",
 
       // Color
-      "bg-surface-0 dark:bg-surface-900",
+      "bg-surface-page",
 
       // Position
       "static sm:absolute",
@@ -163,12 +159,12 @@ export default {
       "m-0",
 
       // Color
-      "text-surface-400 dark:text-surface-500",
-      "bg-surface-0 dark:bg-surface-900",
+      "text-fg-muted",
+      "bg-surface-page",
     ],
   },
   separator: {
-    class: "border-t border-surface-200 dark:border-surface-600",
+    class: "border-t border-line-strong",
   },
   button: {
     class: [
@@ -183,13 +179,11 @@ export default {
       // Shape
       "rounded-full",
       // Color
-      "text-surface-500 dark:text-white/80",
+      "text-fg-muted",
 
       // States
-      "hover:text-surface-600 dark:hover:text-white/60",
-      "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]",
-      "focus:outline-hidden focus:outline-offset-0",
-      "focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
+      "hover:text-fg-subtle",
+      "hover:bg-surface-hover",
 
       // Transitions
       "transition duration-200 ease-in-out",

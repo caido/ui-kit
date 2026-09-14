@@ -14,10 +14,10 @@ export default {
       "inset-0 opacity-0 transition-opacity duration-300",
 
       // Color
-      "bg-transparent text-surface-100",
+      "bg-transparent text-white",
 
       // States
-      "hover:opacity-100 hover:cursor-pointer hover:bg-black/50 hover:bg-opacity-50",
+      "hover:opacity-100 hover:cursor-pointer hover:bg-black/50",
     ],
   },
   mask: {
@@ -68,7 +68,6 @@ export default {
 
       // States
       "hover:text-white hover:bg-surface-0/10",
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
 
       // Transition
       "transition duration-200 ease-in-out",
@@ -98,7 +97,6 @@ export default {
 
       // States
       "hover:text-white hover:bg-surface-0/10",
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
 
       // Transition
       "transition duration-200 ease-in-out",
@@ -128,7 +126,6 @@ export default {
 
       // States
       "hover:text-white hover:bg-surface-0/10",
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
 
       // Transition
       "transition duration-200 ease-in-out",
@@ -158,7 +155,6 @@ export default {
 
       // States
       "hover:text-white hover:bg-surface-0/10",
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
 
       // Transition
       "transition duration-200 ease-in-out",
@@ -188,7 +184,6 @@ export default {
 
       // States
       "hover:text-white hover:bg-surface-0/10",
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400",
 
       // Transition
       "transition duration-200 ease-in-out",

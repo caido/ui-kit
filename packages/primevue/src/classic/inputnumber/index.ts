@@ -14,7 +14,7 @@ export default {
           parent.instance.$name === "InputGroup" && !props.showButtons,
       },
       {
-        "border-0 border-y border-l last:border-r border-surface-300 dark:border-surface-700":
+        "border-0 border-y border-l last:border-r border-line-default":
           parent.instance.$name === "InputGroup" && !props.showButtons,
       },
       {
@@ -66,22 +66,21 @@ export default {
         },
 
         // Colors
-        "text-surface-800 dark:text-white/80",
-        "placeholder:text-surface-400 dark:placeholder:text-surface-500",
-        { "bg-surface-0 dark:bg-surface-950": !context.disabled },
+        "text-fg-strong",
+        "placeholder:text-fg-muted",
+        { "bg-surface-page": !context.disabled },
         "border",
-        { "border-surface-300 dark:border-surface-700": !parent.props.invalid },
+        { "border-line-default": !parent.props.invalid },
 
         // Invalid State
-        "invalid:focus:ring-danger-400",
-        "invalid:hover:border-danger-400",
-        { "border-red-500 dark:border-red-400": parent.props.invalid },
+        "invalid:hover:border-line-danger",
+        { "border-line-danger": parent.props.invalid },
 
         // States
-        { "hover:border-secondary-400": !parent.props.invalid },
-        "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-secondary-500 dark:focus:ring-secondary-400 focus:z-10",
+        { "hover:border-fill-secondary": !parent.props.invalid },
+        "focus:z-10",
         {
-          "bg-surface-200 dark:bg-surface-700 select-none pointer-events-none cursor-default":
+          "bg-surface-subtle select-none pointer-events-none cursor-default":
             context.disabled,
         },
 
@@ -140,13 +139,13 @@ export default {
       { "order-1": props.showButtons && props.buttonLayout === "vertical" },
 
       //Color
-      "text-surface-800 dark:text-surface-0",
+      "text-fg-strong",
       "bg-transparent",
       {
-        "dark:bg-surface-900":
+        "bg-surface-page":
           props.showButtons && props.buttonLayout !== "stacked",
       },
-      "border border-surface-300 dark:border-surface-700",
+      "border border-line-default",
       { "border-0": props.showButtons && props.buttonLayout === "stacked" },
       {
         "border-l-0":
@@ -180,7 +179,7 @@ export default {
       },
 
       //States
-      "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]",
+      "hover:bg-surface-hover",
 
       //Misc
       "cursor-pointer overflow-hidden select-none",
@@ -209,13 +208,13 @@ export default {
       { "order-3": props.showButtons && props.buttonLayout === "vertical" },
 
       //Color
-      "text-surface-800 dark:text-surface-0",
+      "text-fg-strong",
       "bg-transparent",
       {
-        "dark:bg-surface-900":
+        "bg-surface-page":
           props.showButtons && props.buttonLayout !== "stacked",
       },
-      "border border-surface-300 dark:border-surface-700",
+      "border border-line-default",
       { "border-0": props.showButtons && props.buttonLayout === "stacked" },
       {
         "border-r-0":
@@ -252,7 +251,7 @@ export default {
       },
 
       //States
-      "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]",
+      "hover:bg-surface-hover",
 
       //Misc
       "cursor-pointer overflow-hidden select-none",

@@ -6,13 +6,12 @@ export default {
         "cursor-default pointer-events-none select-none opacity-60":
           context.disabled,
       },
-      "[&_[data-pc-section=separator]]:has-[~[data-p-active=true]]:bg-secondary-400",
+      "[&_[data-pc-section=separator]]:has-[~[data-p-active=true]]:bg-fill-secondary",
     ],
   }),
   header: ({ props, context }) => ({
     class: [
       "inline-flex items-center border-0 cursor-pointer rounded-md outline-transparent bg-transparent p-0 gap-2",
-      "focus:outline-hidden focus:outline-offset-0 focus-visible:ring-1 ring-inset focus-visible:ring-secondary-400 dark:focus-visible:ring-secondary-300",
       { "!cursor-default": context.active },
       { "cursor-auto": props.linear },
     ],
@@ -25,12 +24,10 @@ export default {
       "justify-center",
 
       //Colors
-      "border-solid border-2 border-surface-200 dark:border-surface-700",
+      "border-solid border-2 border-line-default",
 
       // Colors (Conditional)
-      context.active
-        ? "text-secondary-400"
-        : "text-surface-900 dark:text-surface-0", // Adjust colors as needed
+      context.active ? "text-fg-secondary" : "text-fg-strong", // Adjust colors as needed
 
       // Size and Shape
       "min-w-[2rem]",
@@ -58,9 +55,7 @@ export default {
       "max-w-full",
 
       // Text
-      context.active
-        ? "text-secondary-400"
-        : "text-surface-700 dark:text-surface-0/80",
+      context.active ? "text-fg-secondary" : "text-fg-default",
       "font-medium",
 
       // Transitions

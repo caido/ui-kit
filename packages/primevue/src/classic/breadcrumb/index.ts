@@ -8,7 +8,7 @@ export default {
       "p-4",
 
       // Color
-      "bg-surface-0 dark:bg-surface-900",
+      "bg-surface-page",
 
       // Misc
       "overflow-x-auto",
@@ -32,11 +32,9 @@ export default {
       "rounded-md",
 
       // Color
-      "text-surface-600 dark:text-white/70",
+      "text-fg-subtle",
 
       // States
-      "focus-visible:outline-hidden focus-visible:outline-offset-0",
-      "focus-visible:ring-1 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400",
 
       // Transitions
       "transition-shadow duration-200",
@@ -46,7 +44,7 @@ export default {
     ],
   },
   itemIcon: {
-    class: "text-surface-600 dark:text-white/70",
+    class: "text-fg-subtle",
   },
   separator: {
     class: [
@@ -57,7 +55,7 @@ export default {
       "mx-2",
 
       // Color
-      "text-surface-600 dark:text-white/70",
+      "text-fg-subtle",
     ],
   },
 };

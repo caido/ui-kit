@@ -10,9 +10,9 @@ export default {
       "p-1",
 
       // Colors
-      "bg-surface-0 dark:bg-surface-900",
-      "text-surface-700 dark:text-white/80",
-      "border border-surface-200 dark:border-surface-700",
+      "bg-surface-page",
+      "text-fg-default",
+      "border border-line-default",
     ],
   },
   rootList: {
@@ -22,7 +22,6 @@ export default {
       "list-none",
       "m-0",
       "p-0",
-      "outline-hidden",
     ],
   },
   item: {
@@ -35,11 +34,9 @@ export default {
 
       // Colors
       {
-        "text-surface-500 dark:text-white/70":
-          !context.focused && !context.active,
-        "text-surface-500 dark:text-white/70 bg-surface-100 dark:bg-[rgba(255,255,255,0.03)]":
-          context.focused && !context.active,
-        "bg-highlight text-highlight-contrast":
+        "text-fg-muted": !context.focused && !context.active,
+        "text-fg-default bg-surface-hover": context.focused && !context.active,
+        "bg-surface-selected text-fg-strong":
           (context.focused && context.active) ||
           context.active ||
           (!context.focused && context.active),
@@ -51,9 +48,8 @@ export default {
 
       // States
       {
-        "hover:bg-surface-100 dark:hover:bg-[rgba(255,255,255,0.03)]":
-          !context.active,
-        "hover:bg-highlight-emphasis": context.active,
+        "hover:bg-surface-hover": !context.active,
+        "hover:bg-surface-hover hover:text-fg-strong": context.active,
       },
 
       // Disabled
@@ -102,7 +98,7 @@ export default {
       // Shape
       "shadow-md",
       "rounded-md",
-      "dark:border dark:border-surface-700",
+      "border border-line-default",
 
       // Position
       "static sm:absolute",
@@ -110,14 +106,14 @@ export default {
       { "sm:absolute sm:left-full sm:top-0": props.level > 1 },
 
       // Color
-      "bg-surface-0 dark:bg-surface-900",
+      "bg-surface-page",
     ],
   }),
   submenuIcon: {
     class: ["ml-auto"],
   },
   separator: {
-    class: "border-t border-surface-200 dark:border-surface-700",
+    class: "border-t border-line-default",
   },
   transition: {
     enterFromClass: "opacity-0",

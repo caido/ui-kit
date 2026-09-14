@@ -27,12 +27,12 @@ export default {
       "rounded-md",
 
       // Colors
-      "bg-surface-0 dark:bg-surface-900",
-      "border border-surface-300 dark:border-surface-700",
+      "bg-surface-page",
+      "border border-line-default",
 
       // States
-      "hover:border-surface-400 dark:hover:border-surface-600",
-      "focus:outline-hidden focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400 focus:z-10",
+      "hover:border-line-strong",
+      "focus:z-10",
 
       // Transition
       "transition-colors duration-200",
@@ -53,7 +53,7 @@ export default {
       "shadow-md border",
 
       // Colors
-      "bg-surface-800 dark:bg-surface-900 border-surface-600 dark:border-surface-700",
+      "bg-surface-page border-line-default",
     ],
   }),
   colorSelector: {

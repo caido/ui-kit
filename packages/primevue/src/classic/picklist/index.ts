@@ -18,9 +18,8 @@ export default {
       "rounded-md",
 
       // Color
-      "bg-surface-0 dark:bg-surface-900",
-      "border border-surface-200 dark:border-surface-700",
-      "outline-hidden",
+      "bg-surface-page",
+      "border border-line-default",
     ],
   },
   transferControls: {
@@ -41,9 +40,8 @@ export default {
       "rounded-md",
 
       // Color
-      "bg-surface-0 dark:bg-surface-900",
-      "border border-surface-200 dark:border-surface-700",
-      "outline-hidden",
+      "bg-surface-page",
+      "border border-line-default",
     ],
   },
   targetControls: {

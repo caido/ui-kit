@@ -9,26 +9,21 @@ export default {
       "rounded-md border",
 
       // Color
-      "bg-surface-100 dark:bg-surface-950",
+      "bg-surface-page",
       {
-        "text-surface-600 dark:text-white/60 before:bg-transparent":
-          !context.active,
-        "text-surface-800 dark:text-white/80 before:bg-surface-0 dark:before:bg-surface-800":
-          context.active,
+        "text-fg-subtle before:bg-transparent": !context.active,
+        "text-fg-strong before:bg-surface-raised": context.active,
       },
 
       // States
       {
-        "hover:text-surface-800 dark:hover:text-white/80":
-          !props.disabled && !props.modelValue,
-        "focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-primary-500 dark:focus-visible:ring-secondary-400":
-          !props.disabled,
+        "hover:text-fg-strong": !props.disabled && !props.modelValue,
       },
 
       // Invalid State
       {
-        "border-red-500 dark:border-red-400": props.invalid,
-        "border-surface-100 dark:border-surface-950": !props.invalid,
+        "border-line-danger": props.invalid,
+        "border-line-default": !props.invalid,
       },
 
       // Before

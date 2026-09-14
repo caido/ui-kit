@@ -12,9 +12,9 @@ export default {
       "p-0 m-0",
 
       // Colors
-      "bg-surface-0 dark:bg-surface-900",
-      "border-b-2 border-surface-200 dark:border-surface-700",
-      "text-surface-900 dark:text-surface-0/80",
+      "bg-surface-page",
+      "border-b-2 border-line-default",
+      "text-fg-strong",
     ],
   },
   menuitem: {
@@ -40,22 +40,17 @@ export default {
 
       // Colors and Conditions
       {
-        "border-surface-200 dark:border-surface-700":
-          state.d_activeIndex !== context.index,
-        "text-surface-700 dark:text-surface-0/80":
-          state.d_activeIndex !== context.index,
+        "border-line-default": state.d_activeIndex !== context.index,
+        "text-fg-default": state.d_activeIndex !== context.index,
 
-        "bg-surface-0 dark:bg-surface-900":
-          state.d_activeIndex === context.index,
-        "border-primary": state.d_activeIndex === context.index,
-        "text-primary": state.d_activeIndex === context.index,
+        "bg-surface-page": state.d_activeIndex === context.index,
+        "border-line-primary": state.d_activeIndex === context.index,
+        "text-fg-primary": state.d_activeIndex === context.index,
       },
 
       // States
-      "focus:outline-hidden focus:outline-offset-0 focus-visible:ring-1 ring-inset focus-visible:ring-primary-400 dark:focus-visible:ring-primary-300",
       {
-        "hover:text-surface-900 dark:hover:text-surface-0":
-          state.d_activeIndex !== context.index,
+        "hover:text-fg-strong": state.d_activeIndex !== context.index,
       },
 
       // Transitions

@@ -28,21 +28,19 @@ export default {
       },
 
       // Color
-      "text-primary-contrast",
       {
-        "bg-primary":
+        "bg-fill-primary":
           !context.info &&
           !context.success &&
           !context.warning &&
           !context.danger &&
           !context.help &&
           !context.secondary,
-        "bg-surface-500 dark:bg-surface-400": context.secondary,
-        "bg-green-500 dark:bg-green-400": context.success,
-        "bg-blue-500 dark:bg-blue-400": context.info,
-        "bg-orange-500 dark:bg-orange-400": context.warning,
-        "bg-purple-500 dark:bg-purple-400": context.help,
-        "bg-red-500 dark:bg-red-400": context.danger,
+        "bg-fill-neutral text-fg-on-neutral": context.secondary,
+        "bg-fill-success text-fg-on-success": context.success,
+        "bg-fill-info text-fg-on-info": context.info || context.help,
+        "bg-fill-warn text-fg-on-warn": context.warning,
+        "bg-fill-danger text-fg-on-danger": context.danger,
       },
     ],
   }),
