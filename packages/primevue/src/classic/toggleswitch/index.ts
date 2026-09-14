@@ -28,14 +28,15 @@ export default {
       "before:h-4 before:w-4",
       "before:rounded-full",
       "before:duration-200",
-      "before:bg-fill-neutral",
 
       // Colors
       "border",
       {
-        "bg-surface-subtle": !(props.modelValue == props.trueValue),
-        "bg-fill-secondary": props.modelValue == props.trueValue,
-        "before:bg-fg-on-secondary": props.modelValue == props.trueValue,
+        "bg-surface-subtle before:bg-fill-neutral": !(
+          props.modelValue == props.trueValue
+        ),
+        "bg-fill-secondary before:bg-fg-on-secondary":
+          props.modelValue == props.trueValue,
         "border-transparent": !props.invalid,
       },
 
