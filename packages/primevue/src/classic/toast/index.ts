@@ -18,11 +18,11 @@ export default {
 
       // Colors
       {
-        "bg-surface-info": props.message.severity == "info",
-        "bg-surface-success": props.message.severity == "success",
+        "bg-surface-toast-info": props.message.severity == "info",
+        "bg-surface-toast-success": props.message.severity == "success",
         "bg-surface-raised": props.message.severity == "secondary",
-        "bg-surface-warn": props.message.severity == "warn",
-        "bg-surface-danger": props.message.severity == "error",
+        "bg-surface-toast-warn": props.message.severity == "warn",
+        "bg-surface-toast-danger": props.message.severity == "error",
         "bg-fill-neutral": props.message.severity == "contrast",
       },
       {
