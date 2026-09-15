@@ -1,0 +1,46 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "z-index": {
+    "$type": "number",
+    "below": {
+      "$description": "Under the content it belongs to. The workflow connection canvas is the only thing here: it draws the lines between node cards and has to sit beneath them.",
+      "$value": { "index": -1 }
+    },
+    "base": {
+      "$description": "Ordinary content. Nothing needs this class, and it exists so that the answer to which layer is this is never nothing.",
+      "$value": { "index": 0 }
+    },
+    "raised": {
+      "$description": "Lifted above its own siblings inside one panel and nothing else. A selected row overlay, a resize handle, a state panel covering an editor, a hit area carrying a tooltip. Eighteen sites were written as 1, 10, 11 and 12 and no two of them could ever stack against each other.",
+      "$value": { "index": 1 }
+    },
+    "sticky": {
+      "$description": "Stays in place while its container scrolls. One rung above raised because a sticky table header has to clear the selected row overlay it scrolls past.",
+      "$value": { "index": 2 }
+    },
+    "overlay": {
+      "$description": "Floats over one panel. The jump to row pill, the WebSocket message drawer, a drag mirror. Above 40 because the vendor component preset writes z-40 on a sticky table header and a popover root, and those classes land in the same stacking context as this one.",
+      "$value": { "index": 50 }
+    },
+    "scrim": {
+      "$description": "Dims the page so one thing can be worked on. Above overlay because it covers panel overlays too.",
+      "$value": { "index": 60 }
+    },
+    "spotlight": {
+      "$description": "The one element a scrim isolates. The sidebar while it is being customised is the only use.",
+      "$value": { "index": 70 }
+    },
+    "floating": {
+      "$description": "Every menu, select, popover, dialog, drawer, toast and tooltip the component library opens. One layer rather than seven, because the library holds one list of open surfaces and places each new one above the last, so order inside this layer is open order and no configuration can make it category order. The library adds this number again for each surface whose kind differs from the one before it, so the worst case is one hundred and one per surface and one hundred surfaces would have to be open at once to reach the next layer.",
+      "$value": { "index": 100 }
+    },
+    "detached": {
+      "$description": "A surface the application places outside the element it belongs to, where that element can itself be floating. The editor tooltip host is the only one: editors appear inside two dialogs, so an autocomplete or a lint message opened in one has to clear every floating surface.",
+      "$value": { "index": 10000 }
+    },
+    "cover": {
+      "$description": "Replaces the application. First run onboarding, the welcome screen and the loading screen. Nothing the application draws sits above this.",
+      "$value": { "index": 20000 }
+    }
+  }
+}

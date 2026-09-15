@@ -2,7 +2,8 @@
     "files": [],
     "references": [
       { "path": "./packages/primevue" },
-      { "path": "./packages/tailwindcss" }
+      { "path": "./packages/tailwindcss" },
+      { "path": "./packages/tokens" }
     ]
   }
   

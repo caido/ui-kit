@@ -1,0 +1,14 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "icon": {
+    "$type": "dimension",
+    "marker": {
+      "$description": "A glyph standing alone inside a dense marker, a tag or a badge. Five sites carried 9px and 10px, three of one and two of the other, and no reason was written for either. 12px is the smallest rung the 4px grid carries and it is also the caption type step, so the smallest icon in the product is the same size as the smallest text.",
+      "$value": { "px": 12 }
+    },
+    "message": {
+      "$description": "A glyph that is the subject of a message, on an empty state, a card, a footer notice or a confirmation. Ten sites did this one job at four sizes: 24, 26, 32 and a 4rem that renders at 56 and grows with the text setting. 32px is the rung the largest group already sat on and a multiple of the grid, and the 4rem sites move because a value in a scaling unit promises to grow with text and a standalone glyph is not text.",
+      "$value": { "px": 32 }
+    }
+  }
+}

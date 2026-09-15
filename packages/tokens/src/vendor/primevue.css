@@ -1,0 +1,69 @@
+:root {
+  --p-primary-50: var(--c-primary-100);
+  --p-primary-100: var(--c-primary-100);
+  --p-primary-200: var(--c-primary-200);
+  --p-primary-300: var(--c-primary-300);
+  --p-primary-400: var(--c-primary-400);
+  --p-primary-500: var(--c-primary-500);
+  --p-primary-600: var(--c-primary-600);
+  --p-primary-700: var(--c-primary-700);
+  --p-primary-800: var(--c-primary-800);
+  --p-primary-900: var(--c-primary-900);
+  --p-primary-950: var(--c-primary-900);
+  --p-surface-0: var(--c-surface-0);
+  --p-surface-50: #f8fafc;
+  --p-surface-100: #f1f5f9;
+  --p-surface-200: var(--c-surface-200);
+  --p-surface-300: var(--c-surface-300);
+  --p-surface-400: var(--c-surface-400);
+  --p-surface-500: var(--c-surface-500);
+  --p-surface-600: var(--c-surface-600);
+  --p-surface-700: var(--c-surface-700);
+  --p-surface-800: var(--c-surface-800);
+  --p-surface-900: var(--c-surface-900);
+  --p-surface-950: var(--c-surface-900);
+  --p-content-border-radius: var(--radius);
+}
+
+:root {
+  --p-primary-color: var(--p-primary-500);
+  --p-primary-contrast-color: var(--p-surface-0);
+  --p-primary-hover-color: var(--p-primary-600);
+  --p-primary-active-color: var(--p-primary-700);
+  --p-content-border-color: var(--p-surface-200);
+  --p-content-hover-background: var(--p-surface-100);
+  --p-content-hover-color: var(--p-surface-800);
+  /* Selection is a wash over whatever the row already is, not a block of brand colour, and it
+     has to read the same way in both appearances. The label stays the ordinary body colour
+     because the wash is faint enough to leave it alone. */
+  --p-highlight-background: var(--color-surface-selection);
+  --p-highlight-color: var(--color-fg-default);
+  --p-highlight-focus-background: var(--color-surface-selection-focus);
+  --p-highlight-focus-color: var(--color-fg-default);
+  --p-text-color: var(--p-surface-700);
+  --p-text-hover-color: var(--p-surface-800);
+  --p-text-muted-color: var(--p-surface-500);
+  --p-text-hover-muted-color: var(--p-surface-600);
+}
+
+:root[data-mode="dark"] {
+  /* PrimeVue carries one primary name where this system carries two. Nothing solid reads this
+     one: the preset's primary button reads `--p-primary-700`, and everything left is an accent
+     that marks a selected control, so it takes the step `line-primary` uses. The label on it is
+     computed from the accent rather than chosen, and near-black wins on every severity. */
+  --p-primary-color: var(--p-primary-300);
+  --p-primary-contrast-color: var(--p-surface-900);
+  --p-primary-hover-color: var(--c-secondary-300);
+  --p-primary-active-color: var(--c-secondary-200);
+  --p-content-border-color: var(--p-surface-700);
+  --p-content-hover-background: var(--p-surface-800);
+  --p-content-hover-color: var(--p-surface-0);
+  --p-highlight-background: var(--color-surface-selection);
+  --p-highlight-color: rgba(255, 255, 255, 0.87);
+  --p-highlight-focus-background: var(--color-surface-selection-focus);
+  --p-highlight-focus-color: rgba(255, 255, 255, 0.87);
+  --p-text-color: var(--p-surface-0);
+  --p-text-hover-color: var(--p-surface-0);
+  --p-text-muted-color: var(--p-surface-400);
+  --p-text-hover-muted-color: var(--p-surface-300);
+}

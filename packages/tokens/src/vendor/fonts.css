@@ -1,0 +1,171 @@
+/* Inter 4.1, SIL Open Font License 1.1. See ./fonts/LICENSE-Inter.txt */
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter.woff2") format("woff2");
+  font-weight: 400 600;
+  font-style: normal;
+  font-display: swap;
+  unicode-range:
+    U+0000-00FF, U+00B7, U+2013-2014, U+2018-2019, U+201C-201D, U+2022, U+2026,
+    U+2190-2193, U+21A9, U+21E7, U+2212, U+2303, U+2318, U+232B;
+}
+
+/* Used only while Inter loads. Metrics matched to Inter so the swap does not reflow. */
+@font-face {
+  font-family: "Inter Fallback";
+  src:
+    local("Arial"), local("ArialMT"), local("Helvetica"),
+    local("Liberation Sans"), local("Arimo");
+  font-weight: 400;
+  size-adjust: 107.11%;
+  ascent-override: 90.44%;
+  descent-override: 22.52%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Inter Fallback";
+  src:
+    local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"),
+    local("Liberation Sans Bold"), local("Arimo Bold");
+  font-weight: 600 700;
+  size-adjust: 107.11%;
+  ascent-override: 90.44%;
+  descent-override: 22.52%;
+  line-gap-override: 0%;
+}
+
+/* The faces the interface font setting can select, redeclared so each carries Inter's
+   line box and control heights stay fixed. Both weights are declared because
+   `font-synthesis-weight` is none and a family with no 700 face would lose bold. */
+@font-face {
+  font-family: "Arial";
+  src:
+    local("Arial"), local("ArialMT"), local("Liberation Sans"), local("Arimo");
+  font-weight: 400;
+  ascent-override: 96.88%;
+  descent-override: 24.12%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Arial";
+  src:
+    local("Arial Bold"), local("Arial-BoldMT"), local("Liberation Sans Bold"),
+    local("Arimo Bold");
+  font-weight: 600 700;
+  ascent-override: 96.88%;
+  descent-override: 24.12%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Trebuchet MS";
+  src: local("Trebuchet MS"), local("TrebuchetMS");
+  font-weight: 400;
+  ascent-override: 96.88%;
+  descent-override: 24.12%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Trebuchet MS";
+  src: local("Trebuchet MS Bold"), local("TrebuchetMS-Bold");
+  font-weight: 600 700;
+  ascent-override: 96.88%;
+  descent-override: 24.12%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Verdana";
+  src: local("Verdana"), local("DejaVu Sans");
+  font-weight: 400;
+  ascent-override: 96.88%;
+  descent-override: 24.12%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Verdana";
+  src: local("Verdana Bold"), local("Verdana-Bold"), local("DejaVu Sans Bold");
+  font-weight: 600 700;
+  ascent-override: 96.88%;
+  descent-override: 24.12%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Tahoma";
+  src: local("Tahoma"), local("DejaVu Sans Condensed");
+  font-weight: 400;
+  ascent-override: 96.88%;
+  descent-override: 24.12%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Tahoma";
+  src:
+    local("Tahoma Bold"), local("Tahoma-Bold"),
+    local("DejaVu Sans Condensed Bold");
+  font-weight: 600 700;
+  ascent-override: 96.88%;
+  descent-override: 24.12%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: local("Georgia"), local("Gelasio");
+  font-weight: 400;
+  ascent-override: 96.88%;
+  descent-override: 24.12%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Georgia";
+  src: local("Georgia Bold"), local("Georgia-Bold"), local("Gelasio Bold");
+  font-weight: 600 700;
+  ascent-override: 96.88%;
+  descent-override: 24.12%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Times New Roman";
+  src:
+    local("Times New Roman"), local("TimesNewRomanPSMT"),
+    local("Liberation Serif"), local("Tinos");
+  font-weight: 400;
+  ascent-override: 96.88%;
+  descent-override: 24.12%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Times New Roman";
+  src:
+    local("Times New Roman Bold"), local("TimesNewRomanPS-BoldMT"),
+    local("Liberation Serif Bold"), local("Tinos Bold");
+  font-weight: 600 700;
+  ascent-override: 96.88%;
+  descent-override: 24.12%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Courier New";
+  src:
+    local("Courier New"), local("CourierNewPSMT"), local("Liberation Mono"),
+    local("Cousine");
+  font-weight: 400;
+  ascent-override: 96.88%;
+  descent-override: 24.12%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Courier New";
+  src:
+    local("Courier New Bold"), local("CourierNewPS-BoldMT"),
+    local("Liberation Mono Bold"), local("Cousine Bold");
+  font-weight: 600 700;
+  ascent-override: 96.88%;
+  descent-override: 24.12%;
+  line-gap-override: 0%;
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "duration": {
+    "$type": "duration",
+    "state": {
+      "$description": "A control changing state. Sixteen of the thirty-one transitions in the product already run at this speed and fourteen of them never wrote it, because it is also the framework default. It stays the default, so the commonest motion in the product needs no class.",
+      "$value": { "ms": 150 }
+    },
+    "surface": {
+      "$description": "A surface arriving or leaving. Seven sites, and they are one job: four drawers and a scroll strip at both ends. A larger surface travelling further is the one place a longer duration is earned.",
+      "$value": { "ms": 300 }
+    }
+  },
+  "ease": {
+    "$type": "cubicBezier",
+    "standard": {
+      "$description": "Everything that stays on screen. Twenty-five of thirty-one sites already run on this curve, nineteen of them by inheriting the framework default, which this value keeps.",
+      "$value": { "curve": [0.4, 0, 0.2, 1] }
+    },
+    "enter": {
+      "$description": "A surface arriving. Decelerating, so it settles rather than stops. Three sites already write it.",
+      "$value": { "curve": [0, 0, 0.2, 1] }
+    }
+  }
+}

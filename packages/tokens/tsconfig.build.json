@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "./dist/types"
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": [
+    "./src/**/*.spec.ts",
+    "./src/contract.ts",
+    "./src/contrast.ts",
+    "./src/emit.ts",
+    "./src/resolve.ts"
+  ]
+}
