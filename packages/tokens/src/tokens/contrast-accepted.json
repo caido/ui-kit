@@ -1,0 +1,75 @@
+{
+  "$description": "Pairings that fall below the floor today. Each entry names the appearance it applies to and the reason it is not fixed here. An entry is only legitimate when the fix belongs elsewhere; a pairing this step could fix is fixed, not listed. A pairing here that starts passing has to be removed, and the check fails until it is, so this list can only shrink.",
+  "accepted": [
+    {
+      "foreground": "color.secondary.400",
+      "background": "color.surface.page",
+      "usage": "text",
+      "appearance": "light",
+      "reason": "The name carries two jobs: 33 sites read it as text and 17 as a background. The brand gold clears the floor as a fill in both appearances and as text only in dark. No single value satisfies both until the readers are split onto fg-secondary and fill-secondary."
+    },
+    {
+      "foreground": "color.fg.on-danger",
+      "background": "color.fill.danger-hover",
+      "usage": "text",
+      "appearance": "light",
+      "reason": "The light danger solid sits at the lightness where neither label wins: a dark label fails on the hover and a light label fails on the solid it must also serve. Resolving it needs a hover that does not recolour the fill, or a label token of its own."
+    },
+    {
+      "foreground": "color.fg.on-success",
+      "background": "color.fill.success-hover",
+      "usage": "text",
+      "appearance": "light",
+      "reason": "Same cause and resolution as the danger hover above."
+    },
+    {
+      "foreground": "color.fill.info",
+      "background": "color.surface.page",
+      "usage": "identifier",
+      "appearance": "light",
+      "reason": "The info solid button edge. Measured 5.54 in dark and 2.52 in light against a 3.0 floor. It passes in dark and fails only in light, which the light theme owns. It is a property of the token pair rather than of any site, so no site can fix it by choosing differently. It was surfaced when the pairing was first registered, and the theme had been drawing it unchecked."
+    },
+    {
+      "foreground": "color.fill.secondary",
+      "background": "color.surface.page",
+      "usage": "identifier",
+      "appearance": "light",
+      "reason": "The secondary solid button edge. Measured 6.47 in dark and 2.16 in light against a 3.0 floor. It passes in dark and fails only in light, which the light theme owns. It is a property of the token pair rather than of any site, so no site can fix it by choosing differently. It was surfaced when the pairing was first registered, and the theme had been drawing it unchecked."
+    },
+    {
+      "foreground": "color.fill.success",
+      "background": "color.surface.subtle",
+      "usage": "identifier",
+      "appearance": "light",
+      "reason": "The meter fill on its track. Measured 4.19 in dark and 2.87 in light against a 3.0 floor. It passes in dark and fails only in light, which the light theme owns. It is a property of the token pair rather than of any site, so no site can fix it by choosing differently. It was surfaced when the pairing was first registered, and the theme had been drawing it unchecked. The track is a constrained choice rather than a careless one: six alternatives were measured and none clears 3.0 for all three status fills in both appearances."
+    },
+    {
+      "foreground": "color.fill.warn",
+      "background": "color.surface.subtle",
+      "usage": "identifier",
+      "appearance": "light",
+      "reason": "The password strength meter on its track. Measured 4.28 in dark and 2.81 in light against a 3.0 floor, improved from 9.49 and 1.27 by the re-anchor onto orange. It passes in dark and fails only in light. The track is a constrained choice rather than a careless one: six alternatives were measured and none clears 3.0 for all three status fills in both appearances."
+    },
+    {
+      "foreground": "color.fill.primary",
+      "background": "color.surface.page",
+      "usage": "identifier",
+      "appearance": "dark",
+      "reason": "The primary solid against the page, at the 13 sites that paint it. It has NEVER cleared this floor in dark: the vendor chain it replaced measured 2.55 and the token measures 1.98, so pointing the theme at our own token deepens a pre-existing failure rather than creating one. A dark crimson on a dark grey panel cannot reach 3.0; that is a property of the brand colour against the dark appearance, not of the mapping. Light passes at 7.06. Re-picking either the brand solid or the dark surfaces is a separate change."
+    },
+    {
+      "foreground": "color.fill.primary",
+      "background": "color.surface.subtle",
+      "usage": "identifier",
+      "appearance": "dark",
+      "reason": "The progress and meter fills against their track. Same cause and same history as the pairing against the page: 2.38 under the vendor chain, 1.85 now, and light passes at 6.52."
+    },
+    {
+      "foreground": "color.fg.on-warn",
+      "background": "color.fill.warn-hover",
+      "usage": "text",
+      "appearance": "light",
+      "reason": "The label on the light warn hover. Measured 5.94 in dark and 4.41 in light against a 4.5 floor. Same cause as the danger and success hovers above: the light hover darkens away from the solid, and no single label clears both. The solid itself passes at 5.35 in both appearances. Resolving it needs a hover that does not recolour the fill, or a label token of its own."
+    }
+  ]
+}

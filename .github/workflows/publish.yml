@@ -34,6 +34,13 @@ jobs:
           internal: true
           secret-github-token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Publish @caido/tokens
+        uses: ./.github/actions/publish-one
+        with:
+          package: tokens
+          internal: true
+          secret-github-token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Publish @caido/primevue
         uses: ./.github/actions/publish-one
         with:

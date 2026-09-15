@@ -1,0 +1,41 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "spacing": {
+    "$type": "dimension",
+    "$description": "The base unit. Every spacing and sizing step is a multiple of it. Written in pixels rather than rem so a rung means the same thing at every interface text setting. Half steps are the control padding.",
+    "$value": {
+      "px": 4
+    }
+  },
+  "radius": {
+    "$type": "dimension",
+    "$description": "The one radius, for every rectangular surface. The round shape is a shape rather than a rung and stays `rounded-full`.",
+    "$value": {
+      "px": 6
+    }
+  },
+  "container": {
+    "$type": "dimension",
+    "$description": "Dialog widths. Three rungs rather than a measurement per dialog, because the 41 sized dialogs in the product spell their widths 23 different ways across five unit systems, which is spelling variation rather than anything anyone chose. Derived by shrinking each dialog until its content overflows, on the pre-migration product, every run carrying a control that had to catch an injected unshrinkable child first. The measured content floors are 188px for a confirmation or a single field and 439px for a form with a short body. These three clear both floors with real slack and sit on the 4px grid at rungs 100, 150 and 200. Fixed in pixels: decisions.md puts a dialog width in the column that does not move with the interface text setting, because a dialog is measured against the window rather than against the text inside it.",
+    "dialog": {
+      "sm": {
+        "$description": "A confirmation or a single field. Clears the 188px content floor.",
+        "$value": {
+          "px": 400
+        }
+      },
+      "md": {
+        "$description": "A form with a short body. Clears the 439px content floor.",
+        "$value": {
+          "px": 600
+        }
+      },
+      "lg": {
+        "$description": "The widest forms, which render at 720px today, so this holds them rather than narrowing them.",
+        "$value": {
+          "px": 800
+        }
+      }
+    }
+  }
+}

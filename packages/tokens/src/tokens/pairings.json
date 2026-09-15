@@ -1,0 +1,979 @@
+{
+  "$description": "Every place a colour lands on another colour, with the rule that applies. text needs 4.5, large text and anything that is the only thing identifying a control needs 3. A pairing not listed here is not checked, so a new one must be added when it is introduced.",
+  "pairings": [
+    {
+      "foreground": "color.fg.strong",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 71
+    },
+    {
+      "foreground": "color.fg.default",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 40
+    },
+    {
+      "foreground": "color.fg.subtle",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 68
+    },
+    {
+      "foreground": "color.fg.muted",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 72
+    },
+    {
+      "foreground": "color.fg.muted",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 20
+    },
+    {
+      "foreground": "color.fg.muted",
+      "background": "color.surface.raised",
+      "usage": "identifier",
+      "sites": 1
+    },
+    {
+      "foreground": "color.danger.400",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 25
+    },
+    {
+      "foreground": "color.success.400",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 12
+    },
+    {
+      "foreground": "color.info.400",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 9
+    },
+    {
+      "foreground": "color.secondary.400",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 14
+    },
+    {
+      "foreground": "color.fg.default",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.default",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.default",
+      "background": "color.surface.hover",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.default",
+      "background": "color.surface.selected",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.strong",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.strong",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.strong",
+      "background": "color.surface.hover",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.strong",
+      "background": "color.surface.selected",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.subtle",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.subtle",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.muted",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.primary",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.primary",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.primary",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.primary-strong",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.primary-strong",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.primary-strong",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.danger",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.danger",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.danger",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.danger-strong",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.danger-strong",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.danger-strong",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.success",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.success",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.success",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.success-strong",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.success-strong",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.success-strong",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.warn",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.warn",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.warn",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.warn-strong",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.warn-strong",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.warn-strong",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.info",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.info",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.info",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.info-strong",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.info-strong",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.info-strong",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.secondary",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.secondary",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.secondary",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.secondary-strong",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.secondary-strong",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.secondary-strong",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.on-primary",
+      "background": "color.fill.primary",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.on-primary",
+      "background": "color.fill.primary-hover",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.on-danger",
+      "background": "color.fill.danger",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.on-danger",
+      "background": "color.fill.danger-hover",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.on-success",
+      "background": "color.fill.success",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.on-success",
+      "background": "color.fill.success-hover",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.on-warn",
+      "background": "color.fill.warn",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.on-warn",
+      "background": "color.fill.warn-hover",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.on-info",
+      "background": "color.fill.info",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.on-info",
+      "background": "color.fill.info-hover",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.on-secondary",
+      "background": "color.fill.secondary",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.on-secondary",
+      "background": "color.fill.secondary-hover",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.on-neutral",
+      "background": "color.fill.neutral",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.on-neutral",
+      "background": "color.fill.neutral-hover",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.line.strong",
+      "background": "color.surface.page",
+      "usage": "identifier",
+      "sites": 1
+    },
+    {
+      "foreground": "color.line.focus",
+      "background": "color.surface.page",
+      "usage": "focus",
+      "sites": 1
+    },
+    {
+      "foreground": "color.line.focus",
+      "background": "color.surface.subtle",
+      "usage": "focus",
+      "sites": 1
+    },
+    {
+      "foreground": "color.line.focus",
+      "background": "color.surface.raised",
+      "usage": "focus",
+      "sites": 1
+    },
+    {
+      "foreground": "color.line.focus",
+      "background": "color.surface.hover",
+      "usage": "focus",
+      "sites": 1
+    },
+    {
+      "foreground": "color.line.focus",
+      "background": "color.surface.selected",
+      "usage": "focus",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.rust.fg",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.rust.fg",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.rust.fg",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.amber.fg",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.amber.fg",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.amber.fg",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.lime.fg",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.lime.fg",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.lime.fg",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.fern.fg",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.fern.fg",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.fern.fg",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.teal.fg",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.teal.fg",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.teal.fg",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.azure.fg",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.azure.fg",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.azure.fg",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.azure.fg",
+      "background": "color.category.azure.fill",
+      "over": "color.surface.raised",
+      "alpha": 0.5,
+      "usage": "text",
+      "sites": 3
+    },
+    {
+      "foreground": "color.category.violet.fg",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.violet.fg",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.violet.fg",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.magenta.fg",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.magenta.fg",
+      "background": "color.surface.subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.category.magenta.fg",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.strong",
+      "background": "color.highlight.red",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.strong",
+      "background": "color.highlight.orange",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.strong",
+      "background": "color.highlight.yellow",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.strong",
+      "background": "color.highlight.green",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.strong",
+      "background": "color.highlight.cyan",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.strong",
+      "background": "color.highlight.blue",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.strong",
+      "background": "color.highlight.pink",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.strong",
+      "background": "color.highlight.purple",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.strong",
+      "background": "color.highlight.gray",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.medal.gold",
+      "background": "color.surface.raised",
+      "usage": "identifier",
+      "sites": 1
+    },
+    {
+      "foreground": "color.medal.silver",
+      "background": "color.surface.raised",
+      "usage": "identifier",
+      "sites": 1
+    },
+    {
+      "foreground": "color.medal.bronze",
+      "background": "color.surface.raised",
+      "usage": "identifier",
+      "sites": 1
+    },
+    {
+      "foreground": "color.line.danger",
+      "background": "color.surface.page",
+      "usage": "identifier",
+      "sites": 25
+    },
+    {
+      "foreground": "color.line.info",
+      "background": "color.surface.page",
+      "usage": "identifier",
+      "sites": 3
+    },
+    {
+      "foreground": "color.line.warn",
+      "background": "color.surface.page",
+      "usage": "identifier",
+      "sites": 3
+    },
+    {
+      "foreground": "color.line.secondary",
+      "background": "color.surface.page",
+      "usage": "identifier",
+      "sites": 2
+    },
+    {
+      "foreground": "color.fill.info",
+      "background": "color.surface.page",
+      "usage": "identifier",
+      "sites": 10
+    },
+    {
+      "foreground": "color.fill.warn",
+      "background": "color.surface.page",
+      "usage": "identifier",
+      "sites": 7
+    },
+    {
+      "foreground": "color.fill.secondary",
+      "background": "color.surface.page",
+      "usage": "identifier",
+      "sites": 4
+    },
+    {
+      "foreground": "color.fill.success",
+      "background": "color.surface.subtle",
+      "usage": "identifier",
+      "sites": 7
+    },
+    {
+      "foreground": "color.fill.warn",
+      "background": "color.surface.subtle",
+      "usage": "identifier",
+      "sites": 7
+    },
+    {
+      "foreground": "color.fill.primary",
+      "background": "color.surface.page",
+      "usage": "identifier",
+      "sites": 13
+    },
+    {
+      "foreground": "color.fill.primary",
+      "background": "color.surface.subtle",
+      "usage": "identifier",
+      "sites": 2
+    },
+    {
+      "foreground": "color.line.primary",
+      "background": "color.surface.page",
+      "usage": "identifier",
+      "sites": 2
+    },
+    {
+      "foreground": "color.fg.info-strong",
+      "background": "color.surface.info",
+      "usage": "text",
+      "sites": 7
+    },
+    {
+      "foreground": "color.fg.success-strong",
+      "background": "color.surface.success",
+      "usage": "text",
+      "sites": 5
+    },
+    {
+      "foreground": "color.fg.warn-strong",
+      "background": "color.surface.warn",
+      "usage": "text",
+      "sites": 5
+    },
+    {
+      "foreground": "color.fg.danger-strong",
+      "background": "color.surface.danger",
+      "usage": "text",
+      "sites": 5
+    },
+    {
+      "foreground": "color.syntax.string",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 5
+    },
+    {
+      "foreground": "color.syntax.number",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 6
+    },
+    {
+      "foreground": "color.syntax.boolean",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 6
+    },
+    {
+      "foreground": "color.syntax.property",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 3
+    },
+    {
+      "foreground": "color.syntax.constant",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 6
+    },
+    {
+      "foreground": "color.syntax.version",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 2
+    },
+    {
+      "foreground": "color.syntax.header-name",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 3
+    },
+    {
+      "foreground": "color.syntax.name",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 4
+    },
+    {
+      "foreground": "color.syntax.attribute",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 3
+    },
+    {
+      "foreground": "color.syntax.cookie-value",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 2
+    },
+    {
+      "foreground": "color.syntax.punctuation",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.syntax.comment",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.syntax.meta",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 2
+    },
+    {
+      "foreground": "color.syntax.query-comment",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.syntax.js-comment",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.syntax.js-keyword",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 2
+    },
+    {
+      "foreground": "color.syntax.js-string",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.syntax.js-literal",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 2
+    },
+    {
+      "foreground": "color.syntax.js-variable",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 2
+    },
+    {
+      "foreground": "color.syntax.js-property",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 2
+    },
+    {
+      "foreground": "color.syntax.js-label",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 2
+    },
+    {
+      "foreground": "color.syntax.js-type",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 2
+    },
+    {
+      "foreground": "color.fg.info-strong",
+      "background": "color.surface.toast-info",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.strong",
+      "background": "color.surface.toast-info",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.success-strong",
+      "background": "color.surface.toast-success",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.strong",
+      "background": "color.surface.toast-success",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.warn-strong",
+      "background": "color.surface.toast-warn",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.strong",
+      "background": "color.surface.toast-warn",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.danger-strong",
+      "background": "color.surface.toast-danger",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.strong",
+      "background": "color.surface.toast-danger",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.link",
+      "background": "color.surface.page",
+      "usage": "text",
+      "sites": 3
+    },
+    {
+      "foreground": "color.fg.link",
+      "background": "color.surface.raised",
+      "usage": "text",
+      "sites": 3
+    }
+  ]
+}

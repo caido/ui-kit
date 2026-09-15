@@ -1,0 +1,107 @@
+{
+  "$schema": "https://www.designtokens.org/schemas/2025.10/resolver.json",
+  "name": "Caido design tokens",
+  "version": "2025.10",
+  "sets": {
+    "base": {
+      "description": "The palette. One ramp per appearance, addressed by name rather than by context.",
+      "sources": [
+        {
+          "$ref": "base.tokens.json"
+        }
+      ]
+    },
+    "type": {
+      "description": "The type system. Roles, families and weights, identical in both appearances.",
+      "sources": [
+        {
+          "$ref": "type.tokens.json"
+        }
+      ]
+    },
+    "space": {
+      "description": "The grid and the radius. Fixed in pixels, identical in both appearances.",
+      "sources": [
+        {
+          "$ref": "space.tokens.json"
+        }
+      ]
+    },
+    "depth": {
+      "description": "The layer scale. One name per floating thing on screen, identical in both appearances.",
+      "sources": [
+        {
+          "$ref": "depth.tokens.json"
+        }
+      ]
+    },
+    "motion": {
+      "description": "Durations and easings. Identical in both appearances.",
+      "sources": [
+        {
+          "$ref": "motion.tokens.json"
+        }
+      ]
+    },
+    "icon": {
+      "description": "The icon size ladder. Two rungs for a glyph that stands alone, identical in both appearances.",
+      "sources": [
+        {
+          "$ref": "icon.tokens.json"
+        }
+      ]
+    },
+    "state": {
+      "description": "The interaction state ladder. Values that are not a colour, identical in both appearances.",
+      "sources": [
+        {
+          "$ref": "state.tokens.json"
+        }
+      ]
+    }
+  },
+  "modifiers": {
+    "appearance": {
+      "description": "The two appearances the product ships.",
+      "contexts": {
+        "light": [
+          {
+            "$ref": "appearance/light.tokens.json"
+          }
+        ],
+        "dark": [
+          {
+            "$ref": "appearance/dark.tokens.json"
+          }
+        ]
+      },
+      "default": "dark"
+    }
+  },
+  "resolutionOrder": [
+    {
+      "$ref": "#/sets/base"
+    },
+    {
+      "$ref": "#/sets/type"
+    },
+    {
+      "$ref": "#/sets/space"
+    },
+    {
+      "$ref": "#/sets/depth"
+    },
+    {
+      "$ref": "#/sets/motion"
+    },
+    {
+      "$ref": "#/sets/icon"
+    },
+    {
+      "$ref": "#/sets/state"
+    },
+    {
+      "$ref": "#/modifiers/appearance"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "text": {
+    "$type": "typeStep",
+    "caption": {
+      "$description": "Names or annotates something else. Form labels, table metadata, timestamps, counters and tag text. Single line, so it takes the tight pairing rather than the prose one.",
+      "$value": {
+        "size": 12,
+        "leading": 16,
+        "weight": 400
+      }
+    },
+    "body": {
+      "$description": "A sentence a reader reads. The default for anything that does not say otherwise, and the size the root is set to.",
+      "$value": {
+        "size": 14,
+        "leading": 20,
+        "weight": 400
+      }
+    },
+    "body-strong": {
+      "$description": "Body text carrying emphasis. Separated from body by bold, which survives every face a user can pick.",
+      "$value": {
+        "size": 14,
+        "leading": 20,
+        "weight": 600
+      }
+    },
+    "heading": {
+      "$description": "A heading inside a panel, a settings section or a dialog section.",
+      "$value": {
+        "size": 16,
+        "leading": 20,
+        "weight": 600
+      }
+    },
+    "title": {
+      "$description": "A dialog title, a page header or an empty state heading.",
+      "$value": {
+        "size": 18,
+        "leading": 24,
+        "weight": 600
+      }
+    },
+    "hero": {
+      "$description": "Onboarding and celebration screens only. Not a third heading level, and never used on a screen that carries data.",
+      "$value": {
+        "size": 24,
+        "leading": 32,
+        "weight": 600
+      }
+    }
+  },
+  "font": {
+    "$type": "fontFamily",
+    "sans": {
+      "$description": "All interface text. The user's picked face overrides it through --c-font-family-base, which falls back here.",
+      "$value": {
+        "stack": [
+          "Inter",
+          "Inter Fallback",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif"
+        ]
+      }
+    },
+    "mono": {
+      "$description": "Code, raw HTTP, hex output, scope patterns and every editor surface. One stack, so the editor and the hex viewer stop resolving to different faces on the same machine.",
+      "$value": {
+        "stack": [
+          "ui-monospace",
+          "SFMono-Regular",
+          "Menlo",
+          "Monaco",
+          "Consolas",
+          "Liberation Mono",
+          "Courier New",
+          "monospace"
+        ]
+      }
+    }
+  },
+  "font-weight": {
+    "$type": "fontWeight",
+    "regular": {
+      "$description": "Body text, labels, and resetting an inherited heavier weight.",
+      "$value": {
+        "weight": 400
+      }
+    },
+    "medium": {
+      "$description": "Refines a hierarchy and never carries one. Collapses into regular on a two weight face, so two roles are never separated by medium alone.",
+      "$value": {
+        "weight": 500
+      }
+    },
+    "bold": {
+      "$description": "600 rather than 700. On a two weight face 600 selects the bold face, so the distinction survives; on the shipped face it is the weight the reduction chose, so the fifty elements already set in bold do not move.",
+      "$value": {
+        "weight": 600
+      }
+    }
+  },
+  "container": {
+    "$type": "measure",
+    "measure": {
+      "$description": "The widest a block of prose may run. 66 characters, the middle of the 45 to 75 range readability research settles on and inside the 80 that WCAG 1.4.8 sets as its ceiling. Applies to body and body-strong. A caption is a single line and a heading is bounded by what it sits in, so neither takes one.",
+      "$value": {
+        "ch": 66
+      }
+    }
+  }
+}

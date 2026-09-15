@@ -11,6 +11,7 @@ const packagePrimevue = () => {
 
 /** @type {import('eslint').Linter.Config } */
 export default [
+  { ignores: ["packages/tokens/src/__generated__/**"] },
   ...defaultConfig(),
   ...packagePrimevue(),
 ]

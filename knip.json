@@ -1,12 +1,11 @@
 {
-    "workspaces": {
-      "packages/primevue": {
-        "project": [
-          "src/**/*.ts!",
-          "src/**/*.vue!",
-          "src/stories/**"
-        ]
-      }
+  "workspaces": {
+    "packages/primevue": {
+      "project": ["src/**/*.ts!", "src/**/*.vue!", "src/stories/**"]
+    },
+    "packages/tokens": {
+      "entry": ["src/index.ts!", "scripts/*.ts"],
+      "project": ["src/**/*.ts", "scripts/**/*.ts"]
     }
   }
-  
+}

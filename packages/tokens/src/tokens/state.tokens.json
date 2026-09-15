@@ -1,0 +1,10 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "opacity": {
+    "$type": "number",
+    "disabled": {
+      "$description": "A control that cannot be used. The one value for the whole product, replacing five: the vendored preset writes 0.6 and the product writes 0.35, 0.5, 0.6 and 0.7 with no reason recorded for any of them. 0.6 is the preset's, because it draws far more disabled controls than the product does and matching it costs nothing while diverging costs an override at every site. WCAG 1.4.3 exempts an inactive control from the contrast floor, which is why an opacity is permitted here and nowhere else.",
+      "$value": { "amount": 0.6 }
+    }
+  }
+}
