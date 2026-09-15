@@ -5,7 +5,7 @@ import { toVariableName } from "../src/emit.ts";
 
 import { deprecations, fail } from "./sources.ts";
 
-const EXTENSIONS = [".css", ".ts", ".tsx", ".js", ".jsx", ".vue", ".html"];
+const EXTENSIONS = [".css", ".ts", ".tsx", ".js", ".vue", ".html"];
 const SKIP = new Set(["node_modules", "dist", ".git", ".tsc"]);
 
 const args = process.argv.slice(2);
