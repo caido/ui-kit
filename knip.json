@@ -1,5 +1,15 @@
 {
     "workspaces": {
+      "packages/design-system": {
+        "entry": [
+          ".vitepress/config.mts",
+          ".vitepress/theme/index.mts",
+          ".vitepress/data/extract.mjs"
+        ],
+        "project": [
+          ".vitepress/**/*.{js,mjs,ts,mts,vue}"
+        ]
+      },
       "packages/primevue": {
         "project": [
           "src/**/*.ts!",
@@ -9,4 +19,3 @@
       }
     }
   }
-  

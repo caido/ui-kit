@@ -1,0 +1,648 @@
+{
+ "surface": {
+  "light": [
+   {
+    "step": 0,
+    "hex": "#FDFDFB",
+    "job": "raised plane"
+   },
+   {
+    "step": 50,
+    "hex": "#FAF8F5",
+    "job": "zebra alternate only"
+   },
+   {
+    "step": 100,
+    "hex": "#F3EEE8",
+    "job": "PAGE CANVAS + hover"
+   },
+   {
+    "step": 150,
+    "hex": "#E2DCD4",
+    "job": "recessed plane / inset"
+   },
+   {
+    "step": 200,
+    "hex": "#D8CFC5",
+    "job": "edge rung + skeletons"
+   },
+   {
+    "step": 300,
+    "hex": "#C1B5A9",
+    "job": "divider / seam"
+   },
+   {
+    "step": 350,
+    "hex": "#88796B",
+    "job": "CONTROL BOUNDARY (1.4.11)"
+   },
+   {
+    "step": 400,
+    "hex": "#6A5E53",
+    "job": "placeholder / disabled"
+   },
+   {
+    "step": 500,
+    "hex": "#665C52",
+    "job": "muted / caption"
+   },
+   {
+    "step": 600,
+    "hex": "#554D44",
+    "job": "secondary body"
+   },
+   {
+    "step": 700,
+    "hex": "#453D36",
+    "job": "body / dark tooltip"
+   },
+   {
+    "step": 800,
+    "hex": "#332E28",
+    "job": "headings, --p-text-color"
+   },
+   {
+    "step": 900,
+    "hex": "#221F1B",
+    "job": "max emphasis ink"
+   },
+   {
+    "step": 950,
+    "hex": "#171412",
+    "job": "pressed / deepest"
+   }
+  ],
+  "dark": [
+   {
+    "step": 0,
+    "hex": "#EDEAE8",
+    "job": ""
+   },
+   {
+    "step": 50,
+    "hex": "#F8FAFC",
+    "job": ""
+   },
+   {
+    "step": 100,
+    "hex": "#F1F5F9",
+    "job": ""
+   },
+   {
+    "step": 150,
+    "hex": "#3F424B",
+    "job": ""
+   },
+   {
+    "step": 200,
+    "hex": "#C7C7C7",
+    "job": ""
+   },
+   {
+    "step": 300,
+    "hex": "#ABABAB",
+    "job": ""
+   },
+   {
+    "step": 350,
+    "hex": "#9E9E9E",
+    "job": ""
+   },
+   {
+    "step": 400,
+    "hex": "#919191",
+    "job": ""
+   },
+   {
+    "step": 500,
+    "hex": "#787878",
+    "job": ""
+   },
+   {
+    "step": 600,
+    "hex": "#616161",
+    "job": ""
+   },
+   {
+    "step": 700,
+    "hex": "#484C56",
+    "job": ""
+   },
+   {
+    "step": 800,
+    "hex": "#30333B",
+    "job": ""
+   },
+   {
+    "step": 900,
+    "hex": "#25272D",
+    "job": "Primary -- new rungs (light mode only consumers)"
+   },
+   {
+    "step": 950,
+    "hex": "#25272D",
+    "job": "Dark values are byte-identical to the rungs components use today."
+   }
+  ]
+ },
+ "primary": {
+  "light": [
+   {
+    "step": 50,
+    "hex": "#FEF6F7",
+    "job": ""
+   },
+   {
+    "step": 100,
+    "hex": "#FCEDEF",
+    "job": ""
+   },
+   {
+    "step": 200,
+    "hex": "#F7D4D8",
+    "job": ""
+   },
+   {
+    "step": 300,
+    "hex": "#EDABB5",
+    "job": ""
+   },
+   {
+    "step": 400,
+    "hex": "#B42D46",
+    "job": ""
+   },
+   {
+    "step": 500,
+    "hex": "#A1213F",
+    "job": "THE BRAND"
+   },
+   {
+    "step": 600,
+    "hex": "#8D1B38",
+    "job": ""
+   },
+   {
+    "step": 700,
+    "hex": "#781731",
+    "job": ""
+   },
+   {
+    "step": 800,
+    "hex": "#61142A",
+    "job": ""
+   },
+   {
+    "step": 900,
+    "hex": "#4A1123",
+    "job": ""
+   },
+   {
+    "step": 950,
+    "hex": "#360D19",
+    "job": "Gold"
+   }
+  ],
+  "dark": [
+   {
+    "step": 50,
+    "hex": "#FEF6F7",
+    "job": ""
+   },
+   {
+    "step": 100,
+    "hex": "#FCE8E9",
+    "job": ""
+   },
+   {
+    "step": 200,
+    "hex": "#F9D2D6",
+    "job": ""
+   },
+   {
+    "step": 300,
+    "hex": "#F4AEB6",
+    "job": ""
+   },
+   {
+    "step": 400,
+    "hex": "#ED7E8C",
+    "job": ""
+   },
+   {
+    "step": 500,
+    "hex": "#E15169",
+    "job": ""
+   },
+   {
+    "step": 600,
+    "hex": "#CD3251",
+    "job": ""
+   },
+   {
+    "step": 700,
+    "hex": "#A1213F",
+    "job": ""
+   },
+   {
+    "step": 800,
+    "hex": "#92203D",
+    "job": ""
+   },
+   {
+    "step": 900,
+    "hex": "#7A1F3A",
+    "job": "Secondary with #daa04a as a base color"
+   },
+   {
+    "step": 950,
+    "hex": "#360D19",
+    "job": "50 and 100 carry today's hardcoded --p-surface-50/100 values verbatim.\n     150 and 350 are half-rungs: 200 and 300 are pinned by the prebuilt preset."
+   }
+  ]
+ },
+ "secondary": {
+  "light": [
+   {
+    "step": 100,
+    "hex": "#FBF3E5",
+    "job": ""
+   },
+   {
+    "step": 200,
+    "hex": "#F4E3C2",
+    "job": ""
+   },
+   {
+    "step": 300,
+    "hex": "#DAA049",
+    "job": "DI-SERRIA, fills only"
+   },
+   {
+    "step": 400,
+    "hex": "#845712",
+    "job": "the gold ink"
+   },
+   {
+    "step": 500,
+    "hex": "#845210",
+    "job": "gold ink on inset"
+   },
+   {
+    "step": 600,
+    "hex": "#71430E",
+    "job": ""
+   },
+   {
+    "step": 700,
+    "hex": "#5E360D",
+    "job": ""
+   },
+   {
+    "step": 800,
+    "hex": "#4F2C0D",
+    "job": ""
+   },
+   {
+    "step": 900,
+    "hex": "#40230C",
+    "job": "Danger"
+   }
+  ],
+  "dark": [
+   {
+    "step": 100,
+    "hex": "#F5EAD1",
+    "job": ""
+   },
+   {
+    "step": 200,
+    "hex": "#EBD19E",
+    "job": ""
+   },
+   {
+    "step": 300,
+    "hex": "#E1B56B",
+    "job": ""
+   },
+   {
+    "step": 400,
+    "hex": "#DAA049",
+    "job": ""
+   },
+   {
+    "step": 500,
+    "hex": "#D0802F",
+    "job": ""
+   },
+   {
+    "step": 600,
+    "hex": "#B96427",
+    "job": ""
+   },
+   {
+    "step": 700,
+    "hex": "#994924",
+    "job": ""
+   },
+   {
+    "step": 800,
+    "hex": "#7B3923",
+    "job": ""
+   },
+   {
+    "step": 900,
+    "hex": "#65301F",
+    "job": "Danger with #f58e97 as a base color"
+   }
+  ]
+ },
+ "danger": {
+  "light": [
+   {
+    "step": 100,
+    "hex": "#FDEFEC",
+    "job": ""
+   },
+   {
+    "step": 200,
+    "hex": "#F9D4CD",
+    "job": ""
+   },
+   {
+    "step": 300,
+    "hex": "#F0AA9D",
+    "job": ""
+   },
+   {
+    "step": 400,
+    "hex": "#B12F1B",
+    "job": ""
+   },
+   {
+    "step": 500,
+    "hex": "#9D2515",
+    "job": ""
+   },
+   {
+    "step": 600,
+    "hex": "#8D1E11",
+    "job": ""
+   },
+   {
+    "step": 700,
+    "hex": "#751810",
+    "job": "ERROR beside gold WARN"
+   },
+   {
+    "step": 800,
+    "hex": "#601510",
+    "job": ""
+   },
+   {
+    "step": 900,
+    "hex": "#4D110F",
+    "job": "Info"
+   }
+  ],
+  "dark": [
+   {
+    "step": 100,
+    "hex": "#FDE7E7",
+    "job": ""
+   },
+   {
+    "step": 200,
+    "hex": "#FBD0D3",
+    "job": ""
+   },
+   {
+    "step": 300,
+    "hex": "#F8AAAF",
+    "job": ""
+   },
+   {
+    "step": 400,
+    "hex": "#F58E97",
+    "job": ""
+   },
+   {
+    "step": 500,
+    "hex": "#EA485B",
+    "job": ""
+   },
+   {
+    "step": 600,
+    "hex": "#D72845",
+    "job": ""
+   },
+   {
+    "step": 700,
+    "hex": "#B51C38",
+    "job": ""
+   },
+   {
+    "step": 800,
+    "hex": "#991A35",
+    "job": ""
+   },
+   {
+    "step": 900,
+    "hex": "#7F1A33",
+    "job": "Info with #88a2aa as a base color"
+   }
+  ]
+ },
+ "success": {
+  "light": [
+   {
+    "step": 100,
+    "hex": "#E9F6EA",
+    "job": ""
+   },
+   {
+    "step": 200,
+    "hex": "#CAE7CB",
+    "job": ""
+   },
+   {
+    "step": 300,
+    "hex": "#98CD9A",
+    "job": ""
+   },
+   {
+    "step": 400,
+    "hex": "#246B28",
+    "job": ""
+   },
+   {
+    "step": 500,
+    "hex": "#1F6124",
+    "job": ""
+   },
+   {
+    "step": 600,
+    "hex": "#1A5620",
+    "job": ""
+   },
+   {
+    "step": 700,
+    "hex": "#174A1D",
+    "job": ""
+   },
+   {
+    "step": 800,
+    "hex": "#153C1A",
+    "job": ""
+   },
+   {
+    "step": 900,
+    "hex": "#133017",
+    "job": "Semantic Aliases"
+   }
+  ],
+  "dark": [
+   {
+    "step": 100,
+    "hex": "#E7F3E7",
+    "job": ""
+   },
+   {
+    "step": 200,
+    "hex": "#CDE5CD",
+    "job": ""
+   },
+   {
+    "step": 300,
+    "hex": "#A5CFA5",
+    "job": ""
+   },
+   {
+    "step": 400,
+    "hex": "#76B276",
+    "job": ""
+   },
+   {
+    "step": 500,
+    "hex": "#589D58",
+    "job": ""
+   },
+   {
+    "step": 600,
+    "hex": "#3F783F",
+    "job": ""
+   },
+   {
+    "step": 700,
+    "hex": "#355F35",
+    "job": ""
+   },
+   {
+    "step": 800,
+    "hex": "#2E4D2F",
+    "job": ""
+   },
+   {
+    "step": 900,
+    "hex": "#273F28",
+    "job": "Surface"
+   }
+  ]
+ },
+ "info": {
+  "light": [
+   {
+    "step": 100,
+    "hex": "#E9F3F7",
+    "job": ""
+   },
+   {
+    "step": 200,
+    "hex": "#CCE2EA",
+    "job": ""
+   },
+   {
+    "step": 300,
+    "hex": "#9CC3D3",
+    "job": ""
+   },
+   {
+    "step": 400,
+    "hex": "#2F677F",
+    "job": ""
+   },
+   {
+    "step": 500,
+    "hex": "#285A71",
+    "job": ""
+   },
+   {
+    "step": 600,
+    "hex": "#214D63",
+    "job": ""
+   },
+   {
+    "step": 700,
+    "hex": "#1D4053",
+    "job": ""
+   },
+   {
+    "step": 800,
+    "hex": "#1B3646",
+    "job": ""
+   },
+   {
+    "step": 900,
+    "hex": "#182C39",
+    "job": "Success"
+   }
+  ],
+  "dark": [
+   {
+    "step": 100,
+    "hex": "#E1E8EA",
+    "job": ""
+   },
+   {
+    "step": 200,
+    "hex": "#C9D6D9",
+    "job": ""
+   },
+   {
+    "step": 300,
+    "hex": "#A2B8BE",
+    "job": ""
+   },
+   {
+    "step": 400,
+    "hex": "#88A2AA",
+    "job": ""
+   },
+   {
+    "step": 500,
+    "hex": "#5A7881",
+    "job": ""
+   },
+   {
+    "step": 600,
+    "hex": "#4B626C",
+    "job": ""
+   },
+   {
+    "step": 700,
+    "hex": "#42535C",
+    "job": ""
+   },
+   {
+    "step": 800,
+    "hex": "#3C484E",
+    "job": ""
+   },
+   {
+    "step": 900,
+    "hex": "#363F45",
+    "job": "Success with #579c57 as a base color"
+   }
+  ]
+ }
+}

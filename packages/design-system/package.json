@@ -1,0 +1,26 @@
+{
+  "name": "@caido/design-system",
+  "version": "0.1.0",
+  "description": "Caido design system documentation",
+  "author": "Caido Labs Inc. <dev@caido.io>",
+  "license": "CC-BY-4.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev --port 5179",
+    "build": "vitepress build",
+    "preview": "vitepress preview --port 5179",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "6.5.1",
+    "@types/node": "22.15.30",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.47",
+    "tailwindcss": "3.4.13",
+    "typescript": "5.6.2",
+    "vitepress": "1.6.3",
+    "vue": "3.5.16",
+    "vue-tsc": "2.1.10"
+  }
+}

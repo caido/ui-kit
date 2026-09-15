@@ -5,4 +5,4 @@ knip \
   --production \
   --include files,exports,types,dependencies
 
-eslint packages/**/src -c ./eslint.config.mjs --fix
+eslint packages/**/src "packages/design-system/.vitepress/**/*.{ts,mts,vue}" -c ./eslint.config.mjs --fix
