@@ -2,7 +2,7 @@ import { err, ok, type Result } from "neverthrow";
 
 import { type ResolvedToken } from "./resolve.ts";
 
-export type Deprecation = {
+type Deprecation = {
   /** The token to move to. Absent when a name is going away with nothing taking its job. */
   replacement?: string;
   /** The released version that announced the deprecation. */
