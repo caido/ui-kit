@@ -38,7 +38,7 @@ export default {
       "shrink-0",
 
       // Spacing
-      "p-6",
+      "px-5 py-4",
 
       // Shape
       "rounded-tl-lg",
@@ -46,21 +46,27 @@ export default {
 
       // Colors
       "text-fg-default",
+      "text-lg font-semibold",
       "border border-b-0",
       "border-line-default",
     ],
   },
   title: {
-    class: ["font-semibold text-xl leading-[normal]"],
+    class: ["font-semibold text-lg leading-[normal]"],
   },
   headerActions: {
-    class: ["flex items-center"],
+    class: [
+      "flex items-center gap-1",
+      "[&>button]:size-8 [&>button]:p-0",
+      "[&>button]:!text-fg-muted",
+      "[&>button:hover]:!bg-fill-neutral/10",
+    ],
   },
   content: ({ state, instance }) => ({
     class: [
       // Spacing
-      "px-6",
-      "pb-6",
+      "px-5",
+      "pb-5",
       "pt-0",
 
       // Shape
@@ -88,8 +94,8 @@ export default {
       "gap-2",
 
       // Spacing
-      "px-6",
-      "pb-6",
+      "px-5",
+      "pb-5",
 
       // Shape
       "border-t-0",
