@@ -2,7 +2,6 @@
   "name": "ui-kit",
   "private": true,
   "scripts": {
-    "dev": "pnpm --filter @caido/tokens build && pnpm --filter @caido/design-system dev",
     "typecheck": "pnpm -r typecheck",
     "lint": "bash scripts/lint.sh",
     "lint-prod": "bash scripts/lint-prod.sh"
