@@ -1,0 +1,5 @@
+---
+index: true
+---
+
+# Get started

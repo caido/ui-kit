@@ -1,0 +1,133 @@
+@layer c-base, c-components, c-utilities;
+
+@import "tailwindcss/theme.css" layer(c-base);
+@import "tailwindcss/preflight.css" layer(c-base);
+@import "tailwindcss/utilities.css" layer(c-utilities);
+
+@import "@caido/tokens/tokens.css";
+@import "./prose.css";
+@import "./search.css";
+@import "./markdown.css";
+
+@custom-variant dark (&:where([data-mode=dark], [data-mode=dark] *));
+
+@theme {
+  --default-transition-duration: var(--duration-state);
+  --default-transition-timing-function: var(--ease-standard);
+
+  --header-height: calc(var(--spacing) * 14);
+  --shell-height: calc(100dvh - var(--header-height));
+
+  --text-display: clamp(
+    calc(var(--text-hero) * 1.75),
+    7vw,
+    calc(var(--text-hero) * 3.5)
+  );
+  --text-display--line-height: 1.05;
+  --text-display--font-weight: var(--font-weight-bold);
+
+  --container-display: 18ch;
+
+  --dot-size: calc(var(--spacing) * 6);
+
+  --page-gutter: calc(var(--spacing) * 4);
+
+  --control-default: calc(var(--text-body--line-height) * var(--text-body) + 12px);
+
+  --control-large: calc(var(--text-body--line-height) * var(--text-body) + 16px);
+}
+
+@utility dot-grid {
+  background-image: radial-gradient(
+    var(--color-line-subtle) 1px,
+    transparent 1px
+  );
+  background-size: var(--dot-size) var(--dot-size);
+}
+
+@utility dot-grid-faint {
+  background-image: radial-gradient(
+    color-mix(in oklab, var(--color-line-subtle) 50%, transparent) 1px,
+    transparent 1px
+  );
+  background-size: var(--dot-size) var(--dot-size);
+}
+
+@layer c-base {
+  html {
+    background-color: var(--color-surface-page);
+    color: var(--color-fg-default);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+    font-weight: var(--text-body--font-weight);
+    font-synthesis-weight: none;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-line-focus);
+    outline-offset: 2px;
+  }
+
+  b,
+  strong {
+    font-weight: var(--font-weight-bold);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@source "../../../docs";
+@source "../";
+
+@media (width >= 48rem) {
+  :root {
+    --page-gutter: calc(var(--spacing) * 8);
+  }
+}
+
+@media (width >= 64rem) {
+  :root {
+    --page-gutter: calc(var(--spacing) * 12);
+  }
+}
+
+.pointer-glow {
+  position: relative;
+}
+
+.pointer-glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: var(--glow-opacity, 0);
+  background-image: radial-gradient(
+    var(--color-fg-secondary) 1px,
+    transparent 1px
+  );
+  background-size: var(--dot-size) var(--dot-size);
+  mask-image: radial-gradient(
+    circle calc(var(--spacing) * 36) at var(--glow-x, 50%) var(--glow-y, 50%),
+    #000 0%,
+    transparent 70%
+  );
+  transition: opacity var(--duration-surface) var(--ease-standard);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pointer-glow::before {
+    display: none;
+  }
+}

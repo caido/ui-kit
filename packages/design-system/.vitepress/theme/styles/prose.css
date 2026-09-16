@@ -1,0 +1,173 @@
+@layer c-components {
+  .prose-doc {
+    color: var(--color-fg-default);
+  }
+
+  .prose-doc :where(p, ul, ol, pre, blockquote, table, figure, hr, [data-ds])
+    + :where(p, ul, ol, pre, blockquote, table, figure, hr, [data-ds]) {
+    margin-top: calc(var(--spacing) * 4);
+  }
+
+  .prose-doc h1 {
+    font-size: var(--text-hero);
+    line-height: var(--text-hero--line-height);
+    font-weight: var(--text-hero--font-weight);
+    color: var(--color-fg-strong);
+  }
+
+  .prose-doc h2 {
+    font-size: var(--text-title);
+    line-height: var(--text-title--line-height);
+    font-weight: var(--text-title--font-weight);
+    color: var(--color-fg-strong);
+    margin-top: calc(var(--spacing) * 8);
+    padding-top: calc(var(--spacing) * 4);
+    border-top: 1px solid var(--color-line-subtle);
+  }
+
+  .prose-doc h3 {
+    font-size: var(--text-heading);
+    line-height: var(--text-heading--line-height);
+    font-weight: var(--text-heading--font-weight);
+    color: var(--color-fg-strong);
+    margin-top: calc(var(--spacing) * 8);
+  }
+
+  .prose-doc h4 {
+    font-size: var(--text-body-strong);
+    line-height: var(--text-body-strong--line-height);
+    font-weight: var(--text-body-strong--font-weight);
+    color: var(--color-fg-strong);
+    margin-top: calc(var(--spacing) * 6);
+  }
+
+  .prose-doc h1 + *,
+  .prose-doc h2 + *,
+  .prose-doc h3 + *,
+  .prose-doc h4 + * {
+    margin-top: calc(var(--spacing) * 3);
+  }
+
+  .prose-doc p,
+  .prose-doc li {
+    color: var(--color-fg-default);
+    max-width: var(--container-measure);
+  }
+
+  .prose-doc a {
+    color: var(--color-fg-link);
+    text-underline-offset: 3px;
+  }
+
+  .prose-doc a:hover {
+    text-decoration: underline;
+  }
+
+  .prose-doc ul,
+  .prose-doc ol {
+    padding-left: calc(var(--spacing) * 4);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing) * 2);
+  }
+
+  .prose-doc ul {
+    list-style: disc;
+  }
+
+  .prose-doc ol {
+    list-style: decimal;
+  }
+
+  .prose-doc :not(pre) > code {
+    font-family: var(--font-mono);
+    font-size: var(--text-caption);
+    background-color: var(--color-surface-subtle);
+    border: 1px solid var(--color-line-subtle);
+    border-radius: var(--radius);
+    padding: 0 calc(var(--spacing) * 1);
+  }
+
+  .prose-doc pre {
+    font-family: var(--font-mono);
+    font-size: var(--text-caption);
+    line-height: var(--text-body--line-height);
+    background-color: var(--color-surface-subtle);
+    border: 1px solid var(--color-line-subtle);
+    border-radius: var(--radius);
+    padding: calc(var(--spacing) * 4);
+    overflow-x: auto;
+  }
+
+  .prose-doc blockquote {
+    border-left: 2px solid var(--color-line-default);
+    padding-left: calc(var(--spacing) * 4);
+    color: var(--color-fg-muted);
+  }
+
+  .prose-doc hr {
+    border-top: 1px solid var(--color-line-subtle);
+  }
+
+  .prose-doc table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-body);
+  }
+
+  .prose-doc th {
+    text-align: left;
+    font-size: var(--text-body-strong);
+    line-height: var(--text-body-strong--line-height);
+    font-weight: var(--text-body-strong--font-weight);
+    color: var(--color-fg-strong);
+  }
+
+  .prose-doc th,
+  .prose-doc td {
+    border-bottom: 1px solid var(--color-line-subtle);
+    padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3);
+  }
+
+  .prose-doc tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .prose-doc th:first-child,
+  .prose-doc td:first-child {
+    padding-left: 0;
+  }
+
+  [data-ds] ul,
+  [data-ds] ol {
+    display: revert;
+    flex-direction: revert;
+    gap: revert;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  [data-ds] :not(pre) > code {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  [data-ds] p,
+  [data-ds] li {
+    max-width: none;
+  }
+
+  .prose-doc [data-ds] * + * {
+    margin-top: 0;
+  }
+
+  .prose-doc [data-ds] + [data-ds] {
+    margin-top: calc(var(--spacing) * 8);
+  }
+
+  .prose-doc p + [data-ds] {
+    margin-top: calc(var(--spacing) * 3);
+  }
+}
