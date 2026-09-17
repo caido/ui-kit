@@ -53,13 +53,6 @@ const decisions = [
       @pointermove="onPointerMove"
       @pointerleave="onPointerLeave"
     >
-      <div
-        aria-hidden="true"
-        class="logo-reveal pointer-events-none absolute inset-0 flex items-start justify-center"
-      >
-        <img :src="withBase('/logo.svg')" alt="" class="home-mark" />
-      </div>
-
       <div class="relative flex flex-col items-start gap-4 lg:gap-6">
         <h1 class="max-w-display text-display text-fg-strong">
           Every decision has a

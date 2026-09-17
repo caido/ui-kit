@@ -60,7 +60,14 @@ export const navigation: Item[] = [
           { text: "All tokens", link: "/foundations/tokens/all" },
         ],
       },
-      foundation("Colour", "colour"),
+      {
+        text: "Colour",
+        link: "/foundations/colour",
+        items: [
+          { text: "Accents", link: "/foundations/colour/accents" },
+          { text: "Colour palette", link: "/foundations/colour/palette" },
+        ],
+      },
       foundation("Type", "type"),
       foundation("Space", "space"),
       foundation("Depth", "depth"),

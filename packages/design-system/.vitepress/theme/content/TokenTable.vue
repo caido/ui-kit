@@ -26,6 +26,7 @@ const prefixes = computed(() =>
 const rows = computed(() =>
   Object.entries(tokens)
     .filter(([, entry]) => entry.tier !== "primitive")
+    .filter(([name]) => !/\.\d+$/u.test(name))
     .filter(([name]) => prefixes.value.some((part) => name.startsWith(part)))
     .map(([name, entry]) => ({
       name,

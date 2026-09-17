@@ -1,4 +1,12 @@
 
+.prose-doc .shiki span {
+  color: var(--shiki-light);
+}
+
+[data-mode="dark"] .prose-doc .shiki span {
+  color: var(--shiki-dark);
+}
+
 .prose-doc .custom-block {
   border: 1px solid var(--color-line-default);
   border-left-width: 2px;
@@ -65,4 +73,12 @@
 
 .prose-doc .vp-code-group .blocks > div.active {
   display: block;
+}
+
+.prose-doc div[class*="language-"] {
+  position: relative;
+}
+
+.prose-doc div[class*="language-"] > .lang {
+  display: none;
 }

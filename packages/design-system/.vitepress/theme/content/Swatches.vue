@@ -2,47 +2,97 @@
 import manifest from "@caido/tokens/tokens.json";
 import { computed } from "vue";
 
-type Entry = { variable: string; tier: string };
+import { type Appearance, useAppearance } from "../composables/useAppearance";
 
-const { family, label = "" } = defineProps<{
+type Entry = { variable: string; tier: string; light?: string; dark?: string };
+
+const {
+  family,
+  theme = undefined,
+  label = "",
+  jobs = false,
+} = defineProps<{
   family: string;
+  theme?: Appearance;
   label?: string;
+  jobs?: boolean;
 }>();
+
+const { appearance } = useAppearance();
+
+const shown = computed(() => theme ?? appearance.value);
 
 const tokens = (manifest as { tokens: Record<string, Entry> }).tokens;
 
-const steps = computed(() =>
-  Object.entries(tokens)
+const shared = [
+  "App background",
+  "Subtle background",
+  "Raised surface",
+  "Hover",
+  "Selected",
+  "Subtle border",
+  "Border",
+  "Strong border",
+  "Solid",
+  "Solid hover",
+];
+
+const jobOf = (step: number, total: number) =>
+  shared[step - 1] ??
+  (total === 14
+    ? ["Muted text", "Subtle text", "Body text", "Strong text"][step - 11]
+    : ["Muted text", "Text"][step - 11]) ??
+  "";
+
+const lightnessOf = (value: string | undefined) => {
+  const match = /oklch\(\s*([\d.]+)/u.exec(value ?? "");
+  return match?.[1] === undefined ? 0 : Number(match[1]);
+};
+
+const steps = computed(() => {
+  const found = Object.entries(tokens)
     .filter(([name]) =>
-      new RegExp(`^color\\.${family}\\.\\d+$`, "u").test(name),
+      new RegExp(`^palette\\.${family}\\.${shown.value}\\.\\d+$`, "u").test(
+        name,
+      ),
     )
     .map(([name, entry]) => ({
-      step: name.split(".")[2] ?? "",
+      step: Number(name.split(".")[3]),
       variable: entry.variable,
+      dim: lightnessOf(entry[shown.value]) > 0.62,
     }))
-    .sort((a, b) => Number(a.step) - Number(b.step)),
-);
+    .sort((a, b) => a.step - b.step);
+
+  return found.map((entry) => ({
+    ...entry,
+    job: jobOf(entry.step, found.length),
+  }));
+});
 </script>
 
 <template>
-  <div data-ds class="flex flex-col gap-2">
+  <div data-ds class="flex min-w-0 flex-1 flex-col gap-2">
     <p v-if="label !== ''" class="text-body-strong text-fg-strong">
       {{ label }}
     </p>
 
-    <ul class="flex w-full flex-row gap-3">
+    <ul class="flex flex-col overflow-hidden rounded border border-line-subtle">
+      <!-- eslint-disable design/no-primitive-token -- a palette step is a raw value with no semantic partner, and the label sitting on it has to read against that one step rather than against a surface the system names -->
       <li
         v-for="entry in steps"
         :key="entry.step"
-        class="flex min-w-0 flex-1 flex-col gap-2"
+        :style="{
+          background: `var(${entry.variable})`,
+          color: entry.dim
+            ? 'var(--palette-neutral-dark-1)'
+            : 'var(--palette-neutral-dark-14)',
+        }"
+        class="flex items-center justify-between gap-4 px-3 py-2"
       >
-        <span
-          :style="{ background: `var(${entry.variable})` }"
-          class="h-16 w-full rounded border border-line-subtle"
-          aria-hidden="true"
-        />
-        <code class="text-caption text-fg-muted">{{ entry.step }}</code>
+        <code class="font-mono text-caption">{{ entry.step }}</code>
+        <span v-if="jobs" class="text-caption">{{ entry.job }}</span>
       </li>
+      <!-- eslint-enable design/no-primitive-token -->
     </ul>
   </div>
 </template>

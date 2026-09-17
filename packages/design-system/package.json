@@ -10,7 +10,8 @@
     "build": "vitepress build",
     "dev": "vitepress dev --port 5179",
     "preview": "vitepress preview --port 5179",
-    "typecheck": "vue-tsc --noEmit"
+    "typecheck": "vue-tsc --noEmit",
+    "generate:examples": "node --experimental-strip-types scripts/generate-examples.ts"
   },
   "dependencies": {
     "@caido/tokens": "workspace:*",

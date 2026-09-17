@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372 76" width="372" height="76" role="img">
+  <rect width="372" height="76" fill="oklch(0.9766 0.0051 70)"/>
+  <g transform="translate(-16 -44)">
+  <rect x="40" y="68" width="152" height="28" rx="6" fill="oklch(0.76 0.1239 257.4)"/>
+  <text x="52" y="86.2" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.2194 0.0118 277.9)">GET /login</text>
+  <circle cx="192" cy="82" r="3" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 192 82 L 248 82" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="254" y="86" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">fg-strong</text>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372 132" width="372" height="132" role="img">
+  <rect width="372" height="132" fill="oklch(0.9766 0.0051 70)"/>
+  <g transform="translate(-20 -14)"><circle cx="52" cy="48" r="8" fill="oklch(0.5284 0.1088 82.4)"/><circle cx="52" cy="80" r="8" fill="oklch(0.5437 0.0092 286.1)"/><circle cx="52" cy="112" r="8" fill="oklch(0.4488 0.1248 46.7)"/>
+  <circle cx="128" cy="80" r="3" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 128 80 L 248 80" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="254" y="84" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">colour only</text>
+  </g>
+</svg>
