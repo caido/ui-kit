@@ -3,6 +3,24 @@ import { withBase } from "vitepress";
 
 import AppearanceToggle from "./AppearanceToggle.vue";
 import AppSearch from "./AppSearch.vue";
+
+const socials = [
+  {
+    label: "Caido on Discord",
+    icon: "fa-brands fa-discord",
+    href: "https://links.caido.io/discord",
+  },
+  {
+    label: "Caido on X",
+    icon: "fa-brands fa-x-twitter",
+    href: "https://x.com/caidoio",
+  },
+  {
+    label: "Caido on GitHub",
+    icon: "fa-brands fa-github",
+    href: "https://github.com/caido/caido",
+  },
+];
 </script>
 
 <template>
@@ -36,6 +54,23 @@ import AppSearch from "./AppSearch.vue";
 
       <AppSearch />
       <AppearanceToggle />
+
+      <div class="h-6 w-px bg-line-subtle" aria-hidden="true" />
+
+      <nav aria-label="Caido elsewhere" class="flex items-center gap-1">
+        <a
+          v-for="social in socials"
+          :key="social.href"
+          :href="social.href"
+          target="_blank"
+          rel="noreferrer"
+          :aria-label="social.label"
+          :title="social.label"
+          class="flex size-(--control-default) items-center justify-center rounded text-fg-muted transition hover:bg-surface-hover hover:text-fg-default"
+        >
+          <i :class="social.icon" aria-hidden="true" />
+        </a>
+      </nav>
     </div>
   </header>
 </template>

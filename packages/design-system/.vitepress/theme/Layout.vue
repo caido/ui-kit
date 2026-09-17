@@ -7,10 +7,13 @@ import AppOutline from "./layout/AppOutline.vue";
 import AppSidebar from "./layout/AppSidebar.vue";
 import AppTabs from "./layout/AppTabs.vue";
 import HomeHero from "./layout/HomeHero.vue";
+import LandingPage from "./layout/LandingPage.vue";
 
 const { page } = useData();
 
 const isHome = computed(() => page.value.frontmatter.layout === "home");
+
+const isLanding = computed(() => page.value.frontmatter.layout === "landing");
 
 const hasOutline = computed(
   () =>
@@ -33,15 +36,19 @@ const hasOutline = computed(
       </aside>
 
       <main class="min-w-0 flex-1">
-        <AppTabs />
+        <LandingPage v-if="isLanding" />
 
-        <article class="prose-doc px-8 py-8">
-          <Content />
-        </article>
+        <template v-else>
+          <AppTabs />
+
+          <article class="prose-doc px-8 py-8">
+            <Content />
+          </article>
+        </template>
       </main>
 
       <aside
-        v-if="hasOutline"
+        v-if="hasOutline && !isLanding"
         class="sticky top-(--header-height) hidden h-(--shell-height) w-60 shrink-0 overflow-y-auto border-l border-line-subtle px-4 py-6 xl:block"
       >
         <AppOutline />

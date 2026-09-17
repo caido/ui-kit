@@ -49,18 +49,25 @@ const decisions = [
   <section class="flex h-(--shell-height) flex-col overflow-hidden">
     <div
       ref="field"
-      class="dot-grid pointer-glow flex flex-1 flex-col justify-end px-(--page-gutter) py-8 lg:py-12"
+      class="dot-grid pointer-glow flex flex-1 flex-col justify-end overflow-hidden px-(--page-gutter) py-8 lg:py-12"
       @pointermove="onPointerMove"
       @pointerleave="onPointerLeave"
     >
-      <div class="flex flex-col items-start gap-4 lg:gap-6">
+      <div
+        aria-hidden="true"
+        class="logo-reveal pointer-events-none absolute inset-0 flex items-start justify-center"
+      >
+        <img :src="withBase('/logo.svg')" alt="" class="home-mark" />
+      </div>
+
+      <div class="relative flex flex-col items-start gap-4 lg:gap-6">
         <h1 class="max-w-display text-display text-fg-strong">
           Every decision has a
           <span class="text-fg-secondary">name</span>.
         </h1>
 
         <a
-          :href="withBase('/get-started')"
+          :href="withBase('/design-system')"
           class="flex h-(--control-large) items-center gap-2 rounded bg-fill-primary px-6 text-body-strong text-fg-on-primary transition hover:bg-fill-primary-hover"
         >
           <span>Get started</span>

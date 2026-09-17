@@ -1,5 +1,3 @@
 ---
-index: true
+layout: landing
 ---
-
-# Explore our design system

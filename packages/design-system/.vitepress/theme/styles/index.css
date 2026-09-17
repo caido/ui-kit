@@ -53,6 +53,112 @@
   background-size: var(--dot-size) var(--dot-size);
 }
 
+@utility app-shot {
+  width: 235%;
+  max-width: none;
+  height: auto;
+}
+
+@utility app-shot-fade {
+  -webkit-mask-image:
+    linear-gradient(to right, #000 55%, transparent 100%),
+    linear-gradient(to bottom, #000 55%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to right, #000 55%, transparent 100%),
+    linear-gradient(to bottom, #000 55%, transparent 100%);
+  mask-composite: intersect;
+}
+
+@utility home-mark {
+  height: 150%;
+  width: auto;
+  max-width: none;
+}
+
+@utility logo-reveal {
+  opacity: var(--glow-opacity, 0);
+  -webkit-mask-image:
+    radial-gradient(
+      ellipse calc(var(--spacing) * 72) calc(var(--spacing) * 50)
+        at calc(var(--glow-x, 50%) - var(--spacing) * 7)
+           calc(var(--glow-y, 50%) - var(--spacing) * 5),
+      rgb(0 0 0 / 1) 0%,
+      rgb(0 0 0 / 0.55) 42%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse calc(var(--spacing) * 44) calc(var(--spacing) * 68)
+        at calc(var(--glow-x, 50%) + var(--spacing) * 9)
+           calc(var(--glow-y, 50%) + var(--spacing) * 7),
+      rgb(0 0 0 / 1) 0%,
+      rgb(0 0 0 / 0.5) 46%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse calc(var(--spacing) * 58) calc(var(--spacing) * 40)
+        at calc(var(--glow-x, 50%) + var(--spacing) * 3)
+           calc(var(--glow-y, 50%) - var(--spacing) * 12),
+      rgb(0 0 0 / 1) 0%,
+      rgb(0 0 0 / 0.45) 50%,
+      transparent 100%
+    );
+  -webkit-mask-composite: source-over;
+  mask-image:
+    radial-gradient(
+      ellipse calc(var(--spacing) * 72) calc(var(--spacing) * 50)
+        at calc(var(--glow-x, 50%) - var(--spacing) * 7)
+           calc(var(--glow-y, 50%) - var(--spacing) * 5),
+      rgb(0 0 0 / 1) 0%,
+      rgb(0 0 0 / 0.55) 42%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse calc(var(--spacing) * 44) calc(var(--spacing) * 68)
+        at calc(var(--glow-x, 50%) + var(--spacing) * 9)
+           calc(var(--glow-y, 50%) + var(--spacing) * 7),
+      rgb(0 0 0 / 1) 0%,
+      rgb(0 0 0 / 0.5) 46%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse calc(var(--spacing) * 58) calc(var(--spacing) * 40)
+        at calc(var(--glow-x, 50%) + var(--spacing) * 3)
+           calc(var(--glow-y, 50%) - var(--spacing) * 12),
+      rgb(0 0 0 / 1) 0%,
+      rgb(0 0 0 / 0.45) 50%,
+      transparent 100%
+    );
+  mask-composite: add;
+  transition: opacity var(--duration-surface) var(--ease-standard);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-reveal {
+    display: none;
+  }
+}
+
+@utility reveal {
+  opacity: 0;
+  transform: translateY(calc(var(--spacing) * 4));
+  transition:
+    opacity var(--duration-surface) var(--ease-standard),
+    transform var(--duration-surface) var(--ease-standard);
+}
+
+@utility reveal-shown {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @layer c-base {
   html {
     background-color: var(--color-surface-page);
