@@ -9,20 +9,6 @@
       "reason": "The name carries two jobs: 33 sites read it as text and 17 as a background. The brand gold clears the floor as a fill in both appearances and as text only in dark. No single value satisfies both until the readers are split onto fg-secondary and fill-secondary."
     },
     {
-      "foreground": "color.fg.on-danger",
-      "background": "color.fill.danger-hover",
-      "usage": "text",
-      "appearance": "light",
-      "reason": "The light danger solid sits at the lightness where neither label wins: a dark label fails on the hover and a light label fails on the solid it must also serve. Resolving it needs a hover that does not recolour the fill, or a label token of its own."
-    },
-    {
-      "foreground": "color.fg.on-success",
-      "background": "color.fill.success-hover",
-      "usage": "text",
-      "appearance": "light",
-      "reason": "Same cause and resolution as the danger hover above."
-    },
-    {
       "foreground": "color.fill.info",
       "background": "color.surface.page",
       "usage": "identifier",
@@ -63,13 +49,6 @@
       "usage": "identifier",
       "appearance": "dark",
       "reason": "The progress and meter fills against their track. Same cause and same history as the pairing against the page: 2.38 under the vendor chain, 1.85 now, and light passes at 6.52."
-    },
-    {
-      "foreground": "color.fg.on-warn",
-      "background": "color.fill.warn-hover",
-      "usage": "text",
-      "appearance": "light",
-      "reason": "The label on the light warn hover. Measured 5.94 in dark and 4.41 in light against a 4.5 floor. Same cause as the danger and success hovers above: the light hover darkens away from the solid, and no single label clears both. The solid itself passes at 5.35 in both appearances. Resolving it needs a hover that does not recolour the fill, or a label token of its own."
     }
   ]
 }
