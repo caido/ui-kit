@@ -34,8 +34,7 @@ export default {
       // Colors
       {
         "border-line-default": !context.checked && !props.invalid,
-        "bg-surface-page":
-          !context.checked && !props.invalid && !props.disabled,
+        "bg-surface-page": !context.checked && !props.invalid,
         "border-fill-secondary bg-fill-secondary": context.checked,
       },
 
@@ -50,7 +49,7 @@ export default {
         "peer-hover:bg-fill-secondary-hover peer-hover:border-fill-secondary-hover":
           !props.disabled && context.checked,
         "peer-focus-visible:z-10": !props.disabled,
-        "bg-surface-subtle select-none pointer-events-none cursor-default":
+        "opacity-disabled select-none pointer-events-none cursor-default":
           props.disabled,
       },
 

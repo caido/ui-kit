@@ -3,7 +3,7 @@ export default {
     class: [
       "relative flex flex-auto items-center gap-2 p-2 last-of-type:flex-[initial]",
       {
-        "cursor-default pointer-events-none select-none opacity-60":
+        "cursor-default pointer-events-none select-none opacity-disabled":
           context.disabled,
       },
       "[&_[data-pc-section=separator]]:has-[~[data-p-active=true]]:bg-fill-secondary",

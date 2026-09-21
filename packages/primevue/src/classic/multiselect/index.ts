@@ -36,7 +36,7 @@ export default {
       "cursor-pointer",
       "select-none",
       {
-        "bg-surface-subtle select-none pointer-events-none cursor-default":
+        "bg-surface-disabled opacity-disabled select-none pointer-events-none cursor-default":
           props.disabled,
       },
     ],
@@ -48,7 +48,7 @@ export default {
 
       // Spacing
       {
-        "py-2 px-3":
+        "py-1.5 px-2":
           props.display === "comma" ||
           (props.display === "chip" && !props?.modelValue?.length),
         "py-1 px-1": props.display === "chip" && props?.modelValue?.length > 0,

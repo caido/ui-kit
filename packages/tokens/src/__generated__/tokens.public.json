@@ -4,43 +4,43 @@
     "palette.neutral.light.1": {
       "variable": "--palette-neutral-light-1",
       "tier": "primitive",
-      "dark": "oklch(0.9766 0.0051 70)",
-      "light": "oklch(0.9766 0.0051 70)",
+      "dark": "oklch(0.9746 0.014 70)",
+      "light": "oklch(0.9746 0.014 70)",
       "varies": false
     },
     "palette.neutral.light.2": {
       "variable": "--palette-neutral-light-2",
       "tier": "primitive",
-      "dark": "oklch(0.9497 0.0094 70)",
-      "light": "oklch(0.9497 0.0094 70)",
+      "dark": "oklch(0.948 0.0155 70)",
+      "light": "oklch(0.948 0.0155 70)",
       "varies": false
     },
     "palette.neutral.light.3": {
       "variable": "--palette-neutral-light-3",
       "tier": "primitive",
-      "dark": "oklch(0.9134 0.0115 70)",
-      "light": "oklch(0.9134 0.0115 70)",
+      "dark": "oklch(0.9134 0.017 70)",
+      "light": "oklch(0.9134 0.017 70)",
       "varies": false
     },
     "palette.neutral.light.4": {
       "variable": "--palette-neutral-light-4",
       "tier": "primitive",
-      "dark": "oklch(0.8828 0.0142 70)",
-      "light": "oklch(0.8828 0.0142 70)",
+      "dark": "oklch(0.8828 0.018 70)",
+      "light": "oklch(0.8828 0.018 70)",
       "varies": false
     },
     "palette.neutral.light.5": {
       "variable": "--palette-neutral-light-5",
       "tier": "primitive",
-      "dark": "oklch(0.8551 0.0174 70)",
-      "light": "oklch(0.8551 0.0174 70)",
+      "dark": "oklch(0.8551 0.019 70)",
+      "light": "oklch(0.8551 0.019 70)",
       "varies": false
     },
     "palette.neutral.light.6": {
       "variable": "--palette-neutral-light-6",
       "tier": "primitive",
-      "dark": "oklch(0.8113 0.0198 70)",
-      "light": "oklch(0.8113 0.0198 70)",
+      "dark": "oklch(0.8113 0.0205 70)",
+      "light": "oklch(0.8113 0.0205 70)",
       "varies": false
     },
     "palette.neutral.light.7": {
@@ -1905,56 +1905,63 @@
       "variable": "--color-surface-700",
       "tier": "semantic",
       "dark": "oklch(0.4068 0.0188 273.5)",
-      "light": "oklch(0.8113 0.0198 70)",
+      "light": "oklch(0.8113 0.0205 70)",
       "varies": true
     },
     "color.surface.800": {
       "variable": "--color-surface-800",
       "tier": "semantic",
       "dark": "oklch(0.3263 0.0144 274.5)",
-      "light": "oklch(0.9134 0.0115 70)",
+      "light": "oklch(0.9134 0.017 70)",
       "varies": true
     },
     "color.surface.900": {
       "variable": "--color-surface-900",
       "tier": "semantic",
       "dark": "oklch(0.2732 0.0115 271)",
-      "light": "oklch(0.9766 0.0051 70)",
+      "light": "oklch(0.9746 0.014 70)",
       "varies": true
     },
     "color.surface.page": {
       "variable": "--color-surface-page",
       "tier": "semantic",
       "dark": "oklch(0.2732 0.0115 271)",
-      "light": "oklch(0.9766 0.0051 70)",
+      "light": "oklch(0.9746 0.014 70)",
       "varies": true
     },
     "color.surface.subtle": {
       "variable": "--color-surface-subtle",
       "tier": "semantic",
       "dark": "oklch(0.294 0.013 272.9)",
-      "light": "oklch(0.9497 0.0094 70)",
+      "light": "oklch(0.948 0.0155 70)",
       "varies": true
     },
     "color.surface.raised": {
       "variable": "--color-surface-raised",
       "tier": "semantic",
       "dark": "oklch(0.3263 0.0144 274.5)",
-      "light": "oklch(0.9134 0.0115 70)",
+      "light": "oklch(0.9134 0.017 70)",
       "varies": true
     },
     "color.surface.hover": {
       "variable": "--color-surface-hover",
       "tier": "semantic",
       "dark": "oklch(0.3501 0.0158 275.6)",
-      "light": "oklch(0.8828 0.0142 70)",
+      "light": "oklch(0.8828 0.018 70)",
       "varies": true
     },
     "color.surface.selected": {
       "variable": "--color-surface-selected",
       "tier": "semantic",
       "dark": "oklch(0.3725 0.0176 272.3)",
-      "light": "oklch(0.8551 0.0174 70)",
+      "light": "oklch(0.8551 0.019 70)",
+      "varies": true
+    },
+    "color.surface.disabled": {
+      "variable": "--color-surface-disabled",
+      "tier": "semantic",
+      "dark": "oklch(0.4068 0.0188 273.5)",
+      "light": "oklch(0.8113 0.0205 70)",
       "varies": true
     },
     "color.surface.primary": {
@@ -2045,7 +2052,7 @@
       "variable": "--color-line-subtle",
       "tier": "semantic",
       "dark": "oklch(0.4068 0.0188 273.5)",
-      "light": "oklch(0.8113 0.0198 70)",
+      "light": "oklch(0.8113 0.0205 70)",
       "varies": true
     },
     "color.line.default": {
@@ -2132,6 +2139,20 @@
       "light": "oklch(0.5632 0.0158 272.5)",
       "varies": true
     },
+    "color.fill.neutral-subtle": {
+      "variable": "--color-fill-neutral-subtle",
+      "tier": "semantic",
+      "dark": "oklch(0.4542 0.0132 274.7)",
+      "light": "oklch(0.751 0.0225 70)",
+      "varies": true
+    },
+    "color.fill.neutral-subtle-hover": {
+      "variable": "--color-fill-neutral-subtle-hover",
+      "tier": "semantic",
+      "dark": "oklch(0.5532 0.0093 278.5)",
+      "light": "oklch(0.6372 0.0263 70)",
+      "varies": true
+    },
     "color.fill.primary": {
       "variable": "--color-fill-primary",
       "tier": "semantic",
@@ -2160,6 +2181,20 @@
       "light": "oklch(0.5971 0.1504 18.3)",
       "varies": true
     },
+    "color.fill.danger-strong": {
+      "variable": "--color-fill-danger-strong",
+      "tier": "semantic",
+      "dark": "oklch(0.4763 0.125 18.1)",
+      "light": "oklch(0.5253 0.1677 18.5)",
+      "varies": true
+    },
+    "color.fill.danger-strong-hover": {
+      "variable": "--color-fill-danger-strong-hover",
+      "tier": "semantic",
+      "dark": "oklch(0.4225 0.1158 18)",
+      "light": "oklch(0.3465 0.1223 18.1)",
+      "varies": true
+    },
     "color.fill.success": {
       "variable": "--color-fill-success",
       "tier": "semantic",
@@ -2174,6 +2209,20 @@
       "light": "oklch(0.5916 0.0917 143.9)",
       "varies": true
     },
+    "color.fill.success-strong": {
+      "variable": "--color-fill-success-strong",
+      "tier": "semantic",
+      "dark": "oklch(0.4736 0.076 144.3)",
+      "light": "oklch(0.4918 0.1036 144.2)",
+      "varies": true
+    },
+    "color.fill.success-strong-hover": {
+      "variable": "--color-fill-success-strong-hover",
+      "tier": "semantic",
+      "dark": "oklch(0.4197 0.0712 143.6)",
+      "light": "oklch(0.3452 0.0741 144.3)",
+      "varies": true
+    },
     "color.fill.info": {
       "variable": "--color-fill-info",
       "tier": "semantic",
@@ -2186,6 +2235,20 @@
       "tier": "semantic",
       "dark": "oklch(0.7158 0.1348 250)",
       "light": "oklch(0.6469 0.1089 250)",
+      "varies": true
+    },
+    "color.fill.info-strong": {
+      "variable": "--color-fill-info-strong",
+      "tier": "semantic",
+      "dark": "oklch(0.51 0.0922 250)",
+      "light": "oklch(0.5035 0.1228 250)",
+      "varies": true
+    },
+    "color.fill.info-strong-hover": {
+      "variable": "--color-fill-info-strong-hover",
+      "tier": "semantic",
+      "dark": "oklch(0.447 0.0815 250)",
+      "light": "oklch(0.3461 0.0857 250)",
       "varies": true
     },
     "color.fill.secondary": {
@@ -2214,6 +2277,20 @@
       "tier": "semantic",
       "dark": "oklch(0.6923 0.1776 47.6)",
       "light": "oklch(0.6161 0.1732 47.6)",
+      "varies": true
+    },
+    "color.fill.warn-strong": {
+      "variable": "--color-fill-warn-strong",
+      "tier": "semantic",
+      "dark": "oklch(0.4936 0.1177 47.6)",
+      "light": "oklch(0.5168 0.146 47.6)",
+      "varies": true
+    },
+    "color.fill.warn-strong-hover": {
+      "variable": "--color-fill-warn-strong-hover",
+      "tier": "semantic",
+      "dark": "oklch(0.4345 0.1103 47.6)",
+      "light": "oklch(0.346 0.0993 47.6)",
       "varies": true
     },
     "color.fg.muted": {
@@ -2338,22 +2415,22 @@
     "color.fg.on-danger": {
       "variable": "--color-fg-on-danger",
       "tier": "semantic",
-      "dark": "oklch(0.2178 0 89.9)",
-      "light": "oklch(0.2178 0 89.9)",
+      "dark": "oklch(1 0 89.9)",
+      "light": "oklch(1 0 89.9)",
       "varies": false
     },
     "color.fg.on-success": {
       "variable": "--color-fg-on-success",
       "tier": "semantic",
-      "dark": "oklch(0.2178 0 89.9)",
-      "light": "oklch(0.2178 0 89.9)",
+      "dark": "oklch(1 0 89.9)",
+      "light": "oklch(1 0 89.9)",
       "varies": false
     },
     "color.fg.on-info": {
       "variable": "--color-fg-on-info",
       "tier": "semantic",
-      "dark": "oklch(0.2178 0 89.9)",
-      "light": "oklch(0.2178 0 89.9)",
+      "dark": "oklch(1 0 89.9)",
+      "light": "oklch(1 0 89.9)",
       "varies": false
     },
     "color.fg.on-neutral": {
@@ -2362,6 +2439,13 @@
       "dark": "oklch(0 0 89.9)",
       "light": "oklch(0 0 89.9)",
       "varies": false
+    },
+    "color.fg.on-neutral-subtle": {
+      "variable": "--color-fg-on-neutral-subtle",
+      "tier": "semantic",
+      "dark": "oklch(1 0 89.9)",
+      "light": "oklch(0 0 89.9)",
+      "varies": true
     },
     "color.fg.on-secondary": {
       "variable": "--color-fg-on-secondary",
@@ -2373,8 +2457,8 @@
     "color.fg.on-warn": {
       "variable": "--color-fg-on-warn",
       "tier": "semantic",
-      "dark": "oklch(0.2178 0 89.9)",
-      "light": "oklch(0.2178 0 89.9)",
+      "dark": "oklch(1 0 89.9)",
+      "light": "oklch(1 0 89.9)",
       "varies": false
     },
     "color.fg.link": {
@@ -2825,6 +2909,13 @@
       "light": "oklch(0.764 0.0263 256.8)",
       "varies": true
     },
+    "color.workflow-node.fg": {
+      "variable": "--color-workflow-node-fg",
+      "tier": "semantic",
+      "dark": "oklch(0.2178 0 89.9)",
+      "light": "oklch(0.2178 0 89.9)",
+      "varies": false
+    },
     "color.workflow-node.start-end": {
       "variable": "--color-workflow-node-start-end",
       "tier": "semantic",
@@ -3067,154 +3158,154 @@
       "variable": "--color-syntax-string",
       "tier": "semantic",
       "dark": "oklch(0.8226 0.0586 134.9)",
-      "light": "oklch(0.5431 0.0586 134.9)",
+      "light": "oklch(0.4421 0.0586 134.9)",
       "varies": true
     },
     "color.syntax.number": {
       "variable": "--color-syntax-number",
       "tier": "semantic",
       "dark": "oklch(0.6713 0.1118 245.5)",
-      "light": "oklch(0.5488 0.1118 245.5)",
+      "light": "oklch(0.4437 0.1118 245.5)",
       "varies": true
     },
     "color.syntax.boolean": {
       "variable": "--color-syntax-boolean",
       "tier": "semantic",
       "dark": "oklch(0.7104 0.0825 43.2)",
-      "light": "oklch(0.5579 0.0825 43.2)",
+      "light": "oklch(0.4549 0.0825 43.2)",
       "varies": true
     },
     "color.syntax.property": {
       "variable": "--color-syntax-property",
       "tier": "semantic",
       "dark": "oklch(0.7896 0.1459 79.1)",
-      "light": "oklch(0.5546 0.1152 79.1)",
+      "light": "oklch(0.4496 0.1152 79.1)",
       "varies": true
     },
     "color.syntax.constant": {
       "variable": "--color-syntax-constant",
       "tier": "semantic",
       "dark": "oklch(0.8005 0.1275 305.9)",
-      "light": "oklch(0.5635 0.1275 305.9)",
+      "light": "oklch(0.4604 0.1275 305.9)",
       "varies": true
     },
     "color.syntax.version": {
       "variable": "--color-syntax-version",
       "tier": "semantic",
       "dark": "oklch(0.6997 0.1247 161.2)",
-      "light": "oklch(0.5342 0.1187 161.2)",
+      "light": "oklch(0.4262 0.1187 161.2)",
       "varies": true
     },
     "color.syntax.header-name": {
       "variable": "--color-syntax-header-name",
       "tier": "semantic",
       "dark": "oklch(0.8492 0.1701 86.4)",
-      "light": "oklch(0.5522 0.113 86.4)",
+      "light": "oklch(0.4484 0.113 86.4)",
       "varies": true
     },
     "color.syntax.name": {
       "variable": "--color-syntax-name",
       "tier": "semantic",
       "dark": "oklch(0.7635 0.0852 145.2)",
-      "light": "oklch(0.542 0.0852 145.2)",
+      "light": "oklch(0.4383 0.0852 145.2)",
       "varies": true
     },
     "color.syntax.attribute": {
       "variable": "--color-syntax-attribute",
       "tier": "semantic",
       "dark": "oklch(0.6714 0.1777 27.6)",
-      "light": "oklch(0.5704 0.1777 27.6)",
+      "light": "oklch(0.4687 0.1777 27.6)",
       "varies": true
     },
     "color.syntax.cookie-value": {
       "variable": "--color-syntax-cookie-value",
       "tier": "semantic",
       "dark": "oklch(1 0 89.9)",
-      "light": "oklch(0.55 0 89.9)",
+      "light": "oklch(0.4477 0 89.9)",
       "varies": true
     },
     "color.syntax.punctuation": {
       "variable": "--color-syntax-punctuation",
       "tier": "semantic",
       "dark": "oklch(0.6454 0 89.9)",
-      "light": "oklch(0.5499 0 89.9)",
+      "light": "oklch(0.4477 0 89.9)",
       "varies": true
     },
     "color.syntax.comment": {
       "variable": "--color-syntax-comment",
       "tier": "semantic",
       "dark": "oklch(0.6343 0.1003 137)",
-      "light": "oklch(0.5413 0.1003 137)",
+      "light": "oklch(0.4384 0.1003 137)",
       "varies": true
     },
     "color.syntax.meta": {
       "variable": "--color-syntax-meta",
       "tier": "semantic",
       "dark": "oklch(0.7058 0 89.9)",
-      "light": "oklch(0.5503 0 89.9)",
+      "light": "oklch(0.4477 0 89.9)",
       "varies": true
     },
     "color.syntax.query-comment": {
       "variable": "--color-syntax-query-comment",
       "tier": "semantic",
       "dark": "oklch(0.6769 0.0155 254.6)",
-      "light": "oklch(0.5494 0.0155 254.6)",
+      "light": "oklch(0.445 0.0155 254.6)",
       "varies": true
     },
     "color.syntax.js-comment": {
       "variable": "--color-syntax-js-comment",
       "tier": "semantic",
       "dark": "oklch(0.6774 0.0037 145.5)",
-      "light": "oklch(0.5479 0.0037 145.5)",
+      "light": "oklch(0.4454 0.0037 145.5)",
       "varies": true
     },
     "color.syntax.js-keyword": {
       "variable": "--color-syntax-js-keyword",
       "tier": "semantic",
       "dark": "oklch(0.6588 0.1298 21.4)",
-      "light": "oklch(0.5658 0.1298 21.4)",
+      "light": "oklch(0.4623 0.1298 21.4)",
       "varies": true
     },
     "color.syntax.js-string": {
       "variable": "--color-syntax-js-string",
       "tier": "semantic",
       "dark": "oklch(0.7733 0.1095 113.4)",
-      "light": "oklch(0.5448 0.1095 113.4)",
+      "light": "oklch(0.4417 0.1095 113.4)",
       "varies": true
     },
     "color.syntax.js-literal": {
       "variable": "--color-syntax-js-literal",
       "tier": "semantic",
       "dark": "oklch(0.7279 0.1134 54.7)",
-      "light": "oklch(0.5574 0.1134 54.7)",
+      "light": "oklch(0.4563 0.1134 54.7)",
       "varies": true
     },
     "color.syntax.js-variable": {
       "variable": "--color-syntax-js-variable",
       "tier": "semantic",
       "dark": "oklch(0.8462 0.1115 82.9)",
-      "light": "oklch(0.5517 0.1115 82.9)",
+      "light": "oklch(0.4487 0.1115 82.9)",
       "varies": true
     },
     "color.syntax.js-property": {
       "variable": "--color-syntax-js-property",
       "tier": "semantic",
       "dark": "oklch(0.6975 0.0551 244.3)",
-      "light": "oklch(0.5465 0.0551 244.3)",
+      "light": "oklch(0.4456 0.0551 244.3)",
       "varies": true
     },
     "color.syntax.js-label": {
       "variable": "--color-syntax-js-label",
       "tier": "semantic",
       "dark": "oklch(0.7631 0.0554 185.7)",
-      "light": "oklch(0.5436 0.0554 185.7)",
+      "light": "oklch(0.4398 0.0554 185.7)",
       "varies": true
     },
     "color.syntax.js-type": {
       "variable": "--color-syntax-js-type",
       "tier": "semantic",
       "dark": "oklch(0.7066 0.0651 318.3)",
-      "light": "oklch(0.5566 0.0651 318.3)",
+      "light": "oklch(0.4535 0.0651 318.3)",
       "varies": true
     }
   }

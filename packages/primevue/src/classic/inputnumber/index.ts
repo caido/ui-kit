@@ -43,7 +43,10 @@ export default {
         },
 
         // Spacing
-        "py-2 px-3",
+        {
+          "py-3 px-3.5": parent.props.size === "large",
+          "py-1.5 px-2": parent.props.size !== "large",
+        },
         "m-0",
 
         // Shape
@@ -80,7 +83,7 @@ export default {
         { "hover:border-fill-secondary": !parent.props.invalid },
         "focus:z-10",
         {
-          "bg-surface-subtle select-none pointer-events-none cursor-default":
+          "bg-surface-disabled opacity-disabled select-none pointer-events-none cursor-default":
             context.disabled,
         },
 
@@ -162,7 +165,7 @@ export default {
 
       // Sizing
       "w-[3rem]",
-      { "px-3 py-2": props.showButtons && props.buttonLayout !== "stacked" },
+      { "px-2 py-1.5": props.showButtons && props.buttonLayout !== "stacked" },
       { "p-0": props.showButtons && props.buttonLayout === "stacked" },
       { "w-full": props.showButtons && props.buttonLayout === "vertical" },
 
@@ -231,7 +234,7 @@ export default {
 
       // Sizing
       "w-[3rem]",
-      { "px-3 py-2": props.showButtons && props.buttonLayout !== "stacked" },
+      { "px-2 py-1.5": props.showButtons && props.buttonLayout !== "stacked" },
       { "p-0": props.showButtons && props.buttonLayout === "stacked" },
       { "w-full": props.showButtons && props.buttonLayout === "vertical" },
 

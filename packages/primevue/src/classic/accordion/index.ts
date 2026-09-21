@@ -8,7 +8,7 @@ export default {
       class: [
         // State
         {
-          "select-none pointer-events-none cursor-default opacity-60":
+          "select-none pointer-events-none cursor-default opacity-disabled":
             props?.disabled,
         },
       ],

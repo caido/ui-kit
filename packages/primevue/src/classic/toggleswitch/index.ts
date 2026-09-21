@@ -5,7 +5,7 @@ export default {
       "w-10 h-6",
       "rounded-2xl",
       {
-        "opacity-60 select-none pointer-events-none cursor-default":
+        "opacity-disabled select-none pointer-events-none cursor-default":
           props.disabled,
       },
     ],
@@ -37,7 +37,10 @@ export default {
         ),
         "bg-fill-secondary before:bg-fg-on-secondary":
           props.modelValue == props.trueValue,
-        "border-transparent": !props.invalid,
+        "border-line-strong":
+          !(props.modelValue == props.trueValue) && !props.invalid,
+        "border-transparent":
+          props.modelValue == props.trueValue && !props.invalid,
       },
 
       // Invalid State
@@ -45,7 +48,7 @@ export default {
 
       // States
       {
-        "peer-hover:bg-surface-subtle":
+        "peer-hover:bg-surface-hover":
           !(props.modelValue == props.trueValue) &&
           !props.disabled &&
           !props.invalid,

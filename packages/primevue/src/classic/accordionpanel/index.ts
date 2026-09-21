@@ -3,7 +3,7 @@ export default {
     class: [
       "flex flex-col border-b border-line-default",
       {
-        "[&>[data-pc-name=accordionheader]]:select-none [&>[data-pc-name=accordionheader]]:pointer-events-none [&>[data-pc-name=accordionheader]]:cursor-default [&>[data-pc-name=accordionheader]]:opacity-60":
+        "[&>[data-pc-name=accordionheader]]:select-none [&>[data-pc-name=accordionheader]]:pointer-events-none [&>[data-pc-name=accordionheader]]:cursor-default [&>[data-pc-name=accordionheader]]:opacity-disabled":
           props?.disabled,
         "[&>[data-pc-name=accordionheader]]:text-fg-default hover:[&>[data-pc-name=accordionheader]]:text-fg-strong":
           !props.disabled && context.active,

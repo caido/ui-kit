@@ -21,7 +21,7 @@ export default {
         "bg-transparent": context.active,
         "text-fg-secondary": context.active,
 
-        "opacity-60 cursor-default user-select-none select-none pointer-events-none":
+        "opacity-disabled cursor-default user-select-none select-none pointer-events-none":
           props?.disabled,
       },
 
