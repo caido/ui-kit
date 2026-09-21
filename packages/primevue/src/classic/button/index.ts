@@ -306,8 +306,7 @@ export default {
       },
       // Text & Outlined Button
       {
-        "hover:bg-fg-strong/15":
-          props.plain && (props.text || props.outlined),
+        "hover:bg-fg-strong/15": props.plain && (props.text || props.outlined),
       },
 
       // Primary
@@ -440,7 +439,9 @@ export default {
       },
 
       // Disabled
-      { "opacity-disabled pointer-events-none cursor-default": context.disabled },
+      {
+        "opacity-disabled pointer-events-none cursor-default": context.disabled,
+      },
 
       // Transitions
       "transition duration-200 ease-in-out",

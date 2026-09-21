@@ -38,7 +38,7 @@ export default {
       "shrink-0",
 
       // Spacing
-      "p-6",
+      "p-4",
 
       // Shape
       "rounded-tl-lg",
@@ -51,16 +51,21 @@ export default {
     ],
   },
   title: {
-    class: ["font-semibold text-xl leading-[normal]"],
+    class: ["text-title"],
   },
   headerActions: {
-    class: ["flex items-center"],
+    class: [
+      "flex items-center gap-1",
+      "[&>button]:size-8 [&>button]:p-0",
+      "[&>button]:!text-fg-muted",
+      "[&>button:hover]:!bg-fg-strong/15",
+    ],
   },
   content: ({ state, instance }) => ({
     class: [
       // Spacing
-      "px-6",
-      "pb-6",
+      "px-4",
+      "pb-4",
       "pt-0",
 
       // Shape
@@ -88,8 +93,8 @@ export default {
       "gap-2",
 
       // Spacing
-      "px-6",
-      "pb-6",
+      "px-4",
+      "pb-4",
 
       // Shape
       "border-t-0",
@@ -107,7 +112,7 @@ export default {
       // Transitions
       "transition-all",
       "duration-300",
-      { "p-5": props.position !== "full" },
+      { "p-4": props.position !== "full" },
 
       // Background and Effects
       { "has-[.mask-active]:bg-transparent bg-black/40": props.modal },

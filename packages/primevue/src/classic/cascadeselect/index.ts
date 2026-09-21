@@ -153,7 +153,9 @@ export default {
       },
 
       // Disabled
-      { "opacity-disabled pointer-events-none cursor-default": context.disabled },
+      {
+        "opacity-disabled pointer-events-none cursor-default": context.disabled,
+      },
     ],
   }),
   optionContent: {

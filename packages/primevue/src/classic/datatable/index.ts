@@ -49,9 +49,7 @@ export default {
       "font-bold",
 
       // Shape
-      props.showGridlines
-        ? "border-x border-t border-b-0"
-        : "border-0",
+      props.showGridlines ? "border-x border-t border-b-0" : "border-0",
 
       // Spacing
       "p-4",
