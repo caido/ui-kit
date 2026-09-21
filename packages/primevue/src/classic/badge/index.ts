@@ -36,11 +36,12 @@ export default {
         "bg-fill-primary text-fg-on-primary":
           props.severity == null || props.severity === "primary",
         "bg-fill-neutral text-fg-on-neutral": props.severity === "secondary",
-        "bg-fill-success text-fg-on-success": props.severity === "success",
-        "bg-fill-info text-fg-on-info":
+        "bg-fill-success-strong text-fg-on-success":
+          props.severity === "success",
+        "bg-fill-info-strong text-fg-on-info":
           props.severity === "info" || props.severity === "help",
-        "bg-fill-warn text-fg-on-warn": props.severity === "warn",
-        "bg-fill-danger text-fg-on-danger": props.severity === "danger",
+        "bg-fill-warn-strong text-fg-on-warn": props.severity === "warn",
+        "bg-fill-danger-strong text-fg-on-danger": props.severity === "danger",
         "text-fg-on-neutral bg-fill-neutral": props.severity === "contrast",
       },
     ],

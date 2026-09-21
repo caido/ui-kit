@@ -74,7 +74,7 @@ export default {
       },
 
       // Disabled State
-      { "opacity-60 pointer-events-none cursor-default": context.disabled },
+      { "opacity-disabled pointer-events-none cursor-default": context.disabled },
 
       // Transitions
       "transition-all",

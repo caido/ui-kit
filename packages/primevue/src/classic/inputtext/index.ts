@@ -14,8 +14,7 @@ export default {
       // Size
       {
         "py-3 px-3.5": props.size == "large",
-        "py-1.5 px-2": props.size == "small",
-        "py-2 px-3": props.size == null,
+        "py-1.5 px-2": props.size !== "large",
       },
 
       // Shape
@@ -48,7 +47,7 @@ export default {
       {
         "hover:border-line-strong": !context.disabled && !props.invalid,
         "focus:z-10": !context.disabled,
-        "bg-surface-subtle select-none pointer-events-none cursor-default":
+        "bg-surface-disabled opacity-disabled select-none pointer-events-none cursor-default":
           context.disabled,
       },
 

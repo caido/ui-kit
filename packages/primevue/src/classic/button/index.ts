@@ -44,7 +44,7 @@ export default {
 
       // Plain Button
       {
-        "text-fg-on-neutral bg-fill-neutral border border-fill-neutral":
+        "text-fg-on-neutral-subtle bg-fill-neutral-subtle border border-fill-neutral-subtle":
           props.plain && !props.outlined && !props.text,
       },
       // Plain Text Button
@@ -131,12 +131,12 @@ export default {
           !props.text &&
           !props.outlined &&
           !props.plain,
-        "bg-fill-success":
+        "bg-fill-success-strong":
           props.severity === "success" &&
           !props.text &&
           !props.outlined &&
           !props.plain,
-        "border border-fill-success":
+        "border border-fill-success-strong":
           props.severity === "success" &&
           !props.text &&
           !props.outlined &&
@@ -160,12 +160,12 @@ export default {
           !props.text &&
           !props.outlined &&
           !props.plain,
-        "bg-fill-info":
+        "bg-fill-info-strong":
           props.severity === "info" &&
           !props.text &&
           !props.outlined &&
           !props.plain,
-        "border border-fill-info":
+        "border border-fill-info-strong":
           props.severity === "info" &&
           !props.text &&
           !props.outlined &&
@@ -188,12 +188,12 @@ export default {
           !props.text &&
           !props.outlined &&
           !props.plain,
-        "bg-fill-warn":
+        "bg-fill-warn-strong":
           props.severity === "warn" &&
           !props.text &&
           !props.outlined &&
           !props.plain,
-        "border border-fill-warn":
+        "border border-fill-warn-strong":
           props.severity === "warn" &&
           !props.text &&
           !props.outlined &&
@@ -216,12 +216,12 @@ export default {
           !props.text &&
           !props.outlined &&
           !props.plain,
-        "bg-fill-info":
+        "bg-fill-info-strong":
           props.severity === "help" &&
           !props.text &&
           !props.outlined &&
           !props.plain,
-        "border border-fill-info":
+        "border border-fill-info-strong":
           props.severity === "help" &&
           !props.text &&
           !props.outlined &&
@@ -244,12 +244,12 @@ export default {
           !props.text &&
           !props.outlined &&
           !props.plain,
-        "bg-fill-danger":
+        "bg-fill-danger-strong":
           props.severity === "danger" &&
           !props.text &&
           !props.outlined &&
           !props.plain,
-        "border border-fill-danger":
+        "border border-fill-danger-strong":
           props.severity === "danger" &&
           !props.text &&
           !props.outlined &&
@@ -268,17 +268,17 @@ export default {
 
       // Contrast Button
       {
-        "text-fg-on-neutral":
+        "text-fg-on-neutral-subtle":
           props.severity === "contrast" &&
           !props.text &&
           !props.outlined &&
           !props.plain,
-        "bg-fill-neutral":
+        "bg-fill-neutral-subtle":
           props.severity === "contrast" &&
           !props.text &&
           !props.outlined &&
           !props.plain,
-        "border border-fill-neutral":
+        "border border-fill-neutral-subtle":
           props.severity === "contrast" &&
           !props.text &&
           !props.outlined &&
@@ -301,12 +301,12 @@ export default {
 
       // Plain
       {
-        "hover:bg-fill-neutral-hover hover:border-fill-neutral-hover":
+        "hover:bg-fill-neutral-subtle-hover hover:border-fill-neutral-subtle-hover":
           props.plain && !props.outlined && !props.text,
       },
       // Text & Outlined Button
       {
-        "hover:bg-fill-neutral/10":
+        "hover:bg-fg-strong/15":
           props.plain && (props.text || props.outlined),
       },
 
@@ -345,7 +345,7 @@ export default {
 
       // Success
       {
-        "hover:bg-fill-success-hover hover:border-fill-success-hover":
+        "hover:bg-fill-success-strong-hover hover:border-fill-success-strong-hover":
           props.severity === "success" &&
           !props.text &&
           !props.outlined &&
@@ -361,7 +361,7 @@ export default {
 
       // Info
       {
-        "hover:bg-fill-info-hover hover:border-fill-info-hover":
+        "hover:bg-fill-info-strong-hover hover:border-fill-info-strong-hover":
           props.severity === "info" &&
           !props.text &&
           !props.outlined &&
@@ -377,7 +377,7 @@ export default {
 
       // Warning
       {
-        "hover:bg-fill-warn-hover hover:border-fill-warn-hover":
+        "hover:bg-fill-warn-strong-hover hover:border-fill-warn-strong-hover":
           props.severity === "warn" &&
           !props.text &&
           !props.outlined &&
@@ -393,7 +393,7 @@ export default {
 
       // Help
       {
-        "hover:bg-fill-info-hover hover:border-fill-info-hover":
+        "hover:bg-fill-info-strong-hover hover:border-fill-info-strong-hover":
           props.severity === "help" &&
           !props.text &&
           !props.outlined &&
@@ -409,7 +409,7 @@ export default {
 
       // Danger
       {
-        "hover:bg-fill-danger-hover hover:border-fill-danger-hover":
+        "hover:bg-fill-danger-strong-hover hover:border-fill-danger-strong-hover":
           props.severity === "danger" &&
           !props.text &&
           !props.outlined &&
@@ -425,7 +425,7 @@ export default {
 
       // Contrast
       {
-        "hover:bg-fill-neutral-hover hover:border-fill-neutral-hover":
+        "hover:bg-fill-neutral-subtle-hover hover:border-fill-neutral-subtle-hover":
           props.severity === "contrast" &&
           !props.text &&
           !props.outlined &&
@@ -433,14 +433,14 @@ export default {
       },
       // Text & Outlined Button
       {
-        "hover:bg-surface-hover":
+        "hover:bg-fg-strong/15":
           (props.text || props.outlined) &&
           props.severity === "contrast" &&
           !props.plain,
       },
 
       // Disabled
-      { "opacity-60 pointer-events-none cursor-default": context.disabled },
+      { "opacity-disabled pointer-events-none cursor-default": context.disabled },
 
       // Transitions
       "transition duration-200 ease-in-out",

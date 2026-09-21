@@ -51,14 +51,14 @@ export default {
       // Shape
       props.showGridlines
         ? "border-x border-t border-b-0"
-        : "border-y border-x-0",
+        : "border-0",
 
       // Spacing
       "p-4",
 
       // Color
       "bg-surface-page",
-      "border-line-default",
+      "border-surface-page",
       "text-fg-default",
     ],
   }),
@@ -119,7 +119,7 @@ export default {
 
         // Shape
         { "first:border-l border-y border-r": context?.showGridlines },
-        "border-x-0 border-y-2 border-solid",
+        "border-x-0 border-y-4 border-solid",
 
         // Spacing
         context?.size === "small"
@@ -132,7 +132,7 @@ export default {
         (props.sortable === "" || props.sortable) && context.sorted
           ? "bg-surface-selected text-fg-strong"
           : "bg-surface-raised text-fg-default",
-        "border-line-default",
+        "border-surface-page",
 
         // States
         {

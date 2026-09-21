@@ -53,7 +53,7 @@ export default {
       },
 
       // Disabled
-      { "opacity-60 pointer-events-none cursor-default": context.disabled },
+      { "opacity-disabled pointer-events-none cursor-default": context.disabled },
     ],
   }),
   itemLink: {

@@ -42,7 +42,7 @@ export default {
 
       // Misc
       "user-none overflow-hidden",
-      { "cursor-default pointer-events-none opacity-60": context.disabled },
+      { "cursor-default pointer-events-none opacity-disabled": context.disabled },
     ],
   }),
   prev: ({ context }) => ({
@@ -72,7 +72,7 @@ export default {
 
       // Misc
       "user-none overflow-hidden",
-      { "cursor-default pointer-events-none opacity-60": context.disabled },
+      { "cursor-default pointer-events-none opacity-disabled": context.disabled },
     ],
   }),
   next: ({ context }) => ({
@@ -102,7 +102,7 @@ export default {
 
       // Misc
       "user-none overflow-hidden",
-      { "cursor-default pointer-events-none opacity-60": context.disabled },
+      { "cursor-default pointer-events-none opacity-disabled": context.disabled },
     ],
   }),
   last: ({ context }) => ({
@@ -132,7 +132,7 @@ export default {
 
       // Misc
       "user-none overflow-hidden",
-      { "cursor-default pointer-events-none opacity-60": context.disabled },
+      { "cursor-default pointer-events-none opacity-disabled": context.disabled },
     ],
   }),
   page: ({ context }) => ({
@@ -166,7 +166,7 @@ export default {
 
       // Misc
       "user-none overflow-hidden",
-      { "cursor-default pointer-events-none opacity-60": context.disabled },
+      { "cursor-default pointer-events-none opacity-disabled": context.disabled },
     ],
   }),
   contentStart: "mr-auto",

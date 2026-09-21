@@ -13,6 +13,9 @@ export default {
       "text-fg-strong",
     ],
   },
+  header: {
+    class: "border-b-4 border-surface-page",
+  },
   body: {
     class: [
       //Flex
