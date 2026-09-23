@@ -94,6 +94,31 @@ const toRgbFromOklch = (value: ColorValue): [number, number, number] => {
 const toRgb = (value: ColorValue): [number, number, number] =>
   value.colorSpace === "oklch" ? toRgbFromOklch(value) : toRgbFromHsl(value);
 
+const toTenth = (value: number) => Math.round(value * 10) / 10;
+
+/** The bare channels a Tailwind preset wraps in hsl() itself. */
+export const toHslTriple = (value: ColorValue) => {
+  const [red = 0, green = 0, blue = 0] = toRgb(value).map(
+    (channel) => channel / 255,
+  );
+
+  const largest = Math.max(red, green, blue);
+  const smallest = Math.min(red, green, blue);
+  const span = largest - smallest;
+  const lightness = (largest + smallest) / 2;
+  const saturation = span === 0 ? 0 : span / (1 - Math.abs(2 * lightness - 1));
+
+  const wheel =
+    largest === red
+      ? ((green - blue) / span + 6) % 6
+      : largest === green
+        ? (blue - red) / span + 2
+        : (red - green) / span + 4;
+  const hue = span === 0 ? 0 : 60 * wheel;
+
+  return `${toTenth(hue)}deg ${toTenth(saturation * 100)}% ${toTenth(lightness * 100)}%`;
+};
+
 type Rgb = [number, number, number];
 
 const composite = (value: Rgb, backdrop: Rgb, alpha: number): Rgb => [

@@ -1,0 +1,1752 @@
+/* Compatibility only, not part of the design system. */
+
+:root, so a moved overlay
+   resolves them the same as an element left in place. */
+
+.border-x-\[10px\] {
+  border-left-width: 10px;
+  border-right-width: 10px
+}
+.border-y-\[10px\] {
+  border-top-width: 10px;
+  border-bottom-width: 10px
+}
+.border-b-\[10px\] {
+  border-bottom-width: 10px
+}
+.border-l-\[10px\] {
+  border-left-width: 10px
+}
+.border-r-\[10px\] {
+  border-right-width: 10px
+}
+.border-t-\[10px\] {
+  border-top-width: 10px
+}
+.border-none {
+  border-style: none
+}
+.border-blue-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(191 219 254 / var(--tw-border-opacity))
+}
+.border-blue-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity))
+}
+.border-blue-500\/20 {
+  border-color: rgb(59 130 246 / 0.2)
+}
+.border-danger-300 {
+  border-color: hsl(var(--c-danger-300))
+}
+.border-danger-400 {
+  border-color: hsl(var(--c-danger-400))
+}
+.border-danger-500 {
+  border-color: hsl(var(--c-danger-500))
+}
+.border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity))
+}
+.border-gray-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity))
+}
+.border-green-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(187 247 208 / var(--tw-border-opacity))
+}
+.border-green-500\/20 {
+  border-color: rgb(34 197 94 / 0.2)
+}
+.border-info-300 {
+  border-color: hsl(var(--c-info-300))
+}
+.border-info-400 {
+  border-color: hsl(var(--c-info-400))
+}
+.border-orange-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(254 215 170 / var(--tw-border-opacity))
+}
+.border-orange-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(253 186 116 / var(--tw-border-opacity))
+}
+.border-orange-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(251 146 60 / var(--tw-border-opacity))
+}
+.border-orange-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(249 115 22 / var(--tw-border-opacity))
+}
+.border-orange-500\/20 {
+  border-color: rgb(249 115 22 / 0.2)
+}
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, var(--p-primary-color) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.border-primary-600\/80 {
+  border-color: color-mix(in srgb, hsl(var(--c-primary-600)) calc(100% * 0.8), transparent)
+}
+.border-primary-700 {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-primary-700)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.border-purple-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(216 180 254 / var(--tw-border-opacity))
+}
+.border-purple-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(192 132 252 / var(--tw-border-opacity))
+}
+.border-purple-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(168 85 247 / var(--tw-border-opacity))
+}
+.border-red-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(254 202 202 / var(--tw-border-opacity))
+}
+.border-red-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(248 113 113 / var(--tw-border-opacity))
+}
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity))
+}
+.border-red-500\/20 {
+  border-color: rgb(239 68 68 / 0.2)
+}
+.border-secondary-300 {
+  border-color: hsl(var(--c-secondary-300))
+}
+.border-secondary-400 {
+  border-color: hsl(var(--c-secondary-400))
+}
+.border-success-300 {
+  border-color: hsl(var(--c-success-300))
+}
+.border-success-400 {
+  border-color: hsl(var(--c-success-400))
+}
+.border-success-500 {
+  border-color: hsl(var(--c-success-500))
+}
+.border-surface-0 {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.border-surface-0\/20 {
+  border-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * 0.2), transparent)
+}
+.border-surface-100 {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-100)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.border-surface-200 {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-200)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.border-surface-300 {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-300)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.border-surface-500 {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-500)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.border-surface-500\/20 {
+  border-color: color-mix(in srgb, hsl(var(--c-surface-500)) calc(100% * 0.2), transparent)
+}
+.border-surface-600 {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.border-surface-700 {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-700)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.border-surface-800 {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-800)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.border-surface-900 {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.border-surface-950 {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.border-transparent {
+  border-color: transparent
+}
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity))
+}
+.border-b-surface-700 {
+  --tw-border-opacity: 1;
+  border-bottom-color: color-mix(in srgb, hsl(var(--c-surface-700)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.border-l-surface-700 {
+  --tw-border-opacity: 1;
+  border-left-color: color-mix(in srgb, hsl(var(--c-surface-700)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.border-r-surface-700 {
+  --tw-border-opacity: 1;
+  border-right-color: color-mix(in srgb, hsl(var(--c-surface-700)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.border-t-surface-700 {
+  --tw-border-opacity: 1;
+  border-top-color: color-mix(in srgb, hsl(var(--c-surface-700)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.bg-black\/40 {
+  background-color: rgb(0 0 0 / 0.4)
+}
+.bg-black\/50 {
+  background-color: rgb(0 0 0 / 0.5)
+}
+.bg-black\/90 {
+  background-color: rgb(0 0 0 / 0.9)
+}
+.bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity))
+}
+.bg-blue-100\/70 {
+  background-color: rgb(219 234 254 / 0.7)
+}
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity))
+}
+.bg-blue-50\/90 {
+  background-color: rgb(239 246 255 / 0.9)
+}
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity))
+}
+.bg-blue-500\/20 {
+  background-color: rgb(59 130 246 / 0.2)
+}
+.bg-danger-300\/10 {
+  background-color: hsl(var(--c-danger-300) / 0.1)
+}
+.bg-danger-400 {
+  background-color: hsl(var(--c-danger-400))
+}
+.bg-danger-500 {
+  background-color: hsl(var(--c-danger-500))
+}
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity))
+}
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity))
+}
+.bg-green-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 252 231 / var(--tw-bg-opacity))
+}
+.bg-green-100\/70 {
+  background-color: rgb(220 252 231 / 0.7)
+}
+.bg-green-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity))
+}
+.bg-green-400\/50 {
+  background-color: rgb(74 222 128 / 0.5)
+}
+.bg-green-50\/90 {
+  background-color: rgb(240 253 244 / 0.9)
+}
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity))
+}
+.bg-green-500\/20 {
+  background-color: rgb(34 197 94 / 0.2)
+}
+.bg-info-300\/10 {
+  background-color: hsl(var(--c-info-300) / 0.1)
+}
+.bg-info-400 {
+  background-color: hsl(var(--c-info-400))
+}
+.bg-orange-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 237 213 / var(--tw-bg-opacity))
+}
+.bg-orange-100\/70 {
+  background-color: rgb(255 237 213 / 0.7)
+}
+.bg-orange-300\/10 {
+  background-color: rgb(253 186 116 / 0.1)
+}
+.bg-orange-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity))
+}
+.bg-orange-400\/50 {
+  background-color: rgb(251 146 60 / 0.5)
+}
+.bg-orange-50\/90 {
+  background-color: rgb(255 247 237 / 0.9)
+}
+.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity))
+}
+.bg-orange-500\/20 {
+  background-color: rgb(249 115 22 / 0.2)
+}
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, var(--p-primary-color) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.bg-primary-300\/10 {
+  background-color: color-mix(in srgb, hsl(var(--c-primary-300)) calc(100% * 0.1), transparent)
+}
+.bg-primary-400 {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-primary-400)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.bg-primary-700 {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-primary-700)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.bg-primary-emphasis {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, var(--p-primary-hover-color) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.bg-purple-300\/10 {
+  background-color: rgb(216 180 254 / 0.1)
+}
+.bg-purple-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 132 252 / var(--tw-bg-opacity))
+}
+.bg-purple-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(168 85 247 / var(--tw-bg-opacity))
+}
+.bg-red-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity))
+}
+.bg-red-100\/70 {
+  background-color: rgb(254 226 226 / 0.7)
+}
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity))
+}
+.bg-red-400\/50 {
+  background-color: rgb(248 113 113 / 0.5)
+}
+.bg-red-50\/90 {
+  background-color: rgb(254 242 242 / 0.9)
+}
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity))
+}
+.bg-red-500\/20 {
+  background-color: rgb(239 68 68 / 0.2)
+}
+.bg-secondary-300\/10 {
+  background-color: hsl(var(--c-secondary-300) / 0.1)
+}
+.bg-secondary-400 {
+  background-color: hsl(var(--c-secondary-400))
+}
+.bg-success-300\/10 {
+  background-color: hsl(var(--c-success-300) / 0.1)
+}
+.bg-success-400 {
+  background-color: hsl(var(--c-success-400))
+}
+.bg-success-500 {
+  background-color: hsl(var(--c-success-500))
+}
+.bg-surface-0 {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.bg-surface-0\/10 {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * 0.1), transparent)
+}
+.bg-surface-100 {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-100)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.bg-surface-100\/40 {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-100)) calc(100% * 0.4), transparent)
+}
+.bg-surface-100\/70 {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-100)) calc(100% * 0.7), transparent)
+}
+.bg-surface-200 {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-200)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.bg-surface-300 {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-300)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.bg-surface-300\/10 {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-300)) calc(100% * 0.1), transparent)
+}
+.bg-surface-400 {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-400)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.bg-surface-50 {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.bg-surface-500 {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-500)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.bg-surface-500\/10 {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-500)) calc(100% * 0.1), transparent)
+}
+.bg-surface-500\/20 {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-500)) calc(100% * 0.2), transparent)
+}
+.bg-surface-600 {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.bg-surface-600\/60 {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * 0.6), transparent)
+}
+.bg-surface-600\/90 {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * 0.9), transparent)
+}
+.bg-surface-700 {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-700)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.bg-surface-700\/30 {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-700)) calc(100% * 0.3), transparent)
+}
+.bg-surface-700\/50 {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-700)) calc(100% * 0.5), transparent)
+}
+.bg-surface-800 {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-800)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.bg-surface-800\/50 {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-800)) calc(100% * 0.5), transparent)
+}
+.bg-surface-800\/80 {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-800)) calc(100% * 0.8), transparent)
+}
+.bg-surface-900 {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.bg-surface-950 {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.bg-transparent {
+  background-color: transparent
+}
+.bg-white\/30 {
+  background-color: rgb(255 255 255 / 0.3)
+}
+.fill-none {
+  fill: none
+}
+.fill-surface-600 {
+  fill: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * 1), transparent)
+}
+.fill-surface-700 {
+  fill: color-mix(in srgb, hsl(var(--c-surface-700)) calc(100% * 1), transparent)
+}
+.stroke-primary {
+  stroke: color-mix(in srgb, var(--p-primary-color) calc(100% * 1), transparent)
+}
+.stroke-surface-200 {
+  stroke: color-mix(in srgb, hsl(var(--c-surface-200)) calc(100% * 1), transparent)
+}
+.text-blue-300 {
+  --tw-text-opacity: 1;
+  color: rgb(147 197 253 / var(--tw-text-opacity))
+}
+.text-blue-700 {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity))
+}
+.text-danger-400 {
+  color: hsl(var(--c-danger-400))
+}
+.text-green-300 {
+  --tw-text-opacity: 1;
+  color: rgb(134 239 172 / var(--tw-text-opacity))
+}
+.text-green-700 {
+  --tw-text-opacity: 1;
+  color: rgb(21 128 61 / var(--tw-text-opacity))
+}
+.text-info-400 {
+  color: hsl(var(--c-info-400))
+}
+.text-orange-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 186 116 / var(--tw-text-opacity))
+}
+.text-orange-400 {
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity))
+}
+.text-orange-500 {
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity))
+}
+.text-orange-700 {
+  --tw-text-opacity: 1;
+  color: rgb(194 65 12 / var(--tw-text-opacity))
+}
+.text-primary {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, var(--p-primary-color) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.text-primary-300 {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-primary-300)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.text-primary-400 {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-primary-400)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.text-primary-500 {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-primary-500)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.text-primary-600 {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-primary-600)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.text-primary-700 {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-primary-700)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.text-primary-contrast {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, var(--p-primary-contrast-color) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.text-purple-400 {
+  --tw-text-opacity: 1;
+  color: rgb(192 132 252 / var(--tw-text-opacity))
+}
+.text-purple-500 {
+  --tw-text-opacity: 1;
+  color: rgb(168 85 247 / var(--tw-text-opacity))
+}
+.text-red-300 {
+  --tw-text-opacity: 1;
+  color: rgb(252 165 165 / var(--tw-text-opacity))
+}
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity))
+}
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity))
+}
+.text-secondary-400 {
+  color: hsl(var(--c-secondary-400))
+}
+.text-success-400 {
+  color: hsl(var(--c-success-400))
+}
+.text-success-500 {
+  color: hsl(var(--c-success-500))
+}
+.text-success-900 {
+  color: hsl(var(--c-success-900))
+}
+.text-surface-0 {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.text-surface-0\/80 {
+  color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * 0.8), transparent)
+}
+.text-surface-100 {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-100)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.text-surface-300 {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-300)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.text-surface-400 {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-400)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.text-surface-500 {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-500)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.text-surface-600 {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.text-surface-700 {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-700)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.text-surface-800 {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-800)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.text-surface-900 {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.text-surface-950 {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.text-transparent {
+  color: transparent
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+.text-white\/60 {
+  color: rgb(255 255 255 / 0.6)
+}
+.text-white\/70 {
+  color: rgb(255 255 255 / 0.7)
+}
+.text-white\/80 {
+  color: rgb(255 255 255 / 0.8)
+}
+.outline-blue-200 {
+  outline-color: #bfdbfe
+}
+.outline-blue-500\/20 {
+  outline-color: rgb(59 130 246 / 0.2)
+}
+.outline-green-200 {
+  outline-color: #bbf7d0
+}
+.outline-green-500\/20 {
+  outline-color: rgb(34 197 94 / 0.2)
+}
+.outline-orange-200 {
+  outline-color: #fed7aa
+}
+.outline-orange-500\/20 {
+  outline-color: rgb(249 115 22 / 0.2)
+}
+.outline-red-200 {
+  outline-color: #fecaca
+}
+.outline-red-500\/20 {
+  outline-color: rgb(239 68 68 / 0.2)
+}
+.outline-surface-0 {
+  outline-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * 1), transparent)
+}
+.outline-surface-200 {
+  outline-color: color-mix(in srgb, hsl(var(--c-surface-200)) calc(100% * 1), transparent)
+}
+.outline-surface-500\/20 {
+  outline-color: color-mix(in srgb, hsl(var(--c-surface-500)) calc(100% * 0.2), transparent)
+}
+.outline-surface-950 {
+  outline-color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * 1), transparent)
+}
+.outline-transparent {
+  outline-color: transparent
+}
+.ring-blue-400 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(96 165 250 / var(--tw-ring-opacity))
+}
+.ring-danger-400 {
+  --tw-ring-color: hsl(var(--c-danger-400))
+}
+.ring-green-400 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(74 222 128 / var(--tw-ring-opacity))
+}
+.ring-info-300 {
+  --tw-ring-color: hsl(var(--c-info-300))
+}
+.ring-orange-400 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(251 146 60 / var(--tw-ring-opacity))
+}
+.ring-primary-300 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-primary-300)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.ring-primary-400 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-primary-400)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.ring-primary-500 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-primary-500)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.ring-primary-500\/50 {
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-primary-500)) calc(100% * 0.5), transparent)
+}
+.ring-purple-400 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(192 132 252 / var(--tw-ring-opacity))
+}
+.ring-secondary-400 {
+  --tw-ring-color: hsl(var(--c-secondary-400))
+}
+.ring-success-400 {
+  --tw-ring-color: hsl(var(--c-success-400))
+}
+.ring-surface-0 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.ring-surface-400 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-surface-400)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.ring-surface-950 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.placeholder\:text-surface-400::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-400)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.placeholder\:text-surface-400::placeholder {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-400)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.placeholder\:text-transparent::-moz-placeholder {
+  color: transparent
+}
+.placeholder\:text-transparent::placeholder {
+  color: transparent
+}
+.before\:border-x-\[10px\]::before {
+  content: var(--tw-content);
+  border-left-width: 10px;
+  border-right-width: 10px
+}
+.before\:border-b-\[10px\]::before {
+  content: var(--tw-content);
+  border-bottom-width: 10px
+}
+.before\:border-surface-200::before {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-200)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.before\:border-transparent::before {
+  content: var(--tw-content);
+  border-color: transparent
+}
+.before\:border-b-surface-200::before {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-bottom-color: color-mix(in srgb, hsl(var(--c-surface-200)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.before\:bg-primary::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, var(--p-primary-color) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.before\:bg-surface-0::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.before\:bg-transparent::before {
+  content: var(--tw-content);
+  background-color: transparent
+}
+.after\:border-x-\[8px\]::after {
+  content: var(--tw-content);
+  border-left-width: 8px;
+  border-right-width: 8px
+}
+.after\:border-b-\[8px\]::after {
+  content: var(--tw-content);
+  border-bottom-width: 8px
+}
+.after\:border-transparent::after {
+  content: var(--tw-content);
+  border-color: transparent
+}
+.after\:border-b-surface-0::after {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-bottom-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.first\:before\:bg-secondary-400:first-child::before {
+  content: var(--tw-content);
+  background-color: hsl(var(--c-secondary-400))
+}
+.last\:border-transparent:last-child {
+  border-color: transparent
+}
+.odd\:bg-surface-0:nth-child(odd) {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.odd\:text-surface-600:nth-child(odd) {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.even\:bg-surface-50:nth-child(even) {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.even\:text-surface-600:nth-child(even) {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.hover\:border-blue-600:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(37 99 235 / var(--tw-border-opacity))
+}
+.hover\:border-danger-600:hover {
+  border-color: hsl(var(--c-danger-600))
+}
+.hover\:border-gray-600:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity))
+}
+.hover\:border-orange-600:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 88 12 / var(--tw-border-opacity))
+}
+.hover\:border-primary-600\/80:hover {
+  border-color: color-mix(in srgb, hsl(var(--c-primary-600)) calc(100% * 0.8), transparent)
+}
+.hover\:border-primary-emphasis:hover {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, var(--p-primary-hover-color) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.hover\:border-purple-600:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(147 51 234 / var(--tw-border-opacity))
+}
+.hover\:border-secondary-300:hover {
+  border-color: hsl(var(--c-secondary-300))
+}
+.hover\:border-secondary-400:hover {
+  border-color: hsl(var(--c-secondary-400))
+}
+.hover\:border-success-600:hover {
+  border-color: hsl(var(--c-success-600))
+}
+.hover\:border-surface-200:hover {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-200)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.hover\:border-surface-300:hover {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-300)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.hover\:border-surface-400:hover {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-400)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.hover\:border-surface-800:hover {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-800)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.hover\:bg-black\/50:hover {
+  background-color: rgb(0 0 0 / 0.5)
+}
+.hover\:bg-blue-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity))
+}
+.hover\:bg-danger-300\/10:hover {
+  background-color: hsl(var(--c-danger-300) / 0.1)
+}
+.hover\:bg-danger-600:hover {
+  background-color: hsl(var(--c-danger-600))
+}
+.hover\:bg-gray-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity))
+}
+.hover\:bg-info-300\/10:hover {
+  background-color: hsl(var(--c-info-300) / 0.1)
+}
+.hover\:bg-orange-300\/10:hover {
+  background-color: rgb(253 186 116 / 0.1)
+}
+.hover\:bg-orange-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 88 12 / var(--tw-bg-opacity))
+}
+.hover\:bg-primary-300\/10:hover {
+  background-color: color-mix(in srgb, hsl(var(--c-primary-300)) calc(100% * 0.1), transparent)
+}
+.hover\:bg-primary-600\/80:hover {
+  background-color: color-mix(in srgb, hsl(var(--c-primary-600)) calc(100% * 0.8), transparent)
+}
+.hover\:bg-primary-emphasis:hover {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, var(--p-primary-hover-color) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.hover\:bg-purple-300\/10:hover {
+  background-color: rgb(216 180 254 / 0.1)
+}
+.hover\:bg-purple-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 51 234 / var(--tw-bg-opacity))
+}
+.hover\:bg-secondary-300:hover {
+  background-color: hsl(var(--c-secondary-300))
+}
+.hover\:bg-secondary-300\/10:hover {
+  background-color: hsl(var(--c-secondary-300) / 0.1)
+}
+.hover\:bg-success-300\/10:hover {
+  background-color: hsl(var(--c-success-300) / 0.1)
+}
+.hover\:bg-success-600:hover {
+  background-color: hsl(var(--c-success-600))
+}
+.hover\:bg-surface-0:hover {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.hover\:bg-surface-0\/10:hover {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * 0.1), transparent)
+}
+.hover\:bg-surface-0\/30:hover {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * 0.3), transparent)
+}
+.hover\:bg-surface-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-100)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.hover\:bg-surface-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-200)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.hover\:bg-surface-200\/20:hover {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-200)) calc(100% * 0.2), transparent)
+}
+.hover\:bg-surface-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-300)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.hover\:bg-surface-300\/10:hover {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-300)) calc(100% * 0.1), transparent)
+}
+.hover\:bg-surface-300\/20:hover {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-300)) calc(100% * 0.2), transparent)
+}
+.hover\:bg-surface-50:hover {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.hover\:bg-surface-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.hover\:bg-surface-800:hover {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-800)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.hover\:bg-surface-900\/10:hover {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * 0.1), transparent)
+}
+.hover\:text-primary-500:hover {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-primary-500)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.hover\:text-primary-600:hover {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-primary-600)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.hover\:text-surface-200:hover {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-200)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.hover\:text-surface-600:hover {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.hover\:text-surface-700:hover {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-700)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.hover\:text-surface-800:hover {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-800)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.hover\:text-surface-900:hover {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+.invalid\:hover\:border-danger-400:hover:invalid {
+  border-color: hsl(var(--c-danger-400))
+}
+.invalid\:hover\:border-red-500:hover:invalid {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity))
+}
+.focus\:border-transparent:focus {
+  border-color: transparent
+}
+.focus\:ring-blue-400:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(96 165 250 / var(--tw-ring-opacity))
+}
+.focus\:ring-blue-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity))
+}
+.focus\:ring-danger-500:focus {
+  --tw-ring-color: hsl(var(--c-danger-500))
+}
+.focus\:ring-green-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(34 197 94 / var(--tw-ring-opacity))
+}
+.focus\:ring-orange-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(249 115 22 / var(--tw-ring-opacity))
+}
+.focus\:ring-primary-300:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-primary-300)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.focus\:ring-primary-400:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-primary-400)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.focus\:ring-primary-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-primary-500)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.focus\:ring-purple-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(168 85 247 / var(--tw-ring-opacity))
+}
+.focus\:ring-red-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(239 68 68 / var(--tw-ring-opacity))
+}
+.focus\:ring-secondary-500:focus {
+  --tw-ring-color: hsl(var(--c-secondary-500))
+}
+.focus\:ring-success-500:focus {
+  --tw-ring-color: hsl(var(--c-success-500))
+}
+.focus\:ring-surface-0:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.focus\:ring-surface-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-surface-500)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.focus\:ring-white\/80:focus {
+  --tw-ring-color: rgb(255 255 255 / 0.8)
+}
+.invalid\:focus\:ring-danger-400:focus:invalid {
+  --tw-ring-color: hsl(var(--c-danger-400))
+}
+.invalid\:focus\:ring-red-200:focus:invalid {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(254 202 202 / var(--tw-ring-opacity))
+}
+.focus-visible\:ring-primary-300:focus-visible {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-primary-300)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.focus-visible\:ring-primary-400:focus-visible {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-primary-400)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.focus-visible\:ring-primary-500:focus-visible {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-primary-500)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.focus-visible\:ring-secondary-400:focus-visible {
+  --tw-ring-color: hsl(var(--c-secondary-400))
+}
+.peer:hover ~ .peer-hover\:border-primary-emphasis {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, var(--p-primary-hover-color) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.peer:hover ~ .peer-hover\:border-surface-400 {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-400)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.peer:hover ~ .peer-hover\:border-surface-600 {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.peer:hover ~ .peer-hover\:bg-primary-emphasis {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, var(--p-primary-hover-color) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.peer:hover ~ .peer-hover\:bg-surface-400 {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-400)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.peer:hover ~ .peer-hover\:bg-surface-600 {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.peer:focus-visible ~ .peer-focus-visible\:ring-primary-400 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-primary-400)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.peer:focus-visible ~ .peer-focus-visible\:ring-primary-500 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-primary-500)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.peer:focus-visible ~ .peer-focus-visible\:ring-secondary-200 {
+  --tw-ring-color: hsl(var(--c-secondary-200))
+}
+.has-\[\.mask-active\]\:bg-transparent:has(.mask-active) {
+  background-color: transparent
+}
+.dark\:border-none:where([data-mode=dark], [data-mode=dark] *) {
+  border-style: none
+}
+.dark\:border-blue-500\/20:where([data-mode=dark], [data-mode=dark] *) {
+  border-color: rgb(59 130 246 / 0.2)
+}
+.dark\:border-danger-400:where([data-mode=dark], [data-mode=dark] *) {
+  border-color: hsl(var(--c-danger-400))
+}
+.dark\:border-green-500\/20:where([data-mode=dark], [data-mode=dark] *) {
+  border-color: rgb(34 197 94 / 0.2)
+}
+.dark\:border-info-400:where([data-mode=dark], [data-mode=dark] *) {
+  border-color: hsl(var(--c-info-400))
+}
+.dark\:border-orange-400:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(251 146 60 / var(--tw-border-opacity))
+}
+.dark\:border-orange-500\/20:where([data-mode=dark], [data-mode=dark] *) {
+  border-color: rgb(249 115 22 / 0.2)
+}
+.dark\:border-purple-400:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(192 132 252 / var(--tw-border-opacity))
+}
+.dark\:border-red-400:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(248 113 113 / var(--tw-border-opacity))
+}
+.dark\:border-red-500\/20:where([data-mode=dark], [data-mode=dark] *) {
+  border-color: rgb(239 68 68 / 0.2)
+}
+.dark\:border-secondary-400:where([data-mode=dark], [data-mode=dark] *) {
+  border-color: hsl(var(--c-secondary-400))
+}
+.dark\:border-success-400:where([data-mode=dark], [data-mode=dark] *) {
+  border-color: hsl(var(--c-success-400))
+}
+.dark\:border-surface-0:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.dark\:border-surface-300:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-300)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.dark\:border-surface-500\/20:where([data-mode=dark], [data-mode=dark] *) {
+  border-color: color-mix(in srgb, hsl(var(--c-surface-500)) calc(100% * 0.2), transparent)
+}
+.dark\:border-surface-600:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.dark\:border-surface-700:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-700)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.dark\:border-surface-800:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-800)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.dark\:border-surface-900:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.dark\:border-surface-950:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.dark\:border-transparent:where([data-mode=dark], [data-mode=dark] *) {
+  border-color: transparent
+}
+.dark\:bg-\[rgba\(255\2c 255\2c 255\2c 0\.03\)\]:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: rgba(255,255,255,0.03)
+}
+.dark\:bg-blue-400:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity))
+}
+.dark\:bg-blue-500\/20:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: rgb(59 130 246 / 0.2)
+}
+.dark\:bg-danger-400:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: hsl(var(--c-danger-400))
+}
+.dark\:bg-gray-700:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity))
+}
+.dark\:bg-green-400:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity))
+}
+.dark\:bg-green-400\/50:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: rgb(74 222 128 / 0.5)
+}
+.dark\:bg-green-500\/20:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: rgb(34 197 94 / 0.2)
+}
+.dark\:bg-info-400:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: hsl(var(--c-info-400))
+}
+.dark\:bg-orange-400:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity))
+}
+.dark\:bg-orange-400\/50:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: rgb(251 146 60 / 0.5)
+}
+.dark\:bg-orange-500\/20:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: rgb(249 115 22 / 0.2)
+}
+.dark\:bg-purple-400:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 132 252 / var(--tw-bg-opacity))
+}
+.dark\:bg-red-400:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity))
+}
+.dark\:bg-red-400\/50:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: rgb(248 113 113 / 0.5)
+}
+.dark\:bg-red-500\/20:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: rgb(239 68 68 / 0.2)
+}
+.dark\:bg-secondary-400:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: hsl(var(--c-secondary-400))
+}
+.dark\:bg-success-400:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: hsl(var(--c-success-400))
+}
+.dark\:bg-surface-0:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.dark\:bg-surface-0\/10:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * 0.1), transparent)
+}
+.dark\:bg-surface-300:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-300)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.dark\:bg-surface-400:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-400)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.dark\:bg-surface-500\/20:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-500)) calc(100% * 0.2), transparent)
+}
+.dark\:bg-surface-600\/60:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * 0.6), transparent)
+}
+.dark\:bg-surface-600\/90:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * 0.9), transparent)
+}
+.dark\:bg-surface-700:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-700)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.dark\:bg-surface-800:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-800)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.dark\:bg-surface-800\/40:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-800)) calc(100% * 0.4), transparent)
+}
+.dark\:bg-surface-800\/50:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-800)) calc(100% * 0.5), transparent)
+}
+.dark\:bg-surface-900:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.dark\:bg-surface-900\/20:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * 0.2), transparent)
+}
+.dark\:bg-surface-900\/40:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * 0.4), transparent)
+}
+.dark\:bg-surface-950:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.dark\:bg-transparent:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: transparent
+}
+.dark\:bg-white\/30:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: rgb(255 255 255 / 0.3)
+}
+.dark\:fill-surface-200:where([data-mode=dark], [data-mode=dark] *) {
+  fill: color-mix(in srgb, hsl(var(--c-surface-200)) calc(100% * 1), transparent)
+}
+.dark\:fill-white\/70:where([data-mode=dark], [data-mode=dark] *) {
+  fill: rgb(255 255 255 / 0.7)
+}
+.dark\:stroke-surface-700:where([data-mode=dark], [data-mode=dark] *) {
+  stroke: color-mix(in srgb, hsl(var(--c-surface-700)) calc(100% * 1), transparent)
+}
+.dark\:text-blue-300:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: rgb(147 197 253 / var(--tw-text-opacity))
+}
+.dark\:text-danger-400:where([data-mode=dark], [data-mode=dark] *) {
+  color: hsl(var(--c-danger-400))
+}
+.dark\:text-green-300:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: rgb(134 239 172 / var(--tw-text-opacity))
+}
+.dark\:text-info-400:where([data-mode=dark], [data-mode=dark] *) {
+  color: hsl(var(--c-info-400))
+}
+.dark\:text-orange-300:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: rgb(253 186 116 / var(--tw-text-opacity))
+}
+.dark\:text-orange-400:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity))
+}
+.dark\:text-primary-400:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-primary-400)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.dark\:text-purple-400:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: rgb(192 132 252 / var(--tw-text-opacity))
+}
+.dark\:text-red-300:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: rgb(252 165 165 / var(--tw-text-opacity))
+}
+.dark\:text-secondary-400:where([data-mode=dark], [data-mode=dark] *) {
+  color: hsl(var(--c-secondary-400))
+}
+.dark\:text-success-400:where([data-mode=dark], [data-mode=dark] *) {
+  color: hsl(var(--c-success-400))
+}
+.dark\:text-success-900:where([data-mode=dark], [data-mode=dark] *) {
+  color: hsl(var(--c-success-900))
+}
+.dark\:text-surface-0:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.dark\:text-surface-0\/50:where([data-mode=dark], [data-mode=dark] *) {
+  color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * 0.5), transparent)
+}
+.dark\:text-surface-0\/60:where([data-mode=dark], [data-mode=dark] *) {
+  color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * 0.6), transparent)
+}
+.dark\:text-surface-0\/70:where([data-mode=dark], [data-mode=dark] *) {
+  color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * 0.7), transparent)
+}
+.dark\:text-surface-0\/80:where([data-mode=dark], [data-mode=dark] *) {
+  color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * 0.8), transparent)
+}
+.dark\:text-surface-200:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-200)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.dark\:text-surface-300:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-300)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.dark\:text-surface-500:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-500)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.dark\:text-surface-600:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.dark\:text-surface-900:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.dark\:text-surface-950:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.dark\:text-white:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+.dark\:text-white\/60:where([data-mode=dark], [data-mode=dark] *) {
+  color: rgb(255 255 255 / 0.6)
+}
+.dark\:text-white\/70:where([data-mode=dark], [data-mode=dark] *) {
+  color: rgb(255 255 255 / 0.7)
+}
+.dark\:text-white\/80:where([data-mode=dark], [data-mode=dark] *) {
+  color: rgb(255 255 255 / 0.8)
+}
+.dark\:outline-blue-500\/20:where([data-mode=dark], [data-mode=dark] *) {
+  outline-color: rgb(59 130 246 / 0.2)
+}
+.dark\:outline-green-500\/20:where([data-mode=dark], [data-mode=dark] *) {
+  outline-color: rgb(34 197 94 / 0.2)
+}
+.dark\:outline-orange-500\/20:where([data-mode=dark], [data-mode=dark] *) {
+  outline-color: rgb(249 115 22 / 0.2)
+}
+.dark\:outline-red-500\/20:where([data-mode=dark], [data-mode=dark] *) {
+  outline-color: rgb(239 68 68 / 0.2)
+}
+.dark\:outline-surface-0:where([data-mode=dark], [data-mode=dark] *) {
+  outline-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * 1), transparent)
+}
+.dark\:outline-surface-500\/20:where([data-mode=dark], [data-mode=dark] *) {
+  outline-color: color-mix(in srgb, hsl(var(--c-surface-500)) calc(100% * 0.2), transparent)
+}
+.dark\:ring-primary-400:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-primary-400)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.dark\:ring-primary-500:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-primary-500)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.dark\:ring-secondary-400:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-color: hsl(var(--c-secondary-400))
+}
+.dark\:placeholder\:text-surface-500:where([data-mode=dark], [data-mode=dark] *)::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-500)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.dark\:placeholder\:text-surface-500:where([data-mode=dark], [data-mode=dark] *)::placeholder {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-500)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.dark\:placeholder\:text-transparent:where([data-mode=dark], [data-mode=dark] *)::-moz-placeholder {
+  color: transparent
+}
+.dark\:placeholder\:text-transparent:where([data-mode=dark], [data-mode=dark] *)::placeholder {
+  color: transparent
+}
+.before\:dark\:border-surface-600:where([data-mode=dark], [data-mode=dark] *)::before {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.before\:dark\:border-surface-700:where([data-mode=dark], [data-mode=dark] *)::before {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-700)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.dark\:before\:border-b-surface-700:where([data-mode=dark], [data-mode=dark] *)::before {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-bottom-color: color-mix(in srgb, hsl(var(--c-surface-700)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.before\:dark\:bg-surface-500:where([data-mode=dark], [data-mode=dark] *)::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-500)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.before\:dark\:bg-surface-950:where([data-mode=dark], [data-mode=dark] *)::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.dark\:before\:bg-surface-800:where([data-mode=dark], [data-mode=dark] *)::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-800)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.dark\:before\:bg-surface-950:where([data-mode=dark], [data-mode=dark] *)::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.dark\:after\:border-b-surface-900:where([data-mode=dark], [data-mode=dark] *)::after {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-bottom-color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.dark\:odd\:bg-surface-700\/30:nth-child(odd):where([data-mode=dark], [data-mode=dark] *) {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-700)) calc(100% * 0.3), transparent)
+}
+.dark\:odd\:bg-surface-800:nth-child(odd):where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-800)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.dark\:odd\:bg-white\/30:nth-child(odd):where([data-mode=dark], [data-mode=dark] *) {
+  background-color: rgb(255 255 255 / 0.3)
+}
+.dark\:odd\:text-surface-0:nth-child(odd):where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.dark\:even\:bg-surface-900:nth-child(even):where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.dark\:even\:text-surface-0:nth-child(even):where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.dark\:hover\:border-danger-300:hover:where([data-mode=dark], [data-mode=dark] *) {
+  border-color: hsl(var(--c-danger-300))
+}
+.dark\:hover\:border-info-300:hover:where([data-mode=dark], [data-mode=dark] *) {
+  border-color: hsl(var(--c-info-300))
+}
+.dark\:hover\:border-orange-300:hover:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(253 186 116 / var(--tw-border-opacity))
+}
+.dark\:hover\:border-purple-300:hover:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(216 180 254 / var(--tw-border-opacity))
+}
+.dark\:hover\:border-secondary-300:hover:where([data-mode=dark], [data-mode=dark] *) {
+  border-color: hsl(var(--c-secondary-300))
+}
+.dark\:hover\:border-success-300:hover:where([data-mode=dark], [data-mode=dark] *) {
+  border-color: hsl(var(--c-success-300))
+}
+.dark\:hover\:border-surface-200:hover:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-200)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.dark\:hover\:border-surface-500:hover:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-500)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.dark\:hover\:border-surface-600:hover:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.dark\:hover\:border-surface-700:hover:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-700)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.dark\:hover\:bg-\[rgba\(255\2c 255\2c 255\2c 0\.03\)\]:hover:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: rgba(255,255,255,0.03)
+}
+.dark\:hover\:bg-\[rgba\(255\2c 255\2c 255\2c 0\.20\)\]:hover:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: rgba(255,255,255,0.20)
+}
+.dark\:hover\:bg-danger-300:hover:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: hsl(var(--c-danger-300))
+}
+.dark\:hover\:bg-info-300:hover:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: hsl(var(--c-info-300))
+}
+.dark\:hover\:bg-orange-300:hover:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 186 116 / var(--tw-bg-opacity))
+}
+.dark\:hover\:bg-purple-300:hover:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 180 254 / var(--tw-bg-opacity))
+}
+.dark\:hover\:bg-secondary-300:hover:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: hsl(var(--c-secondary-300))
+}
+.dark\:hover\:bg-success-300:hover:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: hsl(var(--c-success-300))
+}
+.dark\:hover\:bg-surface-200:hover:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-200)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.dark\:hover\:bg-surface-300:hover:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-300)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.dark\:hover\:bg-surface-500\/10:hover:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-500)) calc(100% * 0.1), transparent)
+}
+.dark\:hover\:bg-surface-500\/20:hover:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-500)) calc(100% * 0.2), transparent)
+}
+.dark\:hover\:bg-surface-600:hover:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.dark\:hover\:bg-surface-700\/50:hover:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-700)) calc(100% * 0.5), transparent)
+}
+.dark\:hover\:bg-surface-800:hover:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-800)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.dark\:hover\:bg-surface-800\/50:hover:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-800)) calc(100% * 0.5), transparent)
+}
+.dark\:hover\:bg-surface-800\/80:hover:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: color-mix(in srgb, hsl(var(--c-surface-800)) calc(100% * 0.8), transparent)
+}
+.dark\:hover\:bg-surface-900:hover:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.dark\:hover\:bg-white\/25:hover:where([data-mode=dark], [data-mode=dark] *) {
+  background-color: rgb(255 255 255 / 0.25)
+}
+.dark\:hover\:text-primary-300:hover:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-primary-300)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.dark\:hover\:text-primary-400:hover:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-primary-400)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.dark\:hover\:text-surface-0:hover:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.dark\:hover\:text-surface-100:hover:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: color-mix(in srgb, hsl(var(--c-surface-100)) calc(100% * var(--tw-text-opacity)), transparent)
+}
+.dark\:hover\:text-white:hover:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+.dark\:hover\:text-white\/60:hover:where([data-mode=dark], [data-mode=dark] *) {
+  color: rgb(255 255 255 / 0.6)
+}
+.dark\:hover\:text-white\/80:hover:where([data-mode=dark], [data-mode=dark] *) {
+  color: rgb(255 255 255 / 0.8)
+}
+.dark\:odd\:hover\:bg-white\/30:hover:nth-child(odd):where([data-mode=dark], [data-mode=dark] *) {
+  background-color: rgb(255 255 255 / 0.3)
+}
+.dark\:focus\:ring-blue-400:focus:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(96 165 250 / var(--tw-ring-opacity))
+}
+.dark\:focus\:ring-danger-400:focus:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-color: hsl(var(--c-danger-400))
+}
+.dark\:focus\:ring-green-400:focus:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(74 222 128 / var(--tw-ring-opacity))
+}
+.dark\:focus\:ring-info-300:focus:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-color: hsl(var(--c-info-300))
+}
+.dark\:focus\:ring-orange-400:focus:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(251 146 60 / var(--tw-ring-opacity))
+}
+.dark\:focus\:ring-primary-400:focus:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-primary-400)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.dark\:focus\:ring-purple-400:focus:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(192 132 252 / var(--tw-ring-opacity))
+}
+.dark\:focus\:ring-secondary-400:focus:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-color: hsl(var(--c-secondary-400))
+}
+.dark\:focus\:ring-success-400:focus:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-color: hsl(var(--c-success-400))
+}
+.dark\:focus\:ring-surface-0:focus:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-surface-0)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.dark\:focus\:ring-surface-400:focus:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-surface-400)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.dark\:focus\:ring-surface-950:focus:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-surface-900)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.dark\:focus\:ring-white\/80:focus:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-color: rgb(255 255 255 / 0.8)
+}
+.dark\:focus-visible\:ring-primary-300:focus-visible:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-primary-300)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.dark\:focus-visible\:ring-primary-400:focus-visible:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-primary-400)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.dark\:focus-visible\:ring-secondary-300:focus-visible:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-color: hsl(var(--c-secondary-300))
+}
+.dark\:focus-visible\:ring-secondary-400:focus-visible:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-color: hsl(var(--c-secondary-400))
+}
+.peer:hover ~ .dark\:peer-hover\:border-surface-400:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-400)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.peer:hover ~ .dark\:peer-hover\:border-surface-600:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-border-opacity: 1;
+  border-color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * var(--tw-border-opacity)), transparent)
+}
+.peer:hover ~ .dark\:peer-hover\:bg-surface-600:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-bg-opacity: 1;
+  background-color: color-mix(in srgb, hsl(var(--c-surface-600)) calc(100% * var(--tw-bg-opacity)), transparent)
+}
+.peer:focus-visible ~ .dark\:peer-focus-visible\:ring-primary-400:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: color-mix(in srgb, hsl(var(--c-primary-400)) calc(100% * var(--tw-ring-opacity)), transparent)
+}
+.peer:focus-visible ~ .dark\:peer-focus-visible\:ring-secondary-200:where([data-mode=dark], [data-mode=dark] *) {
+  --tw-ring-color: hsl(var(--c-secondary-200))
+}

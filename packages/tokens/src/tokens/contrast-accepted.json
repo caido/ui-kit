@@ -1,5 +1,5 @@
 {
-  "$description": "Pairings that fall below the floor today. Each entry names the appearance it applies to and the reason it is not fixed here. An entry is only legitimate when the fix belongs elsewhere; a pairing this step could fix is fixed, not listed. A pairing here that starts passing has to be removed, and the check fails until it is, so this list can only shrink.",
+  "$description": "Pairings below the floor today, each with the appearance and the reason the fix belongs elsewhere. The list can only shrink.",
   "accepted": [
     {
       "foreground": "color.secondary.400",
