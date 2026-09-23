@@ -1,27 +1,27 @@
 :root {
-  --p-primary-50: var(--c-primary-100);
-  --p-primary-100: var(--c-primary-100);
-  --p-primary-200: var(--c-primary-200);
-  --p-primary-300: var(--c-primary-300);
-  --p-primary-400: var(--c-primary-400);
-  --p-primary-500: var(--c-primary-500);
-  --p-primary-600: var(--c-primary-600);
-  --p-primary-700: var(--c-primary-700);
-  --p-primary-800: var(--c-primary-800);
-  --p-primary-900: var(--c-primary-900);
-  --p-primary-950: var(--c-primary-900);
-  --p-surface-0: var(--c-surface-0);
+  --p-primary-50: var(--color-primary-100);
+  --p-primary-100: var(--color-primary-100);
+  --p-primary-200: var(--color-primary-200);
+  --p-primary-300: var(--color-primary-300);
+  --p-primary-400: var(--color-primary-400);
+  --p-primary-500: var(--color-primary-500);
+  --p-primary-600: var(--color-primary-600);
+  --p-primary-700: var(--color-primary-700);
+  --p-primary-800: var(--color-primary-800);
+  --p-primary-900: var(--color-primary-900);
+  --p-primary-950: var(--color-primary-900);
+  --p-surface-0: var(--color-surface-0);
   --p-surface-50: #f8fafc;
   --p-surface-100: #f1f5f9;
-  --p-surface-200: var(--c-surface-200);
-  --p-surface-300: var(--c-surface-300);
-  --p-surface-400: var(--c-surface-400);
-  --p-surface-500: var(--c-surface-500);
-  --p-surface-600: var(--c-surface-600);
-  --p-surface-700: var(--c-surface-700);
-  --p-surface-800: var(--c-surface-800);
-  --p-surface-900: var(--c-surface-900);
-  --p-surface-950: var(--c-surface-900);
+  --p-surface-200: var(--color-surface-200);
+  --p-surface-300: var(--color-surface-300);
+  --p-surface-400: var(--color-surface-400);
+  --p-surface-500: var(--color-surface-500);
+  --p-surface-600: var(--color-surface-600);
+  --p-surface-700: var(--color-surface-700);
+  --p-surface-800: var(--color-surface-800);
+  --p-surface-900: var(--color-surface-900);
+  --p-surface-950: var(--color-surface-900);
   --p-content-border-radius: var(--radius);
 }
 
@@ -53,8 +53,8 @@
      computed from the accent rather than chosen, and near-black wins on every severity. */
   --p-primary-color: var(--p-primary-300);
   --p-primary-contrast-color: var(--p-surface-900);
-  --p-primary-hover-color: var(--c-secondary-300);
-  --p-primary-active-color: var(--c-secondary-200);
+  --p-primary-hover-color: var(--color-secondary-300);
+  --p-primary-active-color: var(--color-secondary-200);
   --p-content-border-color: var(--p-surface-700);
   --p-content-hover-background: var(--p-surface-800);
   --p-content-hover-color: var(--p-surface-0);

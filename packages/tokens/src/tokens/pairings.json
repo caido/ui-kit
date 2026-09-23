@@ -1,5 +1,5 @@
 {
-  "$description": "Every place a colour lands on another colour, with the rule that applies. text needs 4.5, large text and anything that is the only thing identifying a control needs 3. A pairing not listed here is not checked, so a new one must be added when it is introduced.",
+  "$description": "Every place a colour lands on another. Text needs 4.5, large text and a lone identifier need 3. A pairing not listed is not checked.",
   "pairings": [
     {
       "foreground": "color.fg.strong",

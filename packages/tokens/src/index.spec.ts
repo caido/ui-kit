@@ -10,9 +10,11 @@ import {
   checkRemovals,
   checkReplacements,
 } from "./contract.ts";
-import { checkPairing } from "./contrast.ts";
+import { checkPairing, toHslTriple } from "./contrast.ts";
+
 import {
   checkAppearances,
+  checkCompatNames,
   checkDirectNames,
   checkNamespaces,
   checkWholePixels,
@@ -877,5 +879,75 @@ describe("checkAnnouncements", () => {
         "color.fg.muted": { since: "", reason: "" },
       })._unsafeUnwrapErr(),
     ).toEqual(["color.fg.muted is missing since and reason"]);
+  });
+});
+
+describe("toHslTriple", () => {
+  it("writes an sRGB colour as its hsl channels", () => {
+    expect(toHslTriple(color(210, 50, 40))).toBe("210deg 50% 40%");
+  });
+
+  it("writes a neutral with no saturation", () => {
+    expect(toHslTriple(color(0, 0, 100))).toBe("0deg 0% 100%");
+  });
+
+  it("converts an oklch token into channels", () => {
+    expect(
+      toHslTriple({ colorSpace: "oklch", components: [0.5, 0.1, 30] }),
+    ).toMatch(/^-?[\d.]+deg -?[\d.]+% -?[\d.]+%$/);
+  });
+});
+
+describe("checkCompatNames", () => {
+  it("accepts a legacy name that points at a token", () => {
+    expect(
+      checkCompatNames([token("color.surface.page", 1)], {
+        "--c-surface-900": "color.surface.page",
+      }).isOk(),
+    ).toBe(true);
+  });
+
+  it("names a legacy name whose token does not exist", () => {
+    expect(
+      checkCompatNames([], {
+        "--c-surface-900": "color.surface.page",
+      })._unsafeUnwrapErr(),
+    ).toEqual(["--c-surface-900 -> color.surface.page"]);
+  });
+});
+
+describe("the plugin compatibility sheet", () => {
+  const sheet = readFileSync(
+    new URL("./__generated__/plugin-compat.css", import.meta.url),
+    "utf8",
+  );
+
+  it("writes every value as bare hsl channels", () => {
+    const values = [...sheet.matchAll(/^\s*--c-[a-z0-9-]+:\s*([^;]+);/gm)].map(
+      ([, value]) => value,
+    );
+
+    expect(values.length).toBeGreaterThan(0);
+    expect(
+      values.filter(
+        (value) => !/^-?[\d.]+deg -?[\d.]+% -?[\d.]+%$/.test(value ?? ""),
+      ),
+    ).toEqual([]);
+  });
+
+  it("holds one value per name across both appearances", () => {
+    expect(sheet).not.toContain("data-mode");
+  });
+
+  it("keeps the neutral ramp ordered from lightest to darkest", () => {
+    const lightness = ["0", "200", "300", "400", "500", "600", "700", "800", "900"]
+      .map((step) => {
+        const found = sheet.match(
+          new RegExp(`--c-surface-${step}: [^ ]+ [^ ]+ ([\\d.]+)%;`),
+        );
+        return Number(found?.[1] ?? 0);
+      });
+
+    expect(lightness).toEqual([...lightness].sort((a, b) => b - a));
   });
 });

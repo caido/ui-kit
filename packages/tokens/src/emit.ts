@@ -17,6 +17,7 @@ import {
   type ResolvedToken,
   type TokenValue,
 } from "./resolve.ts";
+import { toHslTriple } from "./contrast.ts";
 
 const TAILWIND_NAMESPACES = [
   "color",
@@ -440,4 +441,75 @@ export const isSameAppearance = (
       counterpart !== undefined && isSameValue(token.value, counterpart.value)
     );
   });
+};
+
+export const checkCompatNames = (
+  tokens: ResolvedToken[],
+  names: Record<string, string>,
+): Result<undefined, string[]> => {
+  const paths = new Set(tokens.map((token) => token.path));
+  const stray = Object.entries(names)
+    .filter(([, path]) => !paths.has(path))
+    .map(([name, path]) => `${name} -> ${path}`);
+
+  return stray.length === 0 ? ok(undefined) : err(stray.sort());
+};
+
+export const emitPluginCompatStylesheet = (
+  dark: ResolvedToken[],
+  names: Record<string, string>,
+) => {
+  const byPath = new Map(dark.map((token) => [token.path, token]));
+
+  const declarations = Object.entries(names).flatMap(([name, path]) => {
+    const token = byPath.get(path);
+    if (token === undefined || !isColorValue(token.value)) return [];
+    return [`  ${name}: ${toHslTriple(token.value)};`];
+  });
+
+  return [
+    "/* Generated. Compatibility only, not part of the design system. */",
+    "",
+    ":root {",
+    ...declarations,
+    "}",
+    "",
+  ].join("\n");
+};
+
+type PluginPrimevue = {
+  base: Record<string, string>;
+  semantic: Record<string, string>;
+  rootDeclarations: Record<string, string>;
+};
+
+const PLUGIN_ROOTS = [".c-wrapper-body", ".c-wrapper-topbar"];
+
+export const emitPluginPrimevueStylesheet = (sheet: PluginPrimevue) => {
+  const block = (selector: string, declarations: Record<string, string>) =>
+    Object.keys(declarations).length === 0
+      ? []
+      : [
+          selector,
+          ...Object.entries(declarations).map(
+            ([name, value]) => `  ${name}: ${value};`,
+          ),
+          "}",
+          "",
+        ];
+
+  const scoped = (suffix: string) =>
+    PLUGIN_ROOTS.map((root) => `${suffix}${root},`)
+      .join("\n")
+      .replace(/,$/, " {");
+
+  return [
+    "/* Generated. Compatibility only, not part of the design system. */",
+    "",
+    ...block(scoped(""), {
+      ...sheet.rootDeclarations,
+      ...sheet.base,
+      ...sheet.semantic,
+    }),
+  ].join("\n");
 };
