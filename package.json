@@ -10,7 +10,7 @@
   "author": "Caido Labs Inc.",
   "license": "MIT",
   "devDependencies": {
-    "@caido/eslint-config": "0.4.0",
+    "@caido/eslint-config": "0.11.0-beta.0",
     "eslint": "9.27.0",
     "knip": "5.59.1"
   }

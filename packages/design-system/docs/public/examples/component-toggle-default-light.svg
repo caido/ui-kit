@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 124" width="800" height="124" role="img">
+  <rect width="800" height="124" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(31 27.9)">
+  <rect x="348" y="0" width="40" height="24" rx="12" fill="oklch(0.948 0.0155 70)" stroke="oklch(0.6372 0.0263 70)" stroke-width="1"/>
+  <circle cx="361" cy="12" r="8" fill="oklch(0.5971 0.0188 271.1)"/>
+  <text x="368" y="44.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">off</text>
+  <rect x="414.8" y="0" width="40" height="24" rx="12" fill="oklch(0.7449 0.1231 74.5)"/>
+  <circle cx="443.8" cy="12" r="8" fill="oklch(0.2178 0 89.9)"/>
+  <text x="434.8" y="44.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">on</text>
+  <rect x="345" y="-3" width="46" height="30" rx="9" fill="none" stroke="oklch(0.659 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <rect x="411.8" y="-3" width="46" height="30" rx="9" fill="none" stroke="oklch(0.659 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <circle cx="345" cy="12" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 345 12 L 329 12" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="321" y="16.2" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">line-strong draws the border when off</text>
+  <circle cx="457.8" cy="12" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 457.8 12 L 473.8 12" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="481.8" y="16.2" text-anchor="start" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">on drops the border entirely</text>
+  <text x="400" y="68.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">off is surface-subtle, on is fill-secondary</text>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 236" width="800" height="236" role="img">
+  <rect width="800" height="236" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(42 40.9)">
+  <rect x="264" y="-16" width="224" height="183" rx="6" fill="oklch(0.294 0.013 272.9)"/>
+  <rect x="280" y="0" width="192" height="151" rx="6" fill="oklch(0.2732 0.0115 271)" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  <text x="296" y="36.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="600" fill="oklch(0.8354 0.0018 247.8)">Confirm</text>
+  <rect x="424" y="16" width="32" height="32" rx="6" fill="none" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  <rect x="434.75" y="25" width="10.5" height="14" fill="none"/>
+  <path transform="translate(434.75 25) scale(0.02734)" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" fill="oklch(0.6996 0.0014 286.4)"/>
+  <text x="296" y="78.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.8354 0.0018 247.8)">Replace request?</text>
+  <rect x="316" y="100" width="72" height="35" rx="6" fill="none" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  <text x="352" y="122.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.8354 0.0018 247.8)">Cancel</text>
+  <rect x="396" y="100" width="60" height="35" rx="6" fill="oklch(0.4672 0.1618 13.8)"/>
+  <text x="426" y="122.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(1 0 89.9)">Save</text>
+  <defs>
+    <pattern id="hatch-padding-280-0-16-64" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="280" y="0" width="16" height="64" fill="url(#hatch-padding-280-0-16-64)"/>
+  <rect x="280" y="0" width="16" height="64" fill="none" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-padding-280-84-192-16" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="280" y="84" width="192" height="16" fill="url(#hatch-padding-280-84-192-16)"/>
+  <rect x="280" y="84" width="192" height="16" fill="none" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <rect x="421" y="13" width="38" height="38" rx="9" fill="none" stroke="oklch(0.5068 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-gap-388-100-8-35" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.4446 0.1605 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="388" y="100" width="8" height="35" fill="url(#hatch-gap-388-100-8-35)"/>
+  <rect x="388" y="100" width="8" height="35" fill="none" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <circle cx="280" cy="32" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 280 32 L 280 16" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <path d="M 280 16 L 248 16" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="240" y="20.2" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">header p-4 on all four sides</text>
+  <circle cx="280" cy="92" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 280 92 L 248 92" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="240" y="96.2" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" font-weight="500" fill="oklch(0.6996 0.0014 286.4)">content pb-4, and no padding on top</text>
+  <circle cx="459" cy="32" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 459 32 L 504 32" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="512" y="36.2" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">close button 32px, 1px border</text>
+  <circle cx="392" cy="117.5" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 392 117.5 L 392 163" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <path d="M 392 163 L 504 163" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="512" y="167.2" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">footer actions sit gap-2 apart</text>
+  </g>
+</svg>

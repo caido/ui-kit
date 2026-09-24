@@ -42,7 +42,7 @@ export default {
       "cursor-pointer",
       "select-none",
       {
-        "bg-surface-subtle select-none pointer-events-none cursor-default":
+        "bg-surface-disabled opacity-disabled select-none pointer-events-none cursor-default":
           props.disabled,
       },
     ],
@@ -67,7 +67,10 @@ export default {
 
       // Sizing and Spacing
       "w-[1%]",
-      "py-2 pl-3",
+      {
+        "py-3 pl-3.5": props.size === "large",
+        "py-1.5 pl-2": props.size !== "large",
+      },
       { "pr-7": props.showClear },
 
       //Shape

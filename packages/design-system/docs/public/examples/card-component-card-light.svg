@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 96" width="384" height="96" role="img">
+  <rect width="384" height="96" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(88 10)">
+  <rect x="0" y="0" width="208" height="76" rx="6" fill="oklch(0.9134 0.017 70)" stroke="oklch(0.751 0.0225 70)" stroke-width="1"/>
+  <path d="M 0 26 L 208 26" stroke="oklch(0.8113 0.0205 70)" stroke-width="1" fill="none"/>
+  <text x="12" y="17" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.2194 0.0118 277.9)">Findings</text>
+  <rect x="12" y="38" width="184" height="6" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="12" y="52" width="148" height="6" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="12" y="64" width="100" height="6" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  </g>
+</svg>

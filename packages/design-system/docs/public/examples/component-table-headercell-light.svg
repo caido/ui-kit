@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 212" width="800" height="212" role="img">
+  <rect width="800" height="212" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(310.5 47.4)">
+  <rect x="0" y="0" width="160" height="36" fill="oklch(0.9134 0.017 70)"/>
+  <rect x="159" y="0" width="1" height="36" fill="oklch(0.9746 0.014 70)"/>
+  <text x="16" y="22.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">Method</text>
+  <rect x="77.03" y="11" width="8.75" height="14" fill="none"/>
+  <path transform="translate(77.03 11) scale(0.02734)" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" fill="oklch(0.3454 0.0125 273)"/>
+  <rect x="0" y="64" width="160" height="36" fill="oklch(0.9134 0.017 70)"/>
+  <rect x="159" y="64" width="1" height="36" fill="oklch(0.9746 0.014 70)"/>
+  <text x="144" y="86.9" text-anchor="end" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">Status</text>
+  <rect x="74.22" y="75" width="8.75" height="14" fill="none"/>
+  <path transform="translate(74.22 75) scale(0.02734)" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" fill="oklch(0.3454 0.0125 273)"/>
+  <defs>
+    <pattern id="hatch-padding-0-8-16-20" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="8" width="16" height="20" fill="url(#hatch-padding-0-8-16-20)"/>
+  <rect x="0" y="8" width="16" height="20" fill="none" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-padding-0-28-160-8" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="28" width="160" height="8" fill="url(#hatch-padding-0-28-160-8)"/>
+  <rect x="0" y="28" width="160" height="8" fill="none" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-gap-85_6-72-8-20" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.76 0.1239 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="85.6" y="72" width="8" height="20" fill="url(#hatch-gap-85_6-72-8-20)"/>
+  <rect x="85.6" y="72" width="8" height="20" fill="none" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <rect x="71.4" y="8" width="20" height="20" rx="9" fill="none" stroke="oklch(0.659 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <rect x="142" y="-3" width="37" height="42" rx="9" fill="none" stroke="oklch(0.659 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <circle cx="0" cy="18" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 0 18 L -16 18" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="-24" y="22.2" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">px-4 pads 16px, py-2 pads 8px</text>
+  <circle cx="89.6" cy="92" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 89.6 92 L 89.6 116" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <path d="M 89.6 116 L -16 116" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="-24" y="120.2" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">gap-2 sets 8px before the caret</text>
+  <circle cx="81.4" cy="8" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 81.4 8 L 81.4 -14" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <path d="M 81.4 -14 L 195 -14" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="203" y="-9.8" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">the caret box is 1em, so 14px</text>
+  <circle cx="179" cy="18" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 179 18 L 195 18" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="203" y="22.2" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">a 7px resizer grabs across 31px</text>
+  <text x="89.5" y="136" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">align="end" reverses the header row</text>
+  </g>
+</svg>

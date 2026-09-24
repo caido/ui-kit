@@ -18,7 +18,7 @@ export default {
 
       //States
       {
-        "bg-surface-subtle select-none pointer-events-none cursor-default":
+        "bg-surface-disabled opacity-disabled select-none pointer-events-none cursor-default":
           props.disabled,
       },
     ],

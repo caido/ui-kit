@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 124" width="800" height="124" role="img">
+  <rect width="800" height="124" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(24 -0.8)">
+  <circle cx="161.2" cy="38" r="9.5" fill="none" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  <text x="161.2" y="69.6" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">default</text>
+  <circle cx="252.4" cy="38" r="9.5" fill="none" stroke="oklch(0.5532 0.0093 278.5)" stroke-width="1"/>
+  <text x="252.4" y="69.6" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">hover</text>
+  <circle cx="365.2" cy="38" r="9.5" fill="none" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  <circle cx="365.2" cy="38" r="13" fill="none" stroke="oklch(0.8346 0.0767 74.2)" stroke-width="2"/>
+  <text x="365.2" y="69.6" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">focus-visible</text>
+  <circle cx="485.2" cy="38" r="9.5" fill="oklch(0.4672 0.1618 13.8)" stroke="oklch(0.4672 0.1618 13.8)" stroke-width="1"/>
+  <circle cx="485.2" cy="38" r="6" fill="oklch(0.2732 0.0115 271)"/>
+  <text x="485.2" y="69.6" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">checked</text>
+  <circle cx="587.2" cy="38" r="9.5" fill="oklch(0.294 0.013 272.9)" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  <circle cx="587.2" cy="38" r="6" fill="oklch(0.5969 0.0061 274.9)"/>
+  <text x="587.2" y="69.6" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">disabled</text>
+  <text x="376" y="97.6" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">the interface draws the ring, 2px at a 2px offset</text>
+  </g>
+</svg>

@@ -13,6 +13,9 @@ export default {
       "bg-surface-page",
       "text-fg-default",
       "border border-line-default",
+
+      // Misc
+      "select-none",
     ],
   },
   rootList: {
@@ -53,7 +56,9 @@ export default {
       },
 
       // Disabled
-      { "opacity-60 pointer-events-none cursor-default": context.disabled },
+      {
+        "opacity-disabled pointer-events-none cursor-default": context.disabled,
+      },
     ],
   }),
   itemLink: {

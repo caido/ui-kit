@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 192" width="800" height="192" role="img">
+  <rect width="800" height="192" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(491.2 24.5)">
+  <rect x="-249" y="0" width="150" height="96" rx="3.5" fill="oklch(0.9134 0.017 70)"/>
+  <rect x="-241" y="5" width="134" height="14" rx="6" fill="oklch(0.948 0.0155 70)"/>
+  <rect x="-249" y="23" width="150" height="1" fill="oklch(0.9746 0.014 70)"/>
+  <rect x="-241" y="29" width="134" height="14" rx="6" fill="oklch(0.948 0.0155 70)"/>
+  <rect x="-249" y="47" width="150" height="1" fill="oklch(0.9746 0.014 70)"/>
+  <rect x="-241" y="53" width="134" height="14" rx="6" fill="oklch(0.948 0.0155 70)"/>
+  <rect x="-249" y="71" width="150" height="1" fill="oklch(0.9746 0.014 70)"/>
+  <rect x="-241" y="77" width="134" height="14" rx="6" fill="oklch(0.948 0.0155 70)"/>
+  <rect x="-249" y="95" width="150" height="1" fill="oklch(0.9746 0.014 70)"/>
+  <rect x="-75" y="0" width="150" height="96" rx="3.5" fill="oklch(0.9134 0.017 70)"/>
+  <text x="0" y="52.9" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.5006 0.0163 272.5)">No findings</text>
+  <rect x="99" y="0" width="150" height="96" rx="3.5" fill="oklch(0.9134 0.017 70)"/>
+  <text x="115" y="16.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">GET /login</text>
+  <rect x="99" y="23" width="150" height="1" fill="oklch(0.9746 0.014 70)"/>
+  <rect x="99" y="24" width="150" height="24" fill="oklch(0.948 0.0155 70)"/>
+  <text x="115" y="40.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">GET /login</text>
+  <rect x="99" y="47" width="150" height="1" fill="oklch(0.9746 0.014 70)"/>
+  <text x="115" y="64.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">GET /login</text>
+  <rect x="99" y="71" width="150" height="1" fill="oklch(0.9746 0.014 70)"/>
+  <rect x="99" y="72" width="150" height="24" fill="oklch(0.948 0.0155 70)"/>
+  <text x="115" y="88.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">GET /login</text>
+  <rect x="99" y="95" width="150" height="1" fill="oklch(0.9746 0.014 70)"/>
+  <text x="-174" y="116.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">loading</text>
+  <text x="0" y="116.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">empty</text>
+  <text x="174" y="116.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">data</text>
+  <defs>
+    <pattern id="hatch-padding--249-0-8-24" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="-249" y="0" width="8" height="24" fill="url(#hatch-padding--249-0-8-24)"/>
+  <rect x="-249" y="0" width="8" height="24" fill="none" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <circle cx="-249" cy="12" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M -249 12 L -265 12" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="-273" y="16.2" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">skeleton rows pad px-2</text>
+  <text x="0" y="140" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">the loading rows fill the table's own height</text>
+  </g>
+</svg>

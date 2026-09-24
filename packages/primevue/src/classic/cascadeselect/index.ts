@@ -34,7 +34,7 @@ export default {
       "cursor-pointer",
       "select-none",
       {
-        "bg-surface-subtle select-none pointer-events-none cursor-default":
+        "bg-surface-disabled opacity-disabled select-none pointer-events-none cursor-default":
           props.disabled,
       },
     ],
@@ -153,7 +153,9 @@ export default {
       },
 
       // Disabled
-      { "opacity-60 pointer-events-none cursor-default": context.disabled },
+      {
+        "opacity-disabled pointer-events-none cursor-default": context.disabled,
+      },
     ],
   }),
   optionContent: {

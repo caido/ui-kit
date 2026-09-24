@@ -53,7 +53,7 @@ export default {
         {
           "hover:border-line-strong": !props.disabled && !props.invalid,
           "focus:z-10": !props.disabled,
-          "bg-surface-subtle select-none pointer-events-none cursor-default":
+          "bg-surface-disabled opacity-disabled select-none pointer-events-none cursor-default":
             props.disabled,
         },
 
@@ -222,10 +222,10 @@ export default {
     ],
   },
   weekHeader: {
-    class: ["leading-5", "text-fg-subtle", "opacity-60 cursor-default"],
+    class: ["leading-5", "text-fg-subtle", "opacity-disabled cursor-default"],
   },
   weekNumber: {
-    class: ["text-fg-subtle", "opacity-60 cursor-default"],
+    class: ["text-fg-subtle", "opacity-disabled cursor-default"],
   },
   weekday: {
     class: [
@@ -253,7 +253,7 @@ export default {
       "leading-[normal]",
 
       // Colors
-      "opacity-60 cursor-default",
+      "opacity-disabled cursor-default",
     ],
   },
   dayView: "w-full",
@@ -285,7 +285,7 @@ export default {
         "hover:bg-surface-hover": !context.selected && !context.disabled,
       },
       {
-        "opacity-60 cursor-default": context.disabled,
+        "opacity-disabled cursor-default": context.disabled,
         "cursor-pointer": !context.disabled,
       },
     ],

@@ -4,14 +4,14 @@ export default {
       "rounded-md",
 
       // Colors
-      { "bg-surface-page": !props.disabled },
+      "bg-surface-page",
       "text-fg-default",
       "border",
       { "border-line-default": !props.invalid },
 
       // Disabled State
       {
-        "bg-surface-subtle select-none pointer-events-none cursor-default":
+        "opacity-disabled select-none pointer-events-none cursor-default":
           props.disabled,
       },
 

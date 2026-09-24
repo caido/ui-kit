@@ -11,6 +11,9 @@ export default {
       // Colors
       "bg-surface-page",
       "border border-line-default",
+
+      // Misc
+      "select-none",
     ],
   },
   rootList: {
@@ -50,7 +53,9 @@ export default {
       },
 
       // Disabled
-      { "opacity-60 pointer-events-none cursor-default": context.disabled },
+      {
+        "opacity-disabled pointer-events-none cursor-default": context.disabled,
+      },
     ],
   }),
   itemLink: {

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 188" width="800" height="188" role="img">
+  <rect width="800" height="188" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(225.2 24.4)">
+  <rect x="0" y="0" width="175" height="80" rx="6" fill="none" stroke="oklch(0.4068 0.0188 273.5)" stroke-width="1" stroke-dasharray="3 2"/>
+  <rect x="16" y="14.5" width="14" height="14" fill="none"/>
+  <path transform="translate(16 14.5) scale(0.02734)" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" fill="oklch(0.8354 0.0018 247.8)"/>
+  <text x="38" y="26.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.8354 0.0018 247.8)">Search</text>
+  <rect x="16" y="49.5" width="14" height="14" fill="none"/>
+  <path transform="translate(16 49.5) scale(0.02734)" d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z" fill="oklch(0.8354 0.0018 247.8)"/>
+  <text x="38" y="61.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.8354 0.0018 247.8)">Settings</text>
+  <defs>
+    <pattern id="hatch-fault-175-0-81-80" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.5335 0.1699 30.1)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.5335 0.1699 30.1)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="175" y="0" width="81" height="80" fill="url(#hatch-fault-175-0-81-80)"/>
+  <rect x="175" y="0" width="81" height="80" fill="none" stroke="oklch(0.5335 0.1699 30.1)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <text x="48.8" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">class="w-64 shadow-md"</text>
+  <path d="M 99.2 120.2 L 200 120.2" stroke="oklch(0.5335 0.1699 30.1)" stroke-width="1" fill="none"/>
+  <circle cx="99.2" cy="120.2" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 99.2 120.2 L 99.2 132" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <path d="M 99.2 132 L -16 132" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="-24" y="136.2" text-anchor="end" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">the class is dropped</text>
+  <circle cx="256" cy="40" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 256 40 L 272 40" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="280" y="44.2" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" font-weight="500" fill="oklch(0.6996 0.0014 286.4)">w-64 asks 256px, it renders 175px</text>
+  </g>
+</svg>

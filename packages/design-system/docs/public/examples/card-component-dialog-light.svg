@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 96" width="384" height="96" role="img">
+  <rect width="384" height="96" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(86 12)">
+  <rect x="0" y="0" width="212" height="72" rx="6" fill="oklch(0.9134 0.017 70)" stroke="oklch(0.751 0.0225 70)" stroke-width="1"/>
+  <path d="M 0 28 L 212 28" stroke="oklch(0.8113 0.0205 70)" stroke-width="1" fill="none"/>
+  <text x="12" y="18.2" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.2194 0.0118 277.9)">Delete project</text>
+  <rect x="12" y="40" width="140" height="6" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="104" y="52" width="46" height="12" rx="6" fill="oklch(0.9746 0.014 70)" stroke="oklch(0.751 0.0225 70)" stroke-width="1"/>
+  <rect x="158" y="52" width="42" height="12" rx="6" fill="oklch(0.5253 0.1677 18.5)" stroke="oklch(0.5253 0.1677 18.5)" stroke-width="1"/>
+  </g>
+</svg>

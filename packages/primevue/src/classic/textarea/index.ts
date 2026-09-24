@@ -6,7 +6,10 @@ export default {
 
       // Spacing
       "m-0",
-      "py-2 px-3",
+      {
+        "py-3 px-3.5": props.size === "large",
+        "py-1.5 px-2": props.size !== "large",
+      },
 
       // Shape
       "rounded-md",
@@ -26,7 +29,7 @@ export default {
       {
         "hover:border-line-strong": !context.disabled && !props.invalid,
         "focus:z-10": !context.disabled,
-        "bg-surface-subtle select-none pointer-events-none cursor-default":
+        "bg-surface-disabled opacity-disabled select-none pointer-events-none cursor-default":
           context.disabled,
       },
 

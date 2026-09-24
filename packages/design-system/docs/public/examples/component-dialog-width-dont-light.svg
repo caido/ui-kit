@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 176" width="800" height="176" role="img">
+  <rect width="800" height="176" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(40 24)">
+  <rect x="0" y="0" width="720" height="128" rx="6" fill="oklch(0.948 0.0155 70)" stroke="oklch(0.751 0.0225 70)" stroke-width="1"/>
+  <defs>
+    <pattern id="hatch-fault-210-26_25-90-75_5" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.705 0.1699 30.1)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.705 0.1699 30.1)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="210" y="26.25" width="90" height="75.5" fill="url(#hatch-fault-210-26_25-90-75_5)"/>
+  <rect x="210" y="26.25" width="90" height="75.5" fill="none" stroke="oklch(0.705 0.1699 30.1)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-fault-420-26_25-90-75_5" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.705 0.1699 30.1)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.705 0.1699 30.1)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="420" y="26.25" width="90" height="75.5" fill="url(#hatch-fault-420-26_25-90-75_5)"/>
+  <rect x="420" y="26.25" width="90" height="75.5" fill="none" stroke="oklch(0.705 0.1699 30.1)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <rect x="300" y="26.25" width="120" height="75.5" rx="6" fill="oklch(0.9746 0.014 70)" stroke="oklch(0.751 0.0225 70)" stroke-width="1"/>
+  <rect x="308" y="34.25" width="48" height="10" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="382" y="76.25" width="30" height="17.5" rx="2" fill="oklch(0.4672 0.1618 13.8)"/>
+  </g>
+</svg>

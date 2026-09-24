@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 424 144" width="424" height="144" role="img">
+  <rect width="424" height="144" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(-16 24)">
+  <defs>
+    <pattern id="bad" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.5253 0.1677 18.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.5253 0.1677 18.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="40" y="0" width="56" height="8" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="40" y="16" width="200" height="28" rx="6" fill="oklch(0.9134 0.017 70)"/>
+  <rect x="40" y="8" width="200" height="8" fill="url(#bad)"/>
+  <rect x="40" y="8" width="200" height="8" fill="none" stroke="oklch(0.5253 0.1677 18.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <rect x="40" y="44" width="200" height="8" fill="url(#bad)"/>
+  <rect x="40" y="44" width="200" height="8" fill="none" stroke="oklch(0.5253 0.1677 18.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <rect x="40" y="52" width="56" height="8" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="40" y="68" width="200" height="28" rx="6" fill="oklch(0.9134 0.017 70)"/>
+  <circle cx="240" cy="12" r="3" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 240 12 L 248 12" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="254" y="16" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">gap-2 inside a group</text>
+  <circle cx="240" cy="48" r="3" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 240 48 L 248 48" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="254" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">gap-2 between groups</text>
+  </g>
+</svg>

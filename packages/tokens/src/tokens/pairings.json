@@ -357,49 +357,49 @@
     },
     {
       "foreground": "color.fg.on-danger",
-      "background": "color.fill.danger",
+      "background": "color.fill.danger-strong",
       "usage": "text",
       "sites": 1
     },
     {
       "foreground": "color.fg.on-danger",
-      "background": "color.fill.danger-hover",
+      "background": "color.fill.danger-strong-hover",
       "usage": "text",
       "sites": 1
     },
     {
       "foreground": "color.fg.on-success",
-      "background": "color.fill.success",
+      "background": "color.fill.success-strong",
       "usage": "text",
       "sites": 1
     },
     {
       "foreground": "color.fg.on-success",
-      "background": "color.fill.success-hover",
+      "background": "color.fill.success-strong-hover",
       "usage": "text",
       "sites": 1
     },
     {
       "foreground": "color.fg.on-warn",
-      "background": "color.fill.warn",
+      "background": "color.fill.warn-strong",
       "usage": "text",
       "sites": 1
     },
     {
       "foreground": "color.fg.on-warn",
-      "background": "color.fill.warn-hover",
+      "background": "color.fill.warn-strong-hover",
       "usage": "text",
       "sites": 1
     },
     {
       "foreground": "color.fg.on-info",
-      "background": "color.fill.info",
+      "background": "color.fill.info-strong",
       "usage": "text",
       "sites": 1
     },
     {
       "foreground": "color.fg.on-info",
-      "background": "color.fill.info-hover",
+      "background": "color.fill.info-strong-hover",
       "usage": "text",
       "sites": 1
     },
@@ -428,8 +428,50 @@
       "sites": 1
     },
     {
+      "foreground": "color.fg.on-neutral-subtle",
+      "background": "color.fill.neutral-subtle",
+      "usage": "text",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fg.on-neutral-subtle",
+      "background": "color.fill.neutral-subtle-hover",
+      "usage": "text",
+      "sites": 1
+    },
+    {
       "foreground": "color.line.strong",
       "background": "color.surface.page",
+      "usage": "identifier",
+      "sites": 1
+    },
+    {
+      "foreground": "color.fill.neutral",
+      "background": "color.surface.subtle",
+      "usage": "identifier",
+      "sites": 1
+    },
+    {
+      "foreground": "color.workflow-node.fg",
+      "background": "color.workflow-node.start-end",
+      "usage": "identifier",
+      "sites": 1
+    },
+    {
+      "foreground": "color.workflow-node.fg",
+      "background": "color.workflow-node.code",
+      "usage": "identifier",
+      "sites": 1
+    },
+    {
+      "foreground": "color.workflow-node.fg",
+      "background": "color.workflow-node.control",
+      "usage": "identifier",
+      "sites": 1
+    },
+    {
+      "foreground": "color.workflow-node.fg",
+      "background": "color.workflow-node.default",
       "usage": "identifier",
       "sites": 1
     },

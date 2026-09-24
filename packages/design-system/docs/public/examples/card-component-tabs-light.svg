@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 96" width="384" height="96" role="img">
+  <rect width="384" height="96" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(92 19)">
+  <text x="0" y="14" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.2194 0.0118 277.9)">Plugins</text>
+  <text x="72" y="14" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">Store</text>
+  <text x="132" y="14" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">Settings</text>
+  <path d="M 0 24 L 200 24" stroke="oklch(0.8113 0.0205 70)" stroke-width="1" fill="none"/>
+  <path d="M 0 24 L 52 24" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="2" fill="none"/>
+  <rect x="0" y="36" width="200" height="6" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="0" y="50" width="160" height="6" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  </g>
+</svg>

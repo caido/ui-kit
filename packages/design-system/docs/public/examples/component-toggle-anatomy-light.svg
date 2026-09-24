@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 140" width="800" height="140" role="img">
+  <rect width="800" height="140" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(279.2 24.5)">
+  <rect x="0" y="0" width="80" height="48" rx="24" fill="oklch(0.948 0.0155 70)" stroke="oklch(0.6372 0.0263 70)" stroke-width="1"/>
+  <circle cx="26" cy="24" r="16" fill="oklch(0.5971 0.0188 271.1)"/>
+  <rect x="104" y="0" width="80" height="48" rx="24" fill="oklch(0.7449 0.1231 74.5)"/>
+  <circle cx="162" cy="24" r="16" fill="oklch(0.2178 0 89.9)"/>
+  <defs>
+    <pattern id="slab-padding-0-0-10" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <path d="M 0 24 A 24 24 0 0 1 10 4.51 L 10 43.49 A 24 24 0 0 1 0 24 Z" fill="url(#slab-padding-0-0-10)"/>
+  <path d="M 0 24 A 24 24 0 0 1 10 4.51 L 10 43.49 A 24 24 0 0 1 0 24 Z" fill="none" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="slab-padding-104-178-184" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <path d="M 178 8.13 A 24 24 0 0 1 184 24 L 184 24 A 24 24 0 0 1 178 39.87 Z" fill="url(#slab-padding-104-178-184)"/>
+  <path d="M 178 8.13 A 24 24 0 0 1 184 24 L 184 24 A 24 24 0 0 1 178 39.87 Z" fill="none" stroke="oklch(0.2178 0 89.9)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="slab-gap-104-114-146" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.76 0.1239 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <path d="M 114 4.51 A 24 24 0 0 1 128 0 L 146 0 L 146 48 L 128 48 A 24 24 0 0 1 114 43.49 Z" fill="url(#slab-gap-104-114-146)"/>
+  <path d="M 114 4.51 A 24 24 0 0 1 128 0 L 146 0 L 146 48 L 128 48 A 24 24 0 0 1 114 43.49 Z" fill="none" stroke="oklch(0.2178 0 89.9)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <circle cx="0" cy="24" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 0 24 L -16 24" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="-24" y="28.2" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">5px behind the knob when off</text>
+  <circle cx="184" cy="24" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 184 24 L 200 24" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="208" y="28.2" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">3px ahead of the knob when on</text>
+  <circle cx="130" cy="48" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 130 48 L 130 64" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <path d="M 130 64 L 200 64" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="208" y="68.2" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">16px of travel, the knob's own width</text>
+  <text x="92" y="88" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">drawn at 2x, with the 1px border inside the width</text>
+  </g>
+</svg>

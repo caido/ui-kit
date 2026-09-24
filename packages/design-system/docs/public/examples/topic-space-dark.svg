@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 96" width="384" height="96" role="img">
+  <rect width="384" height="96" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(136 26)">
+  <rect x="0" y="0" width="16" height="16" rx="6" fill="oklch(0.3725 0.0176 272.3)"/>
+  <rect x="20" y="0" width="16" height="16" rx="6" fill="oklch(0.3725 0.0176 272.3)"/>
+  <rect x="40" y="0" width="16" height="16" rx="6" fill="oklch(0.3725 0.0176 272.3)"/>
+  <rect x="60" y="0" width="16" height="16" rx="6" fill="oklch(0.3725 0.0176 272.3)"/>
+  <rect x="0" y="28" width="16" height="16" rx="6" fill="oklch(0.3725 0.0176 272.3)"/>
+  <rect x="32" y="28" width="16" height="16" rx="6" fill="oklch(0.3725 0.0176 272.3)"/>
+  <rect x="64" y="28" width="16" height="16" rx="6" fill="oklch(0.3725 0.0176 272.3)"/>
+  <rect x="96" y="28" width="16" height="16" rx="6" fill="oklch(0.3725 0.0176 272.3)"/>
+  </g>
+</svg>

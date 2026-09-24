@@ -5,7 +5,7 @@ export default {
 
       // Alignment
       "flex items-center justify-center",
-      "py-2 px-4",
+      "py-1.5 px-4",
       "rounded-md border",
 
       // Color
@@ -35,7 +35,7 @@ export default {
       // Misc
       {
         "cursor-pointer": !props.disabled,
-        "opacity-60 select-none pointer-events-none cursor-default":
+        "opacity-disabled select-none pointer-events-none cursor-default":
           props.disabled,
       },
     ],

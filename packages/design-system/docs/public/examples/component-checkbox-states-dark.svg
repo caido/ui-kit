@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 152" width="800" height="152" role="img">
+  <rect width="800" height="152" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(502 64.3)">
+  <rect x="-175.6" y="0" width="20" height="20" rx="6" fill="oklch(0.2732 0.0115 271)" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  <text x="-165.6" y="36.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">rest</text>
+  <rect x="-66.4" y="0" width="20" height="20" rx="6" fill="oklch(0.7579 0.1169 74.6)" stroke="oklch(0.7579 0.1169 74.6)" stroke-width="1"/>
+  <text x="-56.4" y="36.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">hover checked</text>
+  <rect x="43.4" y="-3" width="26" height="26" rx="8" fill="none" stroke="oklch(0.8346 0.0767 74.2)" stroke-width="2"/>
+  <rect x="46.4" y="0" width="20" height="20" rx="6" fill="oklch(0.7449 0.1231 74.5)" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1"/>
+  <text x="56.4" y="36.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">focus</text>
+  <rect x="141.2" y="0" width="20" height="20" rx="6" fill="oklch(0.7449 0.1231 74.5)" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1"/>
+  <rect x="141.2" y="0" width="20" height="20" rx="6" fill="oklch(0.294 0.013 272.9)" opacity="0.4"/>
+  <text x="151.2" y="36.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">disabled</text>
+  <rect x="-61.76" y="3.88" width="10.72" height="12.25" fill="none"/>
+  <path transform="translate(-61.76 3.88) scale(0.02393)" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" fill="oklch(0.2178 0 89.9)"/>
+  <rect x="51.04" y="3.88" width="10.72" height="12.25" fill="none"/>
+  <path transform="translate(51.04 3.88) scale(0.02393)" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" fill="oklch(0.2178 0 89.9)"/>
+  <rect x="145.84" y="3.88" width="10.72" height="12.25" fill="none"/>
+  <path transform="translate(145.84 3.88) scale(0.02393)" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" fill="oklch(0.2178 0 89.9)"/>
+  <rect x="39.4" y="-7" width="34" height="34" rx="9" fill="none" stroke="oklch(0.5068 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <circle cx="39.4" cy="10" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 39.4 10 L 39.4 -32" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <path d="M 39.4 -32 L -196 -32" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="-204" y="-27.8" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">the ring sits 2px outside</text>
+  <text x="0" y="60.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">hovering an unchecked box changes nothing</text>
+  </g>
+</svg>

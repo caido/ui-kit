@@ -1,0 +1,41 @@
+import type { App } from "vue";
+
+import ComponentsIndex from "./ComponentsIndex.vue";
+import ContrastPair from "./ContrastPair.vue";
+import DelayDemo from "./DelayDemo.vue";
+import DoDont from "./DoDont.vue";
+import FoundationsIndex from "./FoundationsIndex.vue";
+import GetStartedIndex from "./GetStartedIndex.vue";
+import GuidesIndex from "./GuidesIndex.vue";
+import IconGrid from "./IconGrid.vue";
+import Indicators from "./Indicators.vue";
+import Preview from "./Preview.vue";
+import SpacingRow from "./SpacingRow.vue";
+import SpacingScale from "./SpacingScale.vue";
+import Specimen from "./Specimen.vue";
+import SwatchPair from "./SwatchPair.vue";
+import TokenBrowser from "./TokenBrowser.vue";
+import TokenCount from "./TokenCount.vue";
+import TokenSwatches from "./TokenSwatches.vue";
+import TokenTable from "./TokenTable.vue";
+
+export const registerContentComponents = (app: App) => {
+  app.component("ComponentsIndex", ComponentsIndex);
+  app.component("ContrastPair", ContrastPair);
+  app.component("DelayDemo", DelayDemo);
+  app.component("DoDont", DoDont);
+  app.component("FoundationsIndex", FoundationsIndex);
+  app.component("GetStartedIndex", GetStartedIndex);
+  app.component("GuidesIndex", GuidesIndex);
+  app.component("IconGrid", IconGrid);
+  app.component("Indicators", Indicators);
+  app.component("Preview", Preview);
+  app.component("Specimen", Specimen);
+  app.component("SpacingRow", SpacingRow);
+  app.component("SpacingScale", SpacingScale);
+  app.component("SwatchPair", SwatchPair);
+  app.component("TokenBrowser", TokenBrowser);
+  app.component("TokenCount", TokenCount);
+  app.component("TokenSwatches", TokenSwatches);
+  app.component("TokenTable", TokenTable);
+};

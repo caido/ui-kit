@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 124" width="800" height="124" role="img">
+  <rect width="800" height="124" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(400 25.4)">
+  <rect x="-254.4" y="0" width="48" height="24" rx="6" fill="oklch(0.3858 0.1095 18)"/>
+  <text x="-230.4" y="16.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.8348 0.0916 18.3)">404</text>
+  <text x="-230.4" y="46.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">w-12 is 48px</text>
+  <rect x="-128" y="0" width="64" height="24" rx="6" fill="oklch(0.4038 0.0778 250)"/>
+  <text x="-96" y="46.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">w-16 is 64px</text>
+  <rect x="21.6" y="0" width="48" height="24" rx="6" fill="oklch(0.3822 0.0654 144.2)"/>
+  <text x="45.6" y="46.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">w-12, no label</text>
+  <rect x="195.45" y="0" width="26.7" height="26" rx="6" fill="oklch(0.4555 0.106 118)" stroke="oklch(0.5211 0.105 118.1)" stroke-width="1"/>
+  <text x="208.8" y="46.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">sized by its glyph</text>
+  <rect x="202.05" y="7" width="13.5" height="12" fill="none"/>
+  <path transform="translate(202.05 7) scale(0.023440000000000003)" d="M264.5 5.2c14.9-6.9 32.1-6.9 47 0l218.6 101c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 149.8C37.4 145.8 32 137.3 32 128s5.4-17.9 13.9-21.8L264.5 5.2zM476.9 209.6l53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 277.8C37.4 273.8 32 265.3 32 256s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0l152-70.2zm-152 198.2l152-70.2 53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 405.8C37.4 401.8 32 393.3 32 384s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0z" fill="oklch(0.84 0.1295 118)"/>
+  <text x="0" y="70.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">an empty tag is pinned at 24px by h-6</text>
+  </g>
+</svg>

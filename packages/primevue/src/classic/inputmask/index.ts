@@ -23,7 +23,7 @@ export default {
         {
           "hover:border-line-strong": !context.disabled && !props.invalid,
           "focus:z-10": !context.disabled,
-          "bg-surface-subtle select-none pointer-events-none cursor-default":
+          "bg-surface-disabled opacity-disabled select-none pointer-events-none cursor-default":
             context.disabled,
         },
 

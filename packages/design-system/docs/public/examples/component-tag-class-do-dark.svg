@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 176" width="800" height="176" role="img">
+  <rect width="800" height="176" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(400 60.2)">
+  <rect x="-76.4" y="0" width="76" height="24" rx="6" fill="oklch(0.4038 0.0778 250)"/>
+  <text x="-38.4" y="16.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.8346 0.0856 250)">Read only</text>
+  <rect x="7.6" y="0" width="68.8" height="24" rx="6" fill="oklch(0.3822 0.0654 144.2)"/>
+  <text x="42" y="16.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.8344 0.075 143.7)">Official</text>
+  <text x="-277.2" y="44.2" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">&lt;HStack :gap="2"&gt;&lt;CTag severity="info" /&gt;&lt;CTag severity="success" /&gt;&lt;/HStack&gt;</text>
+  <defs>
+    <pattern id="hatch-gap--0_4-0-8-24" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.4446 0.1605 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="-0.4" y="0" width="8" height="24" fill="url(#hatch-gap--0_4-0-8-24)"/>
+  <rect x="-0.4" y="0" width="8" height="24" fill="none" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <path d="M -219.6 48.4 L -162 48.4" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" fill="none"/>
+  <circle cx="3.6" cy="0" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 3.6 0 L 3.6 -28" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <path d="M 3.6 -28 L -92.4 -28" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="-100.4" y="-23.8" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">the 8px comes from gap-2</text>
+  <circle cx="-162" cy="48.4" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M -162 48.4 L -162 64.4" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <path d="M -162 64.4 L 92.4 64.4" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="100.4" y="68.6" text-anchor="start" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">the parent owns the gap</text>
+  <text x="0" y="88.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">severity picks the fill, the parent the gap</text>
+  </g>
+</svg>

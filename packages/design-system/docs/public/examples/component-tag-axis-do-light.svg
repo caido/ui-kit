@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160" width="800" height="160" role="img">
+  <rect width="800" height="160" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(272.8 61.3)">
+  <rect x="-116" y="0" width="54.4" height="24" rx="6" fill="oklch(0.8689 0.0702 18.6)"/>
+  <text x="-88.8" y="16.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.3465 0.1223 18.1)">DELETE</text>
+  <text x="-88.8" y="46.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">severity="danger"</text>
+  <rect x="60.6" y="0" width="49.2" height="26" rx="6" fill="oklch(0.8857 0.0595 336.8)" stroke="oklch(0.7594 0.0908 336)" stroke-width="1"/>
+  <text x="85.2" y="17.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.4701 0.1409 336.3)">Alpha</text>
+  <text x="85.2" y="46.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">category="magenta"</text>
+  <rect x="57.6" y="-3" width="55.2" height="32" rx="9" fill="none" stroke="oklch(0.659 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <circle cx="112.8" cy="13" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 112.8 13 L 112.8 -28" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <path d="M 112.8 -28 L 166 -28" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="174" y="-23.8" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">only a category draws a 1px line</text>
+  <text x="0" y="70.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">one axis per tag, and each paints its own</text>
+  </g>
+</svg>

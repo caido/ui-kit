@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 172" width="800" height="172" role="img">
+  <rect width="800" height="172" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(307.2 28)">
+  <rect x="0" y="0" width="200" height="31" rx="6" fill="oklch(0.9746 0.014 70)" stroke="oklch(0.6372 0.0263 70)" stroke-width="1"/>
+  <text x="9" y="20.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.2194 0.0118 277.9)">Alpha</text>
+  <rect x="173" y="8.5" width="14" height="14" fill="none"/>
+  <path transform="translate(173 8.5) scale(0.02734)" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="0" y="59" width="200" height="34" rx="6" fill="oklch(0.9746 0.014 70)" stroke="oklch(0.5253 0.1677 18.5)" stroke-width="1"/>
+  <text x="9" y="80.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.2194 0.0118 277.9)">Alpha, Beta</text>
+  <rect x="168" y="69" width="14" height="14" fill="none"/>
+  <path transform="translate(168 69) scale(0.02734)" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="-3" y="-3" width="206" height="37" rx="9" fill="none" stroke="oklch(0.659 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <rect x="-3" y="56" width="206" height="40" rx="9" fill="none" stroke="oklch(0.659 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-padding-169-1-30-29" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="169" y="1" width="30" height="29" fill="url(#hatch-padding-169-1-30-29)"/>
+  <rect x="169" y="1" width="30" height="29" fill="none" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-padding-151-60-48-32" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="151" y="60" width="48" height="32" fill="url(#hatch-padding-151-60-48-32)"/>
+  <rect x="151" y="60" width="48" height="32" fill="none" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <circle cx="-3" cy="15.5" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M -3 15.5 L -19 15.5" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="-27" y="19.7" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">invalid keeps line-strong here</text>
+  <circle cx="-3" cy="76" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M -3 76 L -19 76" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="-27" y="80.2" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" font-weight="500" fill="oklch(0.5006 0.0163 272.5)">invalid = line-danger on multiple</text>
+  <circle cx="199" cy="15.5" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 199 15.5 L 219 15.5" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="227" y="19.7" text-anchor="start" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">single: 31px tall, 30px block</text>
+  <circle cx="199" cy="76" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 199 76 L 219 76" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="227" y="80.2" text-anchor="start" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">multiple: 34px tall, 48px block</text>
+  <text x="100" y="116" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">no screen in the interface sets multiple</text>
+  </g>
+</svg>

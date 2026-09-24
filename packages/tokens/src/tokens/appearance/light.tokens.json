@@ -18,6 +18,10 @@
       "selected": {
         "$value": "{palette.neutral.light.5}"
       },
+      "disabled": {
+        "$description": "The surface of an inert control. A disabled field is drawn as a filled box among unfilled neighbours, so the fill is what says which one is inert, and the disabled opacity then multiplies through it. On surface-subtle that composite landed at 1.00 against an enabled field, meaning the opacity cancelled the fill exactly and the state read as no state. This sits far enough out to survive it, at 1.56 as drawn, and stays one step off line-default so the field keeps a visible border. The ramp has no rung for an inert surface, which is decisions.md case two; see foundations/colour.md.",
+        "$value": "{palette.neutral.light.6}"
+      },
       "primary": {
         "$value": "{palette.crimson.light.5}"
       },
@@ -141,6 +145,14 @@
       "neutral-hover": {
         "$value": "{palette.neutral.light.10}"
       },
+      "neutral-subtle": {
+        "$description": "The fill of a neutral control that carries a label. The solid at step 9 is too heavy against a light page, and every surface step disappears against the raised panel such a control usually sits on, so this sits between them at 2.06 against the page in light and 2.04 in dark. It draws no border: the fill is the whole control. See `foundations/colour.md` on the rung the neutral ramp is missing.",
+        "$value": "{palette.neutral.light.7}"
+      },
+      "neutral-subtle-hover": {
+        "$description": "The hover of a labelled neutral control. One step toward the solid, so hovering deepens the fill in both appearances rather than inverting in one of them.",
+        "$value": "{palette.neutral.light.8}"
+      },
       "primary": {
         "$value": "{palette.crimson.light.9}"
       },
@@ -153,17 +165,35 @@
       "danger-hover": {
         "$value": "{palette.vermilion.light.10}"
       },
+      "danger-strong": {
+        "$value": "{palette.vermilion.light.11}"
+      },
+      "danger-strong-hover": {
+        "$value": "{palette.vermilion.light.12}"
+      },
       "success": {
         "$value": "{palette.fern.light.9}"
       },
       "success-hover": {
         "$value": "{palette.fern.light.10}"
       },
+      "success-strong": {
+        "$value": "{palette.fern.light.11}"
+      },
+      "success-strong-hover": {
+        "$value": "{palette.fern.light.12}"
+      },
       "info": {
         "$value": "{palette.cerulean.light.9}"
       },
       "info-hover": {
         "$value": "{palette.cerulean.light.10}"
+      },
+      "info-strong": {
+        "$value": "{palette.cerulean.light.11}"
+      },
+      "info-strong-hover": {
+        "$value": "{palette.cerulean.light.12}"
       },
       "secondary": {
         "$value": "{palette.amber.light.9}"
@@ -176,6 +206,12 @@
       },
       "warn-hover": {
         "$value": "{palette.citron.light.10}"
+      },
+      "warn-strong": {
+        "$value": "{palette.citron.light.11}"
+      },
+      "warn-strong-hover": {
+        "$value": "{palette.citron.light.12}"
       }
     },
     "fg": {
@@ -241,7 +277,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.2178,
+            1.0,
             0.0,
             89.9
           ]
@@ -251,7 +287,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.2178,
+            1.0,
             0.0,
             89.9
           ]
@@ -261,7 +297,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.2178,
+            1.0,
             0.0,
             89.9
           ]
@@ -278,6 +314,13 @@
           ]
         }
       },
+      "on-neutral-subtle": {
+        "$description": "The label on a quiet neutral control. Black in light and white in dark, because the fill under it is the same step in both appearances and the page it sits against is not. It clears 9.44 in light and 7.32 in dark, and 6.16 and 4.79 on the hover.",
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [0.0, 0.0, 89.9]
+        }
+      },
       "on-secondary": {
         "$value": {
           "colorSpace": "oklch",
@@ -292,7 +335,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.2178,
+            1.0,
             0.0,
             89.9
           ]
@@ -577,6 +620,13 @@
       "$description": "A row highlight is a band the user paints on a row, so what it has to do is separate that row from the rows around it. The dark set does that at 1.92 to 2.74 against the page. The light set was derived as a pale tint and separated at only 1.19 to 2.09, so a highlighted row read almost the same as a plain one, and the low chroma left several of them muddy rather than coloured. Each light value now solves for the separation its own dark twin achieves, at the same hue, with chroma taken to the gamut ceiling but never past the dark twin. Keeping the per-colour target rather than one target for all nine is what preserves lightness as a second way to tell them apart: the closest pairs come out at 6.4 and 6.6 against 6.3 and 7.8 in dark. fg-strong reads on all nine, worst 5.90 against a 4.5 floor."
     },
     "workflow-node": {
+      "fg": {
+        "$description": "The glyph on a node tile. The four node colours were solved as a stroke on the canvas, which is the job colour.md records for them, and three screens reuse them as a fill behind an icon. A stroke has no obligation to carry a glyph, so the icon was inheriting the surrounding list's text colour and measured 1.02 to 2.60 against the tile, failing the non-text gate on seven of the eight tile and appearance pairs. One fixed dark value clears it on all eight, because every node colour is mid to light in both appearances.",
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [0.2178, 0.0, 89.9]
+        }
+      },
       "start-end": {
         "$value": "{palette.amber.light.9}"
       },
@@ -736,12 +786,12 @@
       }
     },
     "syntax": {
-      "$description": "The editor's syntax colours. Tier 2 under foundations/colour.md: they are decorative, they carry no status, and no intent in the system means what any of them mean, so they take their own namespace with their own value per appearance rather than aliasing a ramp. The dark values are the ones the product already shipped and nineteen of the twenty-two are preserved byte for byte. Three were below the 4.5 text floor against the page and were lifted in lightness at fixed hue and chroma, which is the smallest move that clears the gate: punctuation from 3.78 to 4.56, comment from 3.77 to 4.52 and js-keyword from 4.02 to 4.52. The light values are derived the way the row highlights are, by walking lightness in the light ramp's own direction until the same floor is met, with chroma clamped into gamut at each step. The js- names are a second palette rather than a duplicate of the first: the JavaScript editor ships a Tomorrow Night set where the rest of the product ships a VS Code Dark+ derivative, and collapsing the two would repaint both.",
+      "$description": "The editor's syntax colours. Tier 2 under foundations/colour.md: they are decorative, they carry no status, and no intent in the system means what any of them mean, so they take their own namespace with their own value per appearance rather than aliasing a ramp. The dark values are the ones the product already shipped and nineteen of the twenty-two are preserved byte for byte. Three were below the 4.5 text floor against the page and were lifted in lightness at fixed hue and chroma, which is the smallest move that clears the gate: punctuation from 3.78 to 4.56, comment from 3.77 to 4.52 and js-keyword from 4.02 to 4.52. The light values are derived the way the row highlights are, by walking lightness in the light ramp's own direction until the target is met, with chroma clamped into gamut at each step. The target is 7.0 rather than the 4.5 floor. Walking only to the floor put all twenty-two between 4.50 and 4.55, which passes and still reads washed out on a near-white page, while the same roles sit between 4.52 and 14.93 against the dark page and read clearly. The gap was the complaint, not any one hue. Raising the target fixes every role at once and holds every hue, which is what decisions.md asks for: change the target and re-solve rather than nudging a value by eye. A yellow dark enough to clear 7.0 on this page reads olive, and that is a property of the hue rather than a choice. The js- names are a second palette rather than a duplicate of the first: the JavaScript editor ships a Tomorrow Night set where the rest of the product ships a VS Code Dark+ derivative, and collapsing the two would repaint both.",
       "string": {
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5431,
+            0.4421,
             0.0586,
             134.9
           ]
@@ -751,7 +801,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5488,
+            0.4437,
             0.1118,
             245.5
           ]
@@ -761,7 +811,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5579,
+            0.4549,
             0.0825,
             43.2
           ]
@@ -771,7 +821,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5546,
+            0.4496,
             0.1152,
             79.1
           ]
@@ -781,7 +831,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5635,
+            0.4604,
             0.1275,
             305.9
           ]
@@ -791,7 +841,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5342,
+            0.4262,
             0.1187,
             161.2
           ]
@@ -801,7 +851,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5522,
+            0.4484,
             0.113,
             86.4
           ]
@@ -811,7 +861,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.542,
+            0.4383,
             0.0852,
             145.2
           ]
@@ -821,7 +871,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5704,
+            0.4687,
             0.1777,
             27.6
           ]
@@ -831,7 +881,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.55,
+            0.4477,
             0.0,
             89.9
           ]
@@ -841,7 +891,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5499,
+            0.4477,
             0.0,
             89.9
           ]
@@ -851,7 +901,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5413,
+            0.4384,
             0.1003,
             137.0
           ]
@@ -861,7 +911,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5503,
+            0.4477,
             0.0,
             89.9
           ]
@@ -871,7 +921,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5494,
+            0.445,
             0.0155,
             254.6
           ]
@@ -881,7 +931,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5479,
+            0.4454,
             0.0037,
             145.5
           ]
@@ -891,7 +941,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5658,
+            0.4623,
             0.1298,
             21.4
           ]
@@ -901,7 +951,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5448,
+            0.4417,
             0.1095,
             113.4
           ]
@@ -911,7 +961,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5574,
+            0.4563,
             0.1134,
             54.7
           ]
@@ -921,7 +971,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5517,
+            0.4487,
             0.1115,
             82.9
           ]
@@ -931,7 +981,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5465,
+            0.4456,
             0.0551,
             244.3
           ]
@@ -941,7 +991,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5436,
+            0.4398,
             0.0554,
             185.7
           ]
@@ -951,7 +1001,7 @@
         "$value": {
           "colorSpace": "oklch",
           "components": [
-            0.5566,
+            0.4535,
             0.0651,
             318.3
           ]

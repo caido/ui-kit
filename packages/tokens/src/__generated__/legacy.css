@@ -7,9 +7,9 @@
   --c-surface-400: light-dark(oklch(0.5006 0.0163 272.5), oklch(0.6996 0.0014 286.4));
   --c-surface-500: light-dark(oklch(0.5006 0.0163 272.5), oklch(0.6996 0.0014 286.4));
   --c-surface-600: light-dark(oklch(0.751 0.0225 70), oklch(0.4542 0.0132 274.7));
-  --c-surface-700: light-dark(oklch(0.8113 0.0198 70), oklch(0.4068 0.0188 273.5));
-  --c-surface-800: light-dark(oklch(0.9134 0.0115 70), oklch(0.3263 0.0144 274.5));
-  --c-surface-900: light-dark(oklch(0.9766 0.0051 70), oklch(0.2732 0.0115 271));
+  --c-surface-700: light-dark(oklch(0.8113 0.0205 70), oklch(0.4068 0.0188 273.5));
+  --c-surface-800: light-dark(oklch(0.9134 0.017 70), oklch(0.3263 0.0144 274.5));
+  --c-surface-900: light-dark(oklch(0.9746 0.014 70), oklch(0.2732 0.0115 271));
   --c-primary-100: light-dark(oklch(0.3459 0.1008 13.2), oklch(0.8343 0.0929 13.4));
   --c-primary-200: light-dark(oklch(0.3459 0.1008 13.2), oklch(0.8343 0.0929 13.4));
   --c-primary-300: light-dark(oklch(0.4213 0.1375 13.9), oklch(0.7096 0.1384 13.4));

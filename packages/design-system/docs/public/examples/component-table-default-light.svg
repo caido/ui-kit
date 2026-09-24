@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 192" width="800" height="192" role="img">
+  <rect width="800" height="192" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(264 24.5)">
+  <rect x="0" y="0" width="272" height="112" rx="3.5" fill="oklch(0.9134 0.017 70)"/>
+  <text x="16" y="22.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">Method</text>
+  <rect x="83" y="0" width="1" height="36" fill="oklch(0.9746 0.014 70)"/>
+  <text x="100" y="22.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">Path</text>
+  <rect x="187" y="0" width="1" height="36" fill="oklch(0.9746 0.014 70)"/>
+  <text x="204" y="22.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">Status</text>
+  <rect x="271" y="0" width="1" height="36" fill="oklch(0.9746 0.014 70)"/>
+  <rect x="0" y="36" width="272" height="4" fill="oklch(0.9746 0.014 70)"/>
+  <rect x="0" y="40" width="272" height="24" fill="oklch(0.948 0.0155 70)"/>
+  <text x="18" y="56.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">GET</text>
+  <text x="102" y="56.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">/login</text>
+  <text x="206" y="56.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">200</text>
+  <rect x="0" y="63" width="272" height="1" fill="oklch(0.9746 0.014 70)"/>
+  <text x="18" y="80.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">POST</text>
+  <text x="102" y="80.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">/session</text>
+  <text x="206" y="80.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">201</text>
+  <rect x="0" y="87" width="272" height="1" fill="oklch(0.9746 0.014 70)"/>
+  <rect x="0" y="88" width="272" height="24" fill="oklch(0.948 0.0155 70)"/>
+  <text x="18" y="104.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">GET</text>
+  <text x="102" y="104.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">/health</text>
+  <text x="206" y="104.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">304</text>
+  <rect x="0" y="111" width="272" height="1" fill="oklch(0.9746 0.014 70)"/>
+  <defs>
+    <pattern id="hatch-padding-2-40-16-24" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="2" y="40" width="16" height="24" fill="url(#hatch-padding-2-40-16-24)"/>
+  <rect x="2" y="40" width="16" height="24" fill="none" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-gap-0-36-272-4" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.76 0.1239 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="36" width="272" height="4" fill="url(#hatch-gap-0-36-272-4)"/>
+  <rect x="0" y="36" width="272" height="4" fill="none" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-gap-0-87-272-1" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.76 0.1239 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="87" width="272" height="1" fill="url(#hatch-gap-0-87-272-1)"/>
+  <rect x="0" y="87" width="272" height="1" fill="none" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <rect x="-3" y="61" width="278" height="30" rx="9" fill="none" stroke="oklch(0.659 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <circle cx="2" cy="52" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 2 52 L -19 52" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="-27" y="56.2" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">px-4 pads each cell 16px</text>
+  <circle cx="-3" cy="76" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M -3 76 L -3 92" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <path d="M -3 92 L -19 92" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="-27" y="96.2" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" font-weight="500" fill="oklch(0.5006 0.0163 272.5)">each row is itemHeight, 24px</text>
+  <circle cx="272" cy="38" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 272 38 L 291 38" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="299" y="42.2" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">border-b-4 closes the header</text>
+  <circle cx="272" cy="87.5" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 272 87.5 L 291 87.5" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="299" y="91.7" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">a 1px rule parts the rows</text>
+  <text x="136" y="140" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">row parity counts from the list length</text>
+  </g>
+</svg>

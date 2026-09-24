@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 216" width="800" height="216" role="img">
+  <rect width="800" height="216" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(400 24.5)">
+  <rect x="-324" y="0" width="200" height="128" rx="3.5" fill="oklch(0.9134 0.017 70)"/>
+  <text x="-308" y="26.8" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">Reporter list</text>
+  <text x="-224" y="164" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">&lt;CCard&gt;</text>
+  <rect x="-100" y="0" width="200" height="128" rx="3.5" fill="oklch(0.9134 0.017 70)"/>
+  <rect x="-100" y="48" width="200" height="4" fill="oklch(0.9746 0.014 70)"/>
+  <text x="-84" y="28.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.2194 0.0118 277.9)">Findings</text>
+  <text x="-84" y="78.8" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">Reporter list</text>
+  <text x="0" y="164" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">#header</text>
+  <rect x="124" y="0" width="200" height="128" rx="3.5" fill="oklch(0.9134 0.017 70)"/>
+  <rect x="124" y="48" width="200" height="4" fill="oklch(0.9746 0.014 70)"/>
+  <text x="140" y="28.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.2194 0.0118 277.9)">Findings</text>
+  <text x="140" y="78.8" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">Reporter list</text>
+  <rect x="124" y="91" width="200" height="1" fill="oklch(0.8113 0.0205 70)"/>
+  <text x="140" y="113.2" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">Close</text>
+  <text x="224" y="164" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">#header + #footer</text>
+  </g>
+</svg>

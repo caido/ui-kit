@@ -14,7 +14,7 @@ export default {
       "border-r-0",
 
       // Space
-      "p-2",
+      "py-1.5 px-2",
 
       // Size
       "min-w-[2.5rem]",

@@ -11,6 +11,9 @@ export default {
       // Colors
       "bg-surface-raised",
       "text-fg-default",
+
+      // Misc
+      "select-none",
     ],
   },
   list: {

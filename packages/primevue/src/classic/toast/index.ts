@@ -23,7 +23,7 @@ export default {
         "bg-surface-raised": props.message.severity == "secondary",
         "bg-surface-toast-warn": props.message.severity == "warn",
         "bg-surface-toast-danger": props.message.severity == "error",
-        "bg-fill-neutral": props.message.severity == "contrast",
+        "bg-fill-neutral-subtle": props.message.severity == "contrast",
       },
       {
         "text-fg-info-strong": props.message.severity == "info",
@@ -31,7 +31,7 @@ export default {
         "text-fg-default": props.message.severity == "secondary",
         "text-fg-warn-strong": props.message.severity == "warn",
         "text-fg-danger-strong": props.message.severity == "error",
-        "text-fg-on-neutral": props.message.severity == "contrast",
+        "text-fg-on-neutral-subtle": props.message.severity == "contrast",
       },
     ],
   }),
@@ -70,7 +70,7 @@ export default {
       "block",
       "text-sm",
       props.message.severity === "contrast"
-        ? "text-fg-on-neutral"
+        ? "text-fg-on-neutral-subtle"
         : "text-fg-strong",
       { "mt-2": props.message.summary },
     ],
@@ -96,7 +96,7 @@ export default {
       "transition duration-200 ease-in-out",
 
       // States
-      "hover:bg-surface-hover",
+      "hover:bg-fg-strong/15",
 
       // Misc
       "overflow-hidden",

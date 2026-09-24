@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 144" width="800" height="144" role="img">
+  <rect width="800" height="144" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(441.6 24.5)">
+  <text x="-36.8" y="12" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">&lt;div class="ml-auto"&gt;&lt;CToggle /&gt;&lt;/div&gt;</text>
+  <rect x="0" y="28" width="200" height="40" rx="6" fill="none" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1" stroke-dasharray="4 3"/>
+  <rect x="160" y="36" width="40" height="24" rx="12" fill="oklch(0.7449 0.1231 74.5)"/>
+  <circle cx="189" cy="48" r="8" fill="oklch(0.2178 0 89.9)"/>
+  <defs>
+    <pattern id="hatch-gap-0-36-160-24" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.4446 0.1605 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="36" width="160" height="24" fill="url(#hatch-gap-0-36-160-24)"/>
+  <rect x="0" y="36" width="160" height="24" fill="none" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <circle cx="0" cy="48" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 0 48 L -52.8 48" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="-60.8" y="52.2" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">ml-auto pushes the switch to the end</text>
+  <text x="100" y="92" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">the wrapper carries the alignment</text>
+  </g>
+</svg>

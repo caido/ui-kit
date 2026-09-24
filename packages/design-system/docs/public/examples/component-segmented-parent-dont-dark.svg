@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 144" width="800" height="144" role="img">
+  <rect width="800" height="144" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(187.9 41)">
+  <rect x="-16" y="-16" width="245" height="71" rx="6" fill="oklch(0.294 0.013 272.9)"/>
+  <rect x="0" y="0" width="213" height="39" rx="6" fill="none" stroke="oklch(0.4068 0.0188 273.5)" stroke-width="1" stroke-dasharray="4 3"/>
+  <rect x="0" y="4" width="213" height="31" rx="6" fill="oklch(0.2732 0.0115 271)"/>
+  <rect x="5" y="9" width="94" height="22" rx="4" fill="oklch(0.3263 0.0144 274.5)"/>
+  <text x="51.5" y="24.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="500" fill="oklch(0.9383 0.0063 75.4)">Markdown</text>
+  <text x="133" y="24.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="500" fill="oklch(0.7447 0.0014 286.4)">Raw</text>
+  <defs>
+    <pattern id="hatch-fault-164-5-48-29" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.5335 0.1699 30.1)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.5335 0.1699 30.1)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="164" y="5" width="48" height="29" fill="url(#hatch-fault-164-5-48-29)"/>
+  <rect x="164" y="5" width="48" height="29" fill="none" stroke="oklch(0.5335 0.1699 30.1)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <circle cx="212" cy="19.5" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 212 19.5 L 245 19.5" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="253" y="23.7" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" font-weight="500" fill="oklch(0.6996 0.0014 286.4)">48px of box with no button</text>
+  <text x="-16" y="75" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">A block parent spreads the box; the buttons do not follow.</text>
+  </g>
+</svg>
