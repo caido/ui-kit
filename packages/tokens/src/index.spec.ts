@@ -1,5 +1,7 @@
 import { readFileSync } from "node:fs";
 import { createRequire } from "node:module";
+import { dirname, resolve as resolvePath } from "node:path";
+import { fileURLToPath } from "node:url";
 
 import { describe, expect, it } from "vitest";
 
@@ -11,7 +13,6 @@ import {
   checkReplacements,
 } from "./contract.ts";
 import { checkPairing, toHslTriple } from "./contrast.ts";
-
 import {
   checkAppearances,
   checkCompatNames,
@@ -917,8 +918,9 @@ describe("checkCompatNames", () => {
 });
 
 describe("the plugin compatibility sheet", () => {
+  const here = dirname(fileURLToPath(import.meta.url));
   const sheet = readFileSync(
-    new URL("./__generated__/plugin-compat.css", import.meta.url),
+    resolvePath(here, "__generated__/plugin-compat.css"),
     "utf8",
   );
 

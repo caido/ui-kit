@@ -1,6 +1,7 @@
 import { err, ok, type Result } from "neverthrow";
 
 import { type Deprecations } from "./contract.ts";
+import { toHslTriple } from "./contrast.ts";
 import {
   type Appearance,
   type ColorValue,
@@ -17,7 +18,6 @@ import {
   type ResolvedToken,
   type TokenValue,
 } from "./resolve.ts";
-import { toHslTriple } from "./contrast.ts";
 
 const TAILWIND_NAMESPACES = [
   "color",

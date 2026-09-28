@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { dirname, resolve as resolvePath } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { err, ok, type Result } from "neverthrow";
+import { Result } from "neverthrow";
 
 import { type Contract, type Deprecations } from "../src/contract.ts";
 import {
@@ -15,16 +15,15 @@ import {
 const here = dirname(fileURLToPath(import.meta.url));
 const tokensDir = resolvePath(here, "../src/tokens");
 
-export const readJson = <T>(relative: string): Result<T, string> => {
-  try {
-    return ok(
-      JSON.parse(readFileSync(resolvePath(tokensDir, relative), "utf8")) as T,
-    );
-  } catch (cause) {
-    const reason = cause instanceof Error ? cause.message : String(cause);
-    return err(`${relative} could not be read: ${reason}`);
-  }
-};
+const parseJson = Result.fromThrowable(
+  (path: string): unknown => JSON.parse(readFileSync(path, "utf8")),
+  (cause) => (cause instanceof Error ? cause.message : String(cause)),
+);
+
+export const readJson = <T>(relative: string): Result<T, string> =>
+  parseJson(resolvePath(tokensDir, relative))
+    .map((value) => value as T)
+    .mapErr((reason) => `${relative} could not be read: ${reason}`);
 
 export const fail = (message: string): never => {
   process.stderr.write(`${message}\n`);
