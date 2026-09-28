@@ -6,40 +6,44 @@ The rule underneath all of it is that a value is settled once and read everywher
 
 ## Getting set up
 
-The repository holds four packages: the tokens, the component preset, a Tailwind integration and this site. Install once from the root.
+The repository holds four packages: the tokens, the component preset, a Tailwind integration and this site. Every task runs through mise, which pins the toolchain and defines the tasks, so a fresh checkout needs nothing installed beyond mise itself.
 
 ```sh
-pnpm install
+mise pnpm:install
 ```
 
 One dependency is a local link rather than a registry install. `@caido/eslint-config` resolves to a sibling checkout, so **the `typescript-configs` repository has to sit beside this one or the install fails.**
 
 ## The commands
 
-Every task here is a pnpm script. The repository uses mise to pin the toolchain rather than to define tasks, so the commands below run as written.
+`mise tasks` lists them, which is the answer to what a newcomer can run before reading anything else.
 
 | Command | What it does |
 | --- | --- |
-| `pnpm typecheck` | Typechecks every package that defines the script |
-| `pnpm lint` | Dead code detection, then the [design rules](/guides/enforcement.md) with fixes applied |
-| `pnpm lint-prod` | The same without fixes, failing on any warning |
-| `pnpm --filter @caido/tokens generate` | Rebuilds the generated stylesheets and the manifest from the token source |
-| `pnpm --filter @caido/tokens build` | Copies the generated files into what the packages publish |
-| `pnpm --filter @caido/tokens contrast` | Measures every registered pairing in both appearances |
-| `pnpm --filter @caido/tokens test` | The one test suite in the repository |
-| `pnpm --filter @caido/design-system dev` | Serves this site |
-| `pnpm --filter @caido/design-system generate:examples` | Redraws the specimens this site uses |
+| `mise design-system:dev` | Rebuilds the tokens, then serves this site |
+| `mise design-system:build` | Rebuilds the tokens, then builds this site |
+| `mise design-system:examples` | Redraws the specimens this site uses |
+| `mise primevue:dev` | Serves the preset in its component explorer |
+| `mise tokens:generate` | Rewrites the generated stylesheets and the manifest from the token source |
+| `mise tokens:build` | Generates, then copies the result into what the packages publish |
+| `mise tokens:check` | Fails if the generated output differs from what the source produces |
+| `mise tokens:contrast` | Measures every registered pairing in both appearances |
+| `mise tokens:test` | The one test suite in the repository |
+| `mise typecheck` | Typechecks every package that defines the script |
+| `mise lint:dev` | Dead code detection, then the [design rules](/guides/enforcement.md) with fixes applied |
+| `mise lint:prod` | The same without fixes, failing on any warning |
+| `mise lint:links` | Follows every link in these pages, on disk and over the network |
+| `mise validate` | Everything continuous integration runs |
 
 ## Changing a token
 
 The token source is 15 files, holding the base ramps, one file per property family, and the two [appearance](/foundations/theme.md#appearance-belongs-to-the-token-not-to-a-variant) files that give each semantic name its light and dark value. Edit the source, never the generated output.
 
 ```sh
-pnpm --filter @caido/tokens generate   # rewrite the generated files
-pnpm --filter @caido/tokens build      # copy them into dist
+mise tokens:build
 ```
 
-**Both steps are required, and skipping the second is the mistake that costs an afternoon.** The interface and the linter both read the token package through a local link, so they see `dist` and not your edit. A token changed and generated but not built looks correct in the source and does nothing anywhere else.
+That runs two steps, and **the second is the one that used to cost an afternoon when it was skipped.** The interface and the linter both read the token package through a local link, so they see `dist` and not your edit. A token changed and generated but not built looks correct in the source and does nothing anywhere else. `mise tokens:generate` runs the first step alone, for the rare case where only the source matters.
 
 The generated files are committed on purpose, so a value change shows up in review as a diff rather than as an invisible rebuild. Continuous integration regenerates them and fails if the result differs from what was committed.
 
@@ -66,17 +70,17 @@ The pages are Markdown with Vue components available inside them, which is how a
 The specimens are generated rather than drawn by hand, from one module per [component](/components/) under `scripts/specimens`. Regenerate one at a time while working.
 
 ```sh
-pnpm --filter @caido/design-system generate:examples --only=button
+mise design-system:examples --only=button
 ```
 
 Every drawing takes its geometry and its colours from the shipped preset and the token manifest, so a specimen cannot show a control the interface does not draw.
 
 ## What continuous integration does and does not cover
 
-Three jobs run: a typecheck, the linter, and a token job that runs the tests, regenerates the tokens and fails on drift, measures the contrast pairings, and builds the package.
+Three jobs run on a pull request: a typecheck, the linter, and a token job that runs the tests, regenerates the tokens and fails on drift, measures the contrast pairings, and builds the package. Links are checked in a job of their own, which runs on a push that touches a Markdown file, once a week, and on request.
 
 Two gaps are worth knowing before relying on a green run.
 
 **Checks start when a review is requested rather than when a pull request opens.** Pushing to a branch runs nothing, and a draft is skipped entirely, so a first push shows no signal at all.
 
-The other gap is this site. The linter covers the theme but not the pages, the typechecker covers neither, and nothing in continuous integration builds the site. **A broken link, a dead specimen or a false claim on a page passes every gate this repository has.** That is what makes review of a documentation change a reading job rather than a checking job.
+The other gap is this site. The linter covers the theme but not the pages, the typechecker covers neither, and nothing in continuous integration builds the site. Links are followed, so a page that points nowhere is caught, but **a dead specimen or a false claim passes every gate this repository has.** That is what makes review of a documentation change a reading job rather than a checking job.

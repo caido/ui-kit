@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+mise typecheck
+mise lint:prod
+mise lint:links
+mise tokens:test
+mise tokens:check
+mise tokens:contrast
+mise tokens:build

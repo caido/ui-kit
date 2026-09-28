@@ -65,7 +65,7 @@ A component that exists in one of the two is not done. An implementation with no
 
 Worth knowing before trusting a green tick: the checks start **when a review is requested rather than when a pull request opens**. Pushing to a branch runs nothing and a draft is skipped entirely, so a first push shows no signal at all rather than a passing one.
 
-Three jobs run when they do start: a typecheck, the linter, and a token job that runs the tests, regenerates the tokens and fails if the committed output differs, measures every registered [pairing](/foundations/colour.md), then builds the package.
+Three jobs run when they do start: a typecheck, the linter, and a token job that runs the tests, regenerates the tokens and fails if the committed output differs, measures every registered [pairing](/foundations/colour.md), then builds the package. A fourth job follows every link on this site, on its own schedule rather than on a pull request.
 
 ## Release cadence
 
