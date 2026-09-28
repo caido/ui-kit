@@ -24,7 +24,7 @@ Each entry gives the custom property to redefine, its value in each appearance, 
 
 **The palette.** `--palette-*` names hold values and name no jobs. A theme that repaints the palette is not a theme, it is a fork: the semantic tokens point at palette entries, so moving one moves every job that happens to share it, which is how a slightly warmer grey turns into an unreadable disabled state. [Tokens](/foundations/tokens.md) covers why the two tiers are separate.
 
-**The compatibility layer.** `legacy.css` and `primevue.css` carry names the interface is migrating off. They are not part of the system and they will go.
+**The compatibility layer.** `legacy.css`, `primevue.css` and the `plugin-*.css` sheets carry names the interface and older plugins are migrating off. They are not part of the system and they will go.
 
 **Everything that is not colour.** Type, space, radius, depth and motion carry density and rhythm rather than palette, so they are the same in every theme. A theme that changes the grid unit is a different interface, not a different theme.
 

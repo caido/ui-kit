@@ -21,7 +21,7 @@ It also means the names are a contract. Anything on this page you may rely on. A
 
 **The palette.** Names beginning `--palette-` are primitives, the lower of the two [token tiers](/foundations/tokens.md). They hold a value and name no job, they generate no utility class, and they are free to move whenever a colour is corrected. Reading one gives you a colour that is right today and wrong after the next palette change.
 
-**The compatibility layer.** `legacy.css` and `primevue.css` exist so the interface can migrate off an older vocabulary on its own schedule. They are published for that reason and no other. The `--c-*` and `--p-*` names in them are not part of the system and will go.
+**The compatibility layer.** `legacy.css`, `primevue.css` and the five `plugin-*.css` sheets carry an older vocabulary that the interface and the plugins written against it are still moving off. The `--c-*` and `--p-*` names in them are not part of the system and will go. A plugin reads none of them directly, which the section below explains.
 
 **Anything else.** Internal class names, DOM structure, the shape of the generated CSS. If it is not in the table above, it is not a contract.
 
@@ -104,9 +104,25 @@ Colour tokens carry both appearances in one value, so nothing in a plugin has to
 
 Caido sets two attributes on the root element together, which [Theme](/foundations/theme.md) covers in full. `data-appearance` drives `color-scheme`, which selects between the two halves of every colour token. `data-mode` drives the `dark:` variant. A plugin should read neither, because a token already carries both values. If you find yourself checking one, the value you are switching on wants to be a token.
 
+## If your plugin was written before this
+
+Nothing breaks on the day the tokens ship. A plugin compiled against the older vocabulary writes every colour as `hsl(var(--c-name))` and reaches for numbered step classes such as `bg-surface-0`, and Caido loads a set of compatibility sheets that keep both resolving. Nothing has to be imported and nothing has to be changed for that to happen.
+
+| Sheet | What it keeps working |
+| --- | --- |
+| `plugin-compat.css` | The legacy colour names, one value each, held across both appearances |
+| `plugin-primevue.css` | The `--p-` names, scoped to what a plugin renders into |
+| `plugin-utilities.css` | The utility classes the interface used to emit |
+| `plugin-light.css` | The light appearance, mapped per property rather than per step |
+| `plugin-light-important.css` | The important half of the same |
+
+The numbered ramp in them is absolute rather than relative to the appearance, so step 0 is the lightest in both and a plugin that writes `bg-surface-0 dark:bg-surface-800` keeps switching the appearance for itself. That is deliberate, because a step that moved with the appearance would invert every pair written that way.
+
+**All five are deleted once the last plugin has moved off them.** They are a bridge with an end rather than a surface to build on.
+
 ## Migrating an existing plugin
 
-A plugin written before these names existed still works, and nothing here breaks it. What it no longer does is follow anything. It holds its own colours when somebody changes the appearance, its own sizes when somebody moves the root font setting, and the values it was given on the day it was written while the interface around it moves on. That gap only widens.
+The sheets above keep an older plugin rendering, and they cannot make it follow anything. It holds its own colours when somebody changes the appearance, its own sizes when somebody moves the root font setting, and the values it was given on the day it was written while the interface around it moves on. That gap only widens, and the sheets do not last.
 
 Colour is where the drift shows first, so it is the part worth doing on its own. Almost every literal in a plugin has a name already, and swapping it for that name is the whole change.
 
