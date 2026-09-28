@@ -940,14 +940,31 @@ describe("the plugin compatibility sheet", () => {
   });
 
   it("keeps the neutral ramp ordered from lightest to darkest", () => {
-    const lightness = ["0", "200", "300", "400", "500", "600", "700", "800", "900"]
-      .map((step) => {
-        const found = sheet.match(
-          new RegExp(`--c-surface-${step}: [^ ]+ [^ ]+ ([\\d.]+)%;`),
-        );
-        return Number(found?.[1] ?? 0);
-      });
+    const steps = [
+      "0",
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+    ];
 
+    const measured = steps.map((step) => ({
+      step,
+      lightness: sheet.match(
+        new RegExp(`--c-surface-${step}: [^ ]+ [^ ]+ ([\\d.]+)%;`),
+      )?.[1],
+    }));
+
+    expect(measured.filter((entry) => entry.lightness === undefined)).toEqual(
+      [],
+    );
+
+    const lightness = measured.map((entry) => Number(entry.lightness));
     expect(lightness).toEqual([...lightness].sort((a, b) => b - a));
   });
 });

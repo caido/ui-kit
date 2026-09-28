@@ -1,33 +1,14 @@
 import { readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { resolve as resolvePath } from "node:path";
 
+import { err, ok, type Result } from "neverthrow";
+
 import { toVariableName } from "../src/emit.ts";
 
 import { deprecations, fail } from "./sources.ts";
 
 const EXTENSIONS = [".css", ".ts", ".tsx", ".js", ".vue", ".html"];
 const SKIP = new Set(["node_modules", "dist", ".git", ".tsc"]);
-
-const args = process.argv.slice(2);
-const write = args.includes("--write");
-const targets = args.filter((arg) => !arg.startsWith("--"));
-
-if (targets.length === 0) {
-  fail("usage: codemod [--write] <path>...");
-}
-
-const renames = Object.entries(deprecations).flatMap(([path, entry]) =>
-  entry.replacement === undefined
-    ? []
-    : [
-        [toVariableName(path), toVariableName(entry.replacement)] as const,
-        [path, entry.replacement] as const,
-      ],
-);
-
-if (renames.length === 0) {
-  process.stdout.write("no deprecation names a replacement, nothing to do\n");
-}
 
 const walk = (target: string): string[] => {
   const stats = statSync(target);
@@ -40,25 +21,55 @@ const walk = (target: string): string[] => {
   );
 };
 
-let changed = 0;
-let occurrences = 0;
+const run = (argv: string[]): Result<string[], string> => {
+  const write = argv.includes("--write");
+  const targets = argv.filter((arg) => !arg.startsWith("--"));
 
-for (const file of targets.flatMap(walk)) {
-  const before = readFileSync(file, "utf8");
-  let after = before;
-
-  for (const [from, to] of renames) {
-    const parts = after.split(from);
-    occurrences += parts.length - 1;
-    after = parts.join(to);
+  if (targets.length === 0) {
+    return err("usage: codemod [--write] <path>...");
   }
 
-  if (after === before) continue;
-  changed += 1;
-  if (write) writeFileSync(file, after);
-  process.stdout.write(`${write ? "rewrote" : "would rewrite"} ${file}\n`);
-}
+  const renames = Object.entries(deprecations).flatMap(([path, entry]) =>
+    entry.replacement === undefined
+      ? []
+      : [
+          [toVariableName(path), toVariableName(entry.replacement)] as const,
+          [path, entry.replacement] as const,
+        ],
+  );
 
-process.stdout.write(
-  `${occurrences} occurrences in ${changed} files${write ? " rewritten" : ", run again with --write to apply"}\n`,
+  if (renames.length === 0) {
+    return ok(["no deprecation names a replacement, nothing to do"]);
+  }
+
+  const report: string[] = [];
+  let changed = 0;
+  let occurrences = 0;
+
+  for (const file of targets.flatMap(walk)) {
+    const before = readFileSync(file, "utf8");
+    let after = before;
+
+    for (const [from, to] of renames) {
+      const parts = after.split(from);
+      occurrences += parts.length - 1;
+      after = parts.join(to);
+    }
+
+    if (after === before) continue;
+    changed += 1;
+    if (write) writeFileSync(file, after);
+    report.push(`${write ? "rewrote" : "would rewrite"} ${file}`);
+  }
+
+  report.push(
+    `${occurrences} occurrences in ${changed} files${write ? " rewritten" : ", run again with --write to apply"}`,
+  );
+
+  return ok(report);
+};
+
+run(process.argv.slice(2)).match(
+  (report) => process.stdout.write(`${report.join("\n")}\n`),
+  (reason) => fail(reason),
 );

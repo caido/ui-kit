@@ -12485,314 +12485,158 @@
 :root[data-mode="light"] .text-surface-0 {
   color: var(--color-fg-strong);
 }
-:root[data-mode="light"] .\!text-surface-0 {
-  color: var(--color-fg-strong) !important;
-}
 :root[data-mode="light"] .text-surface-0\/5 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-0\/5 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 5%, transparent);
 }
 :root[data-mode="light"] .text-surface-0\/10 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-0\/10 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 10%, transparent);
 }
 :root[data-mode="light"] .text-surface-0\/20 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-0\/20 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 20%, transparent);
 }
 :root[data-mode="light"] .text-surface-0\/30 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-0\/30 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 30%, transparent);
 }
 :root[data-mode="light"] .text-surface-0\/40 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-0\/40 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 40%, transparent);
 }
 :root[data-mode="light"] .text-surface-0\/50 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-0\/50 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 50%, transparent);
 }
 :root[data-mode="light"] .text-surface-0\/60 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-0\/60 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 60%, transparent);
 }
 :root[data-mode="light"] .text-surface-0\/70 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-0\/70 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 70%, transparent);
 }
 :root[data-mode="light"] .text-surface-0\/75 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-0\/75 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 75%, transparent);
 }
 :root[data-mode="light"] .text-surface-0\/80 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-0\/80 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 80%, transparent);
 }
 :root[data-mode="light"] .text-surface-0\/90 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-0\/90 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 90%, transparent);
 }
 :root[data-mode="light"] .text-surface-0\/95 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-0\/95 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 95%, transparent);
 }
 :root[data-mode="light"] .text-surface-50 {
   color: var(--color-fg-strong);
 }
-:root[data-mode="light"] .\!text-surface-50 {
-  color: var(--color-fg-strong) !important;
-}
 :root[data-mode="light"] .text-surface-50\/5 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-50\/5 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 5%, transparent);
 }
 :root[data-mode="light"] .text-surface-50\/10 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-50\/10 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 10%, transparent);
 }
 :root[data-mode="light"] .text-surface-50\/20 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-50\/20 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 20%, transparent);
 }
 :root[data-mode="light"] .text-surface-50\/30 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-50\/30 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 30%, transparent);
 }
 :root[data-mode="light"] .text-surface-50\/40 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-50\/40 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 40%, transparent);
 }
 :root[data-mode="light"] .text-surface-50\/50 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-50\/50 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 50%, transparent);
 }
 :root[data-mode="light"] .text-surface-50\/60 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-50\/60 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 60%, transparent);
 }
 :root[data-mode="light"] .text-surface-50\/70 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-50\/70 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 70%, transparent);
 }
 :root[data-mode="light"] .text-surface-50\/75 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-50\/75 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 75%, transparent);
 }
 :root[data-mode="light"] .text-surface-50\/80 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-50\/80 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 80%, transparent);
 }
 :root[data-mode="light"] .text-surface-50\/90 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-50\/90 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 90%, transparent);
 }
 :root[data-mode="light"] .text-surface-50\/95 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-50\/95 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 95%, transparent);
 }
 :root[data-mode="light"] .text-surface-100 {
   color: var(--color-fg-strong);
 }
-:root[data-mode="light"] .\!text-surface-100 {
-  color: var(--color-fg-strong) !important;
-}
 :root[data-mode="light"] .text-surface-100\/5 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-100\/5 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 5%, transparent);
 }
 :root[data-mode="light"] .text-surface-100\/10 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-100\/10 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 10%, transparent);
 }
 :root[data-mode="light"] .text-surface-100\/20 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-100\/20 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 20%, transparent);
 }
 :root[data-mode="light"] .text-surface-100\/30 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-100\/30 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 30%, transparent);
 }
 :root[data-mode="light"] .text-surface-100\/40 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-100\/40 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 40%, transparent);
 }
 :root[data-mode="light"] .text-surface-100\/50 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-100\/50 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 50%, transparent);
 }
 :root[data-mode="light"] .text-surface-100\/60 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-100\/60 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 60%, transparent);
 }
 :root[data-mode="light"] .text-surface-100\/70 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-100\/70 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 70%, transparent);
 }
 :root[data-mode="light"] .text-surface-100\/75 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-100\/75 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 75%, transparent);
 }
 :root[data-mode="light"] .text-surface-100\/80 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-100\/80 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 80%, transparent);
 }
 :root[data-mode="light"] .text-surface-100\/90 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-100\/90 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 90%, transparent);
 }
 :root[data-mode="light"] .text-surface-100\/95 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-surface-100\/95 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 95%, transparent);
 }
 :root[data-mode="light"] .text-white {
   color: var(--color-fg-strong);
 }
-:root[data-mode="light"] .\!text-white {
-  color: var(--color-fg-strong) !important;
-}
 :root[data-mode="light"] .text-white\/5 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-white\/5 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 5%, transparent);
 }
 :root[data-mode="light"] .text-white\/10 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-white\/10 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 10%, transparent);
 }
 :root[data-mode="light"] .text-white\/20 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-white\/20 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 20%, transparent);
 }
 :root[data-mode="light"] .text-white\/30 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-white\/30 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 30%, transparent);
 }
 :root[data-mode="light"] .text-white\/40 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-white\/40 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 40%, transparent);
 }
 :root[data-mode="light"] .text-white\/50 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-white\/50 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 50%, transparent);
 }
 :root[data-mode="light"] .text-white\/60 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-white\/60 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 60%, transparent);
 }
 :root[data-mode="light"] .text-white\/70 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-white\/70 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 70%, transparent);
 }
 :root[data-mode="light"] .text-white\/75 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-white\/75 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 75%, transparent);
 }
 :root[data-mode="light"] .text-white\/80 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-white\/80 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 80%, transparent);
 }
 :root[data-mode="light"] .text-white\/90 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-white\/90 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 90%, transparent);
 }
 :root[data-mode="light"] .text-white\/95 {
-  color: var(--color-fg-strong);
-}
-:root[data-mode="light"] .\!text-white\/95 {
-  color: var(--color-fg-strong) !important;
+  color: color-mix(in srgb, var(--color-fg-strong) 95%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-0,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-0,
@@ -12888,7 +12732,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-0\/5,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-0\/5,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-0\/5 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 5%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-0\/10,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-0\/10,
@@ -12936,7 +12780,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-0\/10,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-0\/10,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-0\/10 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 10%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-0\/20,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-0\/20,
@@ -12984,7 +12828,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-0\/20,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-0\/20,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-0\/20 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 20%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-0\/30,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-0\/30,
@@ -13032,7 +12876,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-0\/30,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-0\/30,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-0\/30 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 30%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-0\/40,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-0\/40,
@@ -13080,7 +12924,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-0\/40,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-0\/40,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-0\/40 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 40%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-0\/50,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-0\/50,
@@ -13128,7 +12972,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-0\/50,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-0\/50,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-0\/50 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 50%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-0\/60,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-0\/60,
@@ -13176,7 +13020,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-0\/60,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-0\/60,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-0\/60 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 60%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-0\/70,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-0\/70,
@@ -13224,7 +13068,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-0\/70,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-0\/70,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-0\/70 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 70%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-0\/75,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-0\/75,
@@ -13272,7 +13116,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-0\/75,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-0\/75,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-0\/75 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 75%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-0\/80,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-0\/80,
@@ -13320,7 +13164,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-0\/80,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-0\/80,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-0\/80 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 80%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-0\/90,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-0\/90,
@@ -13368,7 +13212,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-0\/90,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-0\/90,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-0\/90 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 90%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-0\/95,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-0\/95,
@@ -13416,7 +13260,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-0\/95,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-0\/95,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-0\/95 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 95%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-50,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-50,
@@ -13512,7 +13356,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-50\/5,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-50\/5,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-50\/5 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 5%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-50\/10,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-50\/10,
@@ -13560,7 +13404,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-50\/10,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-50\/10,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-50\/10 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 10%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-50\/20,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-50\/20,
@@ -13608,7 +13452,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-50\/20,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-50\/20,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-50\/20 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 20%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-50\/30,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-50\/30,
@@ -13656,7 +13500,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-50\/30,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-50\/30,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-50\/30 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 30%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-50\/40,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-50\/40,
@@ -13704,7 +13548,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-50\/40,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-50\/40,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-50\/40 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 40%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-50\/50,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-50\/50,
@@ -13752,7 +13596,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-50\/50,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-50\/50,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-50\/50 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 50%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-50\/60,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-50\/60,
@@ -13800,7 +13644,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-50\/60,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-50\/60,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-50\/60 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 60%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-50\/70,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-50\/70,
@@ -13848,7 +13692,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-50\/70,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-50\/70,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-50\/70 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 70%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-50\/75,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-50\/75,
@@ -13896,7 +13740,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-50\/75,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-50\/75,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-50\/75 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 75%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-50\/80,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-50\/80,
@@ -13944,7 +13788,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-50\/80,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-50\/80,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-50\/80 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 80%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-50\/90,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-50\/90,
@@ -13992,7 +13836,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-50\/90,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-50\/90,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-50\/90 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 90%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-50\/95,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-50\/95,
@@ -14040,7 +13884,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-50\/95,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-50\/95,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-50\/95 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 95%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-100,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-100,
@@ -14136,7 +13980,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-100\/5,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-100\/5,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-100\/5 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 5%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-100\/10,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-100\/10,
@@ -14184,7 +14028,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-100\/10,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-100\/10,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-100\/10 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 10%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-100\/20,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-100\/20,
@@ -14232,7 +14076,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-100\/20,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-100\/20,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-100\/20 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 20%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-100\/30,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-100\/30,
@@ -14280,7 +14124,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-100\/30,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-100\/30,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-100\/30 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 30%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-100\/40,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-100\/40,
@@ -14328,7 +14172,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-100\/40,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-100\/40,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-100\/40 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 40%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-100\/50,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-100\/50,
@@ -14376,7 +14220,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-100\/50,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-100\/50,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-100\/50 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 50%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-100\/60,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-100\/60,
@@ -14424,7 +14268,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-100\/60,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-100\/60,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-100\/60 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 60%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-100\/70,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-100\/70,
@@ -14472,7 +14316,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-100\/70,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-100\/70,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-100\/70 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 70%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-100\/75,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-100\/75,
@@ -14520,7 +14364,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-100\/75,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-100\/75,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-100\/75 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 75%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-100\/80,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-100\/80,
@@ -14568,7 +14412,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-100\/80,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-100\/80,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-100\/80 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 80%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-100\/90,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-100\/90,
@@ -14616,7 +14460,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-100\/90,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-100\/90,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-100\/90 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 90%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-surface-100\/95,
 :root[data-mode="light"] [class*="bg-primary-"] .text-surface-100\/95,
@@ -14664,7 +14508,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-surface-100\/95,
 :root[data-mode="light"] [class*="bg-lime-"].text-surface-100\/95,
 :root[data-mode="light"] [class*="bg-lime-"] .text-surface-100\/95 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 95%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-white,
 :root[data-mode="light"] [class*="bg-primary-"] .text-white,
@@ -14760,7 +14604,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-white\/5,
 :root[data-mode="light"] [class*="bg-lime-"].text-white\/5,
 :root[data-mode="light"] [class*="bg-lime-"] .text-white\/5 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 5%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-white\/10,
 :root[data-mode="light"] [class*="bg-primary-"] .text-white\/10,
@@ -14808,7 +14652,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-white\/10,
 :root[data-mode="light"] [class*="bg-lime-"].text-white\/10,
 :root[data-mode="light"] [class*="bg-lime-"] .text-white\/10 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 10%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-white\/20,
 :root[data-mode="light"] [class*="bg-primary-"] .text-white\/20,
@@ -14856,7 +14700,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-white\/20,
 :root[data-mode="light"] [class*="bg-lime-"].text-white\/20,
 :root[data-mode="light"] [class*="bg-lime-"] .text-white\/20 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 20%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-white\/30,
 :root[data-mode="light"] [class*="bg-primary-"] .text-white\/30,
@@ -14904,7 +14748,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-white\/30,
 :root[data-mode="light"] [class*="bg-lime-"].text-white\/30,
 :root[data-mode="light"] [class*="bg-lime-"] .text-white\/30 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 30%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-white\/40,
 :root[data-mode="light"] [class*="bg-primary-"] .text-white\/40,
@@ -14952,7 +14796,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-white\/40,
 :root[data-mode="light"] [class*="bg-lime-"].text-white\/40,
 :root[data-mode="light"] [class*="bg-lime-"] .text-white\/40 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 40%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-white\/50,
 :root[data-mode="light"] [class*="bg-primary-"] .text-white\/50,
@@ -15000,7 +14844,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-white\/50,
 :root[data-mode="light"] [class*="bg-lime-"].text-white\/50,
 :root[data-mode="light"] [class*="bg-lime-"] .text-white\/50 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 50%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-white\/60,
 :root[data-mode="light"] [class*="bg-primary-"] .text-white\/60,
@@ -15048,7 +14892,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-white\/60,
 :root[data-mode="light"] [class*="bg-lime-"].text-white\/60,
 :root[data-mode="light"] [class*="bg-lime-"] .text-white\/60 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 60%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-white\/70,
 :root[data-mode="light"] [class*="bg-primary-"] .text-white\/70,
@@ -15096,7 +14940,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-white\/70,
 :root[data-mode="light"] [class*="bg-lime-"].text-white\/70,
 :root[data-mode="light"] [class*="bg-lime-"] .text-white\/70 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 70%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-white\/75,
 :root[data-mode="light"] [class*="bg-primary-"] .text-white\/75,
@@ -15144,7 +14988,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-white\/75,
 :root[data-mode="light"] [class*="bg-lime-"].text-white\/75,
 :root[data-mode="light"] [class*="bg-lime-"] .text-white\/75 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 75%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-white\/80,
 :root[data-mode="light"] [class*="bg-primary-"] .text-white\/80,
@@ -15192,7 +15036,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-white\/80,
 :root[data-mode="light"] [class*="bg-lime-"].text-white\/80,
 :root[data-mode="light"] [class*="bg-lime-"] .text-white\/80 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 80%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-white\/90,
 :root[data-mode="light"] [class*="bg-primary-"] .text-white\/90,
@@ -15240,7 +15084,7 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-white\/90,
 :root[data-mode="light"] [class*="bg-lime-"].text-white\/90,
 :root[data-mode="light"] [class*="bg-lime-"] .text-white\/90 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 90%, transparent);
 }
 :root[data-mode="light"] [class*="bg-primary-"].text-white\/95,
 :root[data-mode="light"] [class*="bg-primary-"] .text-white\/95,
@@ -15288,5 +15132,5 @@
 :root[data-mode="light"] [class*="bg-pink-"] .text-white\/95,
 :root[data-mode="light"] [class*="bg-lime-"].text-white\/95,
 :root[data-mode="light"] [class*="bg-lime-"] .text-white\/95 {
-  color: var(--color-fg-on-primary);
+  color: color-mix(in srgb, var(--color-fg-on-primary) 95%, transparent);
 }

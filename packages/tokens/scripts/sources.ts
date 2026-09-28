@@ -2,6 +2,8 @@ import { readFileSync } from "node:fs";
 import { dirname, resolve as resolvePath } from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { err, ok, type Result } from "neverthrow";
+
 import { type Contract, type Deprecations } from "../src/contract.ts";
 import {
   type Appearance,
@@ -13,13 +15,27 @@ import {
 const here = dirname(fileURLToPath(import.meta.url));
 const tokensDir = resolvePath(here, "../src/tokens");
 
-export const readJson = (relative: string): unknown =>
-  JSON.parse(readFileSync(resolvePath(tokensDir, relative), "utf8"));
+export const readJson = <T>(relative: string): Result<T, string> => {
+  try {
+    return ok(
+      JSON.parse(readFileSync(resolvePath(tokensDir, relative), "utf8")) as T,
+    );
+  } catch (cause) {
+    const reason = cause instanceof Error ? cause.message : String(cause);
+    return err(`${relative} could not be read: ${reason}`);
+  }
+};
 
 export const fail = (message: string): never => {
   process.stderr.write(`${message}\n`);
   process.exit(1);
 };
+
+const orFail = <T>(result: Result<T, string>): T =>
+  result.match(
+    (value) => value,
+    (reason) => fail(reason),
+  );
 
 type Manifest = {
   sets: Record<string, { sources: { $ref: string }[] }>;
@@ -27,22 +43,23 @@ type Manifest = {
   resolutionOrder: { $ref: string }[];
 };
 
-export const manifest = readJson("resolver.json") as Manifest;
+export const manifest = orFail(readJson<Manifest>("resolver.json"));
 
 type Legacy = {
   direct: Record<string, string>;
   keep: string[];
 };
 
-const legacy = readJson("legacy.json") as Legacy;
+const legacy = orFail(readJson<Legacy>("legacy.json"));
 
 export const directNames = legacy.direct;
 export const keptPaths = legacy.keep;
 
 type PluginCompat = { names: Record<string, string> };
 
-export const compatNames = (readJson("plugin-compat.json") as PluginCompat)
-  .names;
+export const compatNames = orFail(
+  readJson<PluginCompat>("plugin-compat.json"),
+).names;
 
 type PluginPrimevueFile = {
   base: Record<string, string>;
@@ -50,16 +67,17 @@ type PluginPrimevueFile = {
   rootDeclarations: Record<string, string>;
 };
 
-export const pluginPrimevue = readJson(
-  "plugin-primevue.json",
-) as PluginPrimevueFile;
+export const pluginPrimevue = orFail(
+  readJson<PluginPrimevueFile>("plugin-primevue.json"),
+);
 
 type DeprecationsFile = { deprecated: Deprecations };
 
-export const deprecations = (readJson("deprecations.json") as DeprecationsFile)
-  .deprecated;
+export const deprecations = orFail(
+  readJson<DeprecationsFile>("deprecations.json"),
+).deprecated;
 
-export const contract = readJson("contract.json") as Contract;
+export const contract = orFail(readJson<Contract>("contract.json"));
 
 const getSources = (appearance: Appearance) =>
   manifest.resolutionOrder.flatMap((entry) => {
@@ -73,7 +91,7 @@ const getSources = (appearance: Appearance) =>
 
 export const buildAppearance = (appearance: Appearance): ResolvedToken[] => {
   const documents = getSources(appearance).map((source) =>
-    readJson(source.$ref),
+    orFail(readJson<unknown>(source.$ref)),
   );
   const resolved = resolveTokens(flattenTokens(documents));
 

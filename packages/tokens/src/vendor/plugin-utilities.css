@@ -1,7 +1,8 @@
 /* Compatibility only, not part of the design system. */
 
-:root, so a moved overlay
-   resolves them the same as an element left in place. */
+/* Nothing here is scoped to a wrapper. A menu, a dialog or a select panel is
+   moved to the end of the body, so a rule naming a wrapper would stop matching
+   the moment the element moved. */
 
 .border-x-\[10px\] {
   border-left-width: 10px;
