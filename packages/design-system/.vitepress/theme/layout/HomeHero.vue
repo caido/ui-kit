@@ -79,8 +79,10 @@ const decisions = [
         class="flex flex-col gap-1"
       >
         <dt class="flex items-baseline gap-2 font-mono text-caption">
-          <span class="text-fg-secondary">{{ entry.name }}</span>
-          <span class="text-fg-muted">{{ entry.value }}</span>
+          <span class="shrink-0 text-fg-secondary">{{ entry.name }}</span>
+          <span :title="entry.value" class="truncate text-fg-muted">{{
+            entry.value
+          }}</span>
         </dt>
         <dd class="text-body text-fg-default">{{ entry.reason }}</dd>
       </div>

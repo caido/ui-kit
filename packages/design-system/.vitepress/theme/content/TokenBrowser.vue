@@ -2,6 +2,7 @@
 import manifest from "@caido/tokens/tokens.json";
 import { computed, ref } from "vue";
 
+import CopyText from "./CopyText.vue";
 import TokenValue from "./TokenValue.vue";
 
 type Entry = {
@@ -207,10 +208,14 @@ const sections = computed(() => {
         <tbody>
           <tr v-for="row in section.rows" :key="row.name">
             <td>
-              <code>{{ row.name }}</code>
-              <span class="block text-caption text-fg-muted">
-                {{ row.variable }}
-              </span>
+              <CopyText :text="row.name">
+                <code>{{ row.name }}</code>
+              </CopyText>
+              <CopyText :text="row.variable" block>
+                <span class="text-caption text-fg-muted">
+                  {{ row.variable }}
+                </span>
+              </CopyText>
               <span
                 v-for="modifier in row.modifiers"
                 :key="modifier"

@@ -4,7 +4,13 @@ import { computed } from "vue";
 
 import { type Group, isGroup, navigation } from "../../navigation";
 
-type Card = { key: string; text: string; link: string; blurb: string; icon: string };
+type Card = {
+  key: string;
+  text: string;
+  link: string;
+  blurb: string;
+  icon: string;
+};
 type Section = { title: string; intro: string; items: Card[] };
 
 const ENTRIES: Record<string, { blurb: string; icon: string }> = {

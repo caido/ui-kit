@@ -7,6 +7,8 @@ import {
   watch,
 } from "vue";
 
+const READING_LINE = 96;
+
 export const useActiveHeading = (ids: () => string[]) => {
   const active = ref<string>();
 
@@ -23,7 +25,15 @@ export const useActiveHeading = (ids: () => string[]) => {
       return;
     }
 
-    const passed = offsets.filter((entry) => entry.top <= 96);
+    const height = window.innerHeight;
+    const scrollable = document.documentElement.scrollHeight - height;
+    const remaining = Math.max(0, scrollable - window.scrollY);
+    const line =
+      scrollable > 0
+        ? Math.max(READING_LINE, height - remaining)
+        : READING_LINE;
+
+    const passed = offsets.filter((entry) => entry.top <= line);
     active.value = (passed.at(-1) ?? offsets[0])?.id;
   };
 

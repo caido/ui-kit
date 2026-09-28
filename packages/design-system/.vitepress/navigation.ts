@@ -120,10 +120,3 @@ const pages = navigation.flatMap(leaves);
 export const tabsForRoute = (path: string): Tab[] | undefined =>
   pages.find((page) => page.tabs?.some((tab) => tab.link === path) === true)
     ?.tabs;
-
-export const containsRoute = (item: Item, path: string): boolean =>
-  leaves(item).some(
-    (page) =>
-      page.link === path ||
-      page.tabs?.some((tab) => tab.link === path) === true,
-  );

@@ -16,7 +16,7 @@ One dependency is a local link rather than a registry install. `@caido/eslint-co
 
 ## The commands
 
-Every task here is a pnpm script. That is the exception rather than the pattern: the rest of Caido runs tasks through mise, and mise is used here only to pin the toolchain, so there is no `mise run` to reach for.
+Every task here is a pnpm script. The repository uses mise to pin the toolchain rather than to define tasks, so the commands below run as written.
 
 | Command | What it does |
 | --- | --- |
@@ -58,6 +58,8 @@ It is run on its own rather than as part of the build. A pairing nobody register
 <TokenCount of="accepted-failures" /> pairings are carried as accepted failures, each with a written reason. **That list can only shrink: a pairing that starts passing fails the check until its entry is deleted.** The check refuses a stale acceptance before it reports a real failure, so the exceptions cannot quietly accumulate.
 
 ## Working on this site
+
+The site runs on [VitePress](https://vitepress.dev), whose documentation covers the Markdown extensions, the frontmatter and the build. Its default theme does not apply here: the layout, the sidebar and the tabs are written in this repository rather than extended from that theme, so a theme option taken from those pages has no effect and the navigation is typed data in `.vitepress/navigation.ts`.
 
 The pages are Markdown with Vue components available inside them, which is how a figure that has to stay true to the code stays true: a count reads the manifest rather than repeating a number that will drift.
 

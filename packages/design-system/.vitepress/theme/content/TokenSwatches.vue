@@ -2,6 +2,8 @@
 import manifest from "@caido/tokens/tokens.json";
 import { computed } from "vue";
 
+import CopyText from "./CopyText.vue";
+
 type Entry = {
   variable: string;
   tier: string;
@@ -47,21 +49,27 @@ const rows = computed(() =>
       <!-- eslint-disable design/no-inline-style -- each bar paints the one token its row documents, which is a value the class list cannot name -->
       <tr v-for="row in rows" :key="row.name">
         <td>
-          <code class="font-mono text-caption">{{ row.name }}</code>
+          <CopyText :text="row.name">
+            <code class="font-mono text-caption">{{ row.name }}</code>
+          </CopyText>
         </td>
         <td>
-          <span
-            :style="{ background: row.light }"
-            class="block h-6 w-full rounded border border-line-subtle"
-            aria-hidden="true"
-          />
+          <CopyText :text="row.light" block>
+            <span
+              :style="{ background: row.light }"
+              class="block h-6 w-full rounded border border-line-subtle"
+              aria-hidden="true"
+            />
+          </CopyText>
         </td>
         <td>
-          <span
-            :style="{ background: row.dark }"
-            class="block h-6 w-full rounded border border-line-subtle"
-            aria-hidden="true"
-          />
+          <CopyText :text="row.dark" block>
+            <span
+              :style="{ background: row.dark }"
+              class="block h-6 w-full rounded border border-line-subtle"
+              aria-hidden="true"
+            />
+          </CopyText>
         </td>
       </tr>
       <!-- eslint-enable design/no-inline-style -->

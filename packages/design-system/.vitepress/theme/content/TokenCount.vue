@@ -26,7 +26,8 @@ const counts: Record<string, number> = {
   "colour-fixed": colour.filter(([, entry]) => entry.varies !== true).length,
   "non-colour": semantic.length - colour.length,
   pairings: (pairingsFile as { pairings: unknown[] }).pairings.length,
-  "accepted-failures": (acceptedFile as { accepted: unknown[] }).accepted.length,
+  "accepted-failures": (acceptedFile as { accepted: unknown[] }).accepted
+    .length,
   appearances: 2,
 };
 

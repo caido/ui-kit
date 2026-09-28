@@ -2,6 +2,8 @@
 import manifest from "@caido/tokens/tokens.json";
 import { computed } from "vue";
 
+import CopyText from "./CopyText.vue";
+
 type Entry = {
   variable: string;
   tier: string;
@@ -54,7 +56,9 @@ const rows = computed(() =>
     <tbody>
       <tr v-for="row in rows" :key="row.name">
         <td>
-          <code>{{ row.name }}</code>
+          <CopyText :text="row.name">
+            <code>{{ row.name }}</code>
+          </CopyText>
         </td>
         <td>
           <span class="flex items-center gap-2 overflow-x-auto">
@@ -64,9 +68,11 @@ const rows = computed(() =>
               class="size-4 shrink-0 rounded border border-line-subtle"
               aria-hidden="true"
             />
-            <code class="text-caption whitespace-nowrap text-fg-muted">
-              {{ row.light }}
-            </code>
+            <CopyText :text="row.light">
+              <code class="text-caption whitespace-nowrap text-fg-muted">
+                {{ row.light }}
+              </code>
+            </CopyText>
           </span>
         </td>
         <td>
@@ -80,9 +86,11 @@ const rows = computed(() =>
               class="size-4 shrink-0 rounded border border-line-subtle"
               aria-hidden="true"
             />
-            <code class="text-caption whitespace-nowrap text-fg-muted">
-              {{ row.dark }}
-            </code>
+            <CopyText :text="row.dark">
+              <code class="text-caption whitespace-nowrap text-fg-muted">
+                {{ row.dark }}
+              </code>
+            </CopyText>
           </span>
         </td>
       </tr>

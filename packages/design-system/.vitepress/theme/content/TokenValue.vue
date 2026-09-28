@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import CopyText from "./CopyText.vue";
+
 const { value, swatch } = defineProps<{ value: string; swatch: boolean }>();
 </script>
 
@@ -10,8 +12,10 @@ const { value, swatch } = defineProps<{ value: string; swatch: boolean }>();
       class="size-4 shrink-0 rounded border border-line-subtle"
       aria-hidden="true"
     />
-    <code class="text-caption whitespace-nowrap text-fg-muted">
-      {{ value }}
-    </code>
+    <CopyText :text="value">
+      <code class="text-caption whitespace-nowrap text-fg-muted">
+        {{ value }}
+      </code>
+    </CopyText>
   </span>
 </template>

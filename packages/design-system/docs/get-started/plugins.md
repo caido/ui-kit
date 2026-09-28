@@ -104,6 +104,30 @@ Colour tokens carry both appearances in one value, so nothing in a plugin has to
 
 Caido sets two attributes on the root element together, which [Theme](/foundations/theme.md) covers in full. `data-appearance` drives `color-scheme`, which selects between the two halves of every colour token. `data-mode` drives the `dark:` variant. A plugin should read neither, because a token already carries both values. If you find yourself checking one, the value you are switching on wants to be a token.
 
+## Migrating an existing plugin
+
+A plugin written before these names existed still works, and nothing here breaks it. What it no longer does is follow anything. It holds its own colours when somebody changes the appearance, its own sizes when somebody moves the root font setting, and the values it was given on the day it was written while the interface around it moves on. That gap only widens.
+
+Colour is where the drift shows first, so it is the part worth doing on its own. Almost every literal in a plugin has a name already, and swapping it for that name is the whole change.
+
+| What a plugin tends to carry | What it becomes |
+| --- | --- |
+| A colour literal, or a colour function | The class for the job, such as `bg-surface-raised` or `text-fg-muted` |
+| A stock ramp class such as `text-red-400` | The name for what it meant, such as `text-fg-danger` |
+| A framework scale name such as `text-sm` | The step it stands for, such as `text-caption` |
+| A size in `rem` written against sixteen pixels | The type step, which is written against the setting |
+| A declaration a token already names | The class on the element, and one stylesheet fewer |
+
+None of it has to be found by reading. The eleven design rules ship in `@caido/eslint-config`, they stay off until asked for, and one line turns them on across every `.vue` and `.ts` file in the plugin.
+
+```ts
+import { defaultConfig } from "@caido/eslint-config";
+
+export default defaultConfig({ design: true });
+```
+
+`@caido/tokens` has to be installed beside it, because the rules that check a name against the published list read that list rather than a copy of it. Every rule reports at error, so **the first run on a plugin that has never had them is a survey rather than a list of things to do tonight**. [Enforcement](/guides/enforcement.md) covers what each rule rejects, and how to record a reason where a value genuinely has no name yet.
+
 ## When a token is going away
 
 A name never disappears without notice. It is marked deprecated first, keeps working for at least one release after that, and carries the reason and its replacement in the manifest.
