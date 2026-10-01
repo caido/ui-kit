@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 96" width="384" height="96" role="img">
+  <rect width="384" height="96" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(100 36)">
+  <rect x="0" y="0" width="24" height="24" rx="6" fill="oklch(0.4672 0.1618 13.8)"/>
+  <rect x="32" y="0" width="24" height="24" rx="6" fill="oklch(0.7449 0.1231 74.5)"/>
+  <rect x="64" y="0" width="24" height="24" rx="6" fill="oklch(0.4918 0.1036 144.2)"/>
+  <rect x="96" y="0" width="24" height="24" rx="6" fill="oklch(0.5035 0.1228 250)"/>
+  <rect x="128" y="0" width="24" height="24" rx="6" fill="oklch(0.5168 0.146 47.6)"/>
+  <rect x="160" y="0" width="24" height="24" rx="6" fill="oklch(0.5253 0.1677 18.5)"/>
+  </g>
+</svg>

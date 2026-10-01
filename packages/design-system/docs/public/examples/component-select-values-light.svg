@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 152" width="800" height="152" role="img">
+  <rect width="800" height="152" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(26.8 41)">
+  <rect x="30.4" y="-16" width="685.6" height="63" rx="6" fill="oklch(0.948 0.0155 70)"/>
+  <rect x="46.4" y="0" width="200" height="31" rx="6" fill="oklch(0.9746 0.014 70)" stroke="oklch(0.6372 0.0263 70)" stroke-width="1"/>
+  <text x="55.4" y="20.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.2194 0.0118 277.9)">Alpha</text>
+  <rect x="270.4" y="0" width="200" height="31" rx="6" fill="oklch(0.9746 0.014 70)" stroke="oklch(0.6372 0.0263 70)" stroke-width="1"/>
+  <text x="279.4" y="20.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.5006 0.0163 272.5)">Select a plugin</text>
+  <rect x="500" y="0" width="200" height="31" rx="6" fill="oklch(0.8113 0.0205 70)" stroke="oklch(0.6372 0.0263 70)" stroke-width="1"/>
+  <text x="509" y="20.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.2194 0.0118 277.9)">Alpha</text>
+  <rect x="219.4" y="8.5" width="14" height="14" fill="none"/>
+  <path transform="translate(219.4 8.5) scale(0.02734)" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="443.4" y="8.5" width="14" height="14" fill="none"/>
+  <path transform="translate(443.4 8.5) scale(0.02734)" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="673" y="8.5" width="14" height="14" fill="none"/>
+  <path transform="translate(673 8.5) scale(0.02734)" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="500" y="0" width="200" height="31" rx="6" fill="oklch(0.9746 0.014 70)" opacity="0.4"/>
+  <text x="146.4" y="63" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">value: fg-strong</text>
+  <text x="370.4" y="63" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" font-weight="500" fill="oklch(0.7449 0.1231 74.5)">placeholder: fg-muted</text>
+  <text x="600" y="63" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">disabled: surface-disabled</text>
+  <text x="373.2" y="83" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">no value and no placeholder leaves a space</text>
+  </g>
+</svg>

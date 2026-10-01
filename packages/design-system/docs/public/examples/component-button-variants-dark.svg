@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 156" width="800" height="156" role="img">
+  <rect width="800" height="156" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(-12.1 4.9)">
+  <rect x="276.6" y="40" width="59.6" height="35" rx="6" fill="oklch(0.4672 0.1618 13.8)" stroke="oklch(0.4672 0.1618 13.8)" stroke-width="1"/>
+  <text x="306.4" y="62.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(1 0 89.9)">Save</text>
+  <text x="306.4" y="95" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">solid</text>
+  <rect x="371.4" y="40" width="59.6" height="35" rx="6" fill="none" stroke="oklch(0.4672 0.1618 13.8)" stroke-width="1"/>
+  <text x="401.2" y="62.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.7096 0.1384 13.4)">Save</text>
+  <text x="401.2" y="95" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">outlined</text>
+  <text x="494.8" y="62.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.7096 0.1384 13.4)">Save</text>
+  <text x="494.8" y="95" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">text</text>
+  <defs>
+    <pattern id="hatch-padding-277_6-49-12-17" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="277.6" y="49" width="12" height="17" fill="url(#hatch-padding-277_6-49-12-17)"/>
+  <rect x="277.6" y="49" width="12" height="17" fill="none" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <rect x="368.4" y="37" width="65.6" height="41" rx="9" fill="none" stroke="oklch(0.5068 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <circle cx="277.6" cy="57.5" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 277.6 57.5 L 260.6 57.5" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="252.6" y="61.7" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">px-3 pads all three variants</text>
+  <circle cx="434" cy="57.5" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 434 57.5 L 434 28" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <path d="M 434 28 L 527.6 28" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="535.6" y="32.2" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">outlined is a 1px border, no fill</text>
+  <text x="394.1" y="123" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">text drops the border, so it is 2px shorter</text>
+  </g>
+</svg>

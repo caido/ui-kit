@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160" width="800" height="160" role="img">
+  <rect width="800" height="160" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(263.8 33.3)">
+  <rect x="-28.2" y="0" width="56.4" height="26" rx="6" fill="oklch(0.8857 0.0595 336.8)" stroke="oklch(0.7594 0.0908 336)" stroke-width="1"/>
+  <text x="0" y="17.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.4701 0.1409 336.3)">DELETE</text>
+  <text x="-129.6" y="46.2" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">category="magenta" severity="danger"</text>
+  <path d="M 7.2 50.4 L 129.6 50.4" stroke="oklch(0.705 0.1699 30.1)" stroke-width="1" fill="none"/>
+  <circle cx="129.6" cy="50.4" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 129.6 50.4 L 129.6 66.4" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <path d="M 129.6 66.4 L 145.6 66.4" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="153.6" y="70.6" text-anchor="start" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">the severity never reaches the page</text>
+  <text x="0" y="90.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">a category present drops the severity</text>
+  </g>
+</svg>
