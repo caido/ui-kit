@@ -5,7 +5,7 @@ import {
   isColorValue,
 } from "../src/resolve.ts";
 
-import { buildAppearance, readJson } from "./sources.ts";
+import { buildAppearance, fail, readJson } from "./sources.ts";
 
 type Accepted = {
   foreground: string;
@@ -15,10 +15,17 @@ type Accepted = {
   reason: string;
 };
 
-const { pairings } = readJson("pairings.json") as { pairings: Pairing[] };
-const { accepted } = readJson("contrast-accepted.json") as {
-  accepted: Accepted[];
-};
+const { pairings } = readJson<{ pairings: Pairing[] }>("pairings.json").match(
+  (value) => value,
+  (reason) => fail(reason),
+);
+
+const { accepted } = readJson<{ accepted: Accepted[] }>(
+  "contrast-accepted.json",
+).match(
+  (value) => value,
+  (reason) => fail(reason),
+);
 
 const appearances: Appearance[] = ["light", "dark"];
 

@@ -9,6 +9,11 @@ const dist = resolvePath(root, "dist");
 const assets: [source: string, published: string][] = [
   ["src/__generated__/tokens.css", "tokens.css"],
   ["src/__generated__/legacy.css", "legacy.css"],
+  ["src/__generated__/plugin-compat.css", "plugin-compat.css"],
+  ["src/__generated__/plugin-primevue.css", "plugin-primevue.css"],
+  ["src/vendor/plugin-utilities.css", "plugin-utilities.css"],
+  ["src/vendor/plugin-light.css", "plugin-light.css"],
+  ["src/vendor/plugin-light-important.css", "plugin-light-important.css"],
   ["src/__generated__/tokens.public.json", "tokens.json"],
   ["src/vendor/primevue.css", "primevue.css"],
   ["src/vendor/fonts.css", "fonts.css"],

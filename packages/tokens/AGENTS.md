@@ -6,7 +6,7 @@ _The design token source, and the generator that turns it into CSS and types._
 
 ### The source of truth
 
-Fifteen files under `src/tokens`. Everything else in this package is generated from them.
+Seventeen files under `src/tokens`. Everything else in this package is generated from them.
 
 | File                           | Holds                                                                                    |
 | ------------------------------ | ---------------------------------------------------------------------------------------- |
@@ -25,6 +25,8 @@ Fifteen files under `src/tokens`. Everything else in this package is generated f
 | `contrast-accepted.json`       | The pairings below the floor today, each with the reason it is not fixed here             |
 | `deprecations.json`            | Names on their way out, with the version that announced each and what to move to         |
 | `contract.json`                | The names the last release published, so a removal without a window fails the build      |
+| `plugin-compat.json`           | The legacy colour names a plugin built before the migration reads, and the token each takes |
+| `plugin-primevue.json`         | The `--p-` names such a plugin reads, scoped to what it renders into                     |
 
 The layout follows the W3C design token resolver module, version 2025.10. The manifest composes the palette first and then one appearance file, and the later file wins.
 
@@ -72,7 +74,7 @@ Listing a token there does two things: it emits a complete colour rather than a 
 
 The names matter more than they look. `--c-highlight-color-red` and its eight siblings are stored, as that literal string, on every request a user has highlighted. The consumer builds the name at runtime and sends `var(--c-highlight-color-red)` to be persisted. Renaming one of those tokens does not break a build; it stops already highlighted requests from painting, in data this package cannot see. They are a data contract, and they do not change without a migration.
 
-### The nine checks
+### The ten checks
 
 Each fails the build and names the token that caused it.
 
@@ -93,6 +95,8 @@ A deprecation whose replacement does not exist.
 A name the last release published, removed without having been deprecated first.
 
 A deprecation that does not say when it was announced or why.
+
+A plugin compatibility name pointing at a token that does not exist.
 
 ### Generated output
 
@@ -116,7 +120,7 @@ The rule that follows: anything read from JavaScript reads the token rather than
 
 ### The PrimeVue variable layer
 
-`src/vendor/primevue.css` declares the `--p-` variables. It is the one file here written by hand rather than generated, and it lives here rather than in a consumer because more than one package loads it and each held its own copy.
+`src/vendor/primevue.css` declares the `--p-` variables. It lives here rather than in a consumer because more than one package loads it and each held its own copy.
 
 PrimeVue does not read it. The application runs PrimeVue with `unstyled: true` and a pass-through theme, and `@primevue/themes` is not installed, so nothing generates or consumes those names at runtime. The single consumer is the `tailwindcss-primeui` Tailwind plugin, which turns them into utility classes. When the theme block takes over those classes, this file has no reader left.
 
@@ -155,6 +159,32 @@ Of seven design systems surveyed, none files a scrollbar under its interaction f
 
 The selected row therefore has no token yet. Naming it is a colour decision, and it waits for the step that defines interaction states.
 
+### The plugin compatibility layer
+
+A plugin built before the migration compiles against `@caido/tailwindcss`, which writes every colour as `hsl(var(--c-NAME))`. The value has to be a bare HSL triple rather than a colour, or the declaration is dropped and the plugin paints nothing.
+
+Five sheets carry it, and none of them is part of the design system. Nothing in this package or in the application may read a name or a class they define.
+
+| File | Holds |
+| ---- | ----- |
+| `__generated__/plugin-compat.css` | The legacy colour names, one value each, held across both appearances |
+| `__generated__/plugin-primevue.css` | The `--p-` names, scoped to `.c-wrapper-body` and `.c-wrapper-topbar` |
+| `vendor/plugin-utilities.css` | The utility classes the application used to emit, generated once with tailwindcss 3.4.13 over the presets plugins bundle |
+| `vendor/plugin-light.css` | The light appearance, mapped per property |
+| `vendor/plugin-light-important.css` | The important half of the same, for the first layer |
+
+Three things about them are not obvious.
+
+The ramp is absolute. Step 0 is the lightest in both appearances and step 900 the darkest, because a plugin writes `bg-surface-0 dark:bg-surface-800` and switches the appearance itself. A step that moved with the appearance would invert that pair.
+
+The light appearance is mapped per property rather than per step. The preset names a step as a background in one rule and as body text in another, so `bg-surface-900` has to be a panel while `text-surface-900` stays readable on it. One value per step cannot serve both.
+
+The important half sits in the first layer rather than the last. A cascade layer orders normal declarations by declaration order and important ones against it, so an important rule in an early layer beats one in a late layer. A plugin ships its own important utilities into `c-plugin`, so these have to sit ahead of it.
+
+The three vendor sheets are unscoped, because a menu, a dialog and a select panel are moved to the end of the body. Every selector names a numbered step, a stock colour or an arbitrary value, all three of which the application's design rules forbid, so none of it reaches the application.
+
+When the last plugin has moved to the semantic tokens, all five are deleted.
+
 ### The appearance switch
 
 Three rules set the appearance, and they do not grow as tokens are added. An absent attribute follows the operating system, and either explicit value overrides it.
@@ -173,6 +203,6 @@ The rule still holds for application code, which runs through the bundler. It do
 
 ## Testing
 
-`src/index.spec.ts` covers the resolver, the emitters and the contract, including each of the nine checks failing.
+`src/index.spec.ts` covers the resolver, the emitters and the contract, including each of the ten checks failing.
 
 A check that has never been seen to fail is not a check. When adding one, write the test that plants the fault first.

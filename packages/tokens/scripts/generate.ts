@@ -11,11 +11,14 @@ import {
 import {
   appearances,
   checkAppearances,
+  checkCompatNames,
   checkDirectNames,
   checkKeptPaths,
   checkNamespaces,
   checkWholePixels,
   emitLegacyStylesheet,
+  emitPluginCompatStylesheet,
+  emitPluginPrimevueStylesheet,
   emitPublicTokens,
   emitStylesheet,
   emitTypes,
@@ -25,6 +28,8 @@ import {
 
 import {
   buildAppearance,
+  compatNames,
+  pluginPrimevue,
   contract,
   deprecations,
   directNames,
@@ -75,6 +80,13 @@ if (light === undefined || dark === undefined) {
     );
   }
 
+  const compat = checkCompatNames(dark, compatNames);
+  if (compat.isErr()) {
+    fail(
+      `the plugin compatibility sheet points at a token that does not exist:\n  ${compat.error.join("\n  ")}`,
+    );
+  }
+
   const announced = checkDeprecated(dark, deprecations);
   if (announced.isErr()) {
     fail(
@@ -110,6 +122,14 @@ if (light === undefined || dark === undefined) {
   writeFileSync(
     resolvePath(generatedDir, "legacy.css"),
     emitLegacyStylesheet(light, dark, directNames, keptPaths),
+  );
+  writeFileSync(
+    resolvePath(generatedDir, "plugin-compat.css"),
+    emitPluginCompatStylesheet(dark, compatNames),
+  );
+  writeFileSync(
+    resolvePath(generatedDir, "plugin-primevue.css"),
+    emitPluginPrimevueStylesheet(pluginPrimevue),
   );
   writeFileSync(resolvePath(generatedDir, "tokens.ts"), emitTypes(dark));
   writeFileSync(resolvePath(generatedDir, "values.ts"), emitValues(dark));

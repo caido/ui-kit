@@ -1,5 +1,5 @@
 {
-  "$description": "Token names on their way out. A name listed here is still emitted, still works, and still appears in the published manifest, marked so a consumer can see it coming. That is what the deprecation window is: the name keeps working for at least one minor release after it is announced, so nothing breaks the moment a rename is decided. Add an entry the release a rename is decided, not the release it lands. Removing a name means deleting its entry here and its token in the same change, and the contract check refuses that unless the previous release had already announced it.",
+  "$description": "Names on their way out. A listed name is still emitted and still works for at least one minor release after it is announced.",
   "$schema": {
     "replacement": "The token to move to. Omit when nothing takes the old name's job.",
     "since": "The released version that announced the deprecation.",
