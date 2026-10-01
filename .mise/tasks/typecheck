@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+echo "[*] Building the tokens package, since the site reads its published manifest"
+pnpm --filter @caido/tokens build
+
 pnpm typecheck
