@@ -22,8 +22,6 @@ The half steps either side of rung 1, and rung 1 itself. Two of the three sit of
 
 The axis spellings take the same three values, so `py-1.5` and `px-1.5` are each the same 6 pixels.
 
-A control that carries text writes no height. It is the line box of the type role plus the padding above and below.
-
 ## Radius
 
 | Class | Value | For |
@@ -40,11 +38,11 @@ A control that carries text writes no height. It is the line box of the type rol
 | `max-w-dialog-md` | 600px | A form with a short body |
 | `max-w-dialog-lg` | 800px | The widest forms |
 
-Derived by shrinking each dialog in Caido until its content overflowed. The measured floors were 188px for a confirmation and 439px for a short form, so all three clear their content with room to spare.
+Derived by shrinking each dialog in Caido until its content overflowed, at 188px for a confirmation and 439px for a short form.
 
 ## Border widths
 
-`border`, `border-2` and `border-4` emit 1, 2 and 4 pixels. They come from the framework as fixed values, so there is nothing to choose and nothing to tokenise.
+`border`, `border-2` and `border-4` emit 1, 2 and 4 pixels. They come from the framework as fixed values, so there is nothing to tokenise.
 
 ## The layout components
 
@@ -75,6 +73,4 @@ Derived by shrinking each dialog in Caido until its content overflowed. The meas
 | Preset corners | `rounded-xs`, `rounded-sm`, `rounded-md`, `rounded-lg` | `rounded`. Each already resolves to the same 6 pixels |
 | Shadows | `shadow-sm`, `shadow-md`, `shadow-lg` | nothing. Layering is z-index, see [Depth](/foundations/depth.md) |
 
-A shadow other than `shadow-none` generates no CSS and reports nothing. A preset corner is the other case: it is aliased onto the one radius so the component library keeps working, and a lint rule reports it in first party markup, at error.
-
-Off-ladder spacing behaves differently. `p-5` does compile, because the utilities come from the framework rather than from this system.
+A preset corner is aliased onto the one radius so the component library keeps working, and a lint rule reports it in first party markup, at error. A shadow other than `shadow-none` is the silent case: it generates no CSS and reports nothing.

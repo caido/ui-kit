@@ -12,7 +12,7 @@ A button needs a label and a handler. The rest has a default that suits the majo
 </template>
 ```
 
-The label is required rather than optional, and it is the visible text and the accessible name at once. A `@click` listener is forwarded straight to the native button and fires with the raw `MouseEvent`, so modifiers work as they do on any element: `@click.stop` inside a clickable row stops the row from reacting. With nothing else written, that button is contrast, solid and medium, and its `type` is `button`, so it submits no form by accident.
+The label is the visible text and the accessible name at once. `@click` fires with the native `MouseEvent`, so `@click.stop` inside a clickable row stops the row from reacting. With nothing else written, the button is contrast, solid and medium, and submits no form.
 
 ## Choosing a severity
 
@@ -24,7 +24,7 @@ Pick the severity from what the command means, and let the colour follow.
 
 **Is it an ordinary command?** Then `contrast`, which is the default and needs no writing.
 
-`secondary`, `success`, `info` and `warn` exist because the vocabulary is shared, and they are rare on buttons. Reach for one when the action is genuinely about that intent, rather than to tint a row.
+`secondary`, `success`, `info` and `warn` are rare on buttons. Reach for one when the action is about that intent, not to tint a row.
 
 ## Choosing a variant
 
@@ -48,7 +48,7 @@ The gap and the alignment live on the wrapper, because a button holds no margin 
 
 ## Adding an icon
 
-`icon` takes a FontAwesome class string and renders before the label; `trailingIcon` renders after it. Both are decorative and hidden from assistive technology, because the label already carries the name. [Icons](/foundations/icons/usage.md#writing-an-icon) owns the class string itself.
+`icon` renders before the label and `trailingIcon` after it. Both are decorative, because the label already carries the name. [Icons](/foundations/icons/usage.md#writing-an-icon) owns the class string itself.
 
 ```vue
 <template>
@@ -56,9 +56,9 @@ The gap and the alignment live on the wrapper, because a button holds no margin 
 </template>
 ```
 
-An icon is worth adding when the glyph is the faster read: a plus for create, a trash for delete. Giving a whole row of buttons an icon each stops the icons distinguishing anything, so spend them on the commands that earn one.
+An icon is worth adding when the glyph is the faster read, such as a plus for create. A row where every button has an icon stops the icons distinguishing anything.
 
-A trailing caret marks a button that opens a menu rather than running a command on the spot, and six of the seven trailing icons in the interface are that caret. The button draws no state of its own for that menu, so pass `aria-expanded` and `aria-haspopup` from the call site; both reach the native button, because anything starting `aria-` is forwarded.
+A trailing caret marks a button that opens a menu. The button draws no menu state of its own, so pass `aria-expanded` and `aria-haspopup` from the call site.
 
 ```vue
 <template>
@@ -91,7 +91,11 @@ Set `iconOnly` and keep writing the label. The label stops being drawn and becom
 </template>
 ```
 
-Attach the tooltip with the `v-tooltip` directive. A `title` attribute is filtered out before it reaches the button and renders nothing, and a tooltip is not a name in any case, which [accessibility](/foundations/accessibility.md#a-tooltip-is-not-a-name) explains. Pass an `icon` as well: nothing in the types stops `iconOnly` from being set on a button with no icon, and the result is an empty control that stays focusable and clickable.
+Attach the tooltip with `v-tooltip`, because a `title` attribute is dropped. A tooltip is not a name in any case, which [accessibility](/foundations/accessibility.md#a-tooltip-is-not-a-name) explains.
+
+::: tip
+Always pass an `icon` with `iconOnly`. Nothing in the types requires one, and without it the button renders as an empty control that is still focusable.
+:::
 
 ## Keeping a row of buttons aligned
 
@@ -106,7 +110,7 @@ Buttons in one row share a height when they share a size, a variant and whether 
   </template>
 </DoDont>
 
-The same trap catches a row of mixed variants: a text button is 2 pixels shorter than a solid or outlined one, because it carries no border width. When a row genuinely needs both, give the container `items-center` and accept that the edges differ, or move the odd control out of the row.
+A text button is also 2 pixels shorter than a solid or outlined one. When a row needs both, give the container `items-center` and accept that the edges differ, or move the odd control out of the row. [Geometry](/components/button/reference.md#geometry) lists every height.
 
 ## Showing that a command is running
 
@@ -119,9 +123,9 @@ Set `loading` while the work is in flight. The button disables itself and a spin
   caption="a spinner arrives even on a button that had no icon, and the button grows by 22 pixels at medium."
 />
 
-**The spinner replaces the icon rather than joining it.** A button with `icon="fas fa-floppy-disk"` shows a spinner in place of the disk, and a button with no icon at all gains one, which is where the width jump comes from. When that shift matters, put the button in a fixed-width parent or set `fluid`.
+**The spinner replaces the icon rather than joining it.** A button with no icon gains one, which is where the width jump comes from. When that shift matters, put the button in a fixed-width parent or set `fluid`.
 
-The spinner is drawn for the eye only. Nothing is announced, so a wait long enough to need words needs them somewhere else on the screen, which [feedback](/foundations/feedback/usage.md#announcing-a-wait) covers.
+Nothing is announced while loading, so a wait long enough to need words needs them elsewhere on the screen, which [feedback](/foundations/feedback/usage.md#announcing-a-wait) covers.
 
 ## Submitting a form
 
@@ -146,16 +150,16 @@ Leave the other buttons in that form on the default `type`, or the first one a r
 </template>
 ```
 
-`fluid` sets the width to 100 per cent of the parent content box, which is what a button in a sidebar column or a narrow panel wants. Constraining the width is also what makes a long label truncate: a free-standing button grows to fit its label however long it is, so the ellipsis arrives once something bounds the button and not before.
+`fluid` fills the parent, which suits a sidebar column or a narrow panel. A free-standing button grows to fit its label, so a long label only truncates once something bounds the width.
 
 ## Naming a button for assistive technology
 
-The label is the name in both forms: a labelled button is named by its text, and an `iconOnly` button is named by the label it no longer draws. An `aria-label` passed from a call site does not survive on a labelled button. It reaches the component and is then overwritten with nothing, so the rendered button carries no `aria-label` at all. Three call sites pass one today, and none of the three names its button. To change what a button is called, change the label.
+The label is the name in both forms: a labelled button is named by its text, and an `iconOnly` button by the label it no longer draws. **An `aria-label` passed from a call site is overwritten, so the rendered button carries none.** To change what a button is called, change the label.
 
-`aria-description`, `aria-describedby`, `aria-expanded`, `aria-haspopup` and `aria-controls` are unaffected, as is any `data-*` attribute, which is how the onboarding tours find their targets. [Components](/foundations/components/usage.md#passing-identity-through-a-component) covers that route.
+Other `aria-*` attributes and any `data-*` attribute reach the button, which is how the onboarding tours find their targets. [Components](/foundations/components/usage.md#passing-identity-through-a-component) covers that route.
 
 ## Styling a button
 
-Do not. A `class`, a `style`, a pass-through object and a class-shaped prop under another name are each refused, and the refusal is silent: the attribute is dropped inside the wrapper with no warning and no visual hint.
+Do not. A `class`, a `style` and the other attributes [Forwarded attributes](/components/button/reference.md#forwarded-attributes) lists are dropped without a warning.
 
-When a button needs a shape the props do not describe, put the spacing on the parent, or add the prop to the component so that every call site gains it. Write the change in `CButton` rather than at the call site.
+When a button needs a shape the props do not describe, put the spacing on the parent, or add the prop to `CButton` so that every call site gains it.

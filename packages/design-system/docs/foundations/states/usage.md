@@ -10,7 +10,7 @@ Reach for the tokens directly only when you are building something the library d
 
 ## Giving two states two properties
 
-The rule from the overview, applied. A row can be coloured by somebody and selected at the same time, so those two cannot both be a background.
+A row can be coloured by somebody and selected at the same time, so those two cannot both be a background.
 
 <DoDont>
 <template #do-example>
@@ -79,11 +79,9 @@ Opacity belongs to disabled. A second state that also dims is not a second state
 
 Disabled means it cannot be operated. It does not mean the content is gone.
 
-Somebody looking at a disabled field usually wants to read what is in it, and often wants to copy it. Turning off text selection takes that away for no gain, because selecting text was never how the control was operated in the first place.
+Somebody looking at a disabled field often wants to read and copy what is in it. Turning off text selection takes that away for no gain.
 
-**The form controls are already settled, so this rule is about what you build around them.** The preset turns selection off together with pointer events on a disabled input, select, checkbox and the other controls it dresses, which leaves nothing to decide there.
-
-On a row, a panel or a container you disable yourself, leave selection on. Turn it off only where a drag or a double click would otherwise pick up the label of something you are dragging.
+The form controls are already settled: the preset turns selection off together with pointer events on a disabled input, select, checkbox and the other controls it dresses. **On a row, a panel or a container you disable yourself, leave selection on.** Turn it off only where a drag or a double click would otherwise pick up the label of something you are dragging.
 
 ## Never removing the focus outline
 
@@ -91,9 +89,7 @@ Focus is applied for the whole interface on `:focus-visible`, so a focusable ele
 
 A few controls move the ring rather than drawing a second one: a bordered input takes it on its own boundary, the three controls that hide their real input draw it on the box beside them, and a composite widget clears it on the container and redraws it on the item the user is on. **Moving a ring is not removing one.**
 
-An outline that has been removed and not replaced makes the interface unusable by keyboard, and it fails silently: everything still works for a pointer, so nothing looks broken until somebody tries to tab.
-
-If an outline is in the wrong place rather than unwanted, move it with an offset. Do not switch it off.
+An outline removed and not replaced makes the interface unusable by keyboard, and nothing looks broken until somebody tries to tab. If an outline is in the wrong place, move it with an offset.
 
 ## Making everything clickable reachable
 
@@ -105,8 +101,6 @@ Anything that appears on hover needs the same treatment: a row action that only 
 
 ## Choosing between read-only and disabled
 
-They feel similar and they are not.
+Read-only means you may read the value and not change it. Disabled means the control does not apply right now. [Read-only against disabled](/foundations/states/reference.md#read-only-against-disabled) has the full comparison.
 
-Read-only means you may read the value and not change it. Disabled means the control does not apply right now. [Reference](/foundations/states/reference.md#read-only-against-disabled) has the full comparison.
-
-Read-only has no appearance of its own. Leave a read-only field at full contrast rather than dimming it, because the dimming is the disabled treatment and it will be read as disabled.
+Leave a read-only field at full contrast. Dimming is the disabled treatment, and a dimmed field will be read as disabled.

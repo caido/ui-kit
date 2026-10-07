@@ -1,6 +1,6 @@
 # Menu
 
-A menu is a list of commands, one of which gets picked. Caido ships two wrappers for that job, and they share the shape of an item and very little else. `CMenu` draws a vertical list in the flow of the page, wherever the markup puts it. `CContextMenu` is the single right-click overlay for the whole application, mounted once in the shell and opened from anywhere.
+A menu is a list of commands, one of which gets picked. Caido ships two wrappers for that job, and they share the shape of an item and very little else. `CMenu` draws a vertical list in the flow of the page. `CContextMenu` is the single right-click overlay for the whole application, mounted once in the shell and opened from anywhere.
 
 This page explains what each one decides for you. [Usage](/components/menu/usage.md) shows how to build them, and [Reference](/components/menu/reference.md) lists the props, slots, attributes and the DOM they render.
 
@@ -15,21 +15,19 @@ This page explains what each one decides for you. [Usage](/components/menu/usage
 | Nesting | A flat section with a heading | A flyout submenu at any level |
 | Surface | Transparent and borderless | `surface-page` behind a 1px `line-default` border |
 
-The wiring differs far enough that swapping one for the other is a rewrite rather than a substitution.
+Swapping one for the other is a rewrite rather than a substitution.
 
 ## The item object is the API
 
 Both take an array of plain objects rather than markup per row. A `label`, an `icon` from the [icon vocabulary](/foundations/icons.md), a `command` and a `disabled` flag cover most rows, and `{ separator: true }` draws the rule between two groups.
 
-**An item runs its own `command` when it is picked.** Neither wrapper declares an event, so there is no selection listener to attach and the callback lives on the row it belongs to. Assembling the array is therefore the whole of the work, which is why Caido builds those arrays in composables rather than in templates.
+**An item runs its own `command` when it is picked.** Neither wrapper declares an event, so assembling the array is the whole of the work, which is why Caido builds those arrays in composables rather than in templates.
 
 ## One right-click menu for the application
 
-`CContextMenu` is written once, beside the confirm dialog at the root of the application shell. It takes no props, exposes no slot, and renders nothing at all until somebody opens it.
+`CContextMenu` is written once, at the root of the application shell. It takes no props, exposes no slot, and renders nothing until somebody opens it.
 
-Anything that needs a right-click menu reaches it through `useContextMenu()`, which returns `show` and `hide`. A table row, a sidebar entry or an editor hands `show` the mouse event and an array of items, and the shell draws the overlay at the pointer.
-
-**Centralising it leaves a caller owning its items and nothing else.** Placement, dismissal, nesting, keyboard handling and stacking are settled in one file, and the fourteen files that assemble item arrays touch none of it.
+Anything that needs a right-click menu calls `useContextMenu()` and hands `show` the mouse event and an array of items. **A caller owns its items and nothing else.** Placement, dismissal, nesting, keyboard handling and stacking are settled in one file.
 
 <Preview
   light="/examples/component-menu-contextmenu-light.svg"
@@ -40,15 +38,13 @@ Anything that needs a right-click menu reaches it through `useContextMenu()`, wh
 
 ## A CMenu cannot be an overlay
 
-The library underneath can render the same list as a floating panel, and Caido closes that route: the flag that would do it is not one of the attributes a component forwards, and `CMenu` stops inheriting the rest, so nothing outside can set it.
-
-A list that has to float goes inside something that already floats. The profile menu puts a `CMenu` inside a popover, and that is the pattern for the case.
+The library underneath can render the same list as a floating panel, and Caido closes that route by not forwarding the flag that would do it. A list that has to float goes inside something that already floats, the way the profile menu puts a `CMenu` inside a popover.
 
 ## The surface belongs to whatever holds it
 
-**A `CMenu` paints neither a background nor a border.** Its root overrides the raised surface the preset asks for, so one dropped onto an arbitrary parent shows whatever sits behind it. Both call sites place it on a surface deliberately, one inside a popover and one on the page surface of the settings column.
+**A `CMenu` paints neither a background nor a border.** One dropped onto an arbitrary parent shows whatever sits behind it, so place it on a surface deliberately.
 
-`CContextMenu` settles its own surface instead, because it opens over content it knows nothing about. It takes the page surface and the 1px border a floating surface takes, and it draws no shadow, because [the system defines none](/foundations/depth.md#there-are-no-shadows).
+`CContextMenu` settles its own surface instead, because it opens over content it knows nothing about. It draws no shadow, because [the system defines none](/foundations/depth.md#there-are-no-shadows).
 
 <Preview
   light="/examples/component-menu-sections-light.svg"
@@ -59,12 +55,12 @@ A list that has to float goes inside something that already floats. The profile 
 
 ## When a menu is the wrong answer
 
-A context menu opens on the element under the pointer, and nothing on screen says what is inside it. An action that lives only there is hard to find, so give it a visible control or a command as well, the way [accessibility](/foundations/accessibility/usage.md#giving-a-double-click-a-second-route) asks of a double-click.
+Nothing on screen says what is inside a context menu, so an action that lives only there is hard to find. Give it a visible control or a command as well, the way [accessibility](/foundations/accessibility/usage.md#giving-a-double-click-a-second-route) asks of a double-click.
 
-**Does the choice stay on screen after it is made?** Then it is a value rather than a command, and a select is the right control. A menu row fires and closes, leaving nothing behind that says what was chosen.
+**Does the choice stay on screen after it is made?** Then it is a value rather than a command, and a select is the right control.
 
 ## What it costs
 
-Neither wrapper takes a size, a severity, a variant or a density. Rows come out at one height, **33 pixels in a `CMenu` and 32 in a `CContextMenu`** at the default text setting, and the states either one draws are focus, hover, active and disabled.
+Neither wrapper takes a size, a severity, a variant or a density, and rows come out at one height. [Geometry](/components/menu/reference.md#geometry) has the measurements.
 
-The attribute contract has a price here too. Presentation cannot be passed in from outside, so a class written on `CMenu` is dropped rather than applied, and the width and the surface have to come from a wrapper. [Usage](/components/menu/usage.md#placing-a-cmenu-inside-an-overlay) shows the arrangement that works.
+Presentation cannot be passed in from outside either, so a class written on `CMenu` is dropped and the width and the surface come from a wrapper. [Usage](/components/menu/usage.md#placing-a-cmenu-inside-an-overlay) shows the arrangement that works.

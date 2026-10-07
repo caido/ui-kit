@@ -25,9 +25,7 @@ const name = ref("");
 </template>
 ```
 
-**A one-way `:visible` compiles, and then the two sides stop agreeing.** Closing the dialog updates the copy the component holds and emits an update nobody listens for, so the value in the parent stays true while the dialog considers itself shut, and setting it true again changes nothing.
-
-Three optional props remain. `width` and `closable` have a section each below, and `maximizable` adds a second header button that fills the window, which no call site in the interface uses today.
+**A one-way `:visible` compiles, and then the two sides stop agreeing.** Closing the dialog leaves the parent value true, so setting it true again changes nothing.
 
 ## Choosing a width
 
@@ -38,7 +36,7 @@ Three optional props remain. `width` and `closable` have a section each below, a
   caption="Each value is a cap, so the rendered width is min(100vw - 32px, cap)."
 />
 
-Take `small` for a confirmation or a single field, `medium` for a form with a short body, and `large` for the widest forms. [Space](/foundations/space/usage.md#sizing-a-dialog) owns that choice. **The three caps are 400, 600 and 800 pixels.**
+Take `small` for a confirmation or a single field, `medium` for a form with a short body, and `large` for the widest forms. [Space](/foundations/space/usage.md#sizing-a-dialog) owns that choice.
 
 <DoDont image="component-dialog-width">
 <template #do>
@@ -55,7 +53,7 @@ Do not reach for a class, because the component refuses attributes and the dialo
 
 ## Filling the footer
 
-**Supplying the footer slot is what makes the footer element exist.** It arrives as a right-aligned row with 8 pixels between its children and 16 pixels of side and bottom padding, so the buttons go straight in.
+**Supplying the footer slot is what makes the footer element exist.** It arrives as a padded, right-aligned row, so the buttons go straight in.
 
 <DoDont>
 <template #do>
@@ -99,13 +97,13 @@ A row inside the row repeats the alignment and stacks 16 more pixels onto each s
 
 ## Padding the content
 
-The content region carries 16 pixels at the sides and the bottom and none at the top, because the header has already supplied that edge. **Padding written inside the slot adds to that rather than replacing it.** A `p-4` on a wrapper there renders 32 pixels down each side, which is what ten of the settings dialogs do today.
+The content region is already padded at the sides and the bottom. **Padding written inside the slot adds to that rather than replacing it**, so a `p-4` wrapper renders 32 pixels down each side.
 
-Leave the padding alone and reach for `VStack` when the fields inside need space between them, which is the rule [Space](/foundations/space/usage.md#spacing-with-the-layout-components) sets for spacing a group.
+Reach for `VStack` when the fields inside need space between them, which is the rule [Space](/foundations/space/usage.md#spacing-with-the-layout-components) sets for spacing a group.
 
 ## Replacing the header
 
-Filling the `header` slot replaces the title text. It does not replace `title`, which stays required and stays the accessible name, so the same translation key is passed twice at several call sites.
+Filling the `header` slot replaces the title text. It does not replace `title`, which stays required as the accessible name, so the same translation key is often passed twice.
 
 ```vue
 <CDialog
@@ -130,7 +128,7 @@ The `text-title` role has to be written by hand here, because the fallback that 
 
 ## Blocking dismissal
 
-`:closable="false"` removes the close button, the Escape key and the click on the scrim in one stroke, which leaves the footer as the whole way out.
+`:closable="false"` removes every way out except the footer, as [Overview](/components/dialog.md#dismissal-is-one-decision-not-three) explains.
 
 ```vue
 <CDialog
@@ -148,11 +146,9 @@ The `text-title` role has to be written by hand here, because the fallback that 
 </CDialog>
 ```
 
-One component in the interface does this, and it is a fatal error screen with a reload button. Leave `closable` at its default everywhere else.
-
 ## Addressing a dialog from outside
 
-`data-*`, `aria-*`, a listener, and the three names `id`, `name` and `form` reach the dialog. `class`, `style` and pass-through attributes do not, which is the filter [Components](/foundations/components/reference.md#what-the-api-accepts) sets for the whole layer.
+Identity attributes and listeners reach the dialog, and `class` and `style` do not. [Attributes](/components/dialog/reference.md#attributes) lists the filter.
 
 ```vue
 <CDialog
@@ -163,11 +159,11 @@ One component in the interface does this, and it is a fatal error screen with a 
 />
 ```
 
-**An `aria-label` written at the call site loses to `title`.** The component binds the title after the forwarded attributes, so the last value on the root is the one the prop supplied. Pass `aria-labelledby` instead when the name has to come from an element.
+**An `aria-label` written at the call site loses to `title`.** Pass `aria-labelledby` instead when the name has to come from an element.
 
 ## Reacting to open and close
 
-`@show`, `@hide` and `@after-hide` are not declared by the component. They arrive as listeners, pass the attribute filter and are bound onto the dialog underneath, so they fire as the library emits them.
+`@show`, `@hide` and `@after-hide` are not declared, but they pass the attribute filter and fire as the library emits them.
 
 ```vue
 <CDialog

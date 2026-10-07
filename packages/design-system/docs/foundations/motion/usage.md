@@ -16,7 +16,7 @@ How to write a transition. For the model behind these rules, see [Overview](/fou
 </template>
 ```
 
-That runs at 150ms on the standard curve, because both are the framework defaults. Adding `duration-state` or `ease-standard` here changes nothing and makes a decision out of something that was free.
+That runs at 150ms on the standard curve, because both are the defaults. Adding `duration-state` or `ease-standard` here changes nothing.
 
 ## Naming what animates
 
@@ -78,7 +78,7 @@ A drawer, a panel or a strip that opens is the one case for the longer duration,
 </template>
 ```
 
-`ease-enter` decelerates, so the surface settles rather than stopping dead. Use it when something arrives, and leave the standard curve on everything else.
+Use `ease-enter` only when something arrives, and leave the standard curve on everything else.
 
 ## Animating position without forcing layout
 
@@ -115,7 +115,7 @@ The same applies to a progress bar. Animate `transform` through `scaleX` rather 
 
 **A row in a data table, a response body and an editor do not animate.**
 
-If something near data needs to move, check whether it is actually on the data or layered over it. A pill above a table and a popover beside a list are both fine, because neither is the data surface.
+If something near data needs to move, check whether it is on the data or layered over it. A pill above a table and a popover beside a list are both fine.
 
 ## Not writing reduced motion yourself
 
@@ -131,4 +131,4 @@ If you do need to stop an animation yourself, set the `animation` shorthand rath
 animation: none;
 ```
 
-Setting `animation-duration: 0s` is beaten by any inline duration, and a data-driven animation writes exactly that: the celebration confetti sets each piece's duration inline from its own data. Setting the shorthand clears the name, and with no name there is nothing left to run. **Write `animation: none` and leave the duration alone.**
+Setting `animation-duration: 0s` is beaten by any inline duration, and a data-driven animation such as the celebration confetti writes exactly that. The shorthand clears the animation name, so nothing is left to run.

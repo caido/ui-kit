@@ -15,21 +15,19 @@ A text field is three elements pretending to be one, and the wiring between them
   caption="Label, 4px gap, field. The whole block measures 55px at the 14px root the application pins."
 />
 
-**The id belongs to the field rather than to the wrapper.** It is generated when the caller passes none, and the label's `for` points at whichever it ended up being. The message, when there is one, gets an id derived from the field's and the field gets an `aria-describedby` pointing back at it. None of that is optional, and none of it is a prop.
+**The id belongs to the field rather than to the wrapper.** It is generated when the caller passes none, the label's `for` points at it, and the message, when there is one, is attached with `aria-describedby`. None of that is a prop.
 
-Appearance is decided the same way. The component refuses `class`, `style` and a pass-through styling object, so the paint comes from the preset, from the classes the template itself writes for `multiline` and `readonly`, and from the application focus rule, rather than from anything a caller supplies. [Components](/foundations/components.md#the-api-cannot-leak-what-it-will-not-accept) explains why the refusal is structural rather than a convention reviewers have to enforce.
+Appearance is decided the same way. The component refuses `class`, `style` and a pass-through styling object, which [components](/foundations/components.md#the-api-cannot-leak-what-it-will-not-accept) explains.
 
 ## The label is not optional
 
-`label` is a required prop with no fallback, so omitting it fails typecheck rather than shipping a field a screen reader cannot name. All 41 call sites in the interface pass one.
+`label` is required, so omitting it fails typecheck rather than shipping a field a screen reader cannot name. The accessible name always comes from the real `<label>`, never from `aria-label`, which is the rule [accessibility](/foundations/accessibility/usage.md#naming-a-control) sets for every control.
 
-**Hiding a label is a visual decision, never a structural one.** `hideLabel` swaps the label's class for `sr-only`, and the element, its text and its `for` association all stay in the DOM. Six inline table editors use it, where a visible label in every cell would be noise and the accessible name is composed from the row instead, and four workflow node fields use it because the node already carries the name.
-
-There is no `aria-label` anywhere in the component. The accessible name always comes from the real `<label>`, which is the rule [accessibility](/foundations/accessibility/usage.md#naming-a-control) sets for every control.
+**Hiding a label is a visual decision, never a structural one.** `hideLabel` keeps the element, its text and its `for` association in the DOM. Inline table editors use it, where a visible label in every cell would be noise, and so do workflow node fields, where the node already carries the name.
 
 ## One component, two field kinds
 
-`multiline` switches the rendered element between an `<input>` and a `<textarea>`. It is one boolean rather than two components, because everything around the field, the label wiring, the message gate and the attribute filter, is identical either way.
+`multiline` switches the rendered element between an `<input>` and a `<textarea>`. It is one boolean rather than two components, because the label wiring, the message gate and the attribute filter are identical either way.
 
 <Preview
   light="/examples/component-input-sizes-light.svg"
@@ -38,30 +36,28 @@ There is no `aria-label` anywhere in the component. The accessible name always c
   caption="Small and large are single-line sizes. The textarea takes its height from rows."
 />
 
-**The two kinds do not resolve to the same drawing.** A single-line field rests on `line-default` and a textarea rests on `line-strong`, because the two presets write different tokens, so a textarea stacked under a row of inputs reads a step heavier than they do. The textarea also carries `resize-none` and no autogrow, so `rows` is the only thing that sets its height.
+**The two kinds do not resolve to the same drawing.** A textarea rests on a stronger border than a single-line field, so a textarea stacked under a row of inputs reads a step heavier. It also cannot be resized or grow, so `rows` is the only thing that sets its height.
 
 ## Invalid is the only tonal state
 
-There is no `severity` prop, and no success, warn, info or contrast appearance. The one colour decision the component makes is the boolean `invalid`, which turns the border to `line-danger` and, with a `message`, adds a 12px caption in `fg-danger` under the field. The border is the property [states](/foundations/states.md#a-state-owns-a-property) assigns to invalid, so the field composes with hover and focus rather than contesting them.
+There is no `severity` prop. The one colour decision the component makes is the boolean `invalid`, which turns the border to `line-danger` and, with a `message`, adds a danger caption under the field. The border is the property [states](/foundations/states.md#a-state-owns-a-property) assigns to invalid, so it composes with hover and focus rather than contesting them.
 
-`message` is gated on `invalid` rather than rendering on its own, so a validation string cannot outlive the condition that produced it. The cost is that a caller who sets one flag without the other gets no message, no `aria-describedby`, and no warning that either is missing.
+`message` renders only while `invalid` is true, so a validation string cannot outlive the condition that produced it. [Usage](/components/input/usage.md#showing-a-validation-message) shows the two set together.
 
 ## When a text field is the right choice
 
-Reach for it when the answer is free text the interface cannot enumerate: a project name, a host list, a key, a note. [Space](/foundations/space.md#sizes-are-not-spacing) calls that an affordance, sized for content that does not exist yet, and a field with spare room inside it is working correctly rather than wasting space.
+Reach for it when the answer is free text the interface cannot enumerate: a project name, a host list, a key, a note. [Space](/foundations/space.md#sizes-are-not-spacing) calls that an affordance, sized for content that does not exist yet, so spare room inside a field is correct.
 
-Two shapes cover almost every call site. A form field inside a dialog takes a visible label and `fluid`, and often `multiline` with ten rows. An inline table editor takes `hideLabel` and `fluid`, and adds a `readonly` binding where the row can be locked.
+Two shapes cover almost every call site: a form field in a dialog with a visible label, and an inline table editor with `hideLabel`. Both take `fluid`.
 
 ## When it is not
 
-A closed set of answers is a different control. Two options is a toggle or a pair of radios, a handful is a segmented control or a select, and a yes or no is a checkbox. Rendering a closed set as free text moves validation from the interface into the submit handler, where the user only meets it after committing.
+A closed set of answers is a different control. Two options is a toggle or a pair of radios, a handful is a segmented control or a select, and a yes or no is a checkbox. Free text for a closed set moves validation into the submit handler, where the user only meets it after committing.
 
-A field that needs an icon, a unit, a prefix or a clear button is also outside this component. **The template contains no `<slot>` element of any kind.** Anything beside the field has to be a sibling outside the tag, which is what a settings form with helper text already does.
+A field that needs an icon, a unit, a prefix or a clear button is also outside this component, because **it has no slots**. Anything beside the field is a sibling outside the tag.
 
 ## What the refusal costs
 
-Blocking `class` has a real price. Width cannot be set on the tag, so it comes from `fluid` or from a wrapper the caller controls. A field without `fluid` inside a flex row collapses to the input's intrinsic width, measured at **174px at a 14px root**, which is the failure the refusal makes easy to write and hard to see.
+Blocking `class` has a real price. Width comes from `fluid` or from a wrapper the caller controls, and a field without `fluid` inside a flex row collapses to its intrinsic width. A caller's `aria-describedby` is also overwritten, so extra description has to go through `message`.
 
-The same filter destroys a caller's `aria-describedby`, because the component binds its own afterwards. Extra descriptive text has to be folded into `message` rather than attached from outside.
-
-Neither of these announces itself. A class on the tag compiles, typechecks, renders, and changes nothing at all, which is the shape [components](/foundations/components.md#almost-nothing-verifies-that-a-class-resolves) already names as the reason the contract exists.
+Neither of these announces itself. A class on the tag compiles, typechecks, renders and changes nothing, which is why [components](/foundations/components.md#almost-nothing-verifies-that-a-class-resolves) treats the contract as necessary.

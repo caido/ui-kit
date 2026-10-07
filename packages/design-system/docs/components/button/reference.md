@@ -73,9 +73,9 @@ Heights, in pixels:
 | Icon-only, solid or outlined | 26 | 32 | 44 |
 | Icon-only, text | 24 | 30 | 42 |
 
-An icon-only button is shorter because an icon box has a line height of 1 while a label box has a line height of normal. A text button is 2 pixels shorter and 2 pixels narrower than the other two variants, because it carries no border width. The label weight is 400 at all three sizes, and the padding is absolute pixels that do not move with the interface text setting.
+An icon-only button is shorter because an icon box has a line height of 1 while a label box has a line height of normal. A text button carries no border width, so it is also 2 pixels narrower. The label weight is 400 at all three sizes, and the padding does not move with the interface text setting.
 
-Width is content driven: twice the side padding, plus twice the border width, plus the width of each child, plus 8 pixels for each gap between them. With `fluid`, the width is 100 per cent of the parent content box instead. The corner is 6 pixels on all four corners, at every size, variant and severity.
+Width is the side padding, the border, each child and an 8 pixel gap between children, or 100 per cent of the parent with `fluid`. The corner is 6 pixels at every size, variant and severity.
 
 ## States
 
@@ -109,7 +109,7 @@ One native `<button>`, with up to three children and no wrapper.
 | `aria-hidden` | On each icon | `true` |
 | `disabled` | `disabled` or `loading` is true | The native attribute, plus `data-p-disabled="true"` |
 
-The component sets no `role`, no `aria-disabled`, no `aria-busy` or live region while loading, no `aria-pressed` and no `aria-expanded`.
+The component sets no `role`, `aria-disabled`, `aria-busy`, live region, `aria-pressed` or `aria-expanded`.
 
 ## Forwarded attributes
 
@@ -124,6 +124,8 @@ The component sets `inheritAttrs: false` and binds one allow-list, `/^(data-|ari
 | `class`, `style`, `title`, `tabindex`, `role` | No, dropped without a warning |
 | A pass-through styling object | No |
 | A class-shaped prop under another name | No |
+
+Three tests pin the refusal of a `class`, a pass-through styling object and a class-shaped prop under another name.
 
 Directives are a separate mechanism and do apply, which is why `v-tooltip` is the route to a tooltip and `title` is not.
 

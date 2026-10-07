@@ -31,7 +31,7 @@ Three props are required: `label`, `items` and `itemHeight`. `label` becomes the
 </template>
 ```
 
-Put the cells straight into the `item-row` slot. Wrapping them in a container puts a plain element between `role="row"` and `role="gridcell"`, which breaks the ownership the roles describe. The shared row wrapper and the About screen both do this today, and they are why [accessibility](/foundations/accessibility.md#a-table-is-a-grid) records the gap.
+Put the cells straight into the `item-row` slot. A wrapping container sits between `role="row"` and `role="gridcell"` and breaks the ownership the roles describe, which is the gap [Accessibility](/foundations/accessibility.md#a-table-is-a-grid) records.
 
 ## Matching a header cell to its cells
 
@@ -42,15 +42,13 @@ Put the cells straight into the `item-row` slot. Wrapping them in a container pu
   caption="8px and 16px of padding, a 14px caret box, a 7px resizer with a 31px grab strip."
 />
 
-`columnId` is the join. The header cell measures itself, writes a width under that key, and each item cell reads the width back out under the same key.
+`columnId` joins a header cell to its item cells. **A mismatched key renders a 50px column and reports nothing**, so take the key from a shared constant where one exists. The finding table passes `:column-id="FindingOrderBy.Title"`, which makes the column identifier and the sort field the same value.
 
-**A mismatched key renders a 50px column and reports nothing.** Take the key from a shared constant where one exists: the finding table passes `:column-id="FindingOrderBy.Title"`, which makes the column identifier and the sort field the same value.
-
-`defaultWidth` is a starting width rather than a fixed one. On mount the cell measures the width it collapses to, which the inline `min-width` pins at `4rem` by default, and writes `max(defaultWidth, that floor)` as its own width. A drag on the resizer replaces the value.
+`defaultWidth` is a starting width, never smaller than `minWidth`, and a drag on the resizer replaces it.
 
 ## Sizing the rows
 
-`itemHeight` is a number of pixels. Read it from the tokens package rather than typing a row height, so a change to the type ramp moves the tables that read it together.
+`itemHeight` is a number of pixels. Read it from the tokens package rather than typing a row height.
 
 ```vue
 <script setup lang="ts">
@@ -70,7 +68,7 @@ const itemHeight = computed(() => rowHeight(fontSize.value));
 </template>
 ```
 
-The `:key` is the part that is easy to leave out. The virtual list captures `itemHeight` once during setup, so a later change moves the drawn row height while the scroll offsets stay where they were. Keying the table on the value remounts it and rebuilds the offsets. Leave the key off and a table looks correct until somebody changes the interface text size.
+The `:key` is the part that is easy to leave out. The virtual list reads `itemHeight` once, so without the key a table looks correct until somebody changes the interface text size.
 
 ## Sizing the table from its parent
 
@@ -85,11 +83,11 @@ The root fills its box and refuses layout attributes, so the wrapper is the one 
   </template>
 </DoDont>
 
-**Nothing reports the dropped class.** Typecheck passes, lint passes, the console stays quiet, and the failure arrives as a panel that is the wrong height. [Components](/foundations/components/usage.md#laying-things-out) sets out where layout belongs when a component refuses to carry it.
+**Nothing reports the dropped class.** Typecheck, lint and the console all stay quiet, and the failure arrives as a panel that is the wrong height. [Components](/foundations/components/usage.md#laying-things-out) sets out where layout belongs.
 
 ## Binding a selection
 
-`selection` is a model, so `v-model:selection` both seeds the set and receives every change. The component owns the click handling underneath: a plain click replaces the set, a modifier click adds or removes a row, and a shift click extends a range from the first item in the set.
+`v-model:selection` both seeds the set and receives every change. A plain click replaces the set, a modifier click adds or removes a row, and a shift click extends a range from the first item in the set.
 
 ```vue
 <template>
@@ -104,13 +102,13 @@ The root fills its box and refuses layout attributes, so the wrapper is the one 
 </template>
 ```
 
-Pass `rowKeyFn` whenever rows can arrive at the top of the set. The default returns the array index, which re-keys every row on a prepend and throws away the DOM reuse virtualisation exists for.
+Pass `rowKeyFn` whenever rows can arrive at the top of the set. The default returns the array index, which re-keys every row on a prepend.
 
-Treat `select` as a notification of intent rather than as the selection itself. A modifier click that removes a row emits nothing, and the exposed `select` method emits without writing to the model, so read `selection` when the current set is what matters. A modifier click also cannot empty the set, because the removal branch is guarded on more than one row being selected, and a right click on an already selected row leaves the set alone so a context menu opens against the whole selection.
+Treat `select` as a notification of intent rather than as the selection itself, and read `selection` when the current set is what matters. [Table events](/components/table/reference.md#table-events) lists the clicks that change the set without emitting `select`.
 
 ## Sorting a column
 
-Mark a header `sortable` and handle the `sort` event. The cycle runs ascending, then descending, then unsorted, so the third click on the same column emits `undefined`.
+Mark a header `sortable` and handle the `sort` event. The third click on the same column emits `undefined`.
 
 ```ts
 import { Table } from "@proxy-frontend/components";
@@ -129,11 +127,11 @@ const onSort = (state: Table.SortState) => {
 };
 ```
 
-Handle the absent case rather than narrowing it away. `Table.SortState` is a `Maybe`, so a handler typed to a bare direction compiles against it by assertion, and the third click is the one that reaches it.
+Handle the absent case rather than narrowing it away, because the third click is the one that reaches it.
 
 ## Persisting column widths
 
-`resize` fires once per gesture, on mouse release, and carries a record of every width the table currently holds. There is no stream of widths during the drag, so a handler writing to storage is called once per column a person drags.
+`resize` fires once per gesture, on mouse release, and carries every width the table currently holds.
 
 ```vue
 <template>
@@ -146,7 +144,7 @@ Handle the absent case rather than narrowing it away. `Table.SortState` is a `Ma
 </template>
 ```
 
-Feed the stored width back through `defaultWidth` on the next mount, which is what the shared `CTableHeaderRow` wrapper does for each column it is handed.
+Feed the stored width back through `defaultWidth` on the next mount, as the shared `CTableHeaderRow` wrapper does.
 
 ## Showing loading and empty
 
@@ -157,7 +155,7 @@ Feed the stored width back through `defaultWidth` on the next mount, which is wh
   caption="One branch renders at a time, and during the first 300ms of loading none of them does."
 />
 
-Set `isLoading` and give it a `loadingLabel`, and the table draws enough skeleton rows to fill its own height. Fill `#empty` for the case where the data arrived and there is none.
+Set `isLoading` and a `loadingLabel`, and the table draws skeleton rows to fill its height. Fill `#empty` for the case where the data arrived and there is none.
 
 ```vue
 <template>
@@ -175,7 +173,11 @@ Set `isLoading` and give it a `loadingLabel`, and the table draws enough skeleto
 </template>
 ```
 
-**`loadingLabel` is announced rather than drawn**, and it reaches the announcer while the indicator is on screen. The indicator waits 300ms before appearing and stays for at least 500ms after loading ends, which suppresses a flash on a fast response at the cost of a blank body during that first 300ms. The empty branch can also appear for one frame on first paint, because emptiness is measured against the rendered window rather than against `items`, so keep the empty state calm enough that a single frame of it costs nothing.
+**`loadingLabel` is announced rather than drawn.** The indicator waits 300ms before appearing, so a fast response shows no flash and a slow one starts with a blank body.
+
+::: tip
+The empty branch can appear for one frame on first paint, so keep the empty state calm enough that a single frame of it costs nothing.
+:::
 
 ## Tailing a log
 
@@ -192,11 +194,11 @@ Set `isLoading` and give it a `loadingLabel`, and the table draws enough skeleto
 </template>
 ```
 
-Scrolling rewrites the mode as it goes. Reaching the bottom arms tailing, reaching the top arms pinning to the first row, and stopping anywhere between the two restores the previously top-most row when the data changes. A table started at `none` therefore begins tailing as soon as somebody scrolls to the end.
+Scrolling rewrites the mode. Reaching the bottom arms tailing, reaching the top pins the first row, and stopping between the two keeps the top-most row in place when the data changes.
 
 ## Reordering rows by dragging
 
-Pass an options object to `draggable` with four callbacks: `onDragStart`, `onDragOver`, `onDragStop` and `isDraggable`. Rows for which `isDraggable` returns false cancel the drag when it starts.
+Pass an options object to `draggable` with the four callbacks [Table props](/components/table/reference.md#table-props) lists.
 
 ```vue
 <template>
@@ -211,11 +213,11 @@ Pass an options object to `draggable` with four callbacks: `onDragStart`, `onDra
 </template>
 ```
 
-Pass a stable `rowKeyFn` alongside it, because the same function supplies the identity the drag reports back in `onDragStop`. Build the options once and leave the binding alone afterwards. **The prop is read a single time, during setup**, so a value that flips from `false` to an options object after mount leaves the drag machinery unstarted.
+Pass a stable `rowKeyFn` alongside it, because it supplies the identity the drag reports back. **The prop is read once, during setup**, so a value that flips from `false` to an options object after mount never starts the drag.
 
 ## Driving the table from script
 
-`Table.useInstance<T>()` builds the typed reference, and `ref="instance"` on the tag fills it. The instance exposes `scrollTo`, `currentIndex`, `select` and the six movement methods.
+`Table.useInstance<T>()` builds the typed reference, and `ref="instance"` on the tag fills it. [Table instance](/components/table/reference.md#table-instance) lists its members.
 
 ```ts
 import { Table } from "@proxy-frontend/components";
@@ -227,4 +229,4 @@ watch(index, (next) => {
 });
 ```
 
-The table handles two keys on its own, PageUp and PageDown, with the platform modifier jumping to the last and first row. Row-by-row movement is left open on purpose, and `focus-changed` hands out the object that performs it, so wire next-row and previous-row movement to that object from whatever owns the keyboard in the surrounding screen.
+The table handles PageUp and PageDown on its own, with the platform modifier jumping to the last and first row. Row-by-row movement is left to the surrounding screen: `focus-changed` hands out the object that performs it, so wire next-row and previous-row movement to that object from whatever owns the keyboard.

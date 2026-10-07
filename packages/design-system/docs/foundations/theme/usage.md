@@ -47,9 +47,11 @@ Two names for one job, inverted twice, agreeing only because dark is the default
 </template>
 </DoDont>
 
-The two halves are not even keyed on the same thing. The variant reads one attribute and the token reads another, so they agree by coincidence rather than by construction. Both halves of the pair above name appearance-aware tokens, so that is not the tell. Keep the half that is correct when the appearance is dark, since dark is the default, and delete the variant.
+The variant and the token read [different attributes](/foundations/theme/reference.md#the-two-attributes), so the halves agree by coincidence rather than by construction. Keep the half that is correct when the appearance is dark, since dark is the default, and delete the variant.
 
-The exception is a pair that expresses maximum contrast against whatever the appearance is, rather than one job at two lightnesses. Applying the ordinary rule there inverts the meaning, and the only way to tell is to measure rather than to match the shape.
+::: tip
+The exception is a pair that expresses maximum contrast against whatever the appearance is, rather than one job at two lightnesses. The ordinary rule inverts its meaning, and only measuring tells the two apart.
+:::
 
 ## Putting text on a fill
 
@@ -74,7 +76,7 @@ The ladder that maps a preset step to a text token is about weight. It says noth
 </template>
 </DoDont>
 
-[Colour](/foundations/colour.md#why-text-on-a-fill-is-different) owns the reasoning, and the check is mechanical once stated. **A fill takes the foreground the pairings table measured against that same fill.** It is not enough to match the word after the dash. `fg-on-danger` is measured against the strong danger fill and not against the plain one, where it lands at 3.77 against a floor of 4.5.
+[Colour](/foundations/colour.md#why-text-on-a-fill-is-different) owns the reasoning. **A fill takes the foreground the pairings table measured against that same fill**, which is not always the one whose name matches. `fg-on-danger` is measured against the strong danger fill and not against the plain one, where it lands at 3.77 against a floor of 4.5.
 
 ## Reaching a token where a class cannot
 

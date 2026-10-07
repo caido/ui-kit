@@ -30,7 +30,7 @@ Against `surface-page`, in each appearance. A ratio is never rounded up.
 | `line-default` | 2.06 | 2.03 |
 | `line-strong` | 3.16 | 3.11 |
 
-`line-strong` is the one token above clearing the 3 to 1 non-text floor, and it is still not used for panel edges, because that floor applies where colour is the only thing identifying a control. A line between two panels identifies nothing.
+`line-strong` is the only one clearing the 3 to 1 non-text floor, and it is still not used for panel edges, because that floor applies where colour is the only thing identifying a control.
 
 ## The layers
 
@@ -55,6 +55,6 @@ The first four order siblings inside one panel. The last six order the page.
 |---|---|---|
 | Shadows | `shadow-sm`, `shadow-md`, `shadow-lg` | a surface step and a border |
 
-The token package clears the shadow scale, so the `shadow-md` and `shadow-lg` the preset writes on a card, a drawer and a tooltip read an empty scale and paint nothing. That is silent, not reported.
+The `shadow-md` and `shadow-lg` the preset writes on a card, a drawer and a tooltip read the empty scale and paint nothing, without any report.
 
-Numeric z-index classes behave differently. `z-10` and `z-50` do compile, because the utilities come from the framework rather than from this system. The named layers are a rule everywhere, not something the compiler enforces.
+Numeric z-index classes such as `z-10` and `z-50` still compile, because they come from the framework rather than from this system. The named layers are a rule, not something the compiler enforces.

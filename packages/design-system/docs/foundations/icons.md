@@ -8,11 +8,9 @@ This page explains the model. [Usage](/foundations/icons/usage.md) shows how to 
 
 Icons come from Font Awesome Free 6.5.1, solid weight, written `fas`.
 
-Caido draws no interface icons of its own, which is the main way icons here differ from a system that ships its own set. The drawn marks that do exist are logos and illustrations rather than icons. There is no drawing budget and no review queue in front of a feature that needs a picture the library already has.
+Caido draws no interface icons of its own. The drawn marks that do exist are logos and illustrations rather than icons, so a feature that needs a picture the library already has waits on nobody.
 
-There is one exception where weight carries meaning: the entry that clears a row highlight uses the regular weight, `far`, so a hollow circle reads as unfilled beside the solid circles that carry a colour. That is the only place in the interface where filled against hollow is the distinction being drawn.
-
-Brand marks are a different family rather than a different weight, and keep `fa-brands`.
+Brand marks keep their own family, and one place uses the regular weight because hollow against filled is the point there. [Prefixes](/foundations/icons/reference.md#prefixes) lists both.
 
 ## A settled vocabulary, not a permission list
 
@@ -20,11 +18,9 @@ The set is a list of **meanings**, each drawn one way. It is not a list of glyph
 
 The point is that a meaning the system already has does not get a second drawing. If a sitemap is already a sitemap, a second sitemap glyph elsewhere is drift, and anybody reading the two would have to work out whether the difference meant something.
 
-Sixty older glyph names resolve to their current ones automatically, so two spellings of the same icon do not drift apart wherever the icon goes through the component.
-
 ## Some icons name a thing, others name a shape
 
-Two kinds, and mixing them up is what makes an icon set stop meaning anything.
+Mixing these two kinds up is what makes an icon set stop meaning anything.
 
 **Single-purpose icons are named after a concept.** A sitemap, a bug, a puzzle piece. Each means one thing and must not be borrowed for another.
 
@@ -59,22 +55,13 @@ The first two are the same icon with nothing written. It is a different size in 
 
 An icon sitting next to text takes no size class at all. It inherits, so its size is 1em: the type step of the text beside it.
 
-That is how it tracks the interface text setting. Somebody who raises their text setting to 20px gets icons that grow with it, because the icon was never told a size in the first place.
-
-Most icons in the interface are inline, and they need nothing written.
+That is how it tracks the interface text setting. Somebody who raises their text setting to 20px gets icons that grow with it, because the icon was never told a size. Most icons in the interface are inline, and need nothing written.
 
 ## Two rungs, for a glyph standing alone
 
-The sizes exist only for a glyph with no text to inherit from.
+The sizes exist only for a glyph with no text to inherit from. `icon-marker` is 12px, for a glyph inside a tag or a badge, and `icon-message` is 32px, for a glyph that is the subject of a message such as an empty state.
 
-| Class | Size | For |
-|---|---|---|
-| `icon-marker` | 12px | A glyph inside a dense marker, a tag or a badge |
-| `icon-message` | 32px | A glyph that is the subject of a message: an empty state, a card, a footer notice, a confirmation |
-
-Both are written in pixels rather than a scaling unit, because a glyph standing alone on an empty state is not text.
-
-12px is also the caption type step, so a marker glyph sits at the size of caption text. There is no rung between the two. A glyph that fits neither, such as the one centred in the 48px circle on an onboarding card, is measured against the shape around it rather than against the ladder.
+Both are written in pixels rather than a scaling unit, because a glyph standing alone is not text. There is no rung between them, as [Sizes](/foundations/icons/reference.md#sizes) sets out.
 
 ## An icon takes the colour of its context
 
@@ -86,4 +73,4 @@ A glyph that carries meaning on its own, such as a status dot, takes a foregroun
 
 An icon beside a text label adds nothing for a screen reader, because the label already says it. An icon standing alone is the only thing saying what a control does.
 
-Those need opposite treatment, and getting it backwards either hides a control or reads the same word twice. [Usage](/foundations/icons/usage.md#labelling-an-icon) covers which is which, and the component does the work once you have decided.
+Getting the treatment backwards either hides a control or reads the same word twice. [Labelling an icon](/foundations/icons/usage.md#labelling-an-icon) covers both cases.

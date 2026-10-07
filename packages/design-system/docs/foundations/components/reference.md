@@ -49,7 +49,13 @@ The eight are the [spacing rungs](/foundations/space/reference.md#the-rungs), ex
 
 ## The vocabulary
 
-The six are `contrast`, `secondary`, `success`, `info`, `warn` and `danger`.
+| Axis | Shared union |
+|---|---|
+| `severity` | `contrast`, `secondary`, `success`, `info`, `warn`, `danger`, referred to below as the six |
+| `variant` | `solid`, `text`, `outlined` |
+| `size` | `small`, `medium`, `large` |
+
+Each component narrows, extends or replaces those unions in its own type.
 
 | Component | Axis | Accepts | Default |
 |---|---|---|---|

@@ -1,14 +1,14 @@
 # Theming
 
-A theme here is a set of colour values, not a set of rules. Redefine what the semantic tokens hold and every component, utility class and editor surface follows, because none of them holds a colour of its own.
+A theme is a set of colour values. Redefine what the semantic tokens hold and every component, utility class and editor surface follows, because none of them holds a colour of its own. There is no theme API and no component to override.
 
-That is the whole mechanism. There is no theme API to implement and no component to override. [Theme](/foundations/theme.md) covers the preset those components are drawn with, which is a different layer and is not what a theme changes.
+::: tip
+[Theme](/foundations/theme.md) covers the component preset, which is a different layer and is not what a theme changes.
+:::
 
 ## What a theme overrides
 
-The semantic tier, and only that. There are <TokenCount of="semantic" /> semantic tokens, every one of them a job rather than a value: `color.surface.page` is the page behind everything, `color.fg.default` is ordinary text, `color.line.default` is an ordinary border.
-
-The published manifest lists them, and the ones that matter are the entries whose tier is semantic.
+The semantic tier, and only that: <TokenCount of="semantic" /> tokens, each named for a job, such as `color.fg.default` for ordinary text. The published manifest lists them.
 
 ```ts
 import manifest from "@caido/tokens/tokens.json";
@@ -22,19 +22,17 @@ Each entry gives the custom property to redefine, its value in each appearance, 
 
 ## What a theme leaves alone
 
-**The palette.** `--palette-*` names hold values and name no jobs. A theme that repaints the palette is not a theme, it is a fork: the semantic tokens point at palette entries, so moving one moves every job that happens to share it, which is how a slightly warmer grey turns into an unreadable disabled state. [Tokens](/foundations/tokens.md) covers why the two tiers are separate.
+**The palette.** Repainting a `--palette-*` entry moves every job that happens to share it, which is how a slightly warmer grey turns into an unreadable disabled state. That is a fork, not a theme.
 
-**The compatibility layer.** `legacy.css`, `primevue.css` and the `plugin-*.css` sheets carry names the interface and older plugins are migrating off. They are not part of the system and they will go.
+**The compatibility layer.** The legacy and plugin sheets are not part of the system and [will go](/get-started/plugins.md#if-your-plugin-was-written-before-this).
 
-**Everything that is not colour.** Type, space, radius, depth and motion carry density and rhythm rather than palette, so they are the same in every theme. A theme that changes the grid unit is a different interface, not a different theme.
+**Everything that is not colour.** Type, space, radius, depth and motion are the same in every theme. A theme that changes the grid unit is a different interface.
 
 ## Whether your override wins
 
-This is the part that decides if a theme works at all, and it is a cascade question rather than a CSS one.
+Caido imports `tokens.css` **outside every layer**, so the token block beats the component library's own stylesheet loaded before it. Unlayered declarations beat layered ones whatever the layer order, which cuts both ways.
 
-The token declarations are **unlayered**. Caido imports `tokens.css` outside every layer, deliberately, so the token block beats the component library's own stylesheet loaded before it. Unlayered declarations beat layered ones no matter what the layer order says, which has one consequence in each direction.
-
-A plain stylesheet loaded after Caido's own wins, because it is unlayered too and comes later, so no stronger selector and no `!important` is needed.
+A plain stylesheet loaded after Caido's own wins, because it is unlayered too and comes later. No stronger selector and no `!important` is needed.
 
 ```css
 :root {
@@ -43,11 +41,11 @@ A plain stylesheet loaded after Caido's own wins, because it is unlayered too an
 }
 ```
 
-**A stylesheet a plugin ships cannot override a token.** Plugin CSS is injected wrapped in the `c-plugin` layer, and a layered declaration loses to an unlayered one however specific it is. Raising specificity does not help, because specificity is only compared within a layer. [For plugin authors](/get-started/plugins.md) covers what a plugin can style and what it cannot.
+**A stylesheet a plugin ships cannot override a token.** Plugin CSS is injected in the `c-plugin` layer, and a layered declaration loses to an unlayered one however specific it is. [Your CSS and the cascade](/get-started/plugins.md#your-css-and-the-cascade) covers what a plugin can style.
 
 ## Covering both appearances
 
-A token whose value differs between the two appearances is emitted as a `light-dark()` pair, and the browser picks using `color-scheme`. A theme should do the same, so one declaration serves both.
+A token whose value differs between the appearances is a `light-dark()` pair, and a theme should write one too.
 
 ```css
 :root {
@@ -55,14 +53,8 @@ A token whose value differs between the two appearances is emitted as a `light-d
 }
 ```
 
-The manifest says which tokens need a pair: <TokenCount of="varying" /> of the <TokenCount of="total" /> carry a different value in each appearance and the rest hold one value in both. Read the `varies` field rather than guessing.
-
-**A theme that gives a varying token a single value silently drops one appearance.** Nothing errors. The interface renders a dark value on a light page for that one job, and only for that one job, which is why it survives a quick look.
+<TokenCount of="varying" /> of the <TokenCount of="total" /> tokens need a pair, and the manifest's `varies` field says which. **A theme that gives a varying token a single value silently drops one appearance**, for that one job only, which is why it survives a quick look.
 
 ## What a theme owes
 
-A theme is a colour decision, so the floors apply to it exactly as they apply to the system's own colours: 4.5 to 1 for text, and 3 to 1 for anything that is the only thing identifying a control or a state. [Accessibility](/foundations/accessibility.md) covers where those numbers come from.
-
-The system records every place a colour lands on another in its pairing list and measures all <TokenCount of="pairings" /> of them in both appearances. A theme cannot run that check from outside the package, so the obligation moves to whoever wrote the theme: move a foreground, and check it against the surfaces it lands on. The pairing list names which those are.
-
-A theme that has not been measured is a theme that is illegible for somebody.
+The [contrast floors](/foundations/tokens/reference.md#contrast-rules) apply to a theme exactly as to the system's own colours. The system measures its <TokenCount of="pairings" /> pairings from inside the package, which a theme cannot do, so **whoever writes the theme measures it**: move a foreground, and check it against each surface the pairing list puts it on.

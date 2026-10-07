@@ -12,8 +12,6 @@ Ask what the thing does, then write the element that already does it.
 
 **Does it introduce a section?** That is a heading element, in an order that does not skip levels, styled by a [type role](/foundations/type.md#a-role-is-visual-the-element-is-structural) rather than identified by one.
 
-The two controls below carry the same border, padding and text. Only one of them can show where the keyboard is.
-
 <DoDont>
 <template #do-example>
   <button type="button" tabindex="-1" aria-hidden="true" class="flex items-center gap-2 rounded border border-line-subtle bg-surface-raised px-3 py-2 text-fg-default outline outline-2 outline-offset-2 outline-line-focus">
@@ -47,8 +45,6 @@ Every interactive control needs a name, and the component layer turns a missing 
 ```
 
 `label` is required on `CInput`, `CSelect`, `CCheckbox`, `CRadio`, `CToggle`, `CSegmented` and `CButton`, so a control built from one of those with no name does not build. `CAutoComplete` and `CDropdown` take no `label` prop, so a name on either is written by hand as an `aria-label`, and `CSearchBar` sets its own. On an input, `hide-label` hides the words and keeps the name. On a button, `icon-only` does the same job.
-
-Neither a placeholder nor a tooltip is a name. A placeholder disappears as soon as somebody types, and a tooltip names its own container while setting nothing on the control.
 
 ## Sizing a pointer target
 
@@ -107,8 +103,8 @@ If a ring sits in the wrong place rather than being unwanted, move it with an of
 
 ## Not trusting a green build
 
-The lint rules catch a click handler with no key handler, an element that cannot take focus, and a control with no label, all at error. What they do not look at is a click handler on a component: that is skipped entirely, whatever it says.
+The lint rules skip a click handler on a component entirely, and do not match a handler written as a property of an object. So a container carrying `@click="row.open"` passes every check while being unreachable by keyboard, and so does any click handler you move onto a component to tidy the template.
 
-So a container carrying `@click="row.open"` passes every check in the repository while being unreachable by keyboard, and so does any click handler you move onto a component to tidy the template. A `@mouseover` is the exception among handlers: that is still checked on a component. The name check also reaches `CDropdown`, because the lint configuration names it.
+A `@mouseover` is the exception: it is still checked on a component. The name check also reaches `CDropdown`, because the lint configuration names it.
 
 Tab to anything you have built out of a container before you believe the build. If the keyboard cannot reach it, nothing the linter said about it matters.

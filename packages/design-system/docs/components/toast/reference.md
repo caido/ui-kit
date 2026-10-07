@@ -78,7 +78,7 @@ The failing case is spelled `error` here and `danger` in the shared severity voc
 | `notifyInfo(message, options)` | `info` | Info | 3000ms plus 333ms per word, floored at 4000 and capped at 12000 |
 | `notifySuccess(message, options)` | `success` | Success | The same calculation |
 
-`options` carries one key, `duration`, in milliseconds, which replaces the lifetime above. `secondary` and `contrast` are outside the composable and reachable only by pushing a message onto the bus directly.
+`options` carries one key, `duration`, in milliseconds, which replaces the lifetime above. Three places pass one: the frontend SDK, which hands a plugin author's value straight through, one replay error path at 4000ms, and the AI provider error path at 5000ms. `secondary` and `contrast` are outside the composable and reachable only by pushing a message onto the bus directly.
 
 ## Attributes
 

@@ -4,7 +4,7 @@ How to render a tab set, fill its panels, size it, and how to render the chip th
 
 ## Rendering a tab set
 
-Two things are required: an `items` array and a `v-model:value`. Each item needs an `id`, which becomes the value of its tab, the value of its panel, and the name of the slot that fills that panel.
+Two things are required: an `items` array and a `v-model:value`. Each item needs an `id`, which is both the tab value and the name of the slot that fills its panel.
 
 ```vue
 <script setup lang="ts">
@@ -31,15 +31,11 @@ const tabs: CTabsItem<"details" | "changelog">[] = [
 </template>
 ```
 
-There is no default slot. Anything placed between the opening and closing tags without a `#name` is discarded, and nothing reports it.
-
-The model is declared required, so it is a prop the template has to supply and a strip left without one has no active tab. Bind it even when the set has a single entry.
+There is no default slot, so anything between the tags without a `#name` is discarded silently. Bind the model even when the set has a single entry, because a strip without one has no active tab.
 
 ## Naming a tab
 
-An item with a `label` needs nothing else. The label is rendered as the fallback content of the shared `tab` slot, which is the whole of what `label` does.
-
-**Does each item carry either a `label` or a slot of its own?** An item with neither renders a tab button 31.5 pixels wide with nothing inside it, still focusable and still selectable. Give every item either a `label` or a `tab-<id>` slot.
+An item with a `label` needs nothing else. **Give every item either a `label` or a `tab-<id>` slot**, because an item with neither renders an empty tab that is still focusable and selectable.
 
 Reach for the slot when a tab holds more than text. Plugins puts a count beside each name that way:
 
@@ -58,19 +54,15 @@ Reach for the slot when a tab holds more than text. Plugins puts a count beside 
 </template>
 ```
 
-The slot is declared with an `active` scope property, and it arrives as `undefined`. The component library renders a tab body with no scope properties at all unless the tab is asked to render as a child, and `CTabs` never asks. Read the model value instead of that property.
+The slot's `active` scope property always arrives as `undefined`, so read the model value instead.
 
 ## Filling a panel
 
-**A panel slot takes the raw `id` and a tab slot takes the same `id` behind `tab-`.** An item whose `id` is the literal string `tab` or `panel` collides with the two shared fallback slots and renders through the wrong branch, so keep those two words out of an identifier.
-
-An item with neither a panel slot nor the shared `panel` slot renders an empty panel rather than nothing, because the shared slot has no fallback content of its own.
+**A panel slot takes the raw `id` and a tab slot takes the same `id` behind `tab-`.** Keep the words `tab` and `panel` out of an identifier, because they collide with the two shared fallback slots that [CTabs slots](/components/tabs/reference.md#ctabs-slots) lists. An item with no panel slot renders an empty panel.
 
 ## Guarding a panel that costs something
 
-**Each panel mounts on the first render, and the inactive ones are hidden rather than removed.** A panel holding a rendered document, a table or a subscription therefore starts working before anybody opens it.
-
-Guard the body against the model value, which is what the plugin store detail does:
+Each panel mounts on the first render, so a panel holding a rendered document, a table or a subscription starts working before anybody opens it. Guard the body against the model value, as the plugin store detail does:
 
 ```vue
 <template>
@@ -86,7 +78,7 @@ The guard belongs inside the slot rather than on the `CTabs`, because the panel 
 
 ## Sizing a tab set
 
-**A `class` on `CTabs` is dropped before it reaches the DOM, along with `style`.** The container keeps its own full height column layout and nothing reports the loss. Put the class on a wrapper element instead, which is what the Automate session settings do.
+**A `class` on `CTabs` is dropped before it reaches the DOM, along with `style`**, and nothing reports the loss. Put the class on a wrapper element instead, as the Automate session settings do.
 
 <DoDont image="component-tabs-class">
   <template #do>
@@ -97,13 +89,13 @@ The guard belongs inside the slot rather than on the `CTabs`, because the panel 
   </template>
 </DoDont>
 
-The two components behave in opposite ways here, so check which one is in front of you before writing a class. What still reaches a `CTabs` is `data-*`, `aria-*`, a listener and the three names `id`, `name` and `form`, and all of them land on the outer container rather than on the tab list.
+[Forwarded attributes](/components/tabs/reference.md#forwarded-attributes) lists what still reaches each one.
 
 ## Reacting to a click
 
-**`tabClick` fires after the model has already changed.** It carries the item identifier, and the order holds because the component library merges its own click handler ahead of the forwarded one. A handler reading the bound value sees the new identifier rather than the previous one. Take the previous value from somewhere the handler owns when it needs one.
+**`tabClick` fires after the model has already changed**, so a handler reading the bound value sees the new identifier. Take the previous value from somewhere the handler owns when it needs one.
 
-`tabMouseDown` exists because a mousedown on a tab does not escape the strip. The component stops propagation, so a listener on any ancestor never sees it, and middle-click and right-click behaviour has to be wired through that event.
+A mousedown on a tab never reaches an ancestor, so wire middle-click and right-click behaviour through `tabMouseDown`.
 
 ```vue
 <template>
@@ -120,9 +112,7 @@ Both listeners take the kebab-case spelling in a template.
 
 ## Switching the indicator off
 
-`indicator` is the one presentational prop, and setting it false hides the 4 pixel bar while leaving the page-coloured band it sits in. Selection is then carried by the active tab's underline and label colour.
-
-Nothing in Caido sets it. Leave it alone unless the strip sits somewhere the bar reads as a second, unrelated rule.
+Setting `indicator` to false hides the bar and leaves the band it sits in. Nothing in Caido sets it, so leave it alone unless the bar reads as a second, unrelated rule.
 
 ## Rendering a chip
 
@@ -148,9 +138,9 @@ Nothing in Caido sets it. Leave it alone unless the strip sits somewhere the bar
 </template>
 ```
 
-**`select` is not confirmation that a chip was chosen.** It fires on a left click of the label button, and on a mousedown from any other button, so a right press that opens a context menu emits it too. Read it as a pointer event on the chip rather than as a selection, and close on a middle click through a plain `@mousedown.middle` listener, which reaches the root element.
+**`select` is not confirmation that a chip was chosen.** A right press that opens a context menu emits it too, so read it as a pointer event on the chip. Close on a middle click through a plain `@mousedown.middle` listener, which reaches the root element.
 
-There is no default slot. Content that belongs beside the label goes in `prefix`, which renders between the icon and the label:
+Content that belongs beside the label goes in `prefix`, which renders between the icon and the label:
 
 ```vue
 <template>
@@ -166,6 +156,8 @@ There is no default slot. Content that belongs beside the label goes in `prefix`
 
 `is-editable` is a model, and the chip sets it to true on its own double-click. Give the same model a second route from a context menu, because double-click has no keyboard equivalent.
 
-`rename` carries the new name, and the field emits it only when the value actually changed, after a blur or Enter. Nothing is written for a field closed at the value it opened with.
+`rename` carries the new name, after a blur or Enter, and only when the value changed.
 
-Before wiring a chip strip, decide which element owns the roles: `CTab` renders a plain container with two data attributes and no `role`, so write the tab semantics on the row yourself, or move the feature to a `CTabs`.
+::: tip
+`CTab` renders no `role`, so write the tab semantics on the row yourself or move the feature to a `CTabs`.
+:::

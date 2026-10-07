@@ -25,7 +25,7 @@ How to place a card, fill its three regions and size it from the outside. For wh
   </template>
 </DoDont>
 
-**A dropped `class` looks identical to a class that works.** Nothing in typecheck, lint or the console reports it, so the failure arrives as a panel that is the wrong height and a template that reads as though it should be right. [Components](/foundations/components/usage.md#laying-things-out) sets out where layout belongs when a component refuses to carry it.
+Nothing in typecheck, lint or the console reports a dropped `class`. [Components](/foundations/components/usage.md#laying-things-out) sets out where layout belongs when a component refuses to carry it.
 
 ## Adding a header
 
@@ -53,7 +53,7 @@ Pass `#header` and the card draws a 48 pixel band with a 4 pixel `surface-page` 
 </template>
 ```
 
-The band is a row flex container that centres its child vertically, so leave the vertical padding off and let `items-center` do the work. Keep the content to one line with its controls at `small`, because the band does not grow: a second row overflows it rather than pushing the body down.
+The band already centres its child vertically, so leave the vertical padding off. Keep the content to one line with its controls at `small`, because a second row overflows the band rather than pushing the body down.
 
 ## Adding a footer
 
@@ -82,7 +82,7 @@ Pass `#footer` and the card draws a 1 pixel `line-subtle` rule above it. The foo
 </template>
 ```
 
-A footer that takes the card's own background needs nothing else. A footer that has to look like a separate plate takes the 4 pixel `surface-page` treatment instead, written on the footer content, matching what the header band already does.
+A footer that has to look like a separate plate takes the 4 pixel `surface-page` strip on its own content, matching the header band.
 
 ## Padding the body
 
@@ -96,11 +96,11 @@ The body carries no padding, so write it on the content or take the `padded` pro
 </template>
 ```
 
-`padded` adds 16 pixels on all four sides of the body and leaves the header and footer untouched. **No call site in the interface passes it.** Call sites pad their own content instead, usually because the padding is asymmetric, or because a scrolling child has to reach the card edge. Take the rung off the [space ladder](/foundations/space/usage.md#picking-a-rung) either way: 8 pixels inside a toolbar row, 16 inside a panel with prose in it.
+`padded` adds 16 pixels to the body only. No call site passes it today, because padding is often asymmetric or a scrolling child has to reach the card edge. Either way, take the rung off the [space ladder](/foundations/space/usage.md#picking-a-rung): 8 pixels inside a toolbar row, 16 inside a panel with prose in it.
 
 ## Putting a scrolling region inside a card
 
-The body is a flex child with `min-h-0` already set, which is the part that lets an overflowing child shrink instead of pushing the card taller. Put the overflow on the child.
+The body already sets `min-h-0`, so an overflowing child shrinks instead of pushing the card taller. Put the overflow on the child.
 
 ```vue
 <template>
@@ -117,11 +117,11 @@ The body is a flex child with `min-h-0` already set, which is the part that lets
 </template>
 ```
 
-Do not try to set the overflow on the card, because no attribute would reach it. A card is a frame around a scrolling thing rather than a scrolling thing itself.
+A card is a frame around a scrolling thing rather than a scrolling thing itself.
 
 ## Passing an identity attribute or a listener
 
-`data-*`, `aria-*`, a listener and the three names `id`, `name` and `form` reach the root. Everything else is filtered out.
+Identity attributes and listeners reach the root, as [Forwarded attributes](/components/card/reference.md#forwarded-attributes) lists.
 
 ```vue
 <template>
@@ -131,7 +131,7 @@ Do not try to set the overflow on the card, because no attribute would reach it.
 </template>
 ```
 
-A tour step, a test selector and a click handler all work through that list, which is why it exists at all, and [components](/foundations/components/usage.md#passing-identity-through-a-component) has its full shape. A directive is not an attribute and is not filtered, so `v-tooltip` on a card reaches the root the way it would on any element: four call sites rely on that, each a locked preset explaining why it cannot be opened.
+A tour step, a test selector and a click handler all work through that list, and [components](/foundations/components/usage.md#passing-identity-through-a-component) has its full shape. A directive such as `v-tooltip` is not filtered, which is how a locked preset card explains why it cannot be opened.
 
 ## Choosing between a card and a well
 
@@ -141,4 +141,4 @@ Ask what the surface is claiming.
 
 **Is it a quieter area inside something already raised?** Reach for `CWell`.
 
-[Overview](/components/card.md#when-a-well-fits-better-than-a-card) sets out why the two stop being interchangeable as soon as a header is involved. When a raised panel needs sub-panels of its own, split it with the 4 pixel `surface-page` strip the header already uses so the page colour runs between them, rather than nesting a second card inside the first.
+[Overview](/components/card.md#when-a-well-fits-better-than-a-card) sets out the difference. When a raised panel needs sub-panels of its own, split it with the 4 pixel `surface-page` strip so the page colour runs between them, rather than nesting a second card inside the first.

@@ -19,8 +19,6 @@ Every size is a whole number of pixels and every line height is a multiple of fo
 
 Each role has a token at `text.<role>` and a custom property at `--text-<role>`, with the line height and the weight on `--text-<role>--line-height` and `--text-<role>--font-weight`.
 
-The sample below shows the roles in proportion to one another, each labelled with the value it resolves from.
-
 <Specimen />
 
 ## Weights
@@ -64,7 +62,7 @@ Every role is written relative to this, so all six move together. Spacing does n
 
 ## What the roles replace
 
-These stock namespaces are emptied before the roles are declared, so `font-serif`, `leading-tight`, `leading-snug`, `leading-relaxed`, `leading-loose` and the six stock `tracking-*` names generate no CSS and produce no warning. The size names from `text-xs` to `text-2xl`, along with `font-normal`, `font-semibold` and `leading-normal`, are pointed back at role values in the app so the component library preset keeps rendering, which means one of those names written in Caido resolves to a role value nobody chose. Two further size names, `text-6xl` and `text-7xl`, are re-declared for the glyphs in the keyboard shortcut dialog and resolve to 52 and 64 at the default rather than to a role.
+These stock namespaces are emptied before the roles are declared. `font-serif`, the four `leading-*` names in the table and the six `tracking-*` names generate no CSS and produce no warning. `text-xs` to `text-2xl`, `font-normal`, `font-semibold` and `leading-normal` are aliased back onto role values so the component library preset keeps rendering, with `font-semibold` at 600. `text-6xl` and `text-7xl` are re-declared for the glyphs in the keyboard shortcut dialog and resolve to 52 and 64 at the default.
 
 | Namespace | Stock classes | Write instead |
 |---|---|---|

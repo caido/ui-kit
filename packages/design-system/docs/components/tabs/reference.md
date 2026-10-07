@@ -144,6 +144,8 @@ The indicator carries an inline `width` and `left` in pixels, written from the a
 | tablist prevButton, nextButton | Defined in the preset | Not rendered |
 | tabpanels root | `bg-surface-raised text-fg-strong outline-0`, padded 15.75px with 12.25px at the top | The attribute class `flex-1 min-h-0 p-0!` followed by the preset class |
 
+The preset also defines a dimmed disabled tab, which no route reaches because `CTabsItem` carries no disabled field.
+
 A class written as a pass-through section replaces the preset value, because the merge spreads one object over the other. A class written as an attribute is concatenated ahead of the preset class instead, which is why the tabs root and the panels area carry both.
 
 ## Measurements
@@ -185,7 +187,7 @@ Computed from the rendered sRGB of each token pair.
 | `line-selected` on `surface-page`, a selected chip border | 7.47 | 5.51 |
 | `line-subtle` on `surface-page`, a resting chip border | 1.66 | 1.67 |
 
-`fill-secondary` is a single value with no light and dark pair, which is why the indicator drops to 2.14 in light. It is one of three cues rather than the only one.
+`fill-secondary` is a single value with no light and dark pair, which is why the indicator drops to 2.14 in light. It is one of three cues, beside the label colour and the underline, rather than the only one.
 
 ## Call sites
 

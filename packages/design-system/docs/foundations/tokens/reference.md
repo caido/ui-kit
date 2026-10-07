@@ -65,6 +65,8 @@ The system publishes one radius token, so the corner to write is the bare `round
 | `data-appearance="light"` | `light` | always light |
 | `data-appearance="dark"` | `dark` | always dark |
 
+Nothing below the root sets `color-scheme`. The code editor is the one exception: it picks light or dark from its own setting rather than from a token, so it reads the resolved mode off the root.
+
 ## Every token
 
 [All tokens](/foundations/tokens/all.md) is the searchable list, with the value each name resolves to in both themes.

@@ -15,9 +15,7 @@ Ask what the text is doing, not how big it should look.
 | A dialog title, a page header, an empty state heading | `title` |
 | An onboarding or celebration screen | `hero` |
 
-If two answers fit, one question decides it. **Does the text annotate another element on the same screen?** If it does, it is a caption. If it stands on its own, it is body.
-
-If no role fits, that is a missing role rather than a missing size. Raise it with the design system rather than writing a size.
+If two answers fit, ask whether the text annotates another element on the same screen. If it does, it is a caption. If no role fits, that is a missing role rather than a missing size, so raise it with the design system.
 
 ## Writing a role
 
@@ -27,20 +25,18 @@ If no role fits, that is a missing role rather than a missing size. Raise it wit
 <label class="[[text-caption]] text-fg-muted">Name</label>
 ```
 
-The two panels below show the same label twice, once with the role and once with the stock classes somebody would reach for instead.
-
 <DoDont>
 <template #do-example>
   <p class="text-caption text-fg-muted">Name</p>
 </template>
 <template #do>
-  <p>A label that reads as a label, because <code>caption</code> sets its size, line height and weight together.</p>
+  <p>A label that reads as a label, because <code>caption</code> sets everything it needs.</p>
 </template>
 <template #dont-example>
   <p class="text-sm font-semibold text-fg-muted">Name</p>
 </template>
 <template #dont>
-  <p>The same element asking for <code>text-sm font-semibold</code>. Neither name says what the element is, and in Caido both resolve through the compatibility aliases the component library preset needs, so the element lands on a size and a weight nobody chose. This page declares none of those aliases, so the sample above falls through to the inherited role rather than showing the failure.</p>
+  <p>The same element asking for <code>text-sm font-semibold</code>. Neither name says what the element is, and in Caido both resolve to a size and a weight nobody chose.</p>
 </template>
 </DoDont>
 
@@ -48,7 +44,7 @@ The two panels below show the same label twice, once with the role and once with
 
 ## Choosing the element under the role
 
-A role decides how text looks and says nothing to a screen reader. Write the heading element the document order calls for, in a sequence that skips no level, and put the role on it. Where emphasis carries meaning, write `strong` rather than `font-bold`, and it will already be the right weight.
+Write the heading element the document order calls for and put the role on it. Where emphasis carries meaning, write `strong` rather than `font-bold`, and it will already be the right weight. [A role is visual, the element is structural](/foundations/type.md#a-role-is-visual-the-element-is-structural) explains why.
 
 ## Emphasising a word inside a sentence
 
@@ -69,13 +65,13 @@ Use `body-strong` for a whole line that carries emphasis. For a word or two insi
 </template>
 </DoDont>
 
-**The role sets the weight, so check the role before reaching for `font-bold`.**
+::: tip
+The role sets the weight, so check the role before reaching for `font-bold`.
+:::
 
 ## Refining inside a role
 
-`font-medium` refines within a role. It never separates two roles, because it collapses into regular for anyone using a system face, and a hierarchy that disappears for some users is not a hierarchy.
-
-So reach for it to lift one item inside a group that already shares a role, and not to invent a step between `body` and `heading`.
+Reach for `font-medium` to lift one item inside a group that already shares a role, and not to invent a step between `body` and `heading`. It collapses into regular for anyone using a system face, as [Three weights](/foundations/type.md#three-weights) explains.
 
 ## Bounding prose, and leaving data alone
 
@@ -87,11 +83,9 @@ So reach for it to lift one item inside a group that already shares a role, and 
 </p>
 ```
 
-Put `max-w-measure` on `body` and `body-strong` running as prose: an empty state, a settings description, a notice. Leave it off table cells, tree rows, log lines and raw HTTP, which are bounded by their column and are being scanned rather than read.
+Put `max-w-measure` on `body` and `body-strong` running as prose: an empty state, a settings description, a notice. Leave it off table cells, tree rows, log lines and raw HTTP, which are scanned rather than read.
 
 ## Code, HTTP and anything monospaced
-
-`font-mono` covers code, raw HTTP, hex output, scope patterns and every editor surface.
 
 Mono is a family, not a size. Monospaced text still carries a role, so it takes the size of whatever it sits in.
 
@@ -105,23 +99,21 @@ Mono is a family, not a size. Monospaced text still carries a role, so it takes 
 
 A size written in pixels does not move when a user changes their interface text setting. Somebody who raised it to 20 because they need to read gets one element that ignored them, and nothing reports it.
 
-**Pinning a size in pixels is an accessibility defect rather than a style preference.** That holds even for one-off text. If a role does not fit, the answer is a missing role, not a pixel value.
-
-There is no exception. Even the `px` suffix beside the size control carries a role rather than a pixel value, so it moves with the setting it labels.
+**Pinning a size in pixels is an accessibility defect rather than a style preference.** There is no exception: even the `px` suffix beside the size control carries a role, so it moves with the setting it labels.
 
 ## Leaving room for longer text
 
 **No box is sized to fit its English string.**
 
-A translated sentence runs about 30 percent longer, and a short label can run far more than that: a four-character word at 175 percent is ordinary. The tightest boxes in an interface hold its shortest strings, which is exactly where that lands.
+A translated sentence runs about 30 percent longer, and a four-character label at 175 percent is ordinary. The tightest boxes hold the shortest strings, which is exactly where that lands.
 
-Raising the interface text size is not a test for this. It moves every string at once and lets the layout respond. A longer locale moves some strings and not others, inside boxes sized for the short ones.
+Raising the interface text size is not a test for this, because it moves every string at once. A longer locale moves some strings and not others.
 
 ## Truncating, and when not to
 
 **Truncation hides information, so it is a last resort rather than a layout tool.**
 
-Where a value has to be cut, keep it reachable: a tooltip, an expansion, or the full value somewhere on the screen. A truncated hostname in a security tool is a hostname somebody cannot read, and the part that got cut is often the part that mattered.
+Where a value has to be cut, keep it reachable: a tooltip, an expansion, or the full value somewhere on the screen. The part of a hostname that got cut is often the part that mattered.
 
 ## Not setting text in capitals
 
@@ -131,6 +123,4 @@ Acronyms and protocol constants are already capitals and stay as they are.
 
 ## Collapsing a line to its text
 
-`leading-none` is the line height override to write, for badges, tabs and single-line rows where the box has to collapse to the text. `leading-tight`, `leading-snug`, `leading-relaxed` and `leading-loose` resolve to nothing, and `leading-normal` survives only as an alias the component library preset needs.
-
-Overriding a role line height breaks the promise that a line of text is a whole number of grid steps tall, which is what lets rows stack predictably. Everywhere else, leave the line height to the role.
+`leading-none` is the one line height override to write, for badges, tabs and single-line rows where the box has to collapse to the text. Everywhere else, leave the line height to the role, because it keeps a line of text a whole number of grid steps tall.

@@ -12,7 +12,7 @@ How to label a tag, pick its colour axis and hold a row still with one. For what
 </template>
 ```
 
-A number needs no conversion on the way in, which is why the intercept and search toolbars hand a status code straight to the prop.
+A number needs no conversion, so a status code goes straight to the prop.
 
 ```vue
 <template>
@@ -20,7 +20,7 @@ A number needs no conversion on the way in, which is why the intercept and searc
 </template>
 ```
 
-Keep the label to a word or two. The chip holds one line, and `truncate` on the root clips anything wider than the space available rather than wrapping it.
+Keep the label to a word or two, because the chip clips anything wider rather than wrapping it.
 
 ## Picking severity or category
 
@@ -49,7 +49,7 @@ Ask what the colour is doing before reaching for either axis.
 
 ## Adding a glyph
 
-`icon` takes the class string of one icon, in the form [icons](/foundations/icons/usage.md#writing-an-icon) sets out, and the component draws it in front of the label with a 4 pixel gap.
+`icon` takes the class string of one icon, in the form [icons](/foundations/icons/usage.md#writing-an-icon) sets out, and draws it in front of the label.
 
 ```vue
 <template>
@@ -79,11 +79,11 @@ A tag can carry a glyph and an empty label, and the container drops the gap besi
 </template>
 ```
 
-`aria-label` is forwarded and lands on the root, and `v-tooltip` is a directive rather than an attribute, so it reaches the root untouched. A tooltip is not a name on its own, which is the rule [accessibility](/foundations/accessibility.md#a-tooltip-is-not-a-name) sets and the reason both are written here.
+Both reach the root. A tooltip is not a name on its own, which is the rule [accessibility](/foundations/accessibility.md#a-tooltip-is-not-a-name) sets.
 
 ## Reserving a width in a toolbar
 
-Pass `width` with an empty label to hold the space a value will occupy. The chip renders as a blank fill at 48 or 64 pixels and the row stops jumping when the value arrives.
+Pass `width` with an empty label to hold the space a value will occupy, so the row does not jump when the value arrives.
 
 ```vue
 <template>
@@ -98,9 +98,9 @@ Pass `width` with an empty label to hold the space a value will occupy. The chip
 </template>
 ```
 
-Match the width to what fills it later. The HTTP history idle row reserves `medium` for the method and `small` for the status code, which are the same 64 and 48 pixels the success row puts in their place.
+Match the width to what fills it later. The HTTP history idle row reserves `medium` for the method and `small` for the status code.
 
-**A reserved chip does not grow with the text setting.** Its height comes from `h-6` rather than from a line box, so it measures 24 pixels at a 12 pixel text setting and 24 at a 24 pixel one, while the labelled tag that replaces it runs from 21.72 to 35.42. Check a toolbar at both ends of the setting before relying on the reservation.
+**A reserved chip does not grow with the text setting**, while the labelled tag that replaces it does. Check a toolbar at a 12 pixel and a 24 pixel text setting before relying on the reservation.
 
 ## Spacing a row of tags
 
@@ -124,11 +124,11 @@ A tag carries no margin and accepts no class, so the gap between two of them bel
   </template>
 </DoDont>
 
-**A dropped class leaves no trace.** The attribute is filtered before the root renders, so the shipped markup holds the component classes and nothing the call site wrote, while the template still reads as though the class took effect. [Components](/foundations/components/usage.md#laying-things-out) covers where layout belongs when a component refuses to hold it.
+[Components](/foundations/components/usage.md#laying-things-out) covers where layout belongs when a component refuses to hold it.
 
 ## Passing an identity attribute
 
-`data-*`, `aria-*`, a listener and the three names `id`, `name` and `form` reach the root. Everything else, including `title` and `role`, is filtered out.
+A `data-*` or `aria-*` attribute reaches the root, which is what a test selector and a tour step run on.
 
 ```vue
 <template>
@@ -136,12 +136,10 @@ A tag carries no margin and accepts no class, so the gap between two of them bel
 </template>
 ```
 
-That list is what a test selector and a tour step run on, and [components](/foundations/components/usage.md#passing-identity-through-a-component) has its full shape.
+[Forwarded attributes](/components/tag/reference.md#forwarded-attributes) lists every shape, and [components](/foundations/components/usage.md#passing-identity-through-a-component) explains the rule.
 
 ## Choosing between a tag and a span
 
-Reach for the component when the chip is a label with a severity or a category on it. Reach past it when the design needs something the two axes do not offer, such as a half-opacity fill or a width outside 48 and 64 pixels, because no attribute will get there.
+Reach for the component when the chip is a label with a severity or a category on it. Reach past it when the design needs something the two axes do not offer, such as a half-opacity fill, because no attribute will get there.
 
-When that happens, write the span from the tokens rather than fighting the component, and hold it level with the tag beside it: caption role, weight 600, `rounded`, and 4 pixels above and below the text.
-
-Then check the pair at a 12 pixel text setting and again at 24, because a tag height is a line box plus its padding and a hand-written one is whatever was typed.
+Write the span from the tokens and hold it level with the tag beside it: caption role, weight 600, `rounded`, and 4 pixels above and below the text. Then check the pair at a 12 pixel text setting and again at 24.

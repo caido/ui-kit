@@ -32,7 +32,7 @@
       [class*="language-"],
       .palette-row
     ) {
-    margin-top: calc(var(--spacing) * 4);
+    margin-top: calc(var(--spacing) * 5);
   }
 
   .prose-doc h1 {
@@ -47,7 +47,7 @@
     line-height: var(--text-title--line-height);
     font-weight: var(--text-title--font-weight);
     color: var(--color-fg-strong);
-    margin-top: calc(var(--spacing) * 8);
+    margin-top: calc(var(--spacing) * 12);
     padding-top: calc(var(--spacing) * 4);
     border-top: 1px solid var(--color-line-subtle);
   }
@@ -57,7 +57,7 @@
     line-height: var(--text-heading--line-height);
     font-weight: var(--text-heading--font-weight);
     color: var(--color-fg-strong);
-    margin-top: calc(var(--spacing) * 8);
+    margin-top: calc(var(--spacing) * 10);
   }
 
   .prose-doc h4 {

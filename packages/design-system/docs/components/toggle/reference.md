@@ -82,7 +82,7 @@ Pixel values below are at the default interface text setting of 14. The switch d
 |---|---|
 | Track | 40 by 24 pixels, 1 pixel border, corner 16 pixels from `rounded-2xl`, which the interface theme restores |
 | Knob | 16 by 16 pixels, fully round, 4 pixels below the outer top edge in both states |
-| Knob inset and travel | 5 pixels from the left edge when off, 3 pixels from the right edge when on, 16 pixels of travel between them |
+| Knob inset and travel | 5 pixels from the left edge when off, 3 pixels from the right edge when on, 16 pixels of travel between them. The offset is measured inside the 1 pixel border while the track width is measured outside it, which is where the 2 pixel difference comes from |
 | Gap, switch to label | 8 pixels, out of the layout under `hideLabel` |
 | Wrapper | Display flex, block level, 24 pixels tall, as wide as its parent |
 | Label | Caption role, 12 pixel type on a 16 pixel line, weight 400, no colour of its own |

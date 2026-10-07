@@ -11,9 +11,7 @@ Both sit on the root element, and they are not interchangeable.
 | `data-appearance` | `light`, `dark`, or absent | The token stylesheet, to set `color-scheme` |
 | `data-mode` | `light` or `dark`, never anything else | The `dark:` variant, and the editor |
 
-Absent means somebody has chosen System. In that case the resolved light or dark still lands on `data-mode`, so `data-mode` always names a real appearance and `data-appearance` records only a deliberate choice.
-
-The `dark:` variant and a token therefore read different attributes.
+Absent means somebody has chosen System. The resolved light or dark still lands on `data-mode`, so `data-mode` always names a real appearance and `data-appearance` records only a deliberate choice.
 
 ## How a value is emitted
 

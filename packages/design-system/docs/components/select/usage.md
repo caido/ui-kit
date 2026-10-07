@@ -1,6 +1,6 @@
 # Using select
 
-How to put a dropdown on a screen and wire it up. For what the component decides, see [Overview](/components/select.md). For every prop and attribute, see [Reference](/components/select/reference.md).
+How to put a dropdown on a screen and wire it up. For every prop and attribute, see [Reference](/components/select/reference.md).
 
 ## Adding a select to a form
 
@@ -19,9 +19,9 @@ Four things cover the common case: a model, a label, the options, and the two ke
 />
 ```
 
-`label` and `options` are both required, so a select with no accessible name and a select with nothing in it are type errors rather than screens. `optionLabel` takes a key name and nothing else, so text that has to be computed is computed into the array first.
+`optionLabel` takes a key name and nothing else, so text that has to be computed is computed into the array first.
 
-Pass a placeholder as well. A single select with no placeholder and no value renders a non-breaking space, so it reads as an empty control rather than as an empty choice. Three of the seven call sites in the interface pass none, and each of the three seeds its model with a value before the field is drawn, which is the other way to keep the trigger from reading blank.
+Pass a placeholder as well, or seed the model with a value before the field is drawn. A single select with neither renders a blank trigger that reads as an empty control rather than as an empty choice.
 
 <Preview
   light="/examples/component-select-values-light.svg"
@@ -32,7 +32,7 @@ Pass a placeholder as well. A single select with no placeholder and no value ren
 
 ## Hiding the label in a toolbar
 
-A toolbar row has no space for a stacked label, and the name still has to reach a screen reader. `hideLabel` swaps the label class for `sr-only` and keeps the element, its text and its `for` association in the DOM.
+A toolbar row has no space for a stacked label, and the name still has to reach a screen reader. `hideLabel` hides the label visually and keeps it in the DOM.
 
 ```vue
 <div [[class="w-40"]]>
@@ -48,7 +48,7 @@ A toolbar row has no space for a stacked label, and the name still has to reach 
 </div>
 ```
 
-**A hidden label is still a real label.** Hiding it also removes the 4px gap above the control, because an `sr-only` element leaves the flex flow, so the block shrinks from 55px to 31px and fits the row.
+**A hidden label is still a real label.** The gap above the control goes with it, so the block shrinks to the height of the trigger and fits the row.
 
 ## Grouping options under headings
 
@@ -67,11 +67,11 @@ Two props turn a flat list into a grouped one, and they are passed together or n
 />
 ```
 
-Each entry of `options` is then a group holding its own rows under the key named by `optionGroupChildren`. A heading is a 36px row in `fg-muted` at weight 600, and it cannot be picked.
+Each entry of `options` is then a group holding its own rows under the key named by `optionGroupChildren`. A heading cannot be picked.
 
 ## Showing a validation message
 
-`message` renders under the control, and an `aria-describedby` pointing at it is written alongside, but only when `invalid` is true as well. The two flags move together or neither of them does anything.
+`message` renders under the control, with an `aria-describedby` pointing at it, only when `invalid` is true as well.
 
 <DoDont image="component-select-invalid">
   <template #do>
@@ -98,11 +98,11 @@ Each entry of `options` is then a group holding its own rows under the key named
 
 Gate `invalid` on something the user has done rather than on emptiness alone, so a form does not open in an error state. Write the message as a sentence saying what to do, because it is doing the work the border is not.
 
-The caption is announced less reliably than it looks. `aria-describedby` lands on the wrapper the library renders rather than on the focusable element inside it, so the element a keyboard reaches carries no description. Keep the message short, and keep the same information in the submit path.
+The caption is announced less reliably than it looks, because the focusable element carries no description. Keep the message short, and keep the same information in the submit path.
 
 ## Reading the chosen value
 
-Read the model. The declared type of the `change` event says it carries a value, and what arrives is the library event object instead.
+Read the model rather than the `change` payload.
 
 ```vue
 <script setup lang="ts">
@@ -122,11 +122,11 @@ const onChange = () => {
 </template>
 ```
 
-**The payload is `{ originalEvent, value }` rather than the value.** The one call site using the event ignores its argument and reads the model, which is the pattern to copy. A handler that has to use the argument takes `.value` off it, and the declared type says otherwise.
+**The payload is `{ originalEvent, value }`, although the declared type says it is the value.** A handler that has to use the argument takes `.value` off it.
 
 ## Selecting more than one value
 
-`multiple` swaps in the multi-choice control, and the obvious way to seed its model is the wrong one.
+`multiple` swaps in the multi-choice control.
 
 ```vue
 <script setup lang="ts">
@@ -147,15 +147,15 @@ const selectedScopes = ref<string[] | undefined>([[undefined]]);
 </template>
 ```
 
-Seed it as `undefined` rather than as an empty array. The preset paints the label transparent when the bound array is present and empty, so `ref([])` draws a control with an invisible placeholder inside it and nothing on screen saying why.
+**Seed the model as `undefined` rather than as an empty array.** The preset paints the label transparent when the bound array is empty, so `ref([])` draws a control with an invisible placeholder.
 
-Expect the rest of the branch to differ too. The control is 34px rather than 31px, each row carries a 20px checkbox, the `<label for>` becomes the accessible name, and `invalid` paints the border for real.
+Expect the rest of the branch to differ too, from the height to the accessible name, as [Geometry](/components/select/reference.md#geometry) and [ARIA](/components/select/reference.md#aria) list.
 
 ## Setting the width
 
-**Width cannot come from a class on the tag.** The component stops inheriting attributes and its filter drops `class`, `style` and a pass-through styling object, so a utility written there typechecks, renders and changes nothing.
+**Width cannot come from a class on the tag.** A utility written there typechecks, renders and changes nothing.
 
-Use `fluid` in a block parent, and a wrapper you own when the width has to be a specific number. The wrapper is already a full-width flex column in an ordinary block parent, so `fluid` matters most when the select is itself a flex item, which is where the collapse is hardest to see.
+Use `fluid` to fill the parent, and a wrapper you own when the width has to be a specific number. `fluid` matters most when the select is itself a flex item, because in a block parent it already fills the width.
 
 ## Reaching for CDropdown instead
 
@@ -180,11 +180,11 @@ Swap wrappers when a row has to be more than text. `CDropdown` forwards everythi
 </CDropdown>
 ```
 
-**Does the row need anything other than text?** Then it is this wrapper, and the accessible name becomes the caller's job: there is no `label` prop, so write an `aria-label` by hand, as twelve of the thirteen call sites do. `optionLabel` is a function here and a key name on `CSelect`, so markup does not move between the two by copying.
+The accessible name becomes the caller's job, because there is no `label` prop, so write an `aria-label` by hand. `optionLabel` is a function here and a key name on `CSelect`, so markup does not move between the two by copying.
 
 ## Passing an identity attribute or a listener
 
-The filter admits four shapes: `data-*`, `aria-*`, an `on[A-Z]` listener, and the three exact names `id`, `name` and `form`. They are bound to the library control rather than to the wrapper.
+`data-*`, `aria-*`, listeners, `id`, `name` and `form` pass the filter and are bound to the library control rather than to the wrapper.
 
 ```vue
 <CSelect
@@ -197,12 +197,8 @@ The filter admits four shapes: `data-*`, `aria-*`, an `on[A-Z]` listener, and th
 />
 ```
 
-That route is the whole event surface beyond `v-model` and `change`. `@focus`, `@blur`, `@show`, `@hide`, `@before-show`, `@before-hide` and `@filter` arrive as forwarded attributes and reach a control that declares each of them.
-
-Do not attach an `aria-describedby` this way. The component binds its own afterwards, so a caller's value is overwritten when there is a message and deleted outright when there is not.
+That route is the whole event surface beyond `v-model` and `change`, and [Events](/components/select/reference.md#events) lists what arrives. Do not attach an `aria-describedby` this way, because the component overwrites or deletes it.
 
 ## Leaving the overlay alone
 
-The overlay takes the page surface, a 1px `line-default` border and no shadow, and its minimum width is pinned to the trigger at the moment it opens. The list scrolls past 196px, which the library sets inline and no class overrides.
-
-Write no shadow, no width and no maximum height around it, and read [depth](/foundations/depth.md#there-are-no-shadows) before changing anything near it.
+The overlay sets its own surface, minimum width and list height, and no class overrides them. Write no shadow, no width and no maximum height around it, and read [depth](/foundations/depth.md#there-are-no-shadows) before changing anything near it.

@@ -1,15 +1,13 @@
 # Select reference
 
-Every prop, event, attribute and measurement, for both wrappers. For the model, see [Overview](/components/select.md). For how to apply it, see [Usage](/components/select/usage.md).
-
-Measurements are taken at a 14px root, which is what the application pins from the interface text size setting.
+Every prop, event, attribute and measurement, for both wrappers. For how to apply it, see [Usage](/components/select/usage.md). Measurements are taken at the 14px root the application pins.
 
 ## Props
 
 | Prop | Type | Required | Default | Meaning |
 |---|---|---|---|---|
 | `label` | `string` | yes | none | Text of the `<label>` bound to the control with `for`. On a single select it is not the accessible name |
-| `options` | `unknown[]` | yes | none | One row per entry, in array order. An empty array renders the untranslated empty message |
+| `options` | `unknown[]` | yes | none | One row per entry, in array order. An empty array renders the empty message, "No available options", untranslated because nothing sets the library locale |
 | `hideLabel` | `boolean` | no | `false` | Swaps the label class from `text-fg-default` to `sr-only`. The element, its text and its `for` stay in the DOM |
 | `optionLabel` | `string \| undefined` | no | `undefined` | Key of the option field holding its text. Unset stringifies the option |
 | `optionValue` | `string \| undefined` | no | `undefined` | Key of the option field holding its value. Unset emits the option object |
@@ -49,7 +47,7 @@ The props type carries a generic parameter, and the component instantiates it wi
 | `small` | 6px top and bottom, 8px left | 31px |
 | `large` | 6px top and bottom, 8px left | 31px |
 
-`CSelectSize` is `Extract<Size, "small" \| "large">`, so `medium` from the shared union is removed and passing it fails typecheck. The two accepted values render identically, because the library declares no size prop on either control, the preset reads it as undefined, and the value falls through to the DOM as a literal `size` attribute on a `div`.
+`CSelectSize` is `Extract<Size, "small" \| "large">`, so passing `medium` fails typecheck. The two accepted values render identically, because the library declares no size prop and the value falls through to the DOM as a literal `size` attribute on a `div`.
 
 ## Severities
 
@@ -76,7 +74,7 @@ With `multiple` the root becomes `<div data-pc-name="multiselect">`, the focusab
 
 | Attribute | On | Written when |
 |---|---|---|
-| `for` | the label | always, including when `hideLabel` makes the label `sr-only` |
+| `for` | the label | always, including when `hideLabel` makes the label `sr-only`. With `multiple` it targets a real input and the browser focuses it on click. On a single select it targets a `<span>`, so the library binds a click listener to the label instead |
 | `aria-describedby` | the library root `<div>` | `invalid` and `message` are both set |
 | `aria-label` | the combobox, single select | a caller forwards one, or a value or a placeholder supplies the text. With none of the three it is undefined |
 | `aria-label` | the combobox, `multiple` | a caller forwards one. The component passes none, so the `<label for>` supplies the name by default |
@@ -85,7 +83,7 @@ With `multiple` the root becomes `<div data-pc-name="multiselect">`, the focusab
 
 `role="combobox"`, `aria-haspopup`, `aria-expanded`, `aria-controls`, `aria-activedescendant`, `role="listbox"`, `role="option"`, `aria-selected`, `aria-setsize`, `aria-posinset` and the live regions all come from the library.
 
-`aria-describedby` is bound to the library root rather than to the focusable element, so the element a keyboard reaches has no description, and the component's own test reads the attribute off that root.
+`aria-describedby` is bound to the library root rather than to the focusable element, so the element a keyboard reaches has no description.
 
 ## Attributes
 
@@ -148,7 +146,7 @@ The filter is the single expression `/^(data-|aria-|on[A-Z])|^(id|name|form)$/`,
 | focused and selected | `surface-hover` | `fg-strong` |
 | empty message | none | `fg-strong` |
 
-Colour changes run through a 200ms transition on both triggers.
+The single select keeps `border-line-strong` in its class list and adds `border-line-danger` beside it, and the strong line is emitted later in the stylesheet, so it wins. The multi-choice preset writes the border on the negated test instead. Colour changes run through a 200ms transition on both triggers.
 
 ## CDropdown
 

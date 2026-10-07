@@ -1,6 +1,6 @@
 # Radio reference
 
-Every prop, event and attribute `CRadio` accepts, and the markup it renders. For the model, see [Overview](/components/radio.md). For how to apply it, see [Usage](/components/radio/usage.md).
+Every prop, event and attribute `CRadio` accepts, and the markup it renders. For how to apply it, see [Usage](/components/radio/usage.md).
 
 ## Props
 
@@ -104,7 +104,7 @@ The circle, the dot and the gap come off `--spacing`, which is 4 pixels and hold
 | Disabled, unchecked | `line-default` | `surface-subtle` | hidden |
 | Disabled, checked | `line-default` | `surface-subtle` | `fill-neutral` |
 
-Hovering a checked circle changes nothing, since the preset gates its hover rules on the option being unchecked. The label takes no colour class of its own and inherits `fg-strong` from the interface root, with `opacity-disabled` at `0.6` over it while disabled.
+Hover keys on the pointer being over the circle, so crossing the label changes nothing even though clicking it selects the option. Hovering a checked circle changes nothing either, since the preset gates its hover rules on the option being unchecked. While disabled the circle takes a default cursor and the label keeps a pointer one. The label takes no colour class of its own and inherits `fg-strong` from the interface root, with `opacity-disabled` at `0.6` over it while disabled.
 
 ## Measured contrast
 

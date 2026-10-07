@@ -200,9 +200,9 @@ const sections = computed(() => {
       <table class="w-full table-fixed">
         <thead>
           <tr>
-            <th class="w-1/2">Token</th>
-            <th class="w-1/4">Light</th>
-            <th class="w-1/4">Dark</th>
+            <th class="w-1/3">Token</th>
+            <th class="w-1/3">Light</th>
+            <th class="w-1/3">Dark</th>
           </tr>
         </thead>
         <tbody>

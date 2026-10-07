@@ -16,7 +16,9 @@ The same token looks different depending on where you meet it. All three refer t
 | CSS variable | `--color-surface-page` | the generated stylesheet, and anything using `var()` |
 | Utility class | `bg-surface-page` | what you write in markup |
 
-The token name is the one this site uses when talking about the system. The utility class is the one you write day to day.
+::: tip
+This site refers to every token by its token name.
+:::
 
 ## Two tiers
 
@@ -80,55 +82,23 @@ A token that varies is emitted as a `light-dark()` pair, and the browser picks a
 --color-surface-page: light-dark(oklch(0.9746 0.014 70), oklch(0.2732 0.0115 271));
 ```
 
-Which side it picks is set in one place, on the root element:
+Which side it picks is set once, on the root element, as [Appearance](/foundations/tokens/reference.md#appearance) shows. A component names a token and never checks the theme itself.
 
-| Root | `color-scheme` | Result |
-|---|---|---|
-| no attribute | `light dark` | follows the operating system |
-| `data-appearance="light"` | `light` | always light |
-| `data-appearance="dark"` | `dark` | always dark |
-
-Nothing below the root sets that property. A component names a token rather than the appearance, and needs no second class name for the other theme. The code editor is the exception on record: it picks light or dark from its own facet rather than from a custom property, so it reads the resolved mode off the root. **If you find yourself checking the theme in a component, the token you need probably exists already.**
+**If you find yourself checking the theme in a component, the token you need probably exists already.**
 
 ## Why stock utility names are not safe to write
 
-Seven namespaces are deliberately emptied before the tokens are declared:
+Seven Tailwind namespaces, such as `--text-*` and `--radius-*`, are cleared before the tokens are declared. Caido then aliases the common names back onto its own values, so the component preset keeps rendering.
 
-```css
---text-*: initial;
---font-*: initial;
---font-weight-*: initial;
---leading-*: initial;
---tracking-*: initial;
---radius-*: initial;
---shadow-*: initial;
-```
+**A stock name in Caido markup therefore resolves to a role nobody chose.** `text-lg` comes out at the heading role, and `rounded-md` at the single radius. A name that is not aliased, such as `shadow-md`, matches nothing at all and fails without a warning.
 
-Emptying a namespace removes the stock utilities keyed to it, so `text-lg`, `text-sm`, `font-semibold` and `rounded-lg` lose the values the framework gave them. Caido then aliases those names back onto its own values, because the shipped component preset writes them in its own markup and would otherwise render unstyled.
-
-**A stock name written in Caido markup therefore resolves to a role nobody chose.** `text-lg` comes out at the heading role, `text-sm` at caption, `font-semibold` at 600, and `rounded-md` at the single radius. `design/no-preset-scale` reports twelve of these names as an error and gives the replacement to write, which is what keeps the alias available to the preset rather than to first-party markup.
-
-A name the theme block does not refill fails the other way, and that failure is quieter. It does not fall back to a default, does not warn, and does not appear in any error. `tracking-wide` and `shadow-md` match no utility, so the element renders at whatever it inherited and the mistake stays invisible until somebody measures it.
-
-The namespaces are cleared on purpose. A component picks a type role rather than a font size, so the system refills most of these namespaces with the names it does support. [Type](/foundations/type.md) and [Space](/foundations/space.md) cover what replaced them, and [Reference](/foundations/tokens/reference.md#cleared-namespaces) lists each one against its replacement.
-
-Shadow is the one cleared and left without a replacement, so the depth names from `shadow-2xs` to `shadow-2xl` match nothing, while `shadow-none` and the shadow colour utilities keep working. The system publishes one radius token, which is why the corner to write is the bare `rounded`. The theme block still hands `rounded-xl` through `rounded-4xl` fixed values of 12px, 16px, 24px and 32px, and those four sit outside the twelve names the rule reports, so they paint a corner nobody chose and nothing flags it.
-
-**The colour namespace is not cleared.** Stock colours like `bg-red-500` still render, and they are still wrong because a fixed colour cannot follow the theme, but they fail by looking wrong rather than by doing nothing.
+[Cleared namespaces](/foundations/tokens/reference.md#cleared-namespaces) lists all seven and what replaces each.
 
 ## How pairings are checked
 
-Whenever one token lands on another, that combination is a pairing. <TokenCount of="pairings" /> of them are listed in the token source, and a contrast script measures each one in both appearances. That script is run on its own rather than as part of the build.
+Whenever one token lands on another, that combination is a pairing. Each listed pairing is measured in both appearances against a contrast floor, as [Contrast rules](/foundations/tokens/reference.md#contrast-rules) sets out.
 
-| Usage | Floor | Pairings | What it covers |
-|---|---|---|---|
-| `text` | 4.5 | 142 | Anything a person reads |
-| `identifier` | 3.0 | 22 | Colour that is the only thing identifying a control |
-| `focus` | 3.0 | 5 | The focus ring against what sits behind it |
-
-The comparison reads the unrounded ratio, so 4.48 fails. <TokenCount of="accepted-failures" /> pairings are recorded as accepted exceptions, each naming the appearance it applies to and why the fix belongs elsewhere.
-
-The part that matters when you build something new is short. **A pairing that is not listed is not checked.** Putting an existing foreground on an existing background does not mean the combination has been measured, only that both tokens exist. If you invent a combination, measure it.
+**A pairing that is not listed is not checked.** Putting an existing foreground on an existing background does not mean the combination has been measured. If you invent a combination, measure it.
 
 ## Names are public API
 

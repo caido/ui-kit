@@ -1,8 +1,6 @@
 # Enforcement
 
-Every rule in this system is a claim about what the interface does. A claim nobody checks stops being true quietly, in a pull request nobody had time to read closely.
-
-Eleven lint rules make the checkable part checkable. They run at error, and they replace a reviewer noticing.
+A rule nobody checks stops being true quietly, in a pull request nobody had time to read closely. Eleven lint rules check what can be checked. They run at error, and they replace a reviewer noticing.
 
 ## What is enforced
 
@@ -20,23 +18,23 @@ Eleven lint rules make the checkable part checkable. They run at error, and they
 | `no-style-block` | a `<style>` block in a component | A component stylesheet is a second system running beside this one |
 | `require-escape-reason` | switching any of the above off without saying why | An exception nobody wrote down cannot be told from a mistake |
 
-Colour is checked separately and by measurement rather than by rule: <TokenCount of="pairings" /> pairings in both appearances, against the floors on [Accessibility](/foundations/accessibility.md).
+Colour contrast is measured rather than linted: <TokenCount of="pairings" /> pairings in both appearances, as [How pairings are checked](/foundations/tokens.md#how-pairings-are-checked) explains.
 
 ## What stays legal, and why
 
-A rule with no correct alternative does not raise a standard. It teaches people to switch rules off. Three constructs use the same square brackets as an arbitrary value and are not one.
+A rule with no correct alternative teaches people to switch rules off. Three constructs use the same square brackets as an arbitrary value and are allowed.
 
-**An arbitrary variant is a selector.** `data-[level=INFO]:text-fg-info` chooses when a class applies and carries no measurement. The two are told apart by the character after the closing bracket, because a variant is always followed by a colon.
+| Construct | Example | Why it is allowed |
+| --- | --- | --- |
+| An arbitrary variant | `data-[level=INFO]:text-fg-info` | It is a selector, always followed by a colon, and carries no measurement |
+| A track template | `grid-cols-[auto_1fr]` | The framework has no namespace for a track list, so there is no token to move to |
+| A keyword | `max-h-[inherit]` | It names a behaviour, not a measurement |
 
-**A track template has no namespace.** `grid-cols-[auto_1fr]` describes the shape of a grid, and the framework has no theme namespace for a track list, so there is no token to move to.
+An inline style is allowed when any value in it comes from an expression, such as a virtual list writing a computed row offset. `:style="{ width: '100%' }"` is all literal, so it is rejected: that one is `w-full`.
 
-**A keyword is not a measurement.** `max-h-[inherit]` names a behaviour.
+Spec files are exempt from the two colour rules, because a test proving a component drops a class needs a class the system would never use.
 
-Inline styles split on the same principle. A style is rejected when every value in it is a literal and allowed when any value comes from an expression. A virtual list writing a computed row offset is a measurement rather than a decision, and it cannot be a class because the number is not known until it runs. `:style="{ width: '100%' }"` is rejected, because that one is `w-full` wearing a disguise.
-
-Spec files are exempt from the two colour rules. A test proving a component drops a class needs a class the system would never use, and a stock red is right for that job precisely because it is banned everywhere else.
-
-Four names carrying the legacy prefix are not tokens, so the rule allows them. Three are channels holding a setting or a computed value, and the fourth is data: a highlight colour name is written onto a request and stored, so renaming one does not break a build, it stops every request already marked with that colour from painting, in projects nobody here can see.
+Four names with the legacy prefix are not tokens, so the rule allows them. Three are channels holding a setting or a computed value. The fourth is a highlight colour name stored on each request, so renaming it would stop every request already marked with that colour from painting.
 
 ## The escape hatch
 
@@ -49,13 +47,11 @@ Any rule can be switched off, and doing so requires a written reason naming whic
 <div class="w-[1em]">
 ```
 
-A reason under twelve characters is rejected as well as a missing one, because a dash and one word is not a reason. `eslint-disable-next-line` reaches only the line that follows it, so an attribute several lines into a multi-line tag needs a disable and enable pair around the element instead.
+A reason under twelve characters is rejected as well as a missing one. `eslint-disable-next-line` reaches only the next line, so an attribute further down a multi-line tag needs a disable and enable pair around the element.
 
-**The narrowest case carries an expiry.** A value private to one component stops being private the moment a third component needs it, at which point it becomes a missing name and moves to a shared utility. That is what happened to the scroll rail hiding, which was the same declarations in two places and is now one utility.
+**The private case carries an expiry.** A value private to one component stops being private when a third component needs it, and moves to a shared utility, as the scroll rail hiding did.
 
 ## What the rules cannot see
-
-A rule that runs is not a rule that covers everything, and the gaps are worth knowing because they are where a violation hides in plain sight.
 
 | Gap | What it means |
 | --- | --- |
@@ -63,14 +59,11 @@ A rule that runs is not a rule that covers everything, and the gaps are worth kn
 | They match `class` and `:class` exactly | An attribute such as `header-class` or a pass-through class carries no protection at all |
 | `no-arbitrary-value` skips anything variant-prefixed | A variant-prefixed arbitrary value is not reported |
 | `require-escape-reason` reads named disables | A bare disable with no rule named is not caught, and switches everything off |
-| A pairing nobody registered | Is a pairing nobody measured, so a new colour on a new surface has to be added to the list |
 
-The preset is the largest uncovered surface. The design rules are applied to the interface and to this site's theme, and never to the package the preset lives in, which is why the preset writes scale names that first-party markup may not.
+The preset is the largest uncovered surface. The rules run on the interface and this site's theme but never on the preset package, which is why the preset writes scale names that first-party markup may not.
 
 ## Turning rules on where violations already exist
 
-**The interface carried 721 violations across 229 files the day these rules were written.** Eleven rules failing a build that was green the day before does not raise the standard, it gets the rules switched off.
+The interface carried 721 violations across 229 files the day these rules were written. Failing the build on all of them would only have got the rules switched off.
 
-The linter records them instead. A suppressions file lists a count per file per rule, it is committed, and it may only ever count down. A new violation fails immediately, including in a file that already carries suppressed ones. Removing the last violation in a file makes its entry unused, and the build fails until the smaller file is committed.
-
-So the file cannot be gamed in either direction, and its total is the tracker. **Two violations remain, both a style block in an editor wrapper**, against a baseline of 721.
+Instead, a committed suppressions file lists a count per file per rule, and it may only count down. A new violation fails immediately, even in a file that already carries suppressed ones, and removing the last one in a file fails the build until the smaller file is committed. **Two violations remain, both a style block in an editor wrapper.**

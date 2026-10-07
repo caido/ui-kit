@@ -4,9 +4,7 @@ How to work with an API that refuses things, and what to do with the class you w
 
 ## Passing identity through a component
 
-Four kinds of attribute reach a component, and nothing else does.
-
-`data-*` for anything that addresses the element from outside, `aria-*` for semantics, a listener, and the three names `id`, `name` and `form`.
+Four kinds of attribute reach a component: `data-*` for anything that addresses the element from outside, `aria-*` for semantics, a listener, and the three names `id`, `name` and `form`.
 
 ```vue
 <template>
@@ -69,7 +67,7 @@ On the layout primitives, `gap` and `padding` accept the eight rungs as a closed
 
 Refusing an escape hatch without reading its uses deletes a feature nobody wrote down.
 
-Read every value passed through it first. That is what tells the difference between a missing default, a missing prop, and something genuinely nobody needs. One prop that looked like a dozen different layout decisions turned out to be mostly missing defaults, a few decisions the component should have owned, and several values that were already dead.
+Read every value passed through it first. That is what tells a missing default from a missing prop and from something nobody needs. One prop that looked like a dozen layout decisions turned out to be mostly missing defaults and several values that were already dead.
 
 ## Counting by import, never by tag name
 
@@ -91,4 +89,4 @@ The test is what happens to a caller who does not get it.
 
 **Does its absence push the caller outside the layer?** Then it is a permanent exception, and an exception is what the next person copies. Add the prop.
 
-The library underneath having a prop is not evidence the layer needs one. A prop only worth having if its value can be named is not worth having: one that positioned an icon became a separate trailing-icon prop instead, because an icon in an unspecified position is not a thing anybody can mean. Name the value before adding the prop, and leave the prop out when the name will not come.
+The library underneath having a prop is not evidence the layer needs one. Name the value before adding the prop, and leave the prop out when the name will not come. A prop that positioned an icon became a separate trailing-icon prop instead, because an icon in an unspecified position is not a thing anybody can mean.

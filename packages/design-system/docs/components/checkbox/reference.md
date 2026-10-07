@@ -16,7 +16,7 @@ The component is generic over `T`, which defaults to `boolean`.
 | `trueValue` | `unknown` | No | `true` | Binary mode. Compared with strict equality for checked-ness, and emitted when checking |
 | `falseValue` | `unknown` | No | `false` | Binary mode. Emitted when unchecking |
 | `description` | `string` | No | `undefined` | Renders a caption paragraph below the row and points `aria-describedby` at it |
-| `indeterminate` | `boolean` | No | `false` | Draws a dash in place of the tick and reports a mixed state. Does not set the native indeterminate property |
+| `indeterminate` | `boolean` | No | `false` | Draws a dash in place of the tick and reports a mixed state. Does not set the native indeterminate property. A click resolves it to `trueValue` in binary mode and removes the value in group mode |
 | `disabled` | `boolean` | No | `false` | Disables the input, dims the box and the label, and suppresses every hover rule |
 | `readonly` | `boolean` | No | `false` | Blocks the change in script. Renders identically to an enabled checkbox |
 | `name` | `string` | No | `undefined` | Lands on the input as its name attribute |
@@ -59,6 +59,8 @@ The component sets `inheritAttrs: false` and binds an allow-list of `data-*`, `a
 | `class`, `style`, `pt`, `labelClass`, `inputClass` | Dropped |
 | `binary`, `variant`, `tabindex`, `required` | Dropped |
 
+The component spec pins the refusal with `class`, `labelClass`, `inputClass` and `pt` set at once.
+
 ## DOM
 
 ```
@@ -96,7 +98,7 @@ Pixel values below are at the default interface text setting of 14. Spacing and 
 | Label | Caption role, 12 pixel type on a 16 pixel line, weight 400 |
 | Description | Caption role, in `fg-subtle` |
 | Tick | 0.875rem square, 12.25 pixels at the default setting |
-| Dash | Inherited font size and inherited colour, since the preset icon styling does not reach it |
+| Dash | Inherited font size and inherited colour, since the preset icon styling does not reach it. It therefore differs from the tick in size and colour |
 | Transition | 200ms on colour, over the 150ms [state duration](/foundations/motion.md#two-durations), on the standard curve |
 | Focus indicator | A 2 pixel `line-focus` outline at a 2 pixel offset, drawn on the box |
 

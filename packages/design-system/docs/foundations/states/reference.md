@@ -47,8 +47,6 @@ Every state, the property it owns and the token it uses. For the model, see [Ove
   </div>
 </div>
 
-Each one changes a different property, which is why any two of them can be true at once and still both be visible.
-
 ## Selected, by surface
 
 | Surface | Identifier | Emphasis |
@@ -73,9 +71,9 @@ Where the background is already carrying a stripe or a colour somebody set, iden
 | `surface-hover` | 4.16 | 5.67 |
 | `surface-selected` | 3.81 | 5.17 |
 
-The worst case among those is 3.81 light and 5.17 dark, both clear of the 3 to 1 an identifier owes. A colour somebody set is outside that set and is not measured here, which is why a selected row carries the wash as well as the edge.
+Every case clears the 3 to 1 an identifier owes. A colour somebody set is outside that set and is not measured here, which is why a selected row carries the wash as well as the edge.
 
-`surface-selected` on its own measures 1.44 light and 1.44 dark against the page. On a sidebar item and a menu item, where it is the identifier, the step up in text colour carries selection with it.
+`surface-selected` on its own measures 1.44 against the page in both appearances. On a sidebar item and a menu item, where it is the identifier, the step up in text colour carries selection with it.
 
 ## The wash
 
@@ -84,7 +82,7 @@ The worst case among those is 3.81 light and 5.17 dark, both clear of the 3 to 1
 | Hover on a surface that carries data | `surface-hover` at 75% |
 | Selected on a surface that carries data | `fg-strong` at 20% |
 
-It is translucent so whatever is underneath, including a colour somebody set, stays visible. It composes as a layer rather than replacing the background, which is what lets hover and a user's colour both be true at once.
+It is translucent, so whatever is underneath, including a colour somebody set, stays visible.
 
 ## Timing
 

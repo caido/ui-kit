@@ -1,5 +1,2 @@
 packages:
   - 'packages/*'
-
-overrides:
-  "@caido/eslint-config": "link:../typescript-configs/packages/eslint-config"

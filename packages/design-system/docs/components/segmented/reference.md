@@ -1,8 +1,6 @@
 # Segmented reference
 
-Every prop, event and rendered attribute, with what it resolves to. For the model, see [Overview](/components/segmented.md). For how to apply it, see [Usage](/components/segmented/usage.md).
-
-Measured values are taken inside the interface, where the root font size comes from a setting that defaults to 14.
+Every prop, event and rendered attribute, with what it resolves to. For how to apply it, see [Usage](/components/segmented/usage.md). Measured values are taken at the default 14px interface root.
 
 ## Props
 
@@ -56,7 +54,7 @@ Clicking the option that is already selected returns before either event, becaus
 | Button label | 14px inherited, weight 500, line height normal, centred |
 | Selection pill | 4px from the left and top, 3px from the right and bottom, 4px radius, behind the label |
 | Transition | All properties, 200ms |
-| Component height | 51px with a visible label, 31px with a hidden one |
+| Component height | 51px with a visible label, 31px with a hidden one, because the hidden label leaves the flow and takes the 4px gap with it |
 
 The pill offsets come from the 4px spacing step, while its size subtracts half a rem, which is 7px at a 14px root. That leaves the pill 22px tall in a 29px button and 94px wide in the 101px Markdown button.
 

@@ -1,8 +1,6 @@
 # Menu reference
 
-Every prop, event, slot, attribute and measured value on the two menu wrappers. For what each one is for, see [Overview](/components/menu.md#two-wrappers-two-different-jobs). For how to build one, see [Usage](/components/menu/usage.md#choosing-between-the-two-menus).
-
-Values were measured at the default interface text size, where the root is 14px.
+Every prop, event, slot, attribute and measured value on the two menu wrappers. For which one to use, see [Usage](/components/menu/usage.md#choosing-between-the-two-menus). Values were measured at the default interface text size, where the root is 14px.
 
 ## CMenu props
 
@@ -14,7 +12,7 @@ Values were measured at the default interface text size, where the root is 14px.
 
 ## CContextMenu props
 
-`CContextMenu` declares no props and no defaults. Items arrive through the event bus behind `useContextMenu()`, and the single instance in the application shell is written with no attributes.
+`CContextMenu` declares no props. Items arrive through the event bus behind `useContextMenu()`.
 
 ## Item fields
 
@@ -45,8 +43,6 @@ Fields the library reads from an entry in `model`, and from an entry passed to `
 | `show`, `hide` | None | Declared by the library and fired from the overlay transition. `CContextMenu` fires them as the overlay opens and closes, and a `CMenu` in flow never runs that transition |
 | `before-show`, `before-hide` | None | Declared by the library, reached through `CContextMenu` only |
 
-Neither wrapper declares an emit of its own, so a row reports itself through its `command`.
-
 ## Slots
 
 | Slot | Component | Props | Notes |
@@ -63,8 +59,7 @@ Neither wrapper declares an emit of its own, so a row reports itself through its
 | Axis | Accepted |
 |---|---|
 | `size`, `severity`, `variant`, density | Neither wrapper declares any of them |
-
-The states either one draws are focus, hover, active and disabled, all set by the library from its own context rather than by a caller.
+| States | Focus, hover, active and disabled, all set by the library rather than by a caller |
 
 ## Attributes
 
@@ -108,11 +103,12 @@ The states either one draws are focus, hover, active and disabled, all set by th
 | Row radius | 4px | 4px |
 | Row padding | 8px and 12px | 6px and 16px |
 | Gap after the icon | 8px | 8px |
+| Trailing shortcut box | Not applicable | 8px, reserved whether or not `shortcut` is set |
 | Section label | 20px tall, regular weight, no padding | Not applicable |
 | Flyout | Not applicable | Fit-content up to 300px, scrolling past 384px |
 | Layer | In flow | An inline z-index seeded from the floating layer, 101 for the first overlay opened |
 
-The two row gaps differ in the list around them. The `CMenu` list is a block container, where the 2px margin below one row and the 2px margin above the next collapse into one, and the `CContextMenu` list is a flex column, where the same two margins add up.
+The row gaps differ because the `CMenu` list is a block container, where the 2px margins between rows collapse, and the `CContextMenu` list is a flex column, where they add up.
 
 ## What not to write
 

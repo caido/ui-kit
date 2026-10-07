@@ -12,11 +12,11 @@ Two things are required and everything else has a default. Pass a `label` and bi
 </template>
 ```
 
-**The model is required rather than optional.** It is declared with `required: true`, so a checkbox written without one warns at render rather than defaulting to unchecked. The label is a plain string and there is no slot to replace it, so text is the only thing that can go there.
+**The model is required.** A checkbox written without one warns at render rather than defaulting to unchecked. The label is plain text, with no slot to replace it.
 
 ## Binding something other than a boolean
 
-A binary checkbox holds `trueValue` when checked and `falseValue` when not. Both default to `true` and `false`, and setting them turns the control into a two-way switch over any pair.
+A binary checkbox holds `trueValue` when checked and `falseValue` when not. Setting them turns the control into a switch over any pair.
 
 ```vue
 <template>
@@ -29,7 +29,7 @@ A binary checkbox holds `trueValue` when checked and `falseValue` when not. Both
 </template>
 ```
 
-Checked-ness here is strict equality against `trueValue`, so an object passed as the true value has to be the same reference rather than an equal one. Keep the pair to strings, numbers or booleans.
+Checked-ness is strict equality against `trueValue`, so keep the pair to strings, numbers or booleans.
 
 ## Building a group from one array
 
@@ -47,7 +47,7 @@ Checked-ness here is strict equality against `trueValue`, so an object passed as
 </template>
 ```
 
-The model has to be an array, because each update is built from the current one and unchecking filters it. There is no `binary` prop to set alongside this, and three call sites in the interface still pass one that goes nowhere. Presence is tested with `isPresent`, which counts `false` and `0` as present, so a falsy value switches the mode as surely as a string does.
+The model has to be an array, because each update is built from the current one. There is no `binary` prop, and a falsy `value` such as `false` or `0` still switches the mode.
 
 ## Deriving the checked state from elsewhere
 
@@ -63,11 +63,11 @@ Where the value lives in a store or is computed from a collection, bind it one w
 </template>
 ```
 
-Fourteen of the interface call sites are written this way, and the shape reads the same as `v-model` to everything downstream.
+The shape reads the same as `v-model` to everything downstream.
 
 ## Showing a partial selection
 
-A parent row over a list of children takes `indeterminate` while some of them are selected. The prop swaps the tick for a dash and tells assistive technology the state is mixed.
+A parent row over a list of children takes `indeterminate` while some of them are selected.
 
 <Preview
   light="/examples/component-checkbox-indeterminate-light.svg"
@@ -88,11 +88,11 @@ A parent row over a list of children takes `indeterminate` while some of them ar
 </template>
 ```
 
-Clear the partial flag inside `onSelect`. **The component keeps no state of its own to clear.** A prop left true after a click paints the dash over a checked box, and the two indicators differ in size and colour because the dash comes from an icon rather than from the preset.
+Clear the partial flag inside `onSelect`. **The component keeps no state of its own to clear**, so a prop left true after a click paints the dash over a checked box.
 
 ## Adding a description under a checkbox
 
-`description` renders a caption paragraph below the row and points the input at it with `aria-describedby`. The prop is the only way to get the paragraph, and it overrides any `aria-describedby` passed as an attribute.
+`description` renders a caption paragraph below the row and points the input at it with `aria-describedby`, overriding any `aria-describedby` passed as an attribute.
 
 ```vue
 <template>
@@ -104,11 +104,11 @@ Clear the partial flag inside `onSelect`. **The component keeps no state of its 
 </template>
 ```
 
-The paragraph is flush with the box rather than indented under the label text. Where the description has to line up with the label, write the paragraph in the parent and point at it with an `aria-describedby` of your own, which the component forwards to the input.
+The paragraph is flush with the box rather than indented under the label. Where it has to line up with the label, write the paragraph in the parent and point at it with an `aria-describedby` of your own.
 
 ## Fitting the label to its row
 
-**A long label cannot shorten itself without `fluid`.** The label carries nothing telling it to truncate, so it wraps or overflows instead. `fluid` puts `w-full` on the wrapper and `flex-1 min-w-0 truncate` on the label, which is what a checkbox sitting inside a flex row needs before the label can shrink at all. Reach for it in a table footer, a settings list or a menu, where the width belongs to the column rather than to the label, and see [truncating](/foundations/type/usage.md#truncating-and-when-not-to) for when shortening a string is the wrong answer.
+**A long label cannot shorten itself without `fluid`.** Without it the label wraps or overflows. Reach for `fluid` in a table footer, a settings list or a menu, where the width belongs to the column, and see [truncating](/foundations/type/usage.md#truncating-and-when-not-to) for when shortening a string is the wrong answer.
 
 ```vue
 <template>
@@ -116,7 +116,7 @@ The paragraph is flush with the box rather than indented under the label text. W
 </template>
 ```
 
-Where the name is already printed beside the box, as a tree row prints it, `hideLabel` clips the label rather than removing it. The accessible name survives and the row collapses to the width of the box, because `sr-only` positions the label absolutely and a gap applies only between items still in flow. The row measures 20 pixels rather than the 28 a surviving gap would give, so a column that has to line up with labelled rows above it carries the offset on the parent.
+Where the name is already printed beside the box, as a tree row prints it, `hideLabel` clips the label rather than removing it. The accessible name survives and the row collapses to the width of the box, gap included, so a column that has to line up with labelled rows carries the offset on the parent.
 
 ```vue
 <template>
@@ -126,7 +126,7 @@ Where the name is already printed beside the box, as a tree row prints it, `hide
 
 ## Positioning and styling a checkbox
 
-**Nothing class-shaped survives the API.** A `class`, a `label-class`, an `input-class` and a pass-through object are all refused, and the component spec pins that refusal with all four set at once.
+**Nothing class-shaped survives the API.** A `class`, a `label-class`, an `input-class` and a pass-through object are all refused.
 
 <DoDont image="component-checkbox-label">
 <template #do>
@@ -141,6 +141,6 @@ Where a checkbox needs a gap, an alignment or a width around it, put that on the
 
 ## Choosing between read-only and disabled
 
-Disabled says the setting does not apply right now, and it dims the box and the label to show it. **Read-only carries no appearance here at all.** It blocks the change and leaves the box at full contrast, the cursor a pointer and the control in the tab order.
+Disabled dims the box and the label. **Read-only carries no appearance at all**: it blocks the change and leaves the box, the cursor and the tab order as they were.
 
-Use `disabled` when the setting does not apply, and when a value is fixed for a reason the person can act on, set `readonly` and write the reason in a sentence beside it.
+Use `disabled` when the setting does not apply right now. When a value is fixed for a reason the person can act on, set `readonly` and write the reason in a sentence beside it. [States](/foundations/states/usage.md#choosing-between-read-only-and-disabled) covers the choice in general.

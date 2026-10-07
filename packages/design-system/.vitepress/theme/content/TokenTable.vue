@@ -44,13 +44,13 @@ const rows = computed(() =>
   <table data-ds class="w-full table-fixed">
     <thead>
       <tr>
-        <th class="sticky top-(--header-height) w-1/2 bg-surface-page">
+        <th class="sticky top-(--header-height) w-1/3 bg-surface-page">
           Token
         </th>
-        <th class="sticky top-(--header-height) w-1/4 bg-surface-page">
+        <th class="sticky top-(--header-height) w-1/3 bg-surface-page">
           Light
         </th>
-        <th class="sticky top-(--header-height) w-1/4 bg-surface-page">Dark</th>
+        <th class="sticky top-(--header-height) w-1/3 bg-surface-page">Dark</th>
       </tr>
     </thead>
     <tbody>
@@ -61,7 +61,7 @@ const rows = computed(() =>
           </CopyText>
         </td>
         <td>
-          <span class="flex items-center gap-2 overflow-x-auto">
+          <span class="flex items-center gap-2">
             <span
               v-if="row.isColour"
               :style="{ background: row.light }"
@@ -69,7 +69,7 @@ const rows = computed(() =>
               aria-hidden="true"
             />
             <CopyText :text="row.light">
-              <code class="text-caption whitespace-nowrap text-fg-muted">
+              <code class="text-caption break-words text-fg-muted">
                 {{ row.light }}
               </code>
             </CopyText>
@@ -79,7 +79,7 @@ const rows = computed(() =>
           <span v-if="!row.varies" class="text-caption text-fg-subtle"
             >same</span
           >
-          <span v-else class="flex items-center gap-2 overflow-x-auto">
+          <span v-else class="flex items-center gap-2">
             <span
               v-if="row.isColour"
               :style="{ background: row.dark }"
@@ -87,7 +87,7 @@ const rows = computed(() =>
               aria-hidden="true"
             />
             <CopyText :text="row.dark">
-              <code class="text-caption whitespace-nowrap text-fg-muted">
+              <code class="text-caption break-words text-fg-muted">
                 {{ row.dark }}
               </code>
             </CopyText>

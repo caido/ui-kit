@@ -4,7 +4,7 @@ How to write an icon, label it, and size it. For the model behind these rules, s
 
 ## Writing an icon
 
-Pass the glyph name. Older names resolve to their current ones automatically, which happens only when the name goes through the prop rather than onto an element as a class.
+Pass the glyph name through the `icon` prop rather than as a class, so older names resolve to their current ones.
 
 ```vue
 <template>
@@ -14,7 +14,7 @@ Pass the glyph name. Older names resolve to their current ones automatically, wh
 
 ## Labelling an icon
 
-This is the decision that matters, and it has exactly two cases.
+This is the decision that matters, and there are two cases.
 
 **The icon sits beside a text label.** It is decorative. Pass no label, and the component hides it from assistive technology so the words are not read twice.
 
@@ -65,7 +65,7 @@ An icon-only button needs **two** things, and neither replaces the other.
 
 **A tooltip**, or a sighted person has no way to learn what the glyph means.
 
-They are two requirements with two different reasons. A tooltip is not an accessible name: the tooltip directive names its own container and sets nothing on the control but a data attribute, so a control with a tooltip and no label is still nameless.
+A tooltip is not an accessible name, so a control with a tooltip and no label is still nameless.
 
 For a button, `CButton` carries the first: `label` is required, and `icon-only` moves it onto the button rather than into the words.
 
@@ -79,9 +79,7 @@ Its pointer target also needs to be at least 24 by 24 CSS pixels, from [criterio
 
 ## Sizing an icon
 
-Most of the time, write no size.
-
-An icon beside text inherits the size of that text, which is what keeps the pair together when somebody changes their interface text setting.
+Most of the time, write no size. An icon beside text inherits the size of that text, which keeps the pair together when somebody changes their interface text setting.
 
 <DoDont>
 <template #do-example>
@@ -108,7 +106,7 @@ For a glyph standing alone with no text beside it, take a rung:
 </template>
 ```
 
-Do not invent a size between the two. There is no rung there, and a glyph that fits neither is measured against the shape around it rather than against the ladder.
+Do not invent a size between the two rungs. A glyph that fits neither is measured against the shape around it.
 
 ## Choosing which icon
 
@@ -116,10 +114,8 @@ Do not invent a size between the two. There is no rung there, and a glyph that f
 
 **Do not borrow a single-purpose icon.** A bug means a finding. It does not mean an error somewhere else, even though the shape would fit.
 
-**Shapes are reusable.** An arrow, a chevron, a circle and a globe are named after how they look, so the same one doing several jobs is correct rather than drift.
+**Shapes are reusable.** An arrow, a chevron, a circle and a globe can each do several jobs.
 
 ## Deciding not to use an icon
 
-If you are struggling to find a clear icon for every row in a menu or a list, that is a sign the icons are not earning their place.
-
-An icon nobody can read is noise on a screen that is already dense, and a row of them costs more attention than the words would have. Drop the icons and let the words carry the row.
+If you are struggling to find a clear icon for every row in a menu or a list, the icons are not earning their place. An icon nobody can read is noise on a screen that is already dense. Drop the icons and let the words carry the row.

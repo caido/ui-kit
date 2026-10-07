@@ -61,7 +61,7 @@ The floor binds where `CLoading` owns both branches. Where a parent chooses betw
 | | `label` | `string` | Yes |
 | `CToast` | `group` | `string` | No |
 
-`CLoading` takes an `indicator` slot for what stands in during the wait and a default slot for the content. It renders its own live region and holds both the delay and the floor. While a load is running and the delay has not elapsed it renders neither slot, so the space goes blank rather than stale. `CProgress` writes `role="meter"` and the real bounds from the counts it is given. Its accessible name is the label alone, so the counts are shown once and read once.
+`CLoading` takes an `indicator` slot for the wait and a default slot for the content. It renders its own live region and holds both the delay and the floor. Before the delay has elapsed it renders neither slot, so the space goes blank rather than stale. `CProgress` writes `role="meter"` and the bounds from its counts, and its accessible name is the label alone.
 
 `useToast` returns `notifyError`, `notifyWarning`, `notifyInfo` and `notifySuccess`. Each takes the message and an optional `{ duration }`. The title is derived from the severity and comes from the message catalogue.
 
@@ -71,7 +71,7 @@ The floor binds where `CLoading` owns both branches. Where a parent chooses betw
 |---|---|
 | 100ms, 1s, 10s | Nielsen's three response-time limits |
 | 300ms delay | The threshold below which an indicator reads as noise rather than as information |
-| 500ms floor | Derived: the 1s limit minus the 300ms delay leaves 700ms, and 500 fits inside it |
+| 500ms floor | Derived: the 1s limit minus the 300ms delay leaves 700ms, and 500 fits inside it. A new floor stays under that ceiling, which moves if the delay does |
 | 3s plus 1s per 3 words | The usual toast reading-time guideline, floored at 4s and capped at 12s |
 | 3 toasts | A fourth pushes the first off the screen before it has been read |
 | `bottom-center` | Set once in `CToast`, so no mount point can differ |

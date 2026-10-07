@@ -34,7 +34,7 @@ Measurements are taken at a 14px root, which is what the application pins from t
 | `scroll` | `number` | On a change to `floor(scrollTop / itemHeight)`, throttled at 100ms |
 | `focus-changed` | `(table: Table, focused: boolean)` | On `focusin` and `focusout` on the root |
 
-Row selection is bound to `mousedown` rather than to `click`, so it settles before a context menu opens. `SortState` is `Maybe<{ columnId: string; direction: "asc" \| "desc" }>`. `LayoutState` is `{ widths: Record<string, string> }`. `Table` is the movement object: `selectNext`, `selectPrev`, `selectPageDown`, `selectPageUp`, `selectFirst`, `selectLast`, each returning nothing.
+Row selection is bound to `mousedown` rather than to `click`, so it settles before a context menu opens. A right click on a row already in the set leaves the set alone, so the menu opens against the whole selection, and a modifier click cannot remove the last selected row. `SortState` is `Maybe<{ columnId: string; direction: "asc" \| "desc" }>`. `LayoutState` is `{ widths: Record<string, string> }`. `Table` is the movement object: `selectNext`, `selectPrev`, `selectPageDown`, `selectPageUp`, `selectFirst`, `selectLast`, each returning nothing.
 
 ## Table slots
 
@@ -92,7 +92,7 @@ Both cell components inject the table context with optional chaining, so renderi
 | `variant` | Not accepted by any of the three components |
 | `align` | `start` or `end`, on the two cell components |
 
-Row density comes from the numeric `itemHeight` rather than from a named size. The shared axes are in [components](/foundations/components/reference.md#the-vocabulary).
+The shared axes are in [components](/foundations/components/reference.md#the-vocabulary).
 
 ## DOM
 
@@ -139,7 +139,7 @@ Row density comes from the numeric `itemHeight` rather than from a named size. T
 | `class`, `style` | Removed, with nothing reported | Reaches the root, with `class` merged into the component class |
 | `title`, `role`, `tabindex` | Removed with the rest | Reaches the root |
 
-`CTable` sets `inheritAttrs: false` and filters through `useForwardedAttrs`, whose pattern is `/^(data-|aria-|on[A-Z])|^(id|name|form)$/`. Neither cell component declares `defineOptions`, so both keep the framework default of inheriting attributes and neither filters anything. The migration log writes a `class` on its `CTable` today, and none of it is applied.
+`CTable` sets `inheritAttrs: false` and filters through `useForwardedAttrs`, whose pattern is `/^(data-|aria-|on[A-Z])|^(id|name|form)$/`. Neither cell component declares `defineOptions`, so both keep the framework default of inheriting attributes and neither filters anything.
 
 ## Measurements
 

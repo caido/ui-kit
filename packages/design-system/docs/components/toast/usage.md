@@ -23,7 +23,7 @@ import { CToast } from "@proxy-frontend/components";
   caption="Fixed at the bottom centre, 36px clear of the window edge, 16px between messages, three at a time."
 />
 
-**A second ungrouped host on screen at the same time draws each ungrouped message twice**, because the event bus offers every message to every host whose group matches. The two hosts written without a group sit on routes that never render together.
+**A second ungrouped host on screen at the same time draws each ungrouped message twice.** The two ungrouped hosts in Caido sit on routes that never render together.
 
 ## Sending a message
 
@@ -38,25 +38,21 @@ notifyError("Could not reach the upstream host.");
 notifySuccess("Project exported.");
 ```
 
-Whatever calls this does not have to sit under the host. Anything mounted under the application root can send, and the message finds the column on its own.
-
-Pass the text and stop there. The title comes from the severity through the message catalogue, so the word Error is spelled once rather than once per call site, and [Feedback](/foundations/feedback/usage.md#never-writing-the-title-or-the-timer) explains why the timer is settled the same way.
+The caller does not have to sit under the host. Pass the text and stop there, because the title comes from the severity, as [Feedback](/foundations/feedback/usage.md#never-writing-the-title-or-the-timer) explains.
 
 ## Setting a duration
 
-`duration` is the one option, written in milliseconds, and it is the only part of a lifetime a call site can reach.
+`duration` is the one option, in milliseconds.
 
 ```ts
 notifyInfo(message, [[{ duration: 5000 }]]);
 ```
 
-Three places in the interface pass one: the frontend SDK, which hands a plugin author's value straight through, one replay path that gives a particular error four seconds, and the AI provider path that gives a failed request five. **Handing a duration to `notifyError` or `notifyWarning` turns a message somebody has to act on into one that leaves on its own**, which is what the last two of those do, so argue with them rather than copying them.
+**Handing a duration to `notifyError` or `notifyWarning` turns a message somebody has to act on into one that leaves on its own.** Two error paths in Caido do that today, and they are not a pattern to copy.
 
 ## Replacing the body of a message
 
-Set a `group` and fill the `message` slot. Both are needed together: an ungrouped host receives the traffic from the composable as well, and would draw those messages through the same template.
-
-A grouped host stays empty until a message carrying the same string reaches it, and the composable sets no group, so such a message is pushed onto the event bus through the toast composable the component library ships.
+Set a `group` and fill the `message` slot. Both are needed, because an ungrouped host would draw the composable's messages through the same template. The composable sets no group, so a grouped message is pushed onto the event bus through the toast composable the component library ships.
 
 ```vue
 <script setup lang="ts">
@@ -79,11 +75,11 @@ const GROUP = "browser-engine-update";
 </template>
 ```
 
-**The slot replaces the icon, the title and the detail for every message that host receives**, and it is handed the message as its scope. The close control is a sibling and stays. Nothing wraps the slot content, so it supplies its own sizing: `flex-auto min-w-0` on the wrapper, or the close control takes the width.
+**The slot replaces the icon, the title and the detail for every message that host receives**, while the close control stays. Nothing wraps the slot content, so give the wrapper `flex-auto min-w-0` or the close control takes the width.
 
 ## Colouring text on a toast surface
 
-A message drawn by the preset already carries the right colour. Inside the slot that colour has to be written, and there is one pairing that looks correct and is not.
+Inside the slot the text colour has to be written, and there is one pairing that looks correct and is not.
 
 <DoDont image="component-toast-contrast">
 <template #do>
@@ -102,20 +98,20 @@ Reach for `fg-on-info`. The `fg-on-*` tokens are measured against the solid `fil
 
 ## Addressing the host from outside
 
-`data-*`, `aria-*`, a listener and the three names `id`, `name` and `form` reach the column. `class` and `style` do not, which is the filter [Components](/foundations/components/reference.md#what-the-api-accepts) sets for the layer.
+A `data-*` or `aria-*` attribute reaches the column, and [Attributes](/components/toast/reference.md#attributes) lists the rest.
 
 ```vue
 <CToast [[data-testid="toast-host"]] />
 ```
 
-**A class written here is not a weak style that something else beats.** It is dropped before it reaches the DOM, so the element carries no trace of it. To colour one message rather than the host, use the slot above.
+**A class written here is dropped before it reaches the DOM.** To colour one message rather than the host, use the slot.
 
 ## Reacting to a dismissal
 
-`@close` reaches the element underneath as a listener and fires with the message that was dismissed. It fires when somebody clicks the close control, and when the three message cap removes the oldest.
+`@close` fires with the dismissed message, when somebody clicks the close control and when the three message cap removes the oldest.
 
 ```vue
 <CToast [[@close="onDismissed"]] />
 ```
 
-**It does not fire when a message reaches the end of its own life**, which emits `life-end` instead. Put whatever has to happen after a message on the call that sent it rather than on a handler here.
+**It does not fire when a message reaches the end of its own life.** Put whatever has to happen after a message on the call that sent it.

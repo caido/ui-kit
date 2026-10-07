@@ -8,11 +8,11 @@ Sizes, prefixes and the component API. For what these mean, see [Overview](/foun
 |---|---|---|
 | none | inherits, 1em | An icon sitting beside text. The usual case |
 | `icon-marker` | 12px | A glyph inside a dense marker, a tag or a badge |
-| `icon-message` | 32px | A glyph that is the subject of a message |
+| `icon-message` | 32px | A glyph that is the subject of a message: an empty state, a card, a footer notice, a confirmation |
 
-Both rungs are in pixels and do not move with the interface text setting. An inline icon does move with it, because it inherits.
+Both rungs are in pixels and do not move with the interface text setting. An inline icon does move with it, because it inherits. 12px is also the caption type step, so a marker glyph sits at the size of caption text.
 
-There is no rung between 12 and 32, and no class that names one.
+There is no rung between 12 and 32, and no class that names one. A glyph that fits neither, such as the one centred in the 48px circle on an onboarding card, is measured against the shape around it.
 
 The two sizes ship as `--icon-marker` and `--icon-message`. Each class is a utility declared from its variable in the app stylesheet, so a surface wiring its own stylesheet declares them again or the class name resolves to nothing.
 
@@ -21,16 +21,14 @@ The two sizes ship as `--icon-marker` and `--icon-message`. Each class is a util
 | Prefix | Used for |
 |---|---|
 | `fas` | The solid weight. Everything but the two cases below |
-| `far` | The regular weight. One place only, where hollow against filled is the distinction |
+| `far` | The regular weight. One place only: the entry that clears a row highlight, so its hollow circle reads as unfilled beside the solid circles that carry a colour |
 | `fa-brands` | Brand marks, which are a different family rather than a different weight |
 
 Only the glyph name is rewritten. Every alias is keyed on a glyph name, so a prefix and any other class on the icon reach the stylesheet exactly as written.
 
 ## Glyph names
 
-Sixty older glyph names resolve to their current ones automatically, so a name that moved upstream, and a second spelling of one that did not, both still render.
-
-That resolution happens inside the component, which means it applies when you pass the icon as a prop and not when you write the class directly on an element.
+Sixty older glyph names resolve to their current ones automatically, so a name that moved upstream, and a second spelling of one that did not, both still render. The resolution happens inside the component, so it applies to the `icon` prop and not to a class written directly on an element.
 
 ## The component
 
@@ -46,8 +44,6 @@ What the component does with `label`:
 |---|---|
 | Passed | `role="img"` and an accessible name |
 | Omitted | `aria-hidden`, so the icon is skipped by assistive technology |
-
-So the decorative case and the meaningful case are handled for you once you have decided which one you have.
 
 ## An icon-only control
 
