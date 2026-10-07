@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 204" width="800" height="204" role="img">
+  <rect width="800" height="204" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(256.4 24.5)">
+  <rect x="0" y="0" width="175" height="114" rx="6" fill="oklch(0.2732 0.0115 271)" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  <rect x="20" y="13" width="14" height="14" fill="none"/>
+  <path transform="translate(20 13) scale(0.02734)" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" fill="oklch(0.9383 0.0063 75.4)"/>
+  <text x="42" y="24.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.9383 0.0063 75.4)">Search</text>
+  <rect x="4" y="40" width="167" height="32" rx="4" fill="oklch(0.3725 0.0176 272.3)"/>
+  <rect x="20" y="49" width="12.25" height="14" fill="none"/>
+  <path transform="translate(20 49) scale(0.02734)" d="M208 0H332.1c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9V336c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V48c0-26.5 21.5-48 48-48zM48 128h80v64H64V448H256V416h64v48c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48z" fill="oklch(0.9383 0.0063 75.4)"/>
+  <text x="40.25" y="60.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.9383 0.0063 75.4)">Copy</text>
+  <rect x="144" y="49" width="7" height="14" fill="none"/>
+  <path transform="translate(144 49) scale(0.02734)" d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" fill="oklch(0.7447 0.0014 286.4)"/>
+  <rect x="20" y="85" width="14" height="14" fill="none"/>
+  <path transform="translate(20 85) scale(0.02734)" d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z" fill="oklch(0.9383 0.0063 75.4)"/>
+  <text x="42" y="96.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.9383 0.0063 75.4)">Rename</text>
+  <rect x="175" y="38" width="102" height="78" rx="6" fill="oklch(0.2732 0.0115 271)" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  <rect x="195" y="51" width="12.25" height="14" fill="none"/>
+  <path transform="translate(195 51) scale(0.02734)" d="M208 0H332.1c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9V336c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V48c0-26.5 21.5-48 48-48zM48 128h80v64H64V448H256V416h64v48c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48z" fill="oklch(0.9383 0.0063 75.4)"/>
+  <text x="215.25" y="62.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.9383 0.0063 75.4)">URL</text>
+  <rect x="195" y="87" width="10.5" height="14" fill="none"/>
+  <path transform="translate(195 87) scale(0.02734)" d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z" fill="oklch(0.9383 0.0063 75.4)"/>
+  <text x="213.5" y="98.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.9383 0.0063 75.4)">Raw</text>
+  <defs>
+    <pattern id="hatch-gap-4-36-167-4" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.4446 0.1605 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="4" y="36" width="167" height="4" fill="url(#hatch-gap-4-36-167-4)"/>
+  <rect x="4" y="36" width="167" height="4" fill="none" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <rect x="273" y="43" width="7" height="30" rx="9" fill="none" stroke="oklch(0.5068 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <circle cx="4" cy="38" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 4 38 L -16 38" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="-24" y="42.2" text-anchor="end" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">margins add to a 4px row gap</text>
+  <circle cx="280" cy="58" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 280 58 L 296 58" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="304" y="62.2" text-anchor="start" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="500" fill="oklch(0.6996 0.0014 286.4)">the flyout has its own border</text>
+  <text x="140" y="152" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">the parent row stays selected while the flyout is open</text>
+  </g>
+</svg>

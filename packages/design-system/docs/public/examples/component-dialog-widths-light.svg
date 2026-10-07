@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 136" width="800" height="136" role="img">
+  <rect width="800" height="136" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(6 24.5)">
+  <rect x="83.8" y="0" width="100" height="40" rx="6" fill="oklch(0.9746 0.014 70)" stroke="oklch(0.751 0.0225 70)" stroke-width="1"/>
+  <rect x="88.03999999999999" y="4.24" width="25.43" height="5.3" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="163.67000000000002" y="26.49" width="15.89" height="9.27" rx="2" fill="oklch(0.4672 0.1618 13.8)"/>
+  <rect x="207.8" y="0" width="150" height="40" rx="6" fill="oklch(0.9746 0.014 70)" stroke="oklch(0.751 0.0225 70)" stroke-width="1"/>
+  <rect x="212.04000000000002" y="4.24" width="25.43" height="5.3" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="337.67" y="26.49" width="15.89" height="9.27" rx="2" fill="oklch(0.4672 0.1618 13.8)"/>
+  <rect x="381.8" y="0" width="200" height="40" rx="6" fill="oklch(0.9746 0.014 70)" stroke="oklch(0.751 0.0225 70)" stroke-width="1"/>
+  <rect x="386.04" y="4.24" width="25.43" height="5.3" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="561.67" y="26.49" width="15.89" height="9.27" rx="2" fill="oklch(0.4672 0.1618 13.8)"/>
+  <rect x="625" y="0" width="72" height="40" rx="6" fill="oklch(0.9746 0.014 70)" stroke="oklch(0.6372 0.0263 70)" stroke-width="1" stroke-dasharray="4 3"/>
+  <rect x="629.24" y="4.24" width="25.43" height="5.3" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="676.87" y="26.49" width="15.89" height="9.27" rx="2" fill="oklch(0.4672 0.1618 13.8)"/>
+  <path d="M 83.8 64 L 183.8 64" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <path d="M 83.8 61 L 83.8 67" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <path d="M 183.8 61 L 183.8 67" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="133.8" y="58" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">400px cap</text>
+  <text x="133.8" y="84" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" font-weight="500" fill="oklch(0.5006 0.0163 272.5)">small</text>
+  <path d="M 207.8 64 L 357.8 64" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <path d="M 207.8 61 L 207.8 67" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <path d="M 357.8 61 L 357.8 67" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="282.8" y="58" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">600px cap</text>
+  <text x="282.8" y="84" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" font-weight="500" fill="oklch(0.5006 0.0163 272.5)">medium</text>
+  <path d="M 381.8 64 L 581.8 64" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <path d="M 381.8 61 L 381.8 67" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <path d="M 581.8 61 L 581.8 67" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="481.8" y="58" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">800px cap</text>
+  <text x="481.8" y="84" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" font-weight="500" fill="oklch(0.5006 0.0163 272.5)">large</text>
+  <text x="661" y="58" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">fits content</text>
+  <text x="661" y="84" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="500" fill="oklch(0.5006 0.0163 272.5)">no width set</text>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 96" width="800" height="96" role="img">
+  <rect width="800" height="96" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(400 24.4)">
+  <rect x="-230.4" y="0" width="76" height="24" rx="6" fill="oklch(0.3501 0.0158 275.6)"/>
+  <text x="-192.4" y="16.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.8354 0.0018 247.8)">secondary</text>
+  <rect x="-130.4" y="0" width="61.6" height="24" rx="6" fill="oklch(0.3822 0.0654 144.2)"/>
+  <text x="-99.6" y="16.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.8344 0.075 143.7)">success</text>
+  <rect x="-44.8" y="0" width="40" height="24" rx="6" fill="oklch(0.4038 0.0778 250)"/>
+  <text x="-24.8" y="16.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.8346 0.0856 250)">info</text>
+  <rect x="19.2" y="0" width="40" height="24" rx="6" fill="oklch(0.3942 0.1028 47.6)"/>
+  <text x="39.2" y="16.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.8346 0.1027 47.6)">warn</text>
+  <rect x="83.2" y="0" width="54.4" height="24" rx="6" fill="oklch(0.3858 0.1095 18)"/>
+  <text x="110.4" y="16.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.8348 0.0916 18.3)">danger</text>
+  <rect x="161.6" y="0" width="68.8" height="24" rx="6" fill="oklch(0.5969 0.0061 274.9)"/>
+  <text x="196" y="16.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0 0 89.9)">contrast</text>
+  <text x="0" y="44.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">the middle four are surface-X + fg-X-strong</text>
+  </g>
+</svg>

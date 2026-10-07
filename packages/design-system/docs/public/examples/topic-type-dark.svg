@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 96" width="384" height="96" role="img">
+  <rect width="384" height="96" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(121.2 31.5)">
+  <text x="0" y="24" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">Aa</text>
+  <text x="40" y="24" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.6996 0.0014 286.4)">Aa</text>
+  <text x="80" y="24" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="16" fill="oklch(0.9383 0.0063 75.4)">Aa</text>
+  <text x="120" y="24" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="18" fill="oklch(0.9383 0.0063 75.4)">Aa</text>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 116" width="800" height="116" role="img">
+  <rect width="800" height="116" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(448.8 -3.5)">
+  <rect x="0" y="28" width="200" height="40" rx="6" fill="none" stroke="oklch(0.751 0.0225 70)" stroke-width="1" stroke-dasharray="4 3"/>
+  <rect x="80" y="36" width="40" height="24" rx="12" fill="oklch(0.7449 0.1231 74.5)"/>
+  <circle cx="109" cy="48" r="8" fill="oklch(0.2178 0 89.9)"/>
+  <defs>
+    <pattern id="hatch-gap-0-36-80-24" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.76 0.1239 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="36" width="80" height="24" fill="url(#hatch-gap-0-36-80-24)"/>
+  <rect x="0" y="36" width="80" height="24" fill="none" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-gap-120-36-80-24" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.76 0.1239 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="120" y="36" width="80" height="24" fill="url(#hatch-gap-120-36-80-24)"/>
+  <rect x="120" y="36" width="80" height="24" fill="none" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <circle cx="0" cy="48" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 0 48 L -16 48" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="-24" y="52.2" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">justify-center splits the slack evenly</text>
+  <text x="2.8" y="92" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">class="flex justify-center"</text>
+  </g>
+</svg>

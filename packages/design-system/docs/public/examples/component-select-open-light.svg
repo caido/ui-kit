@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 212" width="800" height="212" role="img">
+  <rect width="800" height="212" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(328.8 25)">
+  <rect x="0" y="0" width="200" height="31" rx="6" fill="oklch(0.9746 0.014 70)" stroke="oklch(0.6372 0.0263 70)" stroke-width="1"/>
+  <text x="9" y="20.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.2194 0.0118 277.9)">Beta</text>
+  <rect x="173" y="8.5" width="14" height="14" fill="none"/>
+  <path transform="translate(173 8.5) scale(0.02734)" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="0" y="31" width="200" height="108" rx="6" fill="oklch(0.9746 0.014 70)" stroke="oklch(0.751 0.0225 70)" stroke-width="1"/>
+  <text x="17" y="55.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">Alpha</text>
+  <rect x="5" y="70" width="190" height="30" rx="6" fill="oklch(0.8551 0.019 70)"/>
+  <text x="17" y="89.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.2194 0.0118 277.9)">Beta</text>
+  <rect x="5" y="104" width="190" height="30" rx="6" fill="oklch(0.8828 0.018 70)"/>
+  <text x="17" y="123.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">Gamma</text>
+  <defs>
+    <pattern id="hatch-padding-5-36-12-30" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="5" y="36" width="12" height="30" fill="url(#hatch-padding-5-36-12-30)"/>
+  <rect x="5" y="36" width="12" height="30" fill="none" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-gap-5-100-190-4" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.76 0.1239 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="5" y="100" width="190" height="4" fill="url(#hatch-gap-5-100-190-4)"/>
+  <rect x="5" y="100" width="190" height="4" fill="none" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <circle cx="5" cy="51" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 5 51 L -16 51" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="-24" y="55.2" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">px-3 insets the option text</text>
+  <circle cx="5" cy="102" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 5 102 L -16 102" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="-24" y="106.2" text-anchor="end" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">4px between rows, from two preset rules</text>
+  <circle cx="195" cy="85" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 195 85 L 216 85" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="224" y="89.2" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" font-weight="500" fill="oklch(0.7449 0.1231 74.5)">surface-selected is the value</text>
+  <circle cx="195" cy="119" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 195 119 L 216 119" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="224" y="123.2" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">surface-hover is keyboard focus</text>
+  <text x="100" y="159" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">the library checkmark is never asked for</text>
+  </g>
+</svg>

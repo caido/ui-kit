@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+root="${MISE_PROJECT_ROOT:-$PWD}"
+docs="$root/packages/design-system/docs"
+
+lychee \
+  --config "$root/.lychee.toml" \
+  --root-dir "$docs" \
+  "$docs/**/*.md"

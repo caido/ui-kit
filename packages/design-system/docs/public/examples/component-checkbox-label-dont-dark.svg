@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 148" width="800" height="148" role="img">
+  <rect width="800" height="148" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(245.2 24.5)">
+  <rect x="0" y="0" width="20" height="20" rx="6" fill="oklch(0.2732 0.0115 271)" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  <text x="28" y="14.2" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.8354 0.0018 247.8)">Requests</text>
+  <text x="0" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">label-class="text-caption"</text>
+  <path d="M 0 56.2 L 79.2 56.2" stroke="oklch(0.5335 0.1699 30.1)" stroke-width="1" fill="none"/>
+  <text x="0" y="96" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">the marked name is an attribute, not a prop</text>
+  </g>
+</svg>

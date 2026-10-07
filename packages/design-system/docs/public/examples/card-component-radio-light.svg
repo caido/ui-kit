@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 96" width="384" height="96" role="img">
+  <rect width="384" height="96" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(104.65 38)">
+  <circle cx="10" cy="10" r="9.5" fill="oklch(0.4672 0.1618 13.8)" stroke="oklch(0.4672 0.1618 13.8)" stroke-width="1"/>
+  <circle cx="10" cy="10" r="6" fill="oklch(0.9746 0.014 70)"/>
+  <text x="28" y="14.2" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.3454 0.0125 273)">HTTP/1</text>
+  <circle cx="113" cy="10" r="9.5" fill="none" stroke="oklch(0.751 0.0225 70)" stroke-width="1"/>
+  <text x="131" y="14.2" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.3454 0.0125 273)">HTTP/2</text>
+  </g>
+</svg>
