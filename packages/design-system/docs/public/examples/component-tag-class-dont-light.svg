@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 176" width="800" height="176" role="img">
+  <rect width="800" height="176" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(254.8 42.3)">
+  <rect x="-38" y="0" width="76" height="24" rx="6" fill="oklch(0.8866 0.0575 250)"/>
+  <text x="0" y="16.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.3461 0.0857 250)">Read only</text>
+  <text x="-198" y="44.2" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">&lt;CTag label="Read only" severity="info" class="ml-2" /&gt;</text>
+  <path d="M 90 48.4 L 176.4 48.4" stroke="oklch(0.705 0.1699 30.1)" stroke-width="1" fill="none"/>
+  <circle cx="176.4" cy="48.4" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 176.4 48.4 L 176.4 64.4" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <path d="M 176.4 64.4 L 214 64.4" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="222" y="68.6" text-anchor="start" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">class is dropped before it is applied</text>
+  <text x="0" y="88.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">nothing class-shaped reaches the root</text>
+  </g>
+</svg>

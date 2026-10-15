@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 116" width="800" height="116" role="img">
+  <rect width="800" height="116" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(0 -15)">
+  <rect x="48" y="40" width="84.8" height="35" rx="6" fill="oklch(0.4672 0.1618 13.8)" stroke="oklch(0.4672 0.1618 13.8)" stroke-width="1"/>
+  <text x="90.4" y="62.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(1 0 89.9)">primary</text>
+  <rect x="156.8" y="40" width="93.2" height="35" rx="6" fill="oklch(0.751 0.0225 70)" stroke="oklch(0.751 0.0225 70)" stroke-width="1"/>
+  <text x="203.4" y="62.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0 0 89.9)">contrast</text>
+  <rect x="274" y="40" width="101.6" height="35" rx="6" fill="oklch(0.7449 0.1231 74.5)" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1"/>
+  <text x="324.8" y="62.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.2178 0 89.9)">secondary</text>
+  <rect x="399.6" y="40" width="84.8" height="35" rx="6" fill="oklch(0.4918 0.1036 144.2)" stroke="oklch(0.4918 0.1036 144.2)" stroke-width="1"/>
+  <text x="442" y="62.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(1 0 89.9)">success</text>
+  <rect x="508.4" y="40" width="59.6" height="35" rx="6" fill="oklch(0.5035 0.1228 250)" stroke="oklch(0.5035 0.1228 250)" stroke-width="1"/>
+  <text x="538.2" y="62.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(1 0 89.9)">info</text>
+  <rect x="592" y="40" width="59.6" height="35" rx="6" fill="oklch(0.5168 0.146 47.6)" stroke="oklch(0.5168 0.146 47.6)" stroke-width="1"/>
+  <text x="621.8" y="62.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(1 0 89.9)">warn</text>
+  <rect x="675.6" y="40" width="76.4" height="35" rx="6" fill="oklch(0.5253 0.1677 18.5)" stroke="oklch(0.5253 0.1677 18.5)" stroke-width="1"/>
+  <text x="713.8" y="62.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(1 0 89.9)">danger</text>
+  <text x="400" y="103" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">only primary, secondary and contrast fill from a plain token</text>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 136" width="800" height="136" role="img">
+  <rect width="800" height="136" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(178.6 42.5)">
+  <path d="M 0 0 L 224 0" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <path d="M 0 -3 L 0 3" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <path d="M 224 -3 L 224 3" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="112" y="-6" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">w-56 = 224px on the wrapper</text>
+  <rect x="0" y="16" width="224" height="31" rx="6" fill="oklch(0.2732 0.0115 271)" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  <text x="9" y="36.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.9383 0.0063 75.4)">caido.io</text>
+  <rect x="-3" y="13" width="230" height="37" rx="9" fill="none" stroke="oklch(0.5068 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <circle cx="227" cy="31.5" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 227 31.5 L 243 31.5" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="251" y="35.7" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">fluid fills the 224px wrapper</text>
+  <text x="112" y="66" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">&lt;div class="w-56"&gt; around a fluid field</text>
+  <rect x="-28.4" y="-18" width="499.6" height="87" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 184" width="800" height="184" role="img">
+  <rect width="800" height="184" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(3.6 0.5)">
+  <rect x="280" y="24" width="240" height="52" fill="oklch(0.9134 0.017 70)"/>
+  <rect x="280" y="76" width="240" height="4" fill="oklch(0.9746 0.014 70)"/>
+  <rect x="280" y="76" width="73.5" height="4" fill="oklch(0.7449 0.1231 74.5)"/>
+  <rect x="353.5" y="76" width="107.1" height="1" fill="oklch(0.751 0.0225 70)"/>
+  <text x="316.75" y="54.9" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.5069 0.1048 74.8)">Store</text>
+  <text x="407.05" y="54.9" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">Installed</text>
+  <rect x="280" y="80" width="240" height="48" fill="oklch(0.9134 0.017 70)"/>
+  <text x="280" y="108.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.2194 0.0118 277.9)">Panel</text>
+  <defs>
+    <pattern id="hatch-padding-280-40-15_75-20" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="280" y="40" width="15.75" height="20" fill="url(#hatch-padding-280-40-15_75-20)"/>
+  <rect x="280" y="40" width="15.75" height="20" fill="none" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-padding-280-24-73_5-16" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="280" y="24" width="73.5" height="16" fill="url(#hatch-padding-280-24-73_5-16)"/>
+  <rect x="280" y="24" width="73.5" height="16" fill="none" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-gap-460_6-76-59_4-4" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.76 0.1239 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="460.6" y="76" width="59.400000000000006" height="4" fill="url(#hatch-gap-460_6-76-59_4-4)"/>
+  <rect x="460.6" y="76" width="59.400000000000006" height="4" fill="none" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <circle cx="280" cy="32" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 280 32 L 264 32" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="256" y="36.2" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">py-4 is 16px above and below</text>
+  <circle cx="280" cy="50" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 280 50 L 264 50" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="256" y="54.2" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">the preset pads 15.75px a side</text>
+  <circle cx="520" cy="78" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 520 78 L 536 78" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="544" y="82.2" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">border-b-4 is a 4px page band</text>
+  <text x="400" y="156" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">the indicator bar fills that band under the active tab</text>
+  </g>
+</svg>

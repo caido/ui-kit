@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 96" width="384" height="96" role="img">
+  <rect width="384" height="96" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(108 32)">
+  <rect x="0" y="0" width="72" height="32" rx="6" fill="oklch(0.4672 0.1618 13.8)" stroke="oklch(0.4672 0.1618 13.8)" stroke-width="1"/>
+  <text x="36" y="20.9" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(1 0 89.9)">Save</text>
+  <rect x="88" y="0" width="80" height="32" rx="6" fill="oklch(0.9746 0.014 70)" stroke="oklch(0.751 0.0225 70)" stroke-width="1"/>
+  <text x="128" y="20.9" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">Cancel</text>
+  </g>
+</svg>

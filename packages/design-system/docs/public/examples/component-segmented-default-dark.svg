@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 136" width="800" height="136" role="img">
+  <rect width="800" height="136" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(249.1 41)">
+  <rect x="-16" y="-16" width="197" height="63" rx="6" fill="oklch(0.294 0.013 272.9)"/>
+  <rect x="0" y="0" width="165" height="31" rx="6" fill="oklch(0.2732 0.0115 271)"/>
+  <rect x="5" y="5" width="94" height="22" rx="4" fill="oklch(0.3263 0.0144 274.5)"/>
+  <text x="51.5" y="20.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="500" fill="oklch(0.9383 0.0063 75.4)">Markdown</text>
+  <text x="133" y="20.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="500" fill="oklch(0.7447 0.0014 286.4)">Raw</text>
+  <defs>
+    <pattern id="hatch-padding-1-1-16-29" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="1" y="1" width="16" height="29" fill="url(#hatch-padding-1-1-16-29)"/>
+  <rect x="1" y="1" width="16" height="29" fill="none" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-padding-1-24-101-6" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="1" y="24" width="101" height="6" fill="url(#hatch-padding-1-24-101-6)"/>
+  <rect x="1" y="24" width="101" height="6" fill="none" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <rect x="-3" y="-3" width="171" height="37" rx="9" fill="none" stroke="oklch(0.5068 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <circle cx="1" cy="15.5" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 1 15.5 L -32 15.5" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="-40" y="19.7" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">px-4 = 16px padding</text>
+  <circle cx="1" cy="27" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 1 27 L 1 43" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <path d="M 1 43 L -32 43" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="-40" y="47.2" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">py-1.5 = 6px padding</text>
+  <circle cx="168" cy="15.5" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 168 15.5 L 168 -8" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <path d="M 168 -8 L 197 -8" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="205" y="-3.8" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">rounded-md = 6px, border is transparent</text>
+  <text x="82.5" y="67" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">Every button is surface-page; only the selected pill is raised.</text>
+  </g>
+</svg>

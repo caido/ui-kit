@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 100" width="800" height="100" role="img">
+  <rect width="800" height="100" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(400 25.4)">
+  <rect x="-277.2" y="0" width="49.2" height="26" rx="6" fill="oklch(0.8848 0.0595 70.2)" stroke="oklch(0.7595 0.0896 69.7)" stroke-width="1"/>
+  <text x="-252.6" y="17.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.4698 0.1015 70.5)">amber</text>
+  <rect x="-204" y="0" width="49.2" height="26" rx="6" fill="oklch(0.8841 0.0593 248.5)" stroke="oklch(0.7593 0.0903 248.6)" stroke-width="1"/>
+  <text x="-179.4" y="17.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.4701 0.1258 247.8)">azure</text>
+  <rect x="-130.8" y="0" width="42" height="26" rx="6" fill="oklch(0.8853 0.0597 150.3)" stroke="oklch(0.7608 0.0907 150.1)" stroke-width="1"/>
+  <text x="-109.8" y="17.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.4704 0.1295 150)">fern</text>
+  <rect x="-64.8" y="0" width="42" height="26" rx="6" fill="oklch(0.8848 0.0593 118)" stroke="oklch(0.7598 0.0893 117.7)" stroke-width="1"/>
+  <text x="-43.8" y="17.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.4693 0.109 117.7)">lime</text>
+  <rect x="1.2" y="0" width="63.6" height="26" rx="6" fill="oklch(0.8857 0.0595 336.8)" stroke="oklch(0.7594 0.0908 336)" stroke-width="1"/>
+  <text x="33" y="17.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.4701 0.1409 336.3)">magenta</text>
+  <rect x="88.8" y="0" width="42" height="26" rx="6" fill="oklch(0.8841 0.0599 31.1)" stroke="oklch(0.7595 0.0896 32.2)" stroke-width="1"/>
+  <text x="109.8" y="17.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.47 0.1408 31.9)">rust</text>
+  <rect x="154.8" y="0" width="42" height="26" rx="6" fill="oklch(0.885 0.0598 196.1)" stroke="oklch(0.76 0.09 196.3)" stroke-width="1"/>
+  <text x="175.8" y="17.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.4688 0.0799 195.9)">teal</text>
+  <rect x="220.8" y="0" width="56.4" height="26" rx="6" fill="oklch(0.8854 0.059 291.5)" stroke="oklch(0.7602 0.0899 292.1)" stroke-width="1"/>
+  <text x="249" y="17.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.4688 0.1399 291.9)">violet</text>
+  <text x="0" y="46.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">category-X-fill, -line and -fg</text>
+  </g>
+</svg>

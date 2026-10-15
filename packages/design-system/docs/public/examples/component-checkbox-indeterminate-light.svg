@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 132" width="800" height="132" role="img">
+  <rect width="800" height="132" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(261.8 60.4)">
+  <rect x="0" y="0" width="20" height="20" rx="6" fill="oklch(0.9746 0.014 70)" stroke="oklch(0.751 0.0225 70)" stroke-width="1"/>
+  <rect x="3.88" y="3" width="12.25" height="14" fill="none"/>
+  <path transform="translate(3.88 3) scale(0.02734)" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" fill="oklch(0.3454 0.0125 273)"/>
+  <text x="28" y="14.2" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.3454 0.0125 273)">Collection</text>
+  <rect x="124" y="2" width="14" height="16" fill="none"/>
+  <path transform="translate(124 2) scale(0.03125)" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="oklch(0.4501 0.0151 271.1)"/>
+  <rect x="162" y="0" width="20" height="20" rx="6" fill="oklch(0.7449 0.1231 74.5)" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1"/>
+  <rect x="165.88" y="3" width="12.25" height="14" fill="none"/>
+  <path transform="translate(165.88 3) scale(0.02734)" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" fill="oklch(0.3454 0.0125 273)"/>
+  <text x="190" y="14.2" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.3454 0.0125 273)">Collection</text>
+  <rect x="-3" y="-3" width="26" height="26" rx="9" fill="none" stroke="oklch(0.659 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <rect x="159" y="-3" width="26" height="26" rx="9" fill="none" stroke="oklch(0.659 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <circle cx="10" cy="-3" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 10 -3 L 10 -28" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <path d="M 10 -28 L -16 -28" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="-24" y="-23.8" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">the border is line-default</text>
+  <circle cx="172" cy="-3" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 172 -3 L 172 -28" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <path d="M 172 -28 L 278 -28" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="286" y="-23.8" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">the border is fill-secondary</text>
+  <text x="131" y="44" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">the dash is an icon, so its colour holds</text>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 172" width="800" height="172" role="img">
+  <rect width="800" height="172" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(421.6 60.3)">
+  <rect x="-126.8" y="0" width="76" height="24" rx="6" fill="oklch(0.8866 0.0575 250)"/>
+  <text x="-88.8" y="16.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.3461 0.0857 250)">Read only</text>
+  <text x="-88.8" y="60.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" font-weight="500" fill="oklch(0.5006 0.0163 272.5)">severity="info"</text>
+  <rect x="40" y="0" width="76" height="24" rx="6" fill="none"/>
+  <text x="78" y="16.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600" fill="oklch(0.3454 0.0125 273)">Temporary</text>
+  <text x="78" y="60.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">no severity at all</text>
+  <defs>
+    <pattern id="hatch-padding--126_8-0-5_6-24" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="-126.8" y="0" width="5.6" height="24" fill="url(#hatch-padding--126_8-0-5_6-24)"/>
+  <rect x="-126.8" y="0" width="5.6" height="24" fill="none" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-padding--121_2-20-64_8-4" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="-121.2" y="20" width="64.8" height="4" fill="url(#hatch-padding--121_2-20-64_8-4)"/>
+  <rect x="-121.2" y="20" width="64.8" height="4" fill="none" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <rect x="37" y="-3" width="82" height="30" rx="9" fill="none" stroke="oklch(0.659 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <circle cx="-124" cy="0" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M -124 0 L -124 -28" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <path d="M -124 -28 L -158.8 -28" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="-166.8" y="-23.8" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">5.6px a side, set by the preset</text>
+  <circle cx="-121.2" cy="22" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M -121.2 22 L -121.2 40" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <path d="M -121.2 40 L -158.8 40" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="-166.8" y="44.2" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">py-1 stays 4px at any size</text>
+  <circle cx="119" cy="12" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 119 12 L 119 -28" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <path d="M 119 -28 L 158.8 -28" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="166.8" y="-23.8" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">a 6px corner on every tag</text>
+  <text x="0" y="84.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">a caption line box plus py-1 top and bottom</text>
+  </g>
+</svg>

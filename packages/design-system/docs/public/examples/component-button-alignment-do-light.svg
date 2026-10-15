@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 136" width="800" height="136" role="img">
+  <rect width="800" height="136" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(0 -15)">
+  <rect x="278.2" y="40" width="68" height="35" rx="6" fill="oklch(0.4672 0.1618 13.8)" stroke="oklch(0.4672 0.1618 13.8)" stroke-width="1"/>
+  <text x="312.2" y="62.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(1 0 89.9)">Clear</text>
+  <rect x="370.2" y="40" width="59.6" height="35" rx="6" fill="oklch(0.4672 0.1618 13.8)" stroke="oklch(0.4672 0.1618 13.8)" stroke-width="1"/>
+  <text x="400" y="62.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(1 0 89.9)">Copy</text>
+  <rect x="453.8" y="40" width="68" height="35" rx="6" fill="oklch(0.4672 0.1618 13.8)" stroke="oklch(0.4672 0.1618 13.8)" stroke-width="1"/>
+  <text x="487.8" y="62.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(1 0 89.9)">Close</text>
+  <path d="M 270.2 40 L 529.8 40" stroke="oklch(0.751 0.0225 70)" stroke-width="1" stroke-dasharray="3 2" fill="none"/>
+  <path d="M 270.2 75 L 529.8 75" stroke="oklch(0.751 0.0225 70)" stroke-width="1" stroke-dasharray="3 2" fill="none"/>
+  <text x="400" y="123" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">one size and one variant: every edge lines up</text>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+exclude_path = [
+  "node_modules",
+  "dist",
+  ".vitepress/cache",
+  "packages/tokens/src/__generated__",
+]
+
+exclude = [
+  "localhost",
+  "127\\.0\\.0\\.1",
+  "example\\.com",
+]
+
+timeout = 30
+max_retries = 2
+
+accept = [200, 201, 202, 203, 204, 205, 206, 207, 208, 226, 429]

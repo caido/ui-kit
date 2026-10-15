@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+mise tokens:build
+
+echo "[*] Building the design system site"
+pnpm --filter @caido/design-system build

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 96" width="384" height="96" role="img">
+  <rect width="384" height="96" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(114 38)">
+  <rect x="0" y="0" width="44" height="20" rx="6" fill="oklch(0.51 0.0922 250)" stroke="oklch(0.51 0.0922 250)" stroke-width="1"/>
+  <text x="22" y="14.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(1 0 89.9)">200</text>
+  <rect x="52" y="0" width="44" height="20" rx="6" fill="oklch(0.4763 0.125 18.1)" stroke="oklch(0.4763 0.125 18.1)" stroke-width="1"/>
+  <text x="74" y="14.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(1 0 89.9)">500</text>
+  <rect x="104" y="0" width="52" height="20" rx="6" fill="oklch(0.2732 0.0115 271)" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  <text x="130" y="14.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">GET</text>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 148" width="800" height="148" role="img">
+  <rect width="800" height="148" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(229.6 24)">
+  <rect x="0" y="0" width="384" height="65" rx="6" fill="oklch(0.4225 0.1158 18)"/>
+  <rect x="12" y="12" width="15.75" height="15.75" fill="none"/>
+  <path transform="translate(12 12) scale(0.030760000000000003)" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" fill="oklch(0.8348 0.0916 18.3)"/>
+  <text x="43.75" y="25.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="500" fill="oklch(0.8348 0.0916 18.3)">Error</text>
+  <text x="43.75" y="49.2" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.9383 0.0063 75.4)">Connection refused</text>
+  <rect x="352.75" y="19" width="10.5" height="14" fill="none"/>
+  <path transform="translate(352.75 19) scale(0.02734)" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" fill="oklch(0.8348 0.0916 18.3)"/>
+  <defs>
+    <pattern id="hatch-padding-0-0-12-65" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="12" height="65" fill="url(#hatch-padding-0-0-12-65)"/>
+  <rect x="0" y="0" width="12" height="65" fill="none" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-gap-27_75-0-16-65" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.4446 0.1605 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="27.75" y="0" width="16" height="65" fill="url(#hatch-gap-27_75-0-16-65)"/>
+  <rect x="27.75" y="0" width="16" height="65" fill="none" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <circle cx="358" cy="26" r="17" fill="none" stroke="oklch(0.5068 0.1689 141.7)" stroke-width="1" opacity="0.75"/>
+  <circle cx="0" cy="32.5" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 0 32.5 L -16 32.5" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="-24" y="36.7" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" font-weight="500" fill="oklch(0.6996 0.0014 286.4)">p-3 pads 12px each side</text>
+  <circle cx="375" cy="26" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 375 26 L 400 26" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="408" y="30.2" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">close button 28px</text>
+  <text x="192" y="97" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">the toast is 384px wide and draws no border</text>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 96" width="384" height="96" role="img">
+  <rect width="384" height="96" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(88 24)">
+  <text x="0" y="10" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">Severity</text>
+  <rect x="0" y="18" width="208" height="32" rx="6" fill="oklch(0.3263 0.0144 274.5)" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  <text x="12" y="38.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.8354 0.0018 247.8)">High</text>
+  <rect x="182" y="28" width="12" height="12" fill="none"/>
+  <path transform="translate(182 28) scale(0.023440000000000003)" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" fill="oklch(0.6996 0.0014 286.4)"/>
+  </g>
+</svg>

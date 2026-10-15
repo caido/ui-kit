@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 144" width="800" height="144" role="img">
+  <rect width="800" height="144" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(360.8 -6.05)">
+  <rect x="-297.6" y="30.5" width="673.6" height="95.1" fill="none"/>
+  <circle cx="10" cy="40" r="9.5" fill="oklch(0.4672 0.1618 13.8)" stroke="oklch(0.4672 0.1618 13.8)" stroke-width="1"/>
+  <circle cx="10" cy="40" r="6" fill="oklch(0.2732 0.0115 271)"/>
+  <text x="28" y="44.2" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.8354 0.0018 247.8)">Horizontal</text>
+  <circle cx="10" cy="68" r="9.5" fill="none" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  <text x="28" y="72.2" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.8354 0.0018 247.8)">Vertical</text>
+  <defs>
+    <pattern id="hatch-gap-0-50-100-8" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.4446 0.1605 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="50" width="100" height="8" fill="url(#hatch-gap-0-50-100-8)"/>
+  <rect x="0" y="50" width="100" height="8" fill="none" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <text x="-11.2" y="114.2" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" font-weight="500" fill="oklch(0.7449 0.1231 74.5)">&lt;VStack :gap="2"&gt;</text>
+  <path d="M 46.4 118.4 L 104 118.4" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" fill="none"/>
+  <circle cx="0" cy="54" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 0 54 L -27.2 54" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="-35.2" y="58.2" text-anchor="end" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">8px between the two options</text>
+  <circle cx="104" cy="118.4" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 104 118.4 L 127.2 118.4" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="135.2" y="122.6" text-anchor="start" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">set once on the parent stack</text>
+  </g>
+</svg>

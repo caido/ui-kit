@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 116" width="800" height="116" role="img">
+  <rect width="800" height="116" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(22.2 25.5)">
+  <rect x="15.6" y="0" width="96" height="31" rx="6" fill="oklch(0.2732 0.0115 271)" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  <text x="24.6" y="20.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.9383 0.0063 75.4)">resting</text>
+  <text x="63.6" y="47" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">line-default</text>
+  <rect x="138.4" y="0" width="96" height="31" rx="6" fill="oklch(0.2732 0.0115 271)" stroke="oklch(0.5532 0.0093 278.5)" stroke-width="1"/>
+  <text x="147.4" y="20.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.9383 0.0063 75.4)">hover</text>
+  <text x="186.4" y="47" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">line-strong</text>
+  <rect x="254" y="0" width="96" height="31" rx="6" fill="oklch(0.2732 0.0115 271)"/>
+  <rect x="253" y="-1" width="98" height="33" rx="7" fill="none" stroke="oklch(0.8346 0.0767 74.2)" stroke-width="2"/>
+  <text x="263" y="20.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.9383 0.0063 75.4)">focus</text>
+  <text x="302" y="47" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">line-focus</text>
+  <rect x="369.6" y="0" width="96" height="31" rx="6" fill="oklch(0.2732 0.0115 271)" stroke="oklch(0.7226 0.1686 18.3)" stroke-width="1"/>
+  <text x="378.6" y="20.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.9383 0.0063 75.4)">invalid</text>
+  <text x="417.6" y="47" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">line-danger</text>
+  <rect x="506.8" y="0" width="96" height="31" rx="6" fill="oklch(0.4068 0.0188 273.5)" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  <text x="515.8" y="20.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.9383 0.0063 75.4)">disabled</text>
+  <rect x="506.8" y="0" width="96" height="31" rx="6" fill="oklch(0.2732 0.0115 271)" opacity="0.4"/>
+  <text x="554.8" y="47" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">surface-disabled</text>
+  <rect x="644" y="0" width="96" height="31" rx="6" fill="oklch(0.2732 0.0115 271)"/>
+  <text x="653" y="20.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.9383 0.0063 75.4)">readonly</text>
+  <text x="692" y="47" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">transparent</text>
+  <text x="376" y="63" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">readonly writes border-transparent, disabled dims the control</text>
+  </g>
+</svg>

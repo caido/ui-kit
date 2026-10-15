@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 96" width="384" height="96" role="img">
+  <rect width="384" height="96" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(142 34)">
+  <rect x="0" y="0" width="44" height="28" rx="6" fill="oklch(0.9134 0.017 70)"/>
+  <text x="12" y="20" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">Aa</text>
+  <text x="58" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.4918 0.1036 144.2)">AA</text>
+  <rect x="86" y="8" width="14" height="14" fill="none"/>
+  <path transform="translate(86 8) scale(0.02734)" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" fill="oklch(0.4918 0.1036 144.2)"/>
+  </g>
+</svg>
