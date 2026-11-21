@@ -117,7 +117,10 @@ export default {
     class: "border-t border-line-strong",
   },
   transition: {
-    enterFromClass: "opacity-0",
-    enterActiveClass: "transition-opacity duration-250",
+    enterFromClass: "opacity-0 scale-y-[0.8]",
+    enterActiveClass:
+      "transition-[transform,scale,opacity] duration-[120ms] ease-[cubic-bezier(0,0,0.2,1)]",
+    leaveActiveClass: "transition-opacity duration-100 ease-linear",
+    leaveToClass: "opacity-0",
   },
 };
