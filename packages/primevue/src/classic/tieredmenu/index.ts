@@ -103,6 +103,7 @@ export default {
 
       // Shape
       "shadow-none sm:shadow-md",
+      "rounded-md",
       "border border-line-default",
 
       // Position
