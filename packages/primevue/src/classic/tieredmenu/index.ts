@@ -84,7 +84,7 @@ export default {
     ],
   },
   itemLabel: {
-    class: ["leading-normal"],
+    class: ["leading-normal", "mr-2"],
   },
   submenuIcon: {
     class: [
