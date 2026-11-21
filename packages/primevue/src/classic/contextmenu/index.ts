@@ -37,8 +37,8 @@ export default {
 
       // Colors
       {
-        "text-fg-muted": !context.focused && !context.active,
-        "text-fg-default bg-surface-hover": context.focused && !context.active,
+        "text-fg-strong": !context.focused && !context.active,
+        "text-fg-strong bg-surface-hover": context.focused && !context.active,
         "bg-surface-selected text-fg-strong":
           (context.focused && context.active) ||
           context.active ||
@@ -70,8 +70,8 @@ export default {
       "items-center",
 
       // Spacing
-      "py-2",
-      "px-3",
+      "py-1.5",
+      "px-4",
 
       // Misc
       "no-underline",
@@ -87,7 +87,7 @@ export default {
     ],
   },
   itemLabel: {
-    class: ["leading-none"],
+    class: ["leading-normal"],
   },
   submenu: ({ props }) => ({
     class: [
