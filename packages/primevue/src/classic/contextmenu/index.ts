@@ -28,7 +28,7 @@ export default {
     ],
   },
   item: {
-    class: "relative my-[2px] [&:first-child]:mt-0",
+    class: "relative",
   },
   itemContent: ({ context }) => ({
     class: [
@@ -70,8 +70,8 @@ export default {
       "items-center",
 
       // Spacing
-      "py-1.5",
-      "px-4",
+      "py-1",
+      "px-2",
 
       // Misc
       "no-underline",
@@ -118,7 +118,7 @@ export default {
     class: ["ml-auto"],
   },
   separator: {
-    class: "border-t border-line-default",
+    class: "my-1 border-t border-line-subtle/60",
   },
   transition: {
     enterFromClass: "opacity-0",
