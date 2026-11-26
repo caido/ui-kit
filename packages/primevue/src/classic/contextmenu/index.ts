@@ -28,7 +28,7 @@ export default {
     ],
   },
   item: {
-    class: "relative my-[2px] [&:first-child]:mt-0",
+    class: "relative",
   },
   itemContent: ({ context }) => ({
     class: [
@@ -37,8 +37,8 @@ export default {
 
       // Colors
       {
-        "text-fg-muted": !context.focused && !context.active,
-        "text-fg-default bg-surface-hover": context.focused && !context.active,
+        "text-fg-strong": !context.focused && !context.active,
+        "text-fg-strong bg-surface-hover": context.focused && !context.active,
         "bg-surface-selected text-fg-strong":
           (context.focused && context.active) ||
           context.active ||
@@ -70,8 +70,8 @@ export default {
       "items-center",
 
       // Spacing
-      "py-2",
-      "px-3",
+      "py-1",
+      "px-2",
 
       // Misc
       "no-underline",
@@ -87,7 +87,7 @@ export default {
     ],
   },
   itemLabel: {
-    class: ["leading-none"],
+    class: ["leading-normal", "mr-2"],
   },
   submenu: ({ props }) => ({
     class: [
@@ -118,7 +118,7 @@ export default {
     class: ["ml-auto"],
   },
   separator: {
-    class: "border-t border-line-default",
+    class: "my-1 border-t border-line-subtle/60",
   },
   transition: {
     enterFromClass: "opacity-0",

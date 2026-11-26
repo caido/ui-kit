@@ -104,10 +104,11 @@ export default {
   }),
   transition: {
     enterFromClass: "opacity-0 translate-y-2/4",
-    enterActiveClass: "transition-[transform,opacity] duration-300",
+    enterActiveClass:
+      "transition-[transform,translate,opacity] duration-[var(--duration-surface)] ease-[var(--ease-enter)]",
     leaveFromClass: "max-h-[1000px]",
     leaveActiveClass:
-      "!transition-[max-height_.45s_cubic-bezier(0,1,0,1),opacity_.3s,margin-bottom_.3s] overflow-hidden",
-    leaveToClass: "max-h-0 opacity-0 mb-0",
+      "overflow-hidden [transition:transform_var(--duration-state)_var(--ease-standard),translate_var(--duration-state)_var(--ease-standard),opacity_var(--duration-state)_var(--ease-standard),max-height_450ms_cubic-bezier(0,1,0,1),margin-bottom_var(--duration-surface)]",
+    leaveToClass: "max-h-0 mb-0! opacity-0 translate-y-2/4",
   },
 };

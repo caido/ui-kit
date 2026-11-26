@@ -5,19 +5,19 @@ export default {
 
       "[&>[data-pc-name=inputicon]]:absolute",
       "[&>[data-pc-name=inputicon]]:top-1/2",
-      "[&>[data-pc-name=inputicon]]:-mt-2",
+      "[&>[data-pc-name=inputicon]]:-translate-y-1/2",
       "[&>[data-pc-name=inputicon]]:text-fg-muted",
 
       "[&>[data-pc-name=inputicon]:first-child]:left-3",
       "[&>[data-pc-name=inputicon]:last-child]:right-3",
 
-      "[&>[data-pc-name=inputtext]:first-child]:pr-10",
-      "[&>[data-pc-name=inputtext]:last-child]:pl-10",
+      "[&>[data-pc-name=inputtext]:first-child]:pr-9",
+      "[&>[data-pc-name=inputtext]:last-child]:pl-9",
 
       // filter
       "[&>[data-pc-extend=inputicon]]:absolute",
       "[&>[data-pc-extend=inputicon]]:top-1/2",
-      "[&>[data-pc-extend=inputicon]]:-mt-2",
+      "[&>[data-pc-extend=inputicon]]:-translate-y-1/2",
       "[&>[data-pc-extend=inputicon]]:text-fg-muted",
 
       "[&>[data-pc-extend=inputicon]:first-child]:left-3",

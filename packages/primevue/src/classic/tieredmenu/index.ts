@@ -25,7 +25,7 @@ export default {
     ],
   },
   item: {
-    class: "relative my-[2px] [&:first-child]:mt-0",
+    class: "relative",
   },
   itemContent: ({ context }) => ({
     class: [
@@ -34,8 +34,8 @@ export default {
 
       // Colors
       {
-        "text-fg-muted": !context.focused && !context.active,
-        "text-fg-default bg-surface-hover": context.focused && !context.active,
+        "text-fg-strong": !context.focused && !context.active,
+        "text-fg-strong bg-surface-hover": context.focused && !context.active,
         "bg-surface-selected text-fg-strong":
           (context.focused && context.active) ||
           context.active ||
@@ -67,8 +67,8 @@ export default {
       "items-center",
 
       // Spacing
-      "py-2",
-      "px-3",
+      "py-1",
+      "px-2",
 
       // Misc
       "no-underline",
@@ -84,7 +84,7 @@ export default {
     ],
   },
   itemLabel: {
-    class: ["leading-none"],
+    class: ["leading-normal", "mr-2"],
   },
   submenuIcon: {
     class: [
@@ -103,6 +103,7 @@ export default {
 
       // Shape
       "shadow-none sm:shadow-md",
+      "rounded-md",
       "border border-line-default",
 
       // Position
@@ -114,10 +115,13 @@ export default {
     ],
   },
   separator: {
-    class: "border-t border-line-strong",
+    class: "my-1 border-t border-line-subtle/60",
   },
   transition: {
-    enterFromClass: "opacity-0",
-    enterActiveClass: "transition-opacity duration-250",
+    enterFromClass: "opacity-0 scale-y-[0.8]",
+    enterActiveClass:
+      "transition-[transform,scale,opacity] duration-[120ms] ease-[cubic-bezier(0,0,0.2,1)]",
+    leaveActiveClass: "transition-opacity duration-100 ease-linear",
+    leaveToClass: "opacity-0",
   },
 };
