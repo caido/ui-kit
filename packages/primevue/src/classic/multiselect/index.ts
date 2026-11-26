@@ -44,11 +44,11 @@ export default {
   labelContainer: "overflow-hidden flex flex-auto cursor-pointer",
   label: ({ props, parent }) => ({
     class: [
-      "text-base leading-2",
+      "text-body",
 
       // Spacing
       {
-        "py-1.5 px-2":
+        "py-1.25 px-2":
           props.display === "comma" ||
           (props.display === "chip" && !props?.modelValue?.length),
         "py-1 px-1": props.display === "chip" && props?.modelValue?.length > 0,

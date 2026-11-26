@@ -49,9 +49,6 @@ export default {
   }),
   label: ({ props, parent }) => ({
     class: [
-      //Font
-      "leading-[normal]",
-
       // Display
       "block",
       "flex-auto",
@@ -68,8 +65,8 @@ export default {
       // Sizing and Spacing
       "w-[1%]",
       {
-        "py-3 pl-3.5": props.size === "large",
-        "py-1.5 pl-2": props.size !== "large",
+        "leading-[normal] py-3 pl-3.5": props.size === "large",
+        "text-body py-1.25 pl-2": props.size !== "large",
       },
       { "pr-7": props.showClear },
 

@@ -1,9 +1,6 @@
 export default {
   root: ({ props, context, parent }) => ({
     class: [
-      // Font
-      "leading-none",
-
       // Flex
       { "flex-1 w-[1%]": parent.instance.$name == "InputGroup" },
 
@@ -13,8 +10,8 @@ export default {
 
       // Size
       {
-        "py-3 px-3.5": props.size == "large",
-        "py-1.5 px-2": props.size !== "large",
+        "leading-none py-3 px-3.5": props.size == "large",
+        "text-body py-1.25 px-2": props.size !== "large",
       },
 
       // Shape
