@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 136" width="800" height="136" role="img">
+  <rect width="800" height="136" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(21.6 16)">
+  <text x="216.4" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">&lt;CTabs :items v-model:value class="flex-1" /&gt;</text>
+  <path d="M 418 24.2 L 518.8 24.2" stroke="oklch(0.705 0.1699 30.1)" stroke-width="1" fill="none"/>
+  <rect x="280" y="40" width="240" height="52" fill="oklch(0.9134 0.017 70)"/>
+  <rect x="280" y="92" width="240" height="4" fill="oklch(0.9746 0.014 70)"/>
+  <rect x="280" y="92" width="73.5" height="4" fill="oklch(0.7449 0.1231 74.5)"/>
+  <rect x="353.5" y="92" width="107.1" height="1" fill="oklch(0.751 0.0225 70)"/>
+  <text x="316.75" y="70.9" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.5069 0.1048 74.8)">Store</text>
+  <text x="407.05" y="70.9" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.3454 0.0125 273)">Installed</text>
+  </g>
+</svg>

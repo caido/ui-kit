@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+pnpm --filter @caido/tokens generate
+
+if ! git diff --quiet -- packages/tokens/src/__generated__; then
+  echo "The generated token output is not what the token source produces."
+  echo ""
+  echo "Run this and commit the result:"
+  echo ""
+  echo "    mise tokens:generate"
+  echo ""
+  git --no-pager diff -- packages/tokens/src/__generated__
+  exit 1
+fi
+
+echo "Generated token output matches the token source."

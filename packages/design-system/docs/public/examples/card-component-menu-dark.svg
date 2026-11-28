@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 96" width="384" height="96" role="img">
+  <rect width="384" height="96" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(108 10)">
+  <rect x="0" y="0" width="168" height="76" rx="6" fill="oklch(0.3263 0.0144 274.5)" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  <rect x="4" y="6" width="160" height="22" rx="6" fill="oklch(0.3501 0.0158 275.6)"/>
+  <text x="14" y="21" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.9383 0.0063 75.4)">Send to Replay</text>
+  <text x="14" y="45" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.8354 0.0018 247.8)">Copy URL</text>
+  <path d="M 4 54 L 164 54" stroke="oklch(0.4068 0.0188 273.5)" stroke-width="1" fill="none"/>
+  <text x="14" y="69" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.7226 0.1686 18.3)">Delete</text>
+  </g>
+</svg>

@@ -6,6 +6,12 @@
     "packages/tokens": {
       "entry": ["src/index.ts!", "scripts/*.ts"],
       "project": ["src/**/*.ts", "scripts/**/*.ts"]
+    },
+    "packages/design-system": {
+      "entry": [".vitepress/config.ts", ".vitepress/theme/index.ts"],
+      "project": [".vitepress/**/*.{ts,vue}"],
+      "vite": { "config": [".vitepress/config.ts"] },
+      "ignoreDependencies": ["@caido/tokens", "@fortawesome/fontawesome-free"]
     }
   }
 }

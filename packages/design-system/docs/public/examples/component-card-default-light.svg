@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 204" width="800" height="204" role="img">
+  <rect width="800" height="204" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(284.4 25.5)">
+  <rect x="0" y="0" width="224" height="153" rx="3.5" fill="oklch(0.9134 0.017 70)"/>
+  <rect x="0" y="48" width="224" height="4" fill="oklch(0.9746 0.014 70)"/>
+  <text x="16" y="28.9" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.2194 0.0118 277.9)">Findings</text>
+  <text x="16" y="78.8" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">Reflected input</text>
+  <text x="16" y="94.8" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">Open redirect</text>
+  <rect x="0" y="116" width="224" height="1" fill="oklch(0.8113 0.0205 70)"/>
+  <text x="16" y="138.2" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">Close</text>
+  <defs>
+    <pattern id="hatch-padding-0-0-224-48" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.7449 0.1231 74.5)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="224" height="48" fill="url(#hatch-padding-0-0-224-48)"/>
+  <rect x="0" y="0" width="224" height="48" fill="none" stroke="oklch(0.7449 0.1231 74.5)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-gap-0-48-224-4" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.76 0.1239 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="48" width="224" height="4" fill="url(#hatch-gap-0-48-224-4)"/>
+  <rect x="0" y="48" width="224" height="4" fill="none" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <rect x="-3" y="113" width="230" height="7" rx="9" fill="none" stroke="oklch(0.659 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <circle cx="0" cy="24" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 0 24 L -16 24" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="-24" y="28.2" text-anchor="end" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">the header band is a fixed 48px</text>
+  <circle cx="224" cy="50" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 224 50 L 240 50" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="248" y="54.2" text-anchor="start" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="500" fill="oklch(0.5006 0.0163 272.5)">a 4px cut in the page colour</text>
+  <circle cx="227" cy="116.5" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 227 116.5 L 240 116" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="248" y="120.2" text-anchor="start" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">the footer sits under a 1px rule</text>
+  </g>
+</svg>

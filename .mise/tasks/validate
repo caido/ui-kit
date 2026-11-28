@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#MISE depends=["tokens:check"]
+set -euo pipefail
+
+mise run typecheck ::: lint:prod ::: lint:links ::: tokens:test ::: tokens:contrast
+mise tokens:build

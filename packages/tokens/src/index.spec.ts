@@ -703,9 +703,7 @@ describe("iconAliases against the shipped library", () => {
   const require = createRequire(import.meta.url);
   const metadata = JSON.parse(
     readFileSync(
-      require.resolve(
-        "@fortawesome/fontawesome-free/metadata/icon-families.json",
-      ),
+      require.resolve("@fortawesome/fontawesome-free/metadata/icon-families.json"),
       "utf8",
     ),
   ) as Record<string, { aliases?: { names?: string[] } }>;

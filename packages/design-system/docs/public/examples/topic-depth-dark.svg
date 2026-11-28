@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 96" width="384" height="96" role="img">
+  <rect width="384" height="96" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(146 16)">
+  <rect x="0" y="0" width="64" height="44" rx="6" fill="oklch(0.2732 0.0115 271)" stroke="oklch(0.4068 0.0188 273.5)" stroke-width="1"/>
+  <rect x="14" y="10" width="64" height="44" rx="6" fill="oklch(0.294 0.013 272.9)" stroke="oklch(0.4068 0.0188 273.5)" stroke-width="1"/>
+  <rect x="28" y="20" width="64" height="44" rx="6" fill="oklch(0.3263 0.0144 274.5)" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 96" width="384" height="96" role="img">
+  <rect width="384" height="96" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(72 8)">
+  <rect x="0" y="0" width="240" height="80" rx="6" fill="oklch(0.9134 0.017 70)" stroke="oklch(0.751 0.0225 70)" stroke-width="1"/>
+  <rect x="1" y="1" width="238" height="21" rx="2" fill="oklch(0.948 0.0155 70)"/>
+  <path d="M 0 22 L 240 22" stroke="oklch(0.8113 0.0205 70)" stroke-width="1" fill="none"/>
+  <text x="10" y="15.2" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">Host</text>
+  <text x="96" y="15.2" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">Method</text>
+  <text x="180" y="15.2" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">Status</text>
+  <rect x="10" y="29" width="64" height="6" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="96" y="29" width="40" height="6" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="180" y="29" width="30" height="6" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 0 41 L 240 41" stroke="oklch(0.8113 0.0205 70)" stroke-width="1" fill="none"/>
+  <rect x="10" y="48" width="64" height="6" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="96" y="48" width="40" height="6" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="180" y="48" width="30" height="6" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 0 60 L 240 60" stroke="oklch(0.8113 0.0205 70)" stroke-width="1" fill="none"/>
+  <rect x="10" y="67" width="64" height="6" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="96" y="67" width="40" height="6" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <rect x="180" y="67" width="30" height="6" rx="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  </g>
+</svg>

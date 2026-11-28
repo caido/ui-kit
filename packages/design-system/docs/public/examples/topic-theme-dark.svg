@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 96" width="384" height="96" role="img">
+  <rect width="384" height="96" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(99 26)">
+  <rect x="0" y="0" width="90" height="44" rx="6" fill="oklch(0.9134 0.017 70)" stroke="oklch(0.8113 0.0205 70)" stroke-width="1"/>
+  <text x="14" y="27" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.3454 0.0125 273)">Light</text>
+  <rect x="96" y="0" width="90" height="44" rx="6" fill="oklch(0.3263 0.0144 274.5)" stroke="oklch(0.4068 0.0188 273.5)" stroke-width="1"/>
+  <text x="110" y="27" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.8354 0.0018 247.8)">Dark</text>
+  </g>
+</svg>

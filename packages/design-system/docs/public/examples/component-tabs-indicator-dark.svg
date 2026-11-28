@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 136" width="800" height="136" role="img">
+  <rect width="800" height="136" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(-5.7 0.5)">
+  <rect x="280" y="24" width="240" height="52" fill="oklch(0.3263 0.0144 274.5)"/>
+  <rect x="280" y="76" width="240" height="4" fill="oklch(0.2732 0.0115 271)"/>
+  <rect x="280" y="76" width="73.5" height="1" fill="oklch(0.784 0.1048 75.1)"/>
+  <rect x="353.5" y="76" width="107.1" height="1" fill="oklch(0.4542 0.0132 274.7)"/>
+  <text x="316.75" y="54.9" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.784 0.1048 75.1)">Store</text>
+  <text x="407.05" y="54.9" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(0.8354 0.0018 247.8)">Installed</text>
+  <rect x="277" y="73" width="79.5" height="7" rx="9" fill="none" stroke="oklch(0.5068 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-gap-460_6-76-59_4-4" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.4446 0.1605 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="460.6" y="76" width="59.400000000000006" height="4" fill="url(#hatch-gap-460_6-76-59_4-4)"/>
+  <rect x="460.6" y="76" width="59.400000000000006" height="4" fill="none" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <circle cx="277" cy="76.5" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 277 76.5 L 261 76.5" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="253" y="80.7" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">border-b is 1px line-secondary</text>
+  <circle cx="520" cy="78" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 520 78 L 536 78" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="544" y="82.2" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">the 4px band stays, the bar goes</text>
+  <text x="398.5" y="108" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">the underline and the label colour carry it</text>
+  </g>
+</svg>

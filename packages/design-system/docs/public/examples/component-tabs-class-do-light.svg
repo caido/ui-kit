@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 136" width="800" height="136" role="img">
+  <rect width="800" height="136" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(21.6 16)">
+  <text x="209.2" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">&lt;CTab :is-selected="active" class="shrink-0" /&gt;</text>
+  <rect x="319.8" y="32" width="160.4" height="64" rx="6" fill="oklch(0.948 0.0155 70)"/>
+  <rect x="335.8" y="48" width="128.4" height="32" rx="6" fill="none" stroke="oklch(0.5069 0.1048 74.8)" stroke-width="1"/>
+  <rect x="336.8" y="49" width="126.4" height="30" rx="6" fill="oklch(0.9746 0.014 70)"/>
+  <rect x="344.8" y="58" width="12" height="12" fill="none"/>
+  <path transform="translate(344.8 58) scale(0.023440000000000003)" d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z" fill="oklch(0.5006 0.0163 272.5)"/>
+  <text x="364.8" y="68.2" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">Session</text>
+  <rect x="437.95" y="57" width="10.5" height="14" fill="none"/>
+  <path transform="translate(437.95 57) scale(0.02734)" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" fill="oklch(0.4501 0.0151 271.1)"/>
+  </g>
+</svg>

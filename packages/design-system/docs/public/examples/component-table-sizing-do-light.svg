@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 124" width="800" height="124" role="img">
+  <rect width="800" height="124" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(299.2 20.5)">
+  <text x="0" y="16" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.3454 0.0125 273)">&lt;div class="flex-1 min-h-0"&gt;</text>
+  <text x="14.4" y="32" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.3454 0.0125 273)">&lt;CTable :items="items" /&gt;</text>
+  <text x="0" y="48" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.3454 0.0125 273)">&lt;/div&gt;</text>
+  <text x="100.8" y="76" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">the utilities land on the div, where they apply</text>
+  </g>
+</svg>

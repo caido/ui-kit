@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 96" width="384" height="96" role="img">
+  <rect width="384" height="96" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(86 36)">
+  <rect x="0" y="0" width="44" height="24" rx="6" fill="oklch(0.9134 0.017 70)" stroke="oklch(0.8113 0.0205 70)" stroke-width="1"/>
+  <rect x="56" y="0" width="44" height="24" rx="6" fill="oklch(0.8828 0.018 70)" stroke="oklch(0.8113 0.0205 70)" stroke-width="1"/>
+  <rect x="112" y="0" width="44" height="24" rx="6" fill="oklch(0.8551 0.019 70)" stroke="oklch(0.8113 0.0205 70)" stroke-width="1"/>
+  <rect x="168" y="0" width="44" height="24" rx="6" fill="oklch(0.9134 0.017 70)" stroke="oklch(0.3473 0.0735 74.3)" stroke-width="1"/>
+  </g>
+</svg>

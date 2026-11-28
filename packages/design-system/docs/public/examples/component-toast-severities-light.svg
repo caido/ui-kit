@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 124" width="800" height="124" role="img">
+  <rect width="800" height="124" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(208 24)">
+  <rect x="-166.89" y="0" width="89.35" height="41" rx="6" fill="oklch(0.8866 0.0575 250)"/>
+  <rect x="-154.89" y="12" width="15.75" height="15.75" fill="none"/>
+  <path transform="translate(-154.89 12) scale(0.030760000000000003)" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" fill="oklch(0.3461 0.0857 250)"/>
+  <text x="-123.14" y="25.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="500" fill="oklch(0.3461 0.0857 250)">info</text>
+  <rect x="-53.54" y="0" width="114.55" height="41" rx="6" fill="oklch(0.8669 0.0539 143.4)"/>
+  <rect x="-41.54" y="12" width="15.75" height="15.75" fill="none"/>
+  <path transform="translate(-41.54 12) scale(0.030760000000000003)" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" fill="oklch(0.3452 0.0741 144.3)"/>
+  <text x="-9.79" y="25.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="500" fill="oklch(0.3452 0.0741 144.3)">success</text>
+  <rect x="85.01" y="0" width="89.35" height="41" rx="6" fill="oklch(0.8783 0.0735 47.6)"/>
+  <rect x="97.01" y="12" width="15.75" height="15.75" fill="none"/>
+  <path transform="translate(97.01 12) scale(0.030760000000000003)" d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z" fill="oklch(0.346 0.0993 47.6)"/>
+  <text x="128.76" y="25.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="500" fill="oklch(0.346 0.0993 47.6)">warn</text>
+  <rect x="198.36" y="0" width="97.75" height="41" rx="6" fill="oklch(0.8689 0.0702 18.6)"/>
+  <rect x="210.36" y="12" width="15.75" height="15.75" fill="none"/>
+  <path transform="translate(210.36 12) scale(0.030760000000000003)" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" fill="oklch(0.3465 0.1223 18.1)"/>
+  <text x="242.11" y="25.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="500" fill="oklch(0.3465 0.1223 18.1)">error</text>
+  <rect x="320.1" y="0" width="107.6" height="41" rx="6" fill="oklch(0.9134 0.017 70)"/>
+  <text x="340.1" y="25.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="500" fill="oklch(0.3454 0.0125 273)">secondary</text>
+  <rect x="451.7" y="0" width="99.2" height="41" rx="6" fill="oklch(0.751 0.0225 70)"/>
+  <text x="471.7" y="25.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="500" fill="oklch(0 0 89.9)">contrast</text>
+  <text x="192" y="73" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">secondary and contrast draw no icon</text>
+  </g>
+</svg>

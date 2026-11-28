@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 176" width="800" height="176" role="img">
+  <rect width="800" height="176" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(4.6 80.3)">
+  <rect x="169.2" y="0" width="40" height="24" rx="12" fill="oklch(0.294 0.013 272.9)" stroke="oklch(0.5532 0.0093 278.5)" stroke-width="1"/>
+  <circle cx="182.2" cy="12" r="8" fill="oklch(0.5969 0.0061 274.9)"/>
+  <text x="189.2" y="44.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">off</text>
+  <rect x="246" y="0" width="40" height="24" rx="12" fill="oklch(0.3501 0.0158 275.6)" stroke="oklch(0.5532 0.0093 278.5)" stroke-width="1"/>
+  <circle cx="259" cy="12" r="8" fill="oklch(0.5969 0.0061 274.9)"/>
+  <text x="266" y="44.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">hover</text>
+  <rect x="320" y="0" width="40" height="24" rx="12" fill="oklch(0.7449 0.1231 74.5)"/>
+  <circle cx="349" cy="12" r="8" fill="oklch(0.2178 0 89.9)"/>
+  <text x="340" y="44.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">on</text>
+  <rect x="394" y="0" width="40" height="24" rx="12" fill="oklch(0.7579 0.1169 74.6)"/>
+  <circle cx="423" cy="12" r="8" fill="oklch(0.2178 0 89.9)"/>
+  <text x="414" y="44.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">hover</text>
+  <rect x="475" y="-3" width="46" height="30" rx="15" fill="none" stroke="oklch(0.8346 0.0767 74.2)" stroke-width="2"/>
+  <rect x="478" y="0" width="40" height="24" rx="12" fill="oklch(0.294 0.013 272.9)" stroke="oklch(0.5532 0.0093 278.5)" stroke-width="1"/>
+  <circle cx="491" cy="12" r="8" fill="oklch(0.5969 0.0061 274.9)"/>
+  <text x="498" y="44.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">focus</text>
+  <rect x="572.8" y="0" width="40" height="24" rx="12" fill="oklch(0.294 0.013 272.9)" stroke="oklch(0.5532 0.0093 278.5)" stroke-width="1"/>
+  <circle cx="585.8" cy="12" r="8" fill="oklch(0.5969 0.0061 274.9)"/>
+  <rect x="572.8" y="0" width="40" height="24" rx="12" fill="oklch(0.2732 0.0115 271)" opacity="0.4"/>
+  <text x="592.8" y="44.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">disabled</text>
+  <rect x="471" y="-7" width="54" height="38" rx="9" fill="none" stroke="oklch(0.5068 0.1689 141.7)" stroke-width="1" stroke-dasharray="3 2" opacity="0.75"/>
+  <circle cx="471" cy="12" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 471 12 L 471 -48" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <path d="M 471 -48 L 462 -48" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="454" y="-43.8" text-anchor="end" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">the ring sits 2px outside the track</text>
+  <text x="400" y="68.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">hover moves the fill, disabled fades the switch</text>
+  </g>
+</svg>

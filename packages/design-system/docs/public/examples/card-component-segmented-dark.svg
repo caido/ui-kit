@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 96" width="384" height="96" role="img">
+  <rect width="384" height="96" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(104 34)">
+  <rect x="0" y="0" width="176" height="28" rx="6" fill="oklch(0.294 0.013 272.9)" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  <rect x="3" y="3" width="94" height="22" rx="6" fill="oklch(0.3263 0.0144 274.5)" stroke="oklch(0.4542 0.0132 274.7)" stroke-width="1"/>
+  <text x="50" y="18.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.9383 0.0063 75.4)">Markdown</text>
+  <text x="136" y="18.2" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">Raw</text>
+  </g>
+</svg>

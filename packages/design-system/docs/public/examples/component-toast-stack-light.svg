@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 276" width="800" height="276" role="img">
+  <rect width="800" height="276" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(186.4 25)">
+  <rect x="0" y="0" width="384" height="41" rx="6" fill="oklch(0.8866 0.0575 250)"/>
+  <rect x="12" y="12" width="15.75" height="15.75" fill="none"/>
+  <path transform="translate(12 12) scale(0.030760000000000003)" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" fill="oklch(0.3461 0.0857 250)"/>
+  <text x="43.75" y="25.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="500" fill="oklch(0.3461 0.0857 250)">Info</text>
+  <rect x="0" y="57" width="384" height="41" rx="6" fill="oklch(0.8669 0.0539 143.4)"/>
+  <rect x="12" y="69" width="15.75" height="15.75" fill="none"/>
+  <path transform="translate(12 69) scale(0.030760000000000003)" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" fill="oklch(0.3452 0.0741 144.3)"/>
+  <text x="43.75" y="82.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="500" fill="oklch(0.3452 0.0741 144.3)">Success</text>
+  <rect x="0" y="114" width="384" height="41" rx="6" fill="oklch(0.8689 0.0702 18.6)"/>
+  <rect x="12" y="126" width="15.75" height="15.75" fill="none"/>
+  <path transform="translate(12 126) scale(0.030760000000000003)" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" fill="oklch(0.3465 0.1223 18.1)"/>
+  <text x="43.75" y="139.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="500" fill="oklch(0.3465 0.1223 18.1)">Error</text>
+  <defs>
+    <pattern id="hatch-gap-0-41-384-16" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.76 0.1239 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="41" width="384" height="16" fill="url(#hatch-gap-0-41-384-16)"/>
+  <rect x="0" y="41" width="384" height="16" fill="none" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-gap-0-98-384-16" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.76 0.1239 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="98" width="384" height="16" fill="url(#hatch-gap-0-98-384-16)"/>
+  <rect x="0" y="98" width="384" height="16" fill="none" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-gap-0-155-384-36" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.76 0.1239 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="155" width="384" height="36" fill="url(#hatch-gap-0-155-384-36)"/>
+  <rect x="0" y="155" width="384" height="36" fill="none" stroke="oklch(0.76 0.1239 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <path d="M -24 191 L 408 191" stroke="oklch(0.751 0.0225 70)" stroke-width="1" fill="none"/>
+  <circle cx="0" cy="49" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 0 49 L -16 49" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="-24" y="53.2" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" font-weight="500" fill="oklch(0.5006 0.0163 272.5)">16px between toasts</text>
+  <circle cx="384" cy="173" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 384 173 L 400 173" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="408" y="177.2" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.5006 0.0163 272.5)">36px to the window bottom</text>
+  <text x="192" y="223" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">bottom centre, three messages from the composable</text>
+  </g>
+</svg>

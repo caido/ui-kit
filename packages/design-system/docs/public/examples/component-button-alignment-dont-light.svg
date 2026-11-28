@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 136" width="800" height="136" role="img">
+  <rect width="800" height="136" fill="oklch(0.9746 0.014 70)"/>
+  <g transform="translate(57.85 -15)">
+  <rect x="330.68" y="40" width="76.4" height="35" rx="6" fill="oklch(0.4672 0.1618 13.8)" stroke="oklch(0.4672 0.1618 13.8)" stroke-width="1"/>
+  <text x="368.88" y="62.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(1 0 89.9)">Export</text>
+  <rect x="431.08" y="40" width="38.25" height="32" rx="6" fill="oklch(0.4672 0.1618 13.8)" stroke="oklch(0.4672 0.1618 13.8)" stroke-width="1"/>
+  <rect x="444.08" y="49" width="12.25" height="14" fill="none"/>
+  <path transform="translate(444.08 49) scale(0.02734)" d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" fill="oklch(1 0 89.9)"/>
+  <path d="M 322.68 40 L 477.33 40" stroke="oklch(0.751 0.0225 70)" stroke-width="1" stroke-dasharray="3 2" fill="none"/>
+  <path d="M 322.68 75 L 477.33 75" stroke="oklch(0.751 0.0225 70)" stroke-width="1" stroke-dasharray="3 2" fill="none"/>
+  <rect x="431.08" y="72" width="38.25" height="3" fill="oklch(0.705 0.1699 30.1)" opacity="0.75"/>
+  <circle cx="431.08" cy="73.5" r="2" fill="oklch(0.5006 0.0163 272.5)"/>
+  <path d="M 431.08 73.5 L 431.08 95" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <path d="M 431.08 95 L 306.68 95" stroke="oklch(0.5006 0.0163 272.5)" stroke-width="1" fill="none"/>
+  <text x="298.68" y="99.2" text-anchor="end" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="500" fill="oklch(0.5006 0.0163 272.5)">the icon box is 3px shorter</text>
+  <text x="400.01" y="123" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.5006 0.0163 272.5)">an icon-only button is shorter than a labelled one</text>
+  </g>
+</svg>

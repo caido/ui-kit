@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "[*] Rewriting the generated stylesheets and manifest from the token source"
+pnpm --filter @caido/tokens generate
+
+echo "[*] Copying the generated files into what the package publishes"
+pnpm --filter @caido/tokens build

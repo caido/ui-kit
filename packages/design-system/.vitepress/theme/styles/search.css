@@ -1,0 +1,108 @@
+
+:root {
+  --vp-backdrop-bg-color: rgb(0 0 0 / 40%);
+  --vp-c-brand-1: var(--color-fg-secondary);
+  --vp-c-divider: var(--color-line-subtle);
+  --vp-local-search-bg: var(--color-surface-raised);
+  --vp-local-search-highlight-bg: var(--color-surface-selected);
+  --vp-local-search-highlight-text: var(--color-fg-secondary);
+  --vp-local-search-result-bg: var(--color-surface-page);
+  --vp-local-search-result-border: var(--color-line-subtle);
+  --vp-local-search-result-selected-bg: var(--color-surface-selected);
+  --vp-local-search-result-selected-border: var(--color-line-selected);
+}
+
+.VPLocalSearchBox .shell {
+  border: 1px solid var(--color-line-default);
+  border-radius: var(--radius);
+  color: var(--color-fg-default);
+}
+
+.VPLocalSearchBox .search-bar {
+  border: 0;
+  border-radius: var(--radius);
+  padding-left: 0;
+}
+
+.VPLocalSearchBox .toggle-layout-button {
+  display: none;
+}
+
+.VPLocalSearchBox .search-input {
+  font-size: var(--text-body);
+  color: var(--color-fg-default);
+  min-width: 0;
+}
+
+.VPLocalSearchBox .search-input:focus-visible {
+  outline: none;
+}
+
+.VPLocalSearchBox .search-keyboard-shortcuts {
+  border-top: 1px solid var(--color-line-subtle);
+  padding-top: calc(var(--spacing) * 3);
+}
+
+.VPLocalSearchBox .search-keyboard-shortcuts span {
+  font-size: var(--text-caption);
+  color: var(--color-fg-muted);
+}
+
+.VPLocalSearchBox .search-keyboard-shortcuts kbd {
+  font-size: var(--text-caption);
+  color: var(--color-fg-default);
+  background-color: var(--color-surface-subtle);
+  border: 0;
+  border-radius: var(--radius);
+}
+
+.VPLocalSearchBox .title {
+  color: var(--color-fg-default);
+}
+
+.VPLocalSearchBox .no-results {
+  color: var(--color-fg-muted);
+}
+
+.VPLocalSearchBox [class^="vpi-"],
+.VPLocalSearchBox [class*=" vpi-"] {
+  display: inline-block;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-style: normal;
+  line-height: 1;
+  width: auto;
+  height: auto;
+}
+
+.VPLocalSearchBox .vpi-search::before {
+  content: "\f002";
+}
+
+.VPLocalSearchBox .vpi-delete::before {
+  content: "\f55a";
+}
+
+.VPLocalSearchBox .vpi-layout-list::before {
+  content: "\f00b";
+}
+
+.VPLocalSearchBox .vpi-chevron-right::before {
+  content: "\f054";
+}
+
+.VPLocalSearchBox .vpi-arrow-left::before {
+  content: "\f060";
+}
+
+.VPLocalSearchBox .vpi-arrow-up::before {
+  content: "\f062";
+}
+
+.VPLocalSearchBox .vpi-arrow-down::before {
+  content: "\f063";
+}
+
+.VPLocalSearchBox .vpi-corner-down-left::before {
+  content: "\f3be";
+}

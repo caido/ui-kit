@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 196" width="800" height="196" role="img">
+  <rect width="800" height="196" fill="oklch(0.2732 0.0115 271)"/>
+  <g transform="translate(24.8 -14.5)">
+  <rect x="320" y="40" width="59.6" height="35" rx="6" fill="oklch(0.4672 0.1618 13.8)" stroke="oklch(0.4672 0.1618 13.8)" stroke-width="1"/>
+  <text x="349.8" y="62.4" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(1 0 89.9)">Save</text>
+  <rect x="320" y="99" width="81.6" height="35" rx="6" fill="oklch(0.4672 0.1618 13.8)" stroke="oklch(0.4672 0.1618 13.8)" stroke-width="1"/>
+  <rect x="333" y="109.5" width="14" height="14" fill="none"/>
+  <path transform="translate(333 109.5) scale(0.02734)" d="M304 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM48 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm464-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM142.9 437A48 48 0 1 0 75 369.1 48 48 0 1 0 142.9 437zm0-294.2A48 48 0 1 0 75 75a48 48 0 1 0 67.9 67.9zM369.1 437A48 48 0 1 0 437 369.1 48 48 0 1 0 369.1 437z" fill="oklch(1 0 89.9)"/>
+  <text x="355" y="121.4" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="oklch(1 0 89.9)">Save</text>
+  <rect x="320" y="99" width="81.6" height="35" rx="6" fill="oklch(0.2732 0.0115 271)" opacity="0.4"/>
+  <defs>
+    <pattern id="hatch-gap-379_6-75-22-24" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.4446 0.1605 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="379.6" y="75" width="22" height="24" fill="url(#hatch-gap-379_6-75-22-24)"/>
+  <rect x="379.6" y="75" width="22" height="24" fill="none" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <defs>
+    <pattern id="hatch-gap-347-108-8-17" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="oklch(0.4446 0.1605 257.4)" fill-opacity="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="347" y="108" width="8" height="17" fill="url(#hatch-gap-347-108-8-17)"/>
+  <rect x="347" y="108" width="8" height="17" fill="none" stroke="oklch(0.4446 0.1605 257.4)" stroke-width="1" stroke-dasharray="3 2" stroke-opacity="0.75"/>
+  <circle cx="351" cy="125" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 351 125 L 351 154" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <path d="M 351 154 L 304 154" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="296" y="158.2" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">gap-2 puts 8px from spinner to label</text>
+  <circle cx="401.6" cy="87" r="2" fill="oklch(0.6996 0.0014 286.4)"/>
+  <path d="M 401.6 87 L 417.6 87" stroke="oklch(0.6996 0.0014 286.4)" stroke-width="1" fill="none"/>
+  <text x="425.6" y="91.2" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace" font-size="12" fill="oklch(0.6996 0.0014 286.4)">the spinner and its gap widen the button</text>
+  <text x="360.8" y="182" text-anchor="middle" font-family="Inter, &quot;Inter Fallback&quot;, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="oklch(0.6996 0.0014 286.4)">loading adds a spinner and disables the button</text>
+  </g>
+</svg>
